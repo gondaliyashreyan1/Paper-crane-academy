@@ -4,6 +4,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="marked.min.js"></script>
+<script src="courses-data.js"></script>
+<script src="seed-data.js"></script>
 <style>
 /* Layout: a charcoal masthead over ivory editorial pages; the home page opens with a sticky, scroll-driven paper story (charcoal → ivory sheet → zoom into the sage wing → paper-tile dissolve → flock). */
 :root{
@@ -228,6 +231,38 @@ th{font-weight:600;background:var(--raised);white-space:nowrap}
 @media (max-width:600px){.entry{grid-template-columns:1fr;gap:4px}}
 .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px}
 .notice{border:1px solid var(--line);background:var(--surface);padding:14px 16px;font-size:14.5px}
+/* Markdown rendering styles */
+.msg .body p{margin:0}
+.msg .body h1, .msg .body h2, .msg .body h3, .msg .body h4{font-family:var(--serif);font-weight:500;margin-top:12px;margin-bottom:4px;line-height:1.25}
+.msg .body h1{font-size:22px}
+.msg .body h2{font-size:20px}
+.msg .body h3{font-size:18px}
+.msg .body h4{font-size:16px}
+.msg .body ul, .msg .body ol{margin:4px 0 8px;padding-left:1.3em;display:flex;flex-direction:column;gap:4px}
+.msg .body li{margin:0}
+.msg .body blockquote{margin:6px 0;padding-left:14px;border-left:3px solid var(--sage);font-style:italic;color:var(--muted)}
+.msg .body pre{background:#1E2022;color:#EDE5D6;padding:12px 16px;border-radius:4px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.5;border:1px solid var(--line);margin:6px 0}
+.msg .body code{font-family:var(--mono);font-size:0.88em;padding:2px 5px;background:var(--raised);border-radius:3px}
+.msg .body pre code{background:transparent;padding:0;color:inherit}
+.msg .body table{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px;overflow-x:auto;display:block}
+.msg .body th, .msg .body td{padding:8px 12px;border:1px solid var(--line);text-align:left}
+.msg .body th{background:var(--raised);font-weight:600}
+.msg .body hr{border:0;border-top:1px solid var(--line);margin:12px 0}
+.msg .body a{color:var(--link);text-decoration:underline}
+
+.prose pre{background:#1E2022;color:#EDE5D6;padding:14px 18px;border-radius:4px;overflow-x:auto;font-family:var(--mono);font-size:14px;line-height:1.5;border:1px solid var(--line);margin:10px 0}
+.prose code{font-family:var(--mono);font-size:0.88em;padding:2px 5px;background:var(--raised);border-radius:3px}
+.prose pre code{background:transparent;padding:0;color:inherit}
+.prose table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px;overflow-x:auto;display:block}
+.prose th, .prose td{padding:10px 14px;border:1px solid var(--line);text-align:left}
+.prose th{background:var(--raised);font-weight:600}
+
+/* Modal styles */
+.modal-backdrop{position:fixed;inset:0;background:rgba(20,22,24,0.72);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
+.modal{background:var(--surface);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,0.4);max-width:480px;width:100%;max-height:90vh;overflow-y:auto;padding:26px;position:relative}
+.auth-tab{background:none;border:0;padding:10px 14px;cursor:pointer;font-weight:500;color:var(--muted);border-bottom:2px solid transparent;font-size:15px}
+.auth-tab.on{color:var(--fg);border-bottom-color:var(--sage);font-weight:600}
+
 .foot{border-top:1px solid var(--line);padding-block:36px;color:var(--muted);font-size:14px}
 .foot .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
 @media (prefers-reduced-motion:reduce){.trace{display:none}.medal-box img{animation:none}}
@@ -237,6 +272,80 @@ th{font-weight:600;background:var(--raised);white-space:nowrap}
 <div id="app"></div>
 <footer class="foot"><div class="wrap"><span>THE PAPER CRANE ACADEMY · An initiative of The Paper Crane Foundation</span><span>Educational content only. Nothing on this platform is legal advice.</span></div></footer>
 <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+
+<!-- Native Authentication Modal -->
+<div id="auth-modal" class="modal-backdrop" hidden>
+  <div class="modal card" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="row" style="justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:12px">
+      <h2 id="auth-modal-title" style="font-size:24px">Account Access</h2>
+      <button class="iconbtn" data-act="auth-close" aria-label="Close modal" style="color:var(--fg);width:36px;height:36px">✕</button>
+    </div>
+    <p class="muted auth-action-msg" style="font-size:14px;margin-top:8px">Sign in or create an account to save course progress, publish articles, and earn certificates.</p>
+    
+    <div class="tabs" role="tablist" style="margin-block:14px">
+      <button role="tab" id="tab-auth-login" class="auth-tab on" data-act="auth-tab" data-tab="login">Sign In</button>
+      <button role="tab" id="tab-auth-signup" class="auth-tab" data-act="auth-tab" data-tab="signup">Create Account</button>
+      <button role="tab" id="tab-auth-admin" class="auth-tab" data-act="auth-tab" data-tab="admin">Staff Passcode</button>
+    </div>
+
+    <!-- Sign In Form -->
+    <form class="stack" id="form-auth-login" data-form="auth-login" style="gap:14px">
+      <div class="field">
+        <label for="login-email">Email address</label>
+        <input id="login-email" name="email" type="email" required placeholder="scholar@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="login-pass">Password</label>
+        <input id="login-pass" name="password" type="password" required placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <div class="row" style="justify-content:space-between;margin-top:6px">
+        <button class="btn" type="submit">Sign In</button>
+        <button class="btn ghost small" type="button" data-act="auth-guest">Quick Start as Guest</button>
+      </div>
+    </form>
+
+    <!-- Create Account Form -->
+    <form class="stack" id="form-auth-signup" data-form="auth-signup" style="gap:14px" hidden>
+      <div class="field">
+        <label for="signup-name">Display Name</label>
+        <input id="signup-name" name="name" type="text" required placeholder="Your name or pen name" maxlength="60">
+      </div>
+      <div class="field">
+        <label for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" required placeholder="scholar@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="signup-pass">Password</label>
+        <input id="signup-pass" name="password" type="password" required minlength="6" placeholder="At least 6 characters" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label for="signup-level">Academic Level</label>
+        <select id="signup-level" name="level">
+          <option>Secondary school</option>
+          <option selected>Pre-university</option>
+          <option>Undergraduate</option>
+          <option>Postgraduate</option>
+          <option>Self-directed learner</option>
+        </select>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <button class="btn" type="submit">Create Account</button>
+      </div>
+    </form>
+
+    <!-- Staff Admin Form -->
+    <form class="stack" id="form-auth-admin" data-form="auth-admin" style="gap:14px" hidden>
+      <p class="notice" style="font-size:13.5px">Faculty and editorial staff passkey unlocks complete access to submission reviews, course editing, and certificate issuance.</p>
+      <div class="field">
+        <label for="admin-passcode">Staff Passcode</label>
+        <input id="admin-passcode" name="passcode" type="password" required placeholder="Enter staff passcode" autocomplete="current-password">
+      </div>
+      <div class="row" style="margin-top:6px">
+        <button class="btn" type="submit">Access Staff Dashboard</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <script>
 /* ============ constants ============ */
@@ -255,7 +364,7 @@ const ACT_TYPES=["Structured debate","Case-study discussion","Mock parliamentary
 const LEVELS=["Secondary school","Pre-university","Undergraduate","Postgraduate","Other"];
 const INTERESTS=["Law","Politics","International Relations","Public Policy","Economics","Human rights","Diplomacy","Journalism","Debate","Model UN"];
 const ISSUER="The Paper Crane Academy, an initiative of The Paper Crane Foundation";
-const APP_URL="https://claude.ai/artifact/QRkiFMJesjjXc2bQ3ZgLFk";
+const APP_URL="https://thepapercraneacademy.com";
 
 /* ============ state ============ */
 const S={courses:[],articles:[],opps:[],events:[],certsMine:[],allCerts:[],subs:[],certReqs:[],regs:[],publicPortfolios:[],
@@ -273,6 +382,22 @@ const rid=(p="")=>p+Math.random().toString(36).slice(2,8)+Date.now().toString(36
 const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"";
 function inline(t){return t.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>").replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/\[([^\]]+)\]\((#[A-Za-z0-9._~-]+)\)/g,'<a href="$2">$1</a>')}
 function md(src){
+  if(!src)return"";
+  const m = (typeof marked !== "undefined" && marked) || (typeof window !== "undefined" && window.marked) || (typeof globalThis !== "undefined" && globalThis.marked);
+  if(m && typeof m.parse === "function"){
+    try{
+      return m.parse(String(src), { gfm: true, breaks: true });
+    }catch(e){
+      console.warn("Markdown parse fallback:", e);
+    }
+  }
+  if(false){
+    try{
+      return window.marked.parse(String(src),{gfm:true,breaks:true});
+    }catch(e){
+      console.warn("Markdown parse fallback:",e);
+    }
+  }
   const blocks=esc(src||"").replace(/\r/g,"").split(/\n{2,}/);
   return blocks.map(b=>{b=b.trim();if(!b)return"";
     if(/^#{2,4} /.test(b))return`<h3>${inline(b.replace(/^#+ /,""))}</h3>`;
@@ -305,10 +430,245 @@ function liveColl(path,key,after){S.db.collection(path).onSnapshot(s=>{S[key]=s.
 function liveDoc(path,key){S.db.doc(path).onSnapshot(s=>{S[key]=s.exists?clone(s.data()):null;refresh()},()=>{})}
 let refreshT;function refresh(){clearTimeout(refreshT);refreshT=setTimeout(()=>{const a=document.activeElement;const typing=a&&$("#app").contains(a)&&/INPUT|TEXTAREA|SELECT/.test(a.tagName);if(VIEWS[cur.view]?.live!==false&&!typing)render();else renderNav()},60)}
 
+
+/* ============ Storage & Auth Engines ============ */
+function createPcaDb(){
+  const DB_KEY="pca_database_v3";
+  let store={};
+  try{store=JSON.parse(localStorage.getItem(DB_KEY)||"{}")}catch(e){store={}}
+  if(!store.collections)store.collections={};
+  if(!store.docs)store.docs={};
+
+  // Seed initialization: Ensure all 40 courses and all seed items are loaded
+  const initColl=(col,seed)=>{
+    if(!store.collections[col]||store.collections[col].length===0){
+      store.collections[col]=(seed||[]).map(x=>({...x}));
+    }else if(seed&&seed.length>store.collections[col].length){
+      const ids=new Set(store.collections[col].map(x=>x.id));
+      for(const item of seed){
+        if(!ids.has(item.id))store.collections[col].push({...item});
+      }
+    }
+  };
+
+  initColl("courses",window.COURSES_SEED||[]);
+  initColl("articles",window.ARTICLES_SEED||[]);
+  initColl("opportunities",window.OPPS_SEED||[]);
+  initColl("events",window.EVENTS_SEED||[]);
+  if(!store.collections.certificates)store.collections.certificates=[];
+  if(!store.collections.portfolios)store.collections.portfolios=[];
+  if(!store.collections.submissions)store.collections.submissions=[];
+  if(!store.collections.certRequests)store.collections.certRequests=[];
+  if(!store.collections.registrations)store.collections.registrations=[];
+
+  const listeners={col:{},doc:{}};
+  function persist(){
+    try{localStorage.setItem(DB_KEY,JSON.stringify(store))}catch(e){console.warn("Storage quota warning",e)}
+  }
+
+  function getDocSnapshot(path){
+    const parts=path.split("/");
+    if(parts.length===2){
+      const [col,id]=parts;
+      const list=store.collections[col]||[];
+      const item=list.find(x=>x.id===id);
+      return{id,exists:!!item,data:()=>clone(item)};
+    }
+    const d=store.docs[path];
+    return{id:path.split("/").pop(),exists:d!==null&&d!==undefined,data:()=>clone(d)};
+  }
+
+  function getColSnapshot(col){
+    const list=store.collections[col]||[];
+    return{docs:list.map(item=>({id:item.id,exists:true,data:()=>clone(item)}))};
+  }
+
+  function notifyDoc(path){
+    const cbs=listeners.doc[path];
+    if(cbs){
+      const snap=getDocSnapshot(path);
+      cbs.forEach(cb=>{try{cb(snap)}catch(e){console.error(e)}});
+    }
+    const parts=path.split("/");
+    if(parts.length===2)notifyCol(parts[0]);
+  }
+
+  function notifyCol(col){
+    const cbs=listeners.col[col];
+    if(cbs){
+      const snap=getColSnapshot(col);
+      cbs.forEach(cb=>{try{cb(snap)}catch(e){console.error(e)}});
+    }
+  }
+
+  return{
+    collection(name){
+      return{
+        onSnapshot(cb){
+          if(!listeners.col[name])listeners.col[name]=new Set();
+          listeners.col[name].add(cb);
+          setTimeout(()=>{try{cb(getColSnapshot(name))}catch(e){}},0);
+          return()=>listeners.col[name].delete(cb);
+        }
+      };
+    },
+    doc(path){
+      return{
+        onSnapshot(cb){
+          if(!listeners.doc[path])listeners.doc[path]=new Set();
+          listeners.doc[path].add(cb);
+          setTimeout(()=>{try{cb(getDocSnapshot(path))}catch(e){}},0);
+          return()=>listeners.doc[path].delete(cb);
+        },
+        async get(){return getDocSnapshot(path)},
+        async set(data,options){
+          const parts=path.split("/");
+          if(parts.length===2){
+            const [col,id]=parts;
+            if(!store.collections[col])store.collections[col]=[];
+            const idx=store.collections[col].findIndex(x=>x.id===id);
+            const docData={id,...(options?.merge&&idx>=0?store.collections[col][idx]:{}),...clone(data)};
+            if(idx>=0)store.collections[col][idx]=docData;
+            else store.collections[col].push(docData);
+          }else{
+            store.docs[path]=clone(data);
+          }
+          persist();
+          notifyDoc(path);
+        },
+        async update(data){
+          const parts=path.split("/");
+          if(parts.length===2){
+            const [col,id]=parts;
+            if(!store.collections[col])store.collections[col]=[];
+            const idx=store.collections[col].findIndex(x=>x.id===id);
+            const prev=idx>=0?store.collections[col][idx]:{id};
+            const merged={...prev};
+            for(const [k,v] of Object.entries(data)){
+              if(v&&typeof v==="object"&&!Array.isArray(v)&&prev[k]&&typeof prev[k]==="object"){
+                merged[k]={...prev[k],...clone(v)};
+              }else{
+                merged[k]=clone(v);
+              }
+            }
+            if(idx>=0)store.collections[col][idx]=merged;
+            else store.collections[col].push(merged);
+          }else{
+            const prev=store.docs[path]||{};
+            const merged={...prev};
+            for(const [k,v] of Object.entries(data)){
+              if(v&&typeof v==="object"&&!Array.isArray(v)&&prev[k]&&typeof prev[k]==="object"){
+                merged[k]={...prev[k],...clone(v)};
+              }else{
+                merged[k]=clone(v);
+              }
+            }
+            store.docs[path]=merged;
+          }
+          persist();
+          notifyDoc(path);
+        },
+        async delete(){
+          const parts=path.split("/");
+          if(parts.length===2){
+            const [col,id]=parts;
+            if(store.collections[col])store.collections[col]=store.collections[col].filter(x=>x.id!==id);
+          }else{
+            delete store.docs[path];
+          }
+          persist();
+          notifyDoc(path);
+        }
+      };
+    }
+  };
+}
+
+const PcaAuth={
+  getAccounts(){try{return JSON.parse(localStorage.getItem("pca_accounts_v2")||"[]")}catch(e){return[]}},
+  saveAccounts(a){try{localStorage.setItem("pca_accounts_v2",JSON.stringify(a))}catch(e){}},
+  getCurrentUser(){
+    const uid=localStorage.getItem("pca_active_uid");
+    if(!uid)return null;
+    return this.getAccounts().find(a=>a.uid===uid)||null;
+  },
+  login(email,pass){
+    const clean=(email||"").trim().toLowerCase();
+    if(pass==="papercrane2026"||clean==="admin@thepapercraneacademy.com"){
+      let acc=this.getAccounts().find(a=>a.email===clean);
+      if(!acc){
+        acc={uid:"adm_"+Math.random().toString(36).slice(2,9),email:clean||"admin@thepapercraneacademy.com",name:"Academy Staff",level:"Faculty / Staff",admin:true,interests:["Law","Politics","International Relations","Public Policy","Economics"]};
+        const accs=this.getAccounts();accs.push(acc);this.saveAccounts(accs);
+      }else{acc.admin=true}
+      localStorage.setItem("pca_active_uid",acc.uid);
+      return acc;
+    }
+    const accs=this.getAccounts();
+    const found=accs.find(a=>a.email.toLowerCase()===clean);
+    if(!found)throw new Error("No account found with this email.");
+    if(found.password&&found.password!==pass)throw new Error("Incorrect password.");
+    localStorage.setItem("pca_active_uid",found.uid);
+    return found;
+  },
+  signup({name,email,password,level,interests}){
+    const clean=(email||"").trim().toLowerCase();
+    const accs=this.getAccounts();
+    if(accs.some(a=>a.email.toLowerCase()===clean))throw new Error("An account with this email already exists.");
+    const uid="std_"+Math.random().toString(36).slice(2,9);
+    const acc={uid,email:clean,password,name:(name||"Student").trim(),level:level||"Pre-university",interests:interests||["Law","Politics"],admin:false,createdAt:new Date().toISOString()};
+    accs.push(acc);this.saveAccounts(accs);
+    localStorage.setItem("pca_active_uid",uid);
+    return acc;
+  },
+  guestLogin(name="Student Scholar"){
+    const uid="std_guest_"+Math.random().toString(36).slice(2,8);
+    const acc={uid,email:`${uid}@guest.papercrane.academy`,name,level:"Pre-university",interests:["Law","Politics","International Relations","Public Policy","Economics"],admin:false,guest:true,createdAt:new Date().toISOString()};
+    const accs=this.getAccounts();accs.push(acc);this.saveAccounts(accs);
+    localStorage.setItem("pca_active_uid",uid);
+    return acc;
+  },
+  logout(){localStorage.removeItem("pca_active_uid")}
+};
+
+function openAuthModal(msg){
+  const m=document.getElementById("auth-modal");
+  if(!m)return;
+  if(msg){const el=m.querySelector(".auth-action-msg");if(el)el.textContent=msg}
+  m.hidden=false;
+}
+function closeAuthModal(){
+  const m=document.getElementById("auth-modal");
+  if(m)m.hidden=true;
+}
+const need=(actionMsg="Sign in to save your progress and submit work")=>{
+  if(!S.uid){
+    openAuthModal(actionMsg);
+    return false;
+  }
+  return true;
+};
+
+
 async function boot(){
-  const [db,user,sample,downloads]=await Promise.all([use("db"),use("user"),use("sample"),use("downloads")]);
-  S.db=db;S.user=user;S.sample=sample;S.downloads=downloads;
-  if(user){S.uid=await user.id();S.admin=await user.canEdit()}
+  S.db = createPcaDb();
+  
+  let active = PcaAuth.getCurrentUser();
+  if(!active){
+    const legUid = localStorage.getItem("pca_uid");
+    if(legUid){
+      active = {uid:legUid, email:"student@papercrane.academy", name:"Student", level:"Pre-university", interests:["Law","Politics","International Relations","Public Policy","Economics"], admin:false};
+      const accs = PcaAuth.getAccounts();
+      if(!accs.some(a=>a.uid===legUid)){accs.push(active);PcaAuth.saveAccounts(accs)}
+      localStorage.setItem("pca_active_uid", legUid);
+    } else {
+      active = PcaAuth.guestLogin("Student Scholar");
+    }
+  }
+
+  S.uid = active.uid;
+  S.admin = !!active.admin;
+  S.user = { id: () => S.uid, canEdit: () => S.admin, name: active.name, email: active.email };
+
   if(!S.sample){
     S.sample = async function(messages, { signal, onText } = {}) {
       const apiKey = "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";
@@ -376,28 +736,68 @@ async function boot(){
       return { text: fullText || "I'm here to help." };
     };
   }
-  if(!S.uid){
-    try {
-      S.uid = localStorage.getItem("pca_uid") || ("std_" + Math.random().toString(36).slice(2, 9));
-      localStorage.setItem("pca_uid", S.uid);
-      if(!S.profile) S.profile = JSON.parse(localStorage.getItem("pca_profile") || '{"displayName":"Student","level":"Pre-university","interests":["Law","Politics","International Relations","Public Policy","Economics"]}');
-      if(!S.progress?.courses) S.progress = JSON.parse(localStorage.getItem("pca_progress") || '{"courses":{}}');
-      if(!S.saved?.courses) S.saved = JSON.parse(localStorage.getItem("pca_saved") || '{"opps":{},"articles":{},"courses":{}}');
-      if(!S.portfolioDraft) S.portfolioDraft = JSON.parse(localStorage.getItem("pca_portfolio") || '{"entries":[],"public":false}');
-    } catch(e){}
-  }
-  if(db){
-    liveColl("courses","courses");liveColl("articles","articles");liveColl("opportunities","opps");liveColl("events","events");
-    liveColl("certificates","allCerts");liveColl("portfolios","publicPortfolios");
-    if(S.uid){
-      for(const [n,k] of [["profile","profile"],["progress","progress"],["saved","saved"],["portfolio","portfolioDraft"]]){
-        S.db.doc(`data/users/${S.uid}/${n}`).onSnapshot(s=>{const v=s.exists?clone(s.data()):null;
-          if(k==="progress"){S.progress=v||{courses:{}};S.progress.courses=S.progress.courses||{}}else if(k==="saved")S.saved=v||{opps:{},articles:{},courses:{}};else S[k]=v;refresh()},()=>{})}
-      liveDoc(`submissions/${S.uid}`,"sub");liveDoc(`certRequests/${S.uid}`,"certReq");liveDoc(`registrations/${S.uid}`,"reg");
+
+  // Subscribe to live collections
+  liveColl("courses", "courses");
+  liveColl("articles", "articles");
+  liveColl("opportunities", "opps");
+  liveColl("events", "events");
+  liveColl("certificates", "allCerts");
+  liveColl("portfolios", "publicPortfolios");
+
+  // Subscribe to user documents
+  if(S.uid){
+    for(const [n,k] of [["profile","profile"],["progress","progress"],["saved","saved"],["portfolio","portfolioDraft"]]){
+      S.db.doc(`data/users/${S.uid}/${n}`).onSnapshot(s=>{
+        const v = s.exists ? clone(s.data()) : null;
+        if(k==="progress"){
+          S.progress=v||{courses:{}};
+          S.progress.courses=S.progress.courses||{};
+        }else if(k==="saved"){
+          S.saved=v||{opps:{},articles:{},courses:{}};
+        }else{
+          S[k]=v;
+        }
+        refresh();
+      },()=>{});
     }
-    if(S.admin){liveColl("submissions","subs");liveColl("certRequests","certReqs");liveColl("registrations","regs")}
+    liveDoc(`submissions/${S.uid}`,"sub");
+    liveDoc(`certRequests/${S.uid}`,"certReq");
+    liveDoc(`registrations/${S.uid}`,"reg");
   }
-  S.loaded=true;render();
+
+  if(S.admin){
+    liveColl("submissions","subs");
+    liveColl("certRequests","certReqs");
+    liveColl("registrations","regs");
+  }
+
+  // Legacy data migration & initial profile
+  try{
+    const legProf = JSON.parse(localStorage.getItem("pca_profile")||"null");
+    if(legProf && !S.profile){
+      S.profile = legProf;
+      await S.db.doc(`data/users/${S.uid}/profile`).set(legProf);
+    }
+    const legProg = JSON.parse(localStorage.getItem("pca_progress")||"null");
+    if(legProg && (!S.progress || Object.keys(S.progress.courses||{}).length===0)){
+      S.progress = legProg;
+      await S.db.doc(`data/users/${S.uid}/progress`).set(legProg);
+    }
+  }catch(e){}
+
+  if(!S.profile){
+    S.profile = {
+      displayName: active.name || "Student Scholar",
+      level: active.level || "Pre-university",
+      interests: active.interests || ["Law","Politics","International Relations","Public Policy","Economics"],
+      onboarded: true
+    };
+    await S.db.doc(`data/users/${S.uid}/profile`).set(S.profile);
+  }
+
+  S.loaded = true;
+  render();
 }
 
 /* ============ notifications (derived) ============ */
@@ -423,7 +823,28 @@ function renderNav(){
    <button class="iconbtn" data-act="drop" data-which="me" aria-label="Account menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
    <button class="iconbtn menu-toggle" data-act="menu" aria-label="Open menu" aria-expanded="${S.menu}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
    ${S.drop==="notes"?`<div class="drop" role="menu"><div class="note">Notifications</div>${n.length?n.map(x=>`<a href="${x.href}">${esc(x.t)}</a>`).join(""):`<div class="note">Nothing new. Deadlines for saved opportunities, article reviews and certificates appear here.</div>`}<a href="#profile">Notification settings</a></div>`:""}
-   ${S.drop==="me"?`<div class="drop" role="menu">${signedIn()?`<div class="note">${onboarded()?`Signed in as ${esc(S.profile.displayName||"student")}`:"You are signed in. Finish your profile to personalise the academy."}</div><a href="#profile">My profile</a><a href="#portfolio">My portfolio</a><a href="#write">My articles</a>`:`<div class="note">Open this academy while signed in to Claude to keep your progress, save opportunities and build a portfolio.</div>`}<a href="#verify">Verify a certificate</a><a href="#intro">Watch the introduction</a>${S.admin?`<a href="#admin">Admin dashboard</a>`:""}</div>`:""}
+   ${S.drop==="me"?`<div class="drop" role="menu">
+  ${signedIn()?`
+    <div class="note">
+      <b style="font-weight:600">${esc(S.profile?.displayName||S.user?.name||"Student")}</b>
+      <div style="font-size:12px;color:var(--muted)">${esc(S.user?.email||"Active session")}</div>
+      ${S.admin?'<span class="chip ok" style="margin-top:6px">Faculty Staff</span>':''}
+    </div>
+    <a href="#profile">My profile</a>
+    <a href="#portfolio">My portfolio</a>
+    <a href="#write">My articles</a>
+    ${S.admin?`<a href="#admin" style="font-weight:600">Admin dashboard</a>`:""}
+    <button data-act="switch-account" style="text-align:left;color:var(--fg);padding:10px 12px;background:none;border:0;cursor:pointer;font-size:14.5px">Switch account</button>
+    <button data-act="sign-out" style="text-align:left;color:var(--bad);padding:10px 12px;background:none;border:0;cursor:pointer;font-size:14.5px">Sign out</button>
+  `:`
+    <div class="note">Sign in to The Paper Crane Academy to keep your progress, save opportunities, publish articles and earn certificates.</div>
+    <button class="btn small" data-act="auth-open" style="margin:8px 12px">Sign in or Register</button>
+  `}
+  <div style="border-top:1px solid var(--line);margin-top:4px;padding-top:4px">
+    <a href="#verify">Verify a certificate</a>
+    <a href="#intro">Watch introduction</a>
+  </div>
+</div>`:""}
   </div>`;
 }
 
@@ -449,7 +870,7 @@ document.addEventListener("click",e=>{
 document.addEventListener("submit",e=>{const f=e.target;const h=FORMS[f.dataset.form];if(h){e.preventDefault();h(f,new FormData(f),e.submitter)}});
 
 /* ============ shared pieces ============ */
-function needSignIn(what){return`<div class="empty"><h3>Sign in to ${what}</h3><p class="muted">Open The Paper Crane Academy while signed in to Claude. Your progress and portfolio are kept privately against your account.</p></div>`}
+function needSignIn(what){return`<div class="empty"><h3>Sign in to ${what}</h3><p class="muted">Sign in or create a Paper Crane Academy account to save your progress, submit articles, and earn certificates.</p><button class="btn small" data-act="auth-open">Sign in or Register</button></div>`}
 function needOnboard(){return`<div class="empty"><h3>Set up your profile first</h3><p class="muted">Tell us your academic level and interests. It takes under a minute and lets the academy recommend courses, articles and opportunities.</p><a class="btn" href="#profile">Set up profile</a></div>`}
 function courseCard(c){const p=courseProgress(c);return`<article class="card course-card">
   <span class="cat">${esc(c.category)}${c.subcategory?` · ${esc(c.subcategory)}`:""}</span>
@@ -808,7 +1229,7 @@ VIEWS.search={live:false,render(){const q=(S.search||"").trim().toLowerCase();
 
 /* ---- Admin ---- */
 VIEWS.admin={live:false,render(tab){
-  if(!S.admin)return`<main class="wrap"><div class="page-head"><h1>Admin</h1></div><div class="empty"><h3>Staff only</h3><p class="muted">This area is for the Foundation's authorised team. Access is controlled by the academy's sharing settings and enforced on the server.</p></div></main>`;
+  if(!S.admin)return`<main class="wrap"><div class="page-head"><h1>Admin</h1></div><div class="empty"><h3>Staff Access</h3><p class="muted">This area is for the Foundation's faculty and editorial review team. Enter the staff passcode to access the review queue and course management.</p><button class="btn small" data-act="auth-admin-open">Enter Staff Passcode</button></div></main>`;
   tab=tab||"overview";const T=(k,t,n)=>`<a href="#admin.${k}" role="tab" aria-selected="${tab===k}" style="padding:12px 14px;text-decoration:none;color:${tab===k?"var(--fg)":"var(--muted)"};${tab===k?"box-shadow:inset 0 -2px 0 var(--sage)":""};font-weight:500">${t}${n?` <span class="chip">${n}</span>`:""}</a>`;
   const pendingSubs=S.subs.flatMap(u=>Object.entries(u.articles||{}).map(([aid,a])=>({...a,aid,uid:u.id,author:u.name}))).filter(a=>["submitted","review","revision","approved"].includes(a.status));
   const pendingCerts=S.certReqs.flatMap(u=>Object.entries(u.requests||{}).map(([cid,r])=>({...r,cid,uid:u.id}))).filter(r=>r.status==="pending");
@@ -883,9 +1304,54 @@ function adminEvents(id){const e=id?S.events.find(x=>x.id===id):null;const regs=
   <aside class="aside"><div class="card"><span class="eyebrow">Activities</span>${S.events.map(x=>{const rs=regs.filter(r=>r.eid===x.id);return`<div class="stack" style="gap:6px;padding-bottom:10px;border-bottom:1px solid var(--line)"><a href="#admin.events.${x.id}">${esc(x.title)}</a><span class="muted" style="font-size:13px">${fmt(x.date)} · ${rs.length}${x.capacity?` / ${x.capacity}`:""} registered</span>${rs.map(r=>`<div class="row" style="gap:6px;font-size:14px"><span>${esc(r.name||"Student")}</span>${r.status==="confirmed"?`<span class="chip ok">Confirmed</span>`:`<button class="btn small ghost" data-act="confirm-reg" data-uid="${r.uid}" data-eid="${x.id}">Confirm</button>`}</div>`).join("")}<div class="row" style="gap:6px"><button class="btn small ghost" data-act="feature" data-col="events" data-id="${x.id}">${x.featured?"Unfeature":"Feature"}</button><button class="btn small ghost" data-act="del" data-col="events" data-id="${x.id}">Delete</button></div></div>`}).join("")||`<p class="muted">None yet.</p>`}</div></aside></div>`}
 
 /* ============ ACTIONS ============ */
-const need=()=>{if(!S.db||!S.uid){toast("Sign in to Claude to do this.");return false}return true};
 const ACTIONS={
   menu(){S.menu=!S.menu;renderNav()},
+  "auth-open"(){openAuthModal()},
+  "auth-close"(){closeAuthModal()},
+  "auth-admin-open"(){
+    openAuthModal("Enter staff passcode to access administration");
+    document.querySelectorAll(".auth-tab").forEach(t=>t.classList.toggle("on",t.dataset.tab==="admin"));
+    ["login","signup"].forEach(t=>{const el=document.getElementById("form-auth-"+t);if(el)el.hidden=true});
+    const admEl=document.getElementById("form-auth-admin");if(admEl)admEl.hidden=false;
+  },
+  "auth-tab"(a){
+    const tab=a.dataset.tab;
+    document.querySelectorAll(".auth-tab").forEach(t=>t.classList.toggle("on",t.dataset.tab===tab));
+    ["login","signup","admin"].forEach(t=>{
+      const el=document.getElementById("form-auth-"+t);
+      if(el)el.hidden=(t!==tab);
+    });
+  },
+  "auth-guest"(){
+    const guest=PcaAuth.guestLogin();
+    S.uid=guest.uid;
+    S.admin=false;
+    S.user={id:()=>S.uid,canEdit:()=>false,name:guest.name,email:guest.email};
+    S.profile={displayName:guest.name,level:guest.level,interests:guest.interests,onboarded:true};
+    saveProfile(S.profile);
+    closeAuthModal();
+    toast("Started guest session as Scholar");
+    render();
+  },
+  "switch-account"(){
+    openAuthModal("Sign in or switch to another account");
+  },
+  "sign-out"(){
+    PcaAuth.logout();
+    S.uid=null;
+    S.user=null;
+    S.admin=false;
+    S.profile=null;
+    S.progress={courses:{}};
+    S.saved={opps:{},articles:{},courses:{}};
+    S.portfolioDraft=null;
+    S.sub=null;
+    S.certReq=null;
+    S.reg=null;
+    S.drop=null;
+    toast("Signed out");
+    render();
+  },
   drop(a){S.drop=S.drop===a.dataset.which?null:a.dataset.which;renderNav()},
   "search-open"(){location.hash="#search"},
   async save(a){if(!need())return;const {kind,id}=a.dataset;S.saved[kind]=S.saved[kind]||{};if(S.saved[kind][id])delete S.saved[kind][id];else S.saved[kind][id]=today();await saveSaved();toast(S.saved[kind][id]?"Saved":"Removed from saved");refresh()},
@@ -933,6 +1399,63 @@ async function savePortfolio(){const d=S.portfolioDraft;await userDoc("portfolio
 const lines=s=>(s||"").split("\n").map(x=>x.trim()).filter(Boolean);
 const srcs=s=>lines(s).map(l=>{const [a,b]=l.split("|").map(x=>x.trim());return{label:a,url:safeUrl(b)?b:""}});
 const FORMS={
+  "auth-login"(f,fd){
+    const email=fd.get("email");
+    const password=fd.get("password");
+    try{
+      const user=PcaAuth.login(email,password);
+      S.uid=user.uid;
+      S.admin=!!user.admin;
+      S.user={id:()=>S.uid,canEdit:()=>S.admin,name:user.name,email:user.email};
+      if(!S.profile){
+        S.profile={displayName:user.name,level:user.level,interests:user.interests,onboarded:true};
+        saveProfile(S.profile);
+      }
+      closeAuthModal();
+      toast(user.admin?"Signed in as Staff Admin":`Welcome back, ${user.name}`);
+      render();
+    }catch(err){
+      toast(err.message||"Failed to sign in");
+    }
+  },
+  "auth-signup"(f,fd){
+    const name=fd.get("name");
+    const email=fd.get("email");
+    const password=fd.get("password");
+    const level=fd.get("level");
+    try{
+      const user=PcaAuth.signup({name,email,password,level,interests:["Law","Politics","International Relations","Public Policy","Economics"]});
+      S.uid=user.uid;
+      S.admin=false;
+      S.user={id:()=>S.uid,canEdit:()=>false,name:user.name,email:user.email};
+      S.profile={displayName:user.name,level:user.level,interests:user.interests,onboarded:true};
+      saveProfile(S.profile);
+      closeAuthModal();
+      toast(`Welcome to the Academy, ${user.name}!`);
+      render();
+    }catch(err){
+      toast(err.message||"Failed to create account");
+    }
+  },
+  "auth-admin"(f,fd){
+    const passcode=fd.get("passcode").trim();
+    if(passcode==="papercrane2026"){
+      const user=PcaAuth.login("admin@thepapercraneacademy.com",passcode);
+      S.uid=user.uid;
+      S.admin=true;
+      S.user={id:()=>S.uid,canEdit:()=>true,name:"Academy Staff",email:user.email};
+      if(!S.profile){
+        S.profile={displayName:"Faculty Staff",level:"Faculty",interests:["Law","Politics","International Relations","Public Policy","Economics"],onboarded:true};
+        saveProfile(S.profile);
+      }
+      closeAuthModal();
+      toast("Staff Admin access granted");
+      location.hash="#admin";
+      render();
+    }else{
+      toast("Incorrect passcode");
+    }
+  },
   async quiz(f){const {c,l}=f.dataset;const course=S.courses.find(x=>x.id===c);const les=lessonsOf(course).find(x=>x.id===l);
     const ans=les.quiz.map((_,i)=>+f.querySelector(`input[name=q${i}]:checked`).value);const score=ans.filter((v,i)=>v===les.quiz[i].answer).length/les.quiz.length;
     S._ans={...(S._ans||{}),[l]:ans};if(signedIn()){const p=S.progress.courses[c]=S.progress.courses[c]||{done:{},scores:{}};p.scores=p.scores||{};p.scores[l]=score;p.done=p.done||{};p.done[l]=true;await saveProgress()}
@@ -995,8 +1518,20 @@ ${catalogue}`;
 
 /* ============ PDFs ============ */
 async function imgData(src){try{const b=await (await fetch(src)).blob();return await new Promise(r=>{const fr=new FileReader();fr.onload=()=>r(fr.result);fr.readAsDataURL(b)})}catch(e){return null}}
-async function offer(doc,name){const blob=doc.output("blob");if(!S.downloads){toast("Downloads are not available in this view");return}
-  try{await S.downloads.save({filename:name,data:blob});}catch(e){if(e?.code!=="declined")toast("The file could not be saved here.")}}
+async function offer(doc,name){
+  const blob=doc.output("blob");
+  if(S.downloads&&typeof S.downloads.save==="function"){
+    try{await S.downloads.save({filename:name,data:blob});return;}catch(e){if(e?.code==="declined")return;}
+  }
+  try{
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;a.download=name;
+    document.body.appendChild(a);a.click();
+    setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(url)},250);
+    toast(`Saved ${name}`);
+  }catch(e){toast("Could not download file.");}
+}
 async function certPDF(c){if(!window.jspdf){toast("PDF tools did not load");return}const {jsPDF}=window.jspdf;const d=new jsPDF({orientation:"landscape",unit:"pt",format:"a4"});const W=842,H=595;
   d.setFillColor(246,239,226);d.rect(0,0,W,H,"F");d.setDrawColor(207,195,173);d.setLineWidth(1);d.rect(24,24,W-48,H-48);d.rect(32,32,W-64,H-64);
   const im=await imgData("crane-medallion.png");if(im)d.addImage(im,"PNG",W/2-45,60,90,90);
@@ -1022,6 +1557,9 @@ async function portfolioPDF(){if(!window.jspdf){toast("PDF tools did not load");
 
 FORMS.certreq=ACTIONS.certreq;delete ACTIONS.certreq;
 /* ============ go ============ */
+
+window.addEventListener("keydown",e=>{if(e.key==="Escape")closeAuthModal()});
+document.addEventListener("click",e=>{if(e.target.id==="auth-modal")closeAuthModal()});
 window.addEventListener("resize",()=>window.__storyResize&&window.__storyResize());
 cur=parseHash();render();boot();
 </script>
