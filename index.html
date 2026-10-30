@@ -443,7 +443,15 @@ function createPcaDb(){
   const initColl=(col,seed)=>{
     if(!store.collections[col]||store.collections[col].length===0){
       store.collections[col]=(seed||[]).map(x=>({...x}));
-    }else if(seed&&seed.length>store.collections[col].length){
+    }else if(seed){
+      const seedMap=new Map(seed.map(s=>[s.id,s]));
+      store.collections[col]=store.collections[col].map(item=>{
+        if(seedMap.has(item.id)){
+          const s=seedMap.get(item.id);
+          return{...item,instructor:s.instructor||item.instructor,authorName:s.authorName||item.authorName};
+        }
+        return item;
+      });
       const ids=new Set(store.collections[col].map(x=>x.id));
       for(const item of seed){
         if(!ids.has(item.id))store.collections[col].push({...item});
@@ -620,7 +628,7 @@ const PcaAuth={
     localStorage.setItem("pca_active_uid",uid);
     return acc;
   },
-  guestLogin(name="Student Scholar"){
+  guestLogin(name="Student"){
     const uid="std_guest_"+Math.random().toString(36).slice(2,8);
     const acc={uid,email:`${uid}@guest.papercrane.academy`,name,level:"Pre-university",interests:["Law","Politics","International Relations","Public Policy","Economics"],admin:false,guest:true,createdAt:new Date().toISOString()};
     const accs=this.getAccounts();accs.push(acc);this.saveAccounts(accs);
@@ -661,7 +669,7 @@ async function boot(){
       if(!accs.some(a=>a.uid===legUid)){accs.push(active);PcaAuth.saveAccounts(accs)}
       localStorage.setItem("pca_active_uid", legUid);
     } else {
-      active = PcaAuth.guestLogin("Student Scholar");
+      active = PcaAuth.guestLogin("Student");
     }
   }
 
@@ -788,7 +796,7 @@ async function boot(){
 
   if(!S.profile){
     S.profile = {
-      displayName: active.name || "Student Scholar",
+      displayName: active.name || "Student",
       level: active.level || "Pre-university",
       interests: active.interests || ["Law","Politics","International Relations","Public Policy","Economics"],
       onboarded: true
@@ -830,6 +838,7 @@ function renderNav(){
       <div style="font-size:12px;color:var(--muted)">${esc(S.user?.email||"Active session")}</div>
       ${S.admin?'<span class="chip ok" style="margin-top:6px">Faculty Staff</span>':''}
     </div>
+    <a href="#dashboard">My Dashboard</a>
     <a href="#profile">My profile</a>
     <a href="#portfolio">My portfolio</a>
     <a href="#write">My articles</a>
@@ -854,7 +863,7 @@ function parseHash(){const h=(location.hash||"#home").slice(1);const [v,...a]=h.
 window.addEventListener("hashchange",()=>{cur=parseHash();render.last=null;S.menu=false;S.drop=null;render();window.scrollTo(0,0)});
 function render(){
   renderNav();
-  const wantsStory=cur.view==="intro"||(cur.view==="home"&&!onboarded());
+  const wantsStory=cur.view==="intro"||cur.view==="home";
   if(wantsStory&&document.getElementById("story")&&render.last===cur.view){$("#pub").innerHTML=publicSections();return}
   render.last=cur.view;
   stopStory();
@@ -879,7 +888,7 @@ function courseCard(c){const p=courseProgress(c);return`<article class="card cou
   <div class="meta"><span>${esc(c.level)}</span><span>${esc(c.duration)}</span><span>${esc(c.instructor)}</span><span>${c.certificate?"Certificate available":"No certificate"}</span></div>
   ${p.started?`<div class="progress" aria-label="${p.pct}% complete"><i style="width:${p.pct}%"></i></div>`:""}
   <div class="row" style="margin-top:auto"><a class="btn small ${p.started?"":"ghost"}" href="#course.${c.id}">${p.complete?"Completed":p.started?"Continue":"View course"}</a>${saveBtn("courses",c.id)}</div></article>`}
-function articleItem(a){return`<div class="list-item"><div class="stack" style="gap:6px"><span class="cat">${esc(a.category)} · ${esc(KINDS[a.kind]||a.kind||"")}</span><h3><a href="#article.${a.id}" style="color:inherit;text-decoration:none">${esc(a.title)}</a></h3>${a.subtitle?`<p class="muted">${esc(a.subtitle)}</p>`:""}<span class="meta"><span>${esc(a.authorName||"The Paper Crane Press")}</span><span>${fmt(a.date)}</span></span></div>${saveBtn("articles",a.id)}</div>`}
+function articleItem(a){return`<div class="list-item"><div class="stack" style="gap:6px"><span class="cat">${esc(a.category)} · ${esc(KINDS[a.kind]||a.kind||"")}</span><h3><a href="#article.${a.id}" style="color:inherit;text-decoration:none">${esc(a.title)}</a></h3>${a.subtitle?`<p class="muted">${esc(a.subtitle)}</p>`:""}<span class="meta"><span>${esc(a.authorName||"PaperCrane AI")}</span><span>${fmt(a.date)}</span></span></div>${saveBtn("articles",a.id)}</div>`}
 function oppItem(o){const n=daysUntil(o.deadline);const exp=oppExpired(o);
   return`<div class="list-item"><div class="stack" style="gap:6px"><span class="cat">${esc(o.category)}</span><h3><a href="#opp.${o.id}" style="color:inherit;text-decoration:none">${esc(o.title)}</a></h3><span class="meta"><span>${esc(o.org)}</span><span>${esc(o.location||"")}</span><span>${o.deadline?`Deadline ${fmt(o.deadline)}`:"Deadline not listed"}</span></span>
   <div class="row">${exp?`<span class="chip bad">Closed</span>`:o.deadline&&n<=14?`<span class="chip warn">Closes in ${n} day${n===1?"":"s"}</span>`:""}${o.lastChecked?`<span class="chip">Checked ${fmt(o.lastChecked)}</span>`:`<span class="chip warn">Not yet verified</span>`}</div></div>${saveBtn("opps",o.id)}</div>`}
@@ -976,8 +985,12 @@ function stopStory(){storyOn=false;if(storyRAF)cancelAnimationFrame(storyRAF);st
 const VIEWS={};
 VIEWS.intro={render:()=>storyHTML()+`<div id="pub">${publicSections()}</div>`,after:startStory};
 VIEWS.home={render(){
-  if(onboarded())return dashboard();
-  return storyHTML()+`<div id="pub">${publicSections()}</div>`},after(){if(!onboarded())startStory()}};
+  return storyHTML()+`<div id="pub">${publicSections()}</div>`;
+},after:startStory};
+VIEWS.dashboard={render(){
+  if(!signedIn())return`<main class="wrap"><div class="page-head"><h1>Dashboard</h1></div>${needSignIn("view your dashboard")}</main>`;
+  return dashboard();
+}};
 
 function publicSections(){
   const fc=S.courses.filter(c=>c.featured).concat(S.courses.filter(c=>!c.featured)).slice(0,3);
@@ -1079,7 +1092,7 @@ VIEWS.press={render(){
   after(){const up=()=>{F.pcat=$("#pcat").value;F.pkind=$("#pkind").value;ls.set("pca-filters",F);render()};$("#pcat").addEventListener("change",up);$("#pkind").addEventListener("change",up)}};
 VIEWS.article={render(id){const a=S.articles.find(x=>x.id===id);if(!a)return`<main class="wrap">${loadingOr("Article not found","")}</main>`;
   const rel=publishedArticles().filter(x=>x.id!==id&&x.category===a.category).slice(0,3);
-  return`<main class="wrap"><article><div class="article-head"><a class="eyebrow" href="#press" style="text-decoration:none">The Press · ${esc(a.category)}</a><span class="kind">${esc(KINDS[a.kind]||a.kind)}</span><h1>${esc(a.title)}</h1>${a.subtitle?`<p class="sub">${esc(a.subtitle)}</p>`:""}<span class="meta"><span>By ${esc(a.authorName||"The Paper Crane Press")}</span><span>${fmt(a.date)}</span></span></div>
+  return`<main class="wrap"><article><div class="article-head"><a class="eyebrow" href="#press" style="text-decoration:none">The Press · ${esc(a.category)}</a><span class="kind">${esc(KINDS[a.kind]||a.kind)}</span><h1>${esc(a.title)}</h1>${a.subtitle?`<p class="sub">${esc(a.subtitle)}</p>`:""}<span class="meta"><span>By ${esc(a.authorName||"PaperCrane AI")}</span><span>${fmt(a.date)}</span></span></div>
   ${a.kind==="opinion"?`<p class="notice" style="max-width:68ch;margin-bottom:24px">This is an opinion piece. It reflects the author's view, argued from evidence, and not a position of The Paper Crane Academy.</p>`:""}
   <div class="split"><div class="stack" style="gap:32px"><div class="prose">${md(a.body)}</div>
    ${(a.sources||[]).length?`<section class="stack" style="gap:8px;max-width:68ch"><h2 style="font-size:24px">Sources</h2><ol style="margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px">${a.sources.map(s=>`<li>${safeUrl(s.url)?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`:esc(s.label)}</li>`).join("")}</ol></section>`:""}
@@ -1154,7 +1167,7 @@ VIEWS.portfolio={live:false,render(){
   <div class="split"><div class="stack" style="gap:28px">
    <form class="stack card" data-form="pf-settings"><h2 style="font-size:24px">Public page</h2>
     <label class="row" style="gap:10px"><input type="checkbox" name="public" id="pf-public" ${d.public?"checked":""}> Make my portfolio public</label>
-    <div class="field"><label for="pf-handle">Web address</label><span class="hint">Letters, numbers and hyphens. Your page will be at #p.<b>${esc(d.handle||"your-name")}</b></span><input id="pf-handle" name="handle" type="text" pattern="[a-z0-9-]{3,30}" value="${esc(d.handle||"")}" placeholder="e.g. amaya-r"></div>
+    <div class="field"><label for="pf-handle">Web address</label><span class="hint">Letters, numbers and hyphens. Your page will be at #p.<b>${esc(d.handle||"your-name")}</b></span><input id="pf-handle" name="handle" type="text" pattern="[a-z0-9-]{3,30}" value="${esc(d.handle||"")}" placeholder="e.g. your-name"></div>
     <div class="field"><label for="pf-bio">Short biography</label><textarea id="pf-bio" name="bio" maxlength="600" style="min-height:100px">${esc(d.bio||"")}</textarea></div>
     <div class="field"><label for="pf-career">Career interests</label><input id="pf-career" name="career" type="text" value="${esc(d.career||"")}"></div>
     <label class="row" style="gap:10px"><input type="checkbox" name="showScores" id="pf-scores" ${d.showScores?"checked":""}> Show my quiz averages next to certificates</label>
@@ -1275,7 +1288,7 @@ function adminCourses(id){const c=id?S.courses.find(x=>x.id===id):null;
   <aside class="aside"><div class="card"><span class="eyebrow">Courses</span>${S.courses.map(x=>`<div class="stack" style="gap:6px;padding-bottom:10px;border-bottom:1px solid var(--line)"><a href="#admin.courses.${x.id}">${esc(x.title)}</a><div class="row" style="gap:6px"><button class="btn small ghost" data-act="feature" data-col="courses" data-id="${x.id}">${x.featured?"Unfeature":"Feature"}</button><button class="btn small ghost" data-act="del" data-col="courses" data-id="${x.id}">Remove</button></div></div>`).join("")||`<p class="muted">None yet.</p>`}</div></aside></div>`}
 function adminArticleForm(id){const a=id?S.articles.find(x=>x.id===id):null;return`<form class="stack card" data-form="admin-article" data-id="${a?.id||""}"><h2 style="font-size:24px">${a?"Edit published article":"Publish a staff article"}</h2>
   <div class="field"><label for="aa-title">Headline</label><input id="aa-title" name="title" type="text" required value="${esc(a?.title||"")}"></div><div class="field"><label for="aa-sub">Subtitle</label><input id="aa-sub" name="subtitle" type="text" value="${esc(a?.subtitle||"")}"></div>
-  <div class="row"><div class="field" style="flex:1 1 180px"><label for="aa-cat">Section</label><select id="aa-cat" name="category">${PRESS_CATS.map(c=>`<option ${a?.category===c?"selected":""}>${c}</option>`).join("")}</select></div><div class="field" style="flex:1 1 180px"><label for="aa-kind">Type</label><select id="aa-kind" name="kind">${Object.entries(KINDS).map(([k,v])=>`<option value="${k}" ${a?.kind===k?"selected":""}>${v}</option>`).join("")}</select></div><div class="field" style="flex:1 1 180px"><label for="aa-author">Byline</label><input id="aa-author" name="authorName" type="text" value="${esc(a?.authorName||"The Paper Crane Press")}"></div><div class="field" style="flex:1 1 160px"><label for="aa-date">Publish on</label><input id="aa-date" name="publishAt" type="date" value="${esc(a?.publishAt||today())}"></div></div>
+  <div class="row"><div class="field" style="flex:1 1 180px"><label for="aa-cat">Section</label><select id="aa-cat" name="category">${PRESS_CATS.map(c=>`<option ${a?.category===c?"selected":""}>${c}</option>`).join("")}</select></div><div class="field" style="flex:1 1 180px"><label for="aa-kind">Type</label><select id="aa-kind" name="kind">${Object.entries(KINDS).map(([k,v])=>`<option value="${k}" ${a?.kind===k?"selected":""}>${v}</option>`).join("")}</select></div><div class="field" style="flex:1 1 180px"><label for="aa-author">Byline</label><input id="aa-author" name="authorName" type="text" value="${esc(a?.authorName||"PaperCrane AI")}"></div><div class="field" style="flex:1 1 160px"><label for="aa-date">Publish on</label><input id="aa-date" name="publishAt" type="date" value="${esc(a?.publishAt||today())}"></div></div>
   <div class="field"><label for="aa-body">Article</label><textarea id="aa-body" name="body" style="min-height:260px" required>${esc(a?.body||"")}</textarea></div>
   <div class="field"><label for="aa-src">Sources</label><span class="hint">Title | https://link, one per line</span><textarea id="aa-src" name="sources">${esc((a?.sources||[]).map(s=>s.label+(s.url?" | "+s.url:"")).join("\n"))}</textarea></div>
   <div class="field"><label for="aa-corr">Correction note (shown at the end)</label><input id="aa-corr" name="correction" type="text" value="${esc(a?.correction||"")}"></div>
