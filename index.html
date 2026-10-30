@@ -468,13 +468,11 @@ function createPcaDb(){
     })),
     ...userCustomCourses
   ];
-  initColl("articles",window.ARTICLES_SEED||[]);
+  const legacyFakeArticles = ["art-icc-putin", "art-taiwan-strait", "art-ai-copyright", "art-uk-bill-of-rights", "art-1", "art-2", "art-3", "art-4"];
   if(store.collections.articles){
-    store.collections.articles=store.collections.articles.map(a=>({
-      ...a,
-      authorName: a.authorName && a.authorName!=="Anonymous" ? a.authorName : "PaperCrane AI"
-    }));
+    store.collections.articles = store.collections.articles.filter(a => !legacyFakeArticles.includes(a.id));
   }
+  initColl("articles",window.ARTICLES_SEED||[]);
   initColl("opportunities",window.OPPS_SEED||[]);
   initColl("events",window.EVENTS_SEED||[]);
   if(store.collections.events){store.collections.events=store.collections.events.filter(e=>!["ev-debating-2026","ev-icj-masterclass"].includes(e.id));}
@@ -1156,7 +1154,7 @@ VIEWS.press={render(){
   const cat=F.pcat||"";const kind=F.pkind||"";const list=publishedArticles().filter(a=>(!cat||a.category===cat)&&(!kind||a.kind===kind));const lead=list[0];
   return`<main class="wrap"><div class="page-head"><span class="eyebrow">The Paper Crane Press</span><h1>Student journalism on politics, law and public affairs</h1><p>Every piece is labelled as reporting, analysis, opinion or explainer. Factual claims carry sources. Student submissions are reviewed by an editor before publication.</p><div class="row"><a class="btn" href="#write">Write for the Press</a><a class="btn ghost" href="#standards">Editorial standards</a></div></div>
   <div class="filters"><div class="field"><label for="pcat">Section</label><select id="pcat"><option value="">All sections</option>${PRESS_CATS.map(c=>`<option ${cat===c?"selected":""}>${c}</option>`).join("")}</select></div><div class="field"><label for="pkind">Type</label><select id="pkind"><option value="">All types</option>${Object.entries(KINDS).map(([k,v])=>`<option value="${k}" ${kind===k?"selected":""}>${v}</option>`).join("")}</select></div></div>
-  ${lead?`<article class="stack" style="gap:12px;padding-bottom:28px;border-bottom:1px solid var(--line)"><span class="kind">${esc(KINDS[lead.kind]||"")}</span><h2 style="font-size:clamp(30px,4vw,48px);font-weight:400"><a href="#article.${lead.id}" style="color:inherit;text-decoration:none">${esc(lead.title)}</a></h2><p class="muted" style="font-family:var(--serif);font-size:20px;font-style:italic">${esc(lead.subtitle||"")}</p><span class="meta"><span>${esc(lead.authorName||"PaperCrane AI")}</span><span>${fmt(lead.date)}</span><span>${esc(lead.category)}</span></span></article><div class="list">${list.slice(1).map(articleItem).join("")}</div>`:loadingOr("No articles in this section","Choose another section or type.")}</main>`},
+  ${lead?`<article class="stack" style="gap:12px;padding-bottom:28px;border-bottom:1px solid var(--line)"><span class="kind">${esc(KINDS[lead.kind]||"")}</span><h2 style="font-size:clamp(30px,4vw,48px);font-weight:400"><a href="#article.${lead.id}" style="color:inherit;text-decoration:none">${esc(lead.title)}</a></h2><p class="muted" style="font-family:var(--serif);font-size:20px;font-style:italic">${esc(lead.subtitle||"")}</p><span class="meta"><span>${esc(lead.authorName||"PaperCrane AI")}</span><span>${fmt(lead.date)}</span><span>${esc(lead.category)}</span></span></article><div class="list">${list.slice(1).map(articleItem).join("")}</div>`:loadingOr("No articles published yet","Articles submitted by students and staff will appear here once reviewed and published.")}</main>`},
   after(){const up=()=>{F.pcat=$("#pcat").value;F.pkind=$("#pkind").value;ls.set("pca-filters",F);render()};$("#pcat").addEventListener("change",up);$("#pkind").addEventListener("change",up)}};
 VIEWS.article={render(id){const a=S.articles.find(x=>x.id===id);if(!a)return`<main class="wrap">${loadingOr("Article not found","")}</main>`;
   const rel=publishedArticles().filter(x=>x.id!==id&&x.category===a.category).slice(0,3);
