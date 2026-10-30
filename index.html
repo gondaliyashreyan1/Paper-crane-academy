@@ -601,12 +601,34 @@ const PcaAuth={
     if(!uid)return null;
     return this.getAccounts().find(a=>a.uid===uid)||null;
   },
-  login(email,pass){
+  async login(email,pass){
     const clean=(email||"").trim().toLowerCase();
+    // Try Cloudflare D1 backend first
+    try{
+      const res=await fetch("/api/auth?action=login",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({email:clean,password:pass,passcode:pass})
+      });
+      const data=await res.json();
+      if(res.ok&&data.user){
+        const user=data.user;
+        const accs=this.getAccounts().filter(a=>a.uid!==user.uid);
+        accs.push(user);this.saveAccounts(accs);
+        localStorage.setItem("pca_active_uid",user.uid);
+        return user;
+      }else if(!res.ok&&data.error&&!data.error.includes("D1 database not bound")){
+        throw new Error(data.error);
+      }
+    }catch(e){
+      if(e.message&&e.message!=="Failed to fetch")throw e;
+    }
+
+    // Local / Offline fallback
     if(pass==="papercrane2026"||clean==="admin@thepapercraneacademy.com"){
       let acc=this.getAccounts().find(a=>a.email===clean);
       if(!acc){
-        acc={uid:"adm_"+Math.random().toString(36).slice(2,9),email:clean||"admin@thepapercraneacademy.com",name:"Academy Staff",level:"Faculty / Staff",admin:true,interests:["Law","Politics","International Relations","Public Policy","Economics"]};
+        acc={uid:"adm_papercrane",email:clean||"admin@thepapercraneacademy.com",name:"Faculty Staff",level:"Faculty",admin:true,interests:["Law","Politics","International Relations","Public Policy","Economics"]};
         const accs=this.getAccounts();accs.push(acc);this.saveAccounts(accs);
       }else{acc.admin=true}
       localStorage.setItem("pca_active_uid",acc.uid);
@@ -619,8 +641,30 @@ const PcaAuth={
     localStorage.setItem("pca_active_uid",found.uid);
     return found;
   },
-  signup({name,email,password,level,interests}){
+  async signup({name,email,password,level,interests}){
     const clean=(email||"").trim().toLowerCase();
+    // Try Cloudflare D1 backend first
+    try{
+      const res=await fetch("/api/auth?action=register",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({name,email:clean,password,level,interests})
+      });
+      const data=await res.json();
+      if(res.ok&&data.user){
+        const user=data.user;
+        const accs=this.getAccounts().filter(a=>a.uid!==user.uid);
+        accs.push(user);this.saveAccounts(accs);
+        localStorage.setItem("pca_active_uid",user.uid);
+        return user;
+      }else if(!res.ok&&data.error&&!data.error.includes("D1 database not bound")){
+        throw new Error(data.error);
+      }
+    }catch(e){
+      if(e.message&&e.message!=="Failed to fetch")throw e;
+    }
+
+    // Local fallback
     const accs=this.getAccounts();
     if(accs.some(a=>a.email.toLowerCase()===clean))throw new Error("An account with this email already exists.");
     const uid="std_"+Math.random().toString(36).slice(2,9);
@@ -804,6 +848,15 @@ async function boot(){
     };
     await S.db.doc(`data/users/${S.uid}/profile`).set(S.profile);
   }
+
+  // Sync live events & articles from Cloudflare D1
+  fetch("/api/db?col=events").then(r=>r.json()).then(d=>{
+    if(d&&d.events&&d.events.length){
+      S.events=d.events;
+      d.events.forEach(ev=>S.db.doc(`events/${ev.id}`).set(ev));
+      refresh();
+    }
+  }).catch(()=>{});
 
   S.loaded = true;
   render();
@@ -1413,11 +1466,11 @@ async function savePortfolio(){const d=S.portfolioDraft;await userDoc("portfolio
 const lines=s=>(s||"").split("\n").map(x=>x.trim()).filter(Boolean);
 const srcs=s=>lines(s).map(l=>{const [a,b]=l.split("|").map(x=>x.trim());return{label:a,url:safeUrl(b)?b:""}});
 const FORMS={
-  "auth-login"(f,fd){
+  async "auth-login"(f,fd){
     const email=fd.get("email");
     const password=fd.get("password");
     try{
-      const user=PcaAuth.login(email,password);
+      const user=await PcaAuth.login(email,password);
       S.uid=user.uid;
       S.admin=!!user.admin;
       S.user={id:()=>S.uid,canEdit:()=>S.admin,name:user.name,email:user.email};
@@ -1432,13 +1485,13 @@ const FORMS={
       toast(err.message||"Failed to sign in");
     }
   },
-  "auth-signup"(f,fd){
+  async "auth-signup"(f,fd){
     const name=fd.get("name");
     const email=fd.get("email");
     const password=fd.get("password");
     const level=fd.get("level");
     try{
-      const user=PcaAuth.signup({name,email,password,level,interests:["Law","Politics","International Relations","Public Policy","Economics"]});
+      const user=await PcaAuth.signup({name,email,password,level,interests:["Law","Politics","International Relations","Public Policy","Economics"]});
       S.uid=user.uid;
       S.admin=false;
       S.user={id:()=>S.uid,canEdit:()=>false,name:user.name,email:user.email};
@@ -1506,7 +1559,10 @@ const FORMS={
   async opp(f,fd){const id=f.dataset.id||rid("o");const prev=S.opps.find(x=>x.id===id);
     await S.db.doc(`opportunities/${id}`).set({...(prev||{status:"open"}),title:fd.get("title"),org:fd.get("org"),category:fd.get("category"),description:fd.get("description"),eligibility:fd.get("eligibility"),location:fd.get("location"),deadline:fd.get("deadline"),fees:fd.get("fees"),link:safeUrl(fd.get("link")),source:fd.get("source"),lastChecked:fd.get("verified")?today():(prev?.lastChecked||"")});toast("Listing saved");location.hash="#admin.opps"},
   async event(f,fd){const id=f.dataset.id||rid("e");const prev=S.events.find(x=>x.id===id);
-    await S.db.doc(`events/${id}`).set({...(prev||{}),title:fd.get("title"),type:fd.get("type"),date:fd.get("date"),time:fd.get("time"),location:fd.get("location"),capacity:fd.get("capacity"),deadline:fd.get("deadline"),description:fd.get("description"),instructions:fd.get("instructions"),registration:!!fd.get("registration")});toast("Activity saved");location.hash="#admin.events"},
+    const evData={id,title:fd.get("title"),type:fd.get("type"),date:fd.get("date"),time:fd.get("time"),location:fd.get("location"),capacity:fd.get("capacity")?+fd.get("capacity"):null,deadline:fd.get("deadline"),description:fd.get("description"),instructions:fd.get("instructions"),registration:!!fd.get("registration")};
+    await S.db.doc(`events/${id}`).set({...prev,...evData});
+    fetch("/api/db",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({action:"save-event",event:evData})}).catch(()=>{});
+    toast("Activity saved");location.hash="#admin.events"},
 };
 
 function chatTurns(){

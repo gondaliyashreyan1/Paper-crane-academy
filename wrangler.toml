@@ -1,0 +1,8 @@
+name = "paper-crane-academy"
+compatibility_date = "2026-10-30"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "paper-crane-db"
+database_id = "cb3cce04-6104-4091-b1cb-d1b00a7c9994"
