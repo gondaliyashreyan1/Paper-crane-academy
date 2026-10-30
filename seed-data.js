@@ -147,31 +147,4 @@ window.OPPS_SEED = [
     "status": "open"
   }
 ];
-window.EVENTS_SEED = [
-  {
-    "id": "ev-debating-2026",
-    "title": "Inter-Collegiate Debate: 'This House Would Regulate AI Models as Public Utilities'",
-    "type": "Structured debate",
-    "date": "2026-11-15",
-    "time": "18:00 UTC",
-    "location": "Online via Zoom",
-    "capacity": 100,
-    "deadline": "2026-11-14",
-    "registration": true,
-    "description": "Join our flagship monthly parliamentary debate examining whether foundation artificial intelligence models should be designated as common carrier natural monopolies under public utility law.",
-    "instructions": "British Parliamentary format. Seven-minute speeches. Points of information permitted between minute 1 and minute 6."
-  },
-  {
-    "id": "ev-icj-masterclass",
-    "title": "Masterclass in Oral Advocacy: Pleading Before the International Court of Justice",
-    "type": "Webinar",
-    "date": "2026-11-28",
-    "time": "15:00 UTC",
-    "location": "Online via Zoom",
-    "capacity": 250,
-    "deadline": "2026-11-27",
-    "registration": true,
-    "description": "Led by distinguished international barristers who have appeared before the Peace Palace in The Hague, this workshop covers memorial drafting, jurisdictional objections, and oral pleading techniques.",
-    "instructions": "Registered participants will receive the moot problem and briefing materials 48 hours prior to the session."
-  }
-];
+window.EVENTS_SEED = [];

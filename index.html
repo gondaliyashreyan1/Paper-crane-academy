@@ -463,6 +463,7 @@ function createPcaDb(){
   initColl("articles",window.ARTICLES_SEED||[]);
   initColl("opportunities",window.OPPS_SEED||[]);
   initColl("events",window.EVENTS_SEED||[]);
+  if(store.collections.events){store.collections.events=store.collections.events.filter(e=>!["ev-debating-2026","ev-icj-masterclass"].includes(e.id));}
   if(!store.collections.certificates)store.collections.certificates=[];
   if(!store.collections.portfolios)store.collections.portfolios=[];
   if(!store.collections.submissions)store.collections.submissions=[];
