@@ -1,103 +1,135 @@
-/* Auto-generated comprehensive courses database for The Paper Crane Academy */
+/* The Paper Crane Academy - 40 Comprehensive Academic Courses */
 window.COURSES_SEED = [
   {
-    "id": "law-marbury",
-    "title": "Marbury v. Madison & The Invention of Judicial Supremacy",
+    "id": "law-constitutional",
+    "title": "Constitutional Law: Principles, Separation of Powers & Judicial Review",
     "category": "Law",
-    "subcategory": "Constitutional Law",
+    "subcategory": "Constitutional law",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "The high-stakes political duel between Thomas Jefferson and John Marshall that birthed American judicial review, examining midnight judges, mandamus writs, and how the Supreme Court seized the power to strike down federal laws.",
-    "passMark": 70,
+    "description": "A comprehensive foundational study of modern constitutionalism. This course examines how written charters establish, divide, and constrain government authority, exploring separation of powers, the doctrine of checks and balances, the counter-majoritarian difficulty of judicial review, and the procedural boundaries of executive power.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-10",
     "objectives": [
-      "Deconstruct the political crisis of the 1800 election and the Federalist midnight appointments.",
-      "Analyze Chief Justice John Marshall's legal masterstroke in refusing jurisdiction while establishing judicial supremacy.",
-      "Evaluate Article III constitutional limits and the inherent power of courts to interpret law.",
-      "Critique modern debates on judicial activism vs judicial restraint sparked by the decision."
+      "Distinguish between parliamentary supremacy, judicial supremacy, and popular constitutionalism.",
+      "Analyze the doctrinal foundations of judicial review established in Marbury v. Madison (1803) and comparative international frameworks.",
+      "Evaluate the constitutional mechanisms of executive orders, war powers, and legislative oversight.",
+      "Synthesize constitutional interpretation methods, comparing originalism, textualism, and living constitutionalism."
     ],
     "modules": [
       {
-        "title": "The Political Crisis and the Judiciary Act",
+        "title": "Module 1: Foundations of Constitutionalism & Written Charters",
         "lessons": [
           {
-            "id": "marbury-l1",
-            "title": "The Midnight Judges and the Stalled Commissions",
-            "body": "### The Election of 1800: A Constitutional Republic in Crisis\n\nThe election of 1800 was the first peaceful transfer of power between rival political factions in modern history, yet it nearly precipitated a civil war. John Adams' Federalists, who favored an energetic national government and a strong judiciary, were decisively defeated by Thomas Jefferson's Democratic-Republicans, who championed agrarian populism and strict state sovereignty.\n\nTerrified that the incoming Jeffersonians would dismantle the federal republic, Adams and the outgoing Federalist Congress passed the **Judiciary Act of 1801** and the **Organic Act of 1801** in the dying weeks of his administration. These statutes created dozens of new federal circuit judgeships and forty-two justice of the peace commissions for the District of Columbia. \n\nIn a frantic race against the clock, President Adams signed these judicial commissions late into the night of March 3, 1801\u2014earning them the historic moniker **The Midnight Judges**. John Marshall, then serving simultaneously as Adams' Secretary of State and newly appointed Chief Justice, affixed the Great Seal of the United States to the parchment commissions. However, in the chaotic final hours before Jefferson's inauguration on March 4, Marshall failed to deliver several commissions, including that of William Marbury, an ardent Federalist financier appointed as a justice of the peace.\n\n#### Jefferson's Defiance and the Writ of Mandamus\n\nUpon entering the executive mansion, President Jefferson was incensed by the Federalist court-packing scheme. He immediately ordered his new Secretary of State, **James Madison**, not to deliver the remaining commissions, treating them as nullities. Denied his office, William Marbury retained former Attorney General Charles Lee and filed an emergency petition directly with the Supreme Court of the United States. \n\nMarbury invoked **Section 13 of the Judiciary Act of 1789**, which expressly empowered the Supreme Court to issue **Writs of Mandamus** (court orders commanding a government official to perform a mandatory ministerial duty) to persons holding public office under the authority of the United States.\n\nMarshall was caught in a lethal trap:\n1. If the Court ordered Madison to deliver the commission, the Jefferson administration would simply ignore the writ, exposing the Supreme Court as a toothless, powerless council with neither the sword nor the purse.\n2. If the Court backed down and denied Marbury relief, the judiciary would appear cowardly and subservient to executive intimidation.",
+            "id": "law-c1-l1",
+            "title": "The Nature of Fundamental Law: Written Constitutions vs Parliamentary Sovereignty",
+            "body": "### Fundamental Law and the Constitutional Compact\n\nA constitution is not merely another statute passed by a legislature; it is the fundamental law (*lex fundamentalis*) from which all ordinary legislation derives its legitimacy. In constitutional theory, a fundamental tension exists between two primary architectures of state power:\n\n1. **The Model of Parliamentary Supremacy (The Westminster Model):** Under the British constitutional tradition articulated by A.V. Dicey, Parliament holds supreme legal authority. It can make or unmake any law whatever; no person or body is recognized by the law as having a right to override or set aside the legislation of Parliament.\n2. **The Model of Constitutional Supremacy:** Exemplified by the United States, post-war Germany (*Grundgesetz*), and South Africa (1996 Constitution), the written constitution sits at the apex of the legal hierarchy. Every branch of government\u2014including the legislative majority\u2014is legally subordinate to the text of the constitution.\n\n#### Constitutional Legitimacy and Constituent Power\nThe distinction rests on the concept of **constituent power** (*pouvoir constituant*), first systematically articulated by Emmanuel-Joseph Siey\u00e8s during the French Revolution. Ordinary legislators possess only *constituted power* (*pouvoir constitu\u00e9*); they act within the framework established by the sovereign people. Therefore, an ordinary act of parliament that contradicts the fundamental compact of the people is void *ab initio*.\n\n```\nHierarchy of Laws (Kelsenian Stufenbaulehre):\n[Grundnorm / Fundamental Constitution]\n       \u2193\n[Organic & Constitutional Statutes]\n       \u2193\n[Ordinary Parliamentary Legislation]\n       \u2193\n[Executive Decrees, Administrative Rules & Bylaws]\n```\n\n#### Rigid vs Flexible Constitutions\nConstitutions further bifurcate according to amendment difficulty (Lord Bryce's taxonomy). Flexible constitutions can be altered through ordinary legislative majorities (e.g., New Zealand). Rigid constitutions enforce heightened thresholds\u2014such as supermajorities, state referenda, or regional ratification (e.g., Article V of the U.S. Constitution or Article 79(3) of Germany's Basic Law, which contains an immutable 'eternity clause' protecting democracy and human dignity from any amendment).",
             "readings": [
               {
-                "label": "U.S. Supreme Court, Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)",
-                "url": "https://www.oyez.org/cases/1789-1850/5us137"
+                "label": "A.V. Dicey, Introduction to the Study of the Law of the Constitution (1885)",
+                "url": "https://www.gutenberg.org/ebooks/57519"
               },
               {
-                "label": "Akhil Reed Amar, America's Constitution: A Biography (2005)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "U.S. National Archives, The Constitution of the United States",
+                "url": "https://www.archives.gov/founding-docs/constitution"
+              },
+              {
+                "label": "Federal Constitutional Court of Germany, Basic Law Overview",
+                "url": "https://www.bundesverfassungsgericht.de/EN/Das-Gericht/Grundgesetz/grundgesetz_node.html"
               }
             ],
             "quiz": [
               {
-                "q": "Why did William Marbury file his lawsuit directly in the Supreme Court rather than a lower state court?",
+                "q": "What distinguishes constituent power (pouvoir constituant) from constituted power (pouvoir constitu\u00e9)?",
                 "options": [
-                  "He relied on Section 13 of the Judiciary Act of 1789, which purported to grant original jurisdiction for writs of mandamus.",
-                  "President Jefferson personally signed a decree ordering him to the Supreme Court.",
-                  "There were no lower federal courts in existence in 1801.",
-                  "The Constitution explicitly requires all property disputes to be heard by nine justices."
+                  "Constituted power creates the constitution; constituent power passes ordinary taxes.",
+                  "Constituent power resides in the sovereign authority to create a constitutional framework, whereas constituted power is the delegated authority exercising governance under that framework.",
+                  "Constituent power is exclusive to monarchies, while constituted power applies only in federal democracies.",
+                  "There is no distinction; both terms refer interchangeably to administrative rulemaking."
                 ],
-                "answer": 0,
-                "why": "Section 13 of the 1789 Judiciary Act appeared to give the Supreme Court original jurisdiction to issue writs of mandamus directly against executive officers."
+                "answer": 1,
+                "why": "Constituent power is the primordial authority of the people to draft and enact a constitution, whereas constituted bodies (presidents, parliaments, courts) derive all their legitimate authority from that constitution."
               },
               {
-                "q": "What was the strategic political dilemma facing Chief Justice John Marshall?",
+                "q": "What is an 'eternity clause' (Ewigkeitsklausel) in constitutional law?",
                 "options": [
-                  "If he ordered Madison to deliver the commission, the executive would disobey; if he backed down, the Court would look weak.",
-                  "He was afraid of losing his seat because Supreme Court justices did not have life tenure.",
-                  "Congress had suspended all trials in the District of Columbia.",
-                  "The French Navy was blockading Washington harbor."
+                  "A clause granting judges lifetime tenure without any retirement age.",
+                  "A provision stating that national elections must occur every four years indefinitely.",
+                  "A constitutional provision that prohibits any amendment that would alter certain core principles, such as human dignity or the democratic state form.",
+                  "A clause allowing international treaties to supersede domestic law permanently."
                 ],
-                "answer": 0,
-                "why": "Marshall faced either executive defiance (ignoring the writ) or judicial capitulation (appearing subservient to Jefferson)."
+                "answer": 2,
+                "why": "Article 79(3) of Germany's Basic Law is the classic example of an eternity clause: it places human dignity and the federal, democratic republic beyond the reach of any legislative amendment."
               }
             ]
           },
           {
-            "id": "marbury-l2",
-            "title": "Marshall's Coup: The Creation of Judicial Review",
-            "body": "### The Legal Masterstroke\n\nOn February 24, 1803, Chief Justice Marshall delivered the unanimous opinion of the Court. With breathtaking legal dexterity, Marshall answered three questions:\n\n1. **Does Marbury have a legal right to the commission?** \n   Yes. When the President signed the commission and the Secretary of State affixed the Great Seal, the appointment was legally complete. The withholding of the parchment was a plain violation of a vested legal right.\n2. **Does the law afford him a remedy?**\n   Yes. The very essence of civil liberty requires that where a legal right is infringed, the laws provide a remedy. The government of the United States is *\"a government of laws, and not of men.\"*\n3. **Can the Supreme Court issue the writ of mandamus requested?**\n   **No.** And here Marshall unleashed his masterstroke.\n\n#### Striking Down the Judiciary Act\n\nMarshall examined Article III, Section 2, Clause 2 of the United States Constitution, which divides the Supreme Court's jurisdiction into two distinct categories:\n- **Original Jurisdiction**: Cases affecting ambassadors, public ministers, and those in which a State is a party.\n- **Appellate Jurisdiction**: All other cases, with exceptions made by Congress.\n\nMarbury was not an ambassador, nor was a State a party. Therefore, when Congress enacted Section 13 of the Judiciary Act of 1789 purporting to expand the Court's *original* jurisdiction to issue mandamus, Congress had acted in direct violation of the constitutional text.\n\nMarshall then stated the foundational axiom of constitutional supremacy:\n> \"It is emphatically the province and duty of the judicial department to say what the law is... If a law be in opposition to the constitution; if both the law and the constitution apply to a particular case... the court must determine which of these conflicting rules governs the case. This is of the very essence of judicial duty.\"\n\nBy declaring that an Act of Congress was unconstitutional and refusing to enforce it, Marshall sacrificed Marbury's trivial justice of the peace commission, denied Jefferson any target to disobey, and established for all time the supreme authority of the judiciary to invalidate federal statutes.",
+            "id": "law-c1-l2",
+            "title": "Separation of Powers: Functional Independence and Dynamic Checks",
+            "body": "### The Architectural Separation of Powers\n\nThe doctrine of the separation of powers is rooted in Montesquieu's *De l'esprit des lois* (1748), which warned that political liberty is imperiled whenever legislative, executive, and judicial authorities are concentrated in a single magistrate or assembly:\n\n> *\"When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty; because apprehensions may arise, lest the same monarch or senate should enact tyrannical laws, to execute them in a tyrannical manner.\"*\n\n#### Strict Separation vs Checks and Balances\nConstitutional systems operationalize Montesquieu's principle in two divergent manners:\n1. **Strict Tripartite Separation:** Each branch possesses a distinct constitutional sphere into which other branches cannot trespass.\n2. **Checks and Balances (Madisonian Model):** As James Madison articulated in *Federalist No. 51*, ambition must be made to counteract ambition. The branches are deliberately interconnected so that each exercises constitutional defenses against the usurpations of the others:\n   - The Executive holds a qualified veto over congressional legislation.\n   - The Legislature controls the power of the purse and holds the power of impeachment.\n   - The Judiciary interprets the laws and evaluates executive/legislative action against constitutional benchmarks.\n\n#### The Doctrine of Non-Delegation\nA crucial modern battlefield in separation of powers jurisprudence is the **non-delegation doctrine**. Derived from the maxim *delegata potestas non potest delegari* (no delegated power can be further delegated), it posits that when the constitution vests legislative power in a parliament or congress, that body cannot surrender its essential lawmaking function to executive regulatory agencies without providing an 'intelligible principle' to direct administrative discretion (*J.W. Hampton v. United States*, 1928).",
             "readings": [
               {
-                "label": "Alexander Hamilton, Federalist No. 78 (The Judiciary Department)",
+                "label": "Montesquieu, The Spirit of Laws, Book XI (1748)",
+                "url": "https://avalon.law.yale.edu/18th_century/montesquieu_11.asp"
+              },
+              {
+                "label": "James Madison, Federalist No. 51: Checks and Balances (1788)",
+                "url": "https://avalon.law.yale.edu/18th_century/fed51.asp"
+              },
+              {
+                "label": "Cornell LII, Nondelegation Doctrine Overview",
+                "url": "https://www.law.cornell.edu/wex/nondelegation_doctrine"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What was James Madison's primary defense of the system of checks and balances in Federalist No. 51?",
+                "options": [
+                  "Government officials are naturally altruistic and require no institutional constraints.",
+                  "Complete separation without mutual checks leads to one branch gradually encroaching upon and dominating the others.",
+                  "The judiciary should command military forces to balance legislative spending.",
+                  "Executive decrees must always supersede legislative statutes during economic emergencies."
+                ],
+                "answer": 1,
+                "why": "Madison argued that parchment barriers are insufficient to prevent tyranny; each department must be given the constitutional means and personal motives to resist encroachments by the other departments."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Module 2: Judicial Supremacy, Review & Constitutional Interpretation",
+        "lessons": [
+          {
+            "id": "law-c1-l3",
+            "title": "The Mechanics of Judicial Review: Marbury v. Madison to Modern Constitutional Courts",
+            "body": "### The Genesis of Judicial Review\n\nIn *Marbury v. Madison* (1803), Chief Justice John Marshall confronted a perilous institutional crisis. Outgoing Federalist President John Adams had appointed William Marbury as a justice of the peace, but the commission was not delivered before Thomas Jefferson assumed office. Jefferson ordered Secretary of State James Madison to withhold the commission.\n\nMarbury petitioned the Supreme Court directly for a writ of mandamus under Section 13 of the Judiciary Act of 1789.\n\n#### Marshall's Judicial Masterstroke\nMarshall faced a dilemma: if he ordered Madison to deliver the commission, the Jefferson administration would ignore the order, exposing the Court's complete lack of enforcement power (*The judiciary has 'neither force nor will, but merely judgment'*\u2014Hamilton, *Federalist No. 78*). If he refused to act, the Court would appear timid and powerless.\n\nMarshall escaped the trap by declaring that:\n1. Marbury had a legal right to his commission.\n2. The laws of the United States provided a remedy for the violation of that right.\n3. However, Section 13 of the Judiciary Act of 1789, which purported to expand the Supreme Court's **original jurisdiction** to issue writs of mandamus to public officers, was unconstitutional because Article III of the Constitution explicitly limits the Court's original jurisdiction to ambassadors, public ministers, and cases in which a state is a party.\n\n```\nArticle III, Section 2 (Constitutional Ceiling)\n               vs\nSection 13, Judiciary Act of 1789 (Statutory Expansion)\n               \u2193\nRule of Law: The Constitution controls any contrary legislative act.\n```\n\nBy striking down a federal statute that gave his own Court power, Marshall established the irrevocable precedent:\n> *\"It is emphatically the province and duty of the judicial department to say what the law is. Those who apply the rule to particular cases, must of necessity expound and interpret that rule.\"*\n\n#### Comparative Review: Diffuse vs Concentrated Models\n- **Diffuse Review (American Model):** Any court of general jurisdiction can determine the constitutionality of a law in an active 'case or controversy'.\n- **Concentrated Review (European / Kelsenian Model):** Pioneer by legal theorist Hans Kelsen in Austria (1920) and adopted across Europe, judicial review is centralized in a dedicated, specialized **Constitutional Court** (*Verfassungsgericht*), which often exercises abstract review without requiring an ongoing private lawsuit.",
+            "readings": [
+              {
+                "label": "Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)",
+                "url": "https://www.law.cornell.edu/supremecourt/text/5/137"
+              },
+              {
+                "label": "Alexander Hamilton, Federalist No. 78 (1788)",
                 "url": "https://avalon.law.yale.edu/18th_century/fed78.asp"
               },
               {
-                "label": "Gordon S. Wood, The Idea of America (2011)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Stanford Encyclopedia of Philosophy, Constitutionalism",
+                "url": "https://plato.stanford.edu/entries/constitutionalism/"
               }
             ],
             "quiz": [
               {
-                "q": "On what specific constitutional ground did Marshall strike down Section 13 of the Judiciary Act of 1789?",
+                "q": "Why did Chief Justice John Marshall strike down Section 13 of the Judiciary Act of 1789 in Marbury v. Madison?",
                 "options": [
-                  "Congress had unconstitutionally expanded the Supreme Court's original jurisdiction beyond the limits set in Article III.",
-                  "The statute violated the First Amendment freedom of petition.",
-                  "The President did not have the power to appoint justices of the peace without congressional veto.",
-                  "The statute had not been signed by the Vice President."
+                  "Because Marbury was not a citizen of the United States.",
+                  "Because Congress had attempted to expand the Supreme Court's original jurisdiction beyond the boundaries defined in Article III of the Constitution.",
+                  "Because the President possesses absolute immunity from all legal review.",
+                  "Because the Judiciary Act was passed without a quorum in the Senate."
                 ],
-                "answer": 0,
-                "why": "Article III sets an exhaustive floor and ceiling on the Court's original jurisdiction; Congress could not add mandamus petitions to original jurisdiction."
-              },
-              {
-                "q": "Why was Jefferson unable to openly resist or defy Marshall's ruling in Marbury v. Madison?",
-                "options": [
-                  "Because Marshall technically ruled in Jefferson's favor by denying Marbury the writ and demanding no executive action.",
-                  "Jefferson had already resigned the presidency.",
-                  "The military had surrounded the White House.",
-                  "The Supreme Court had jailed James Madison for contempt."
-                ],
-                "answer": 0,
-                "why": "Since the Court held it lacked jurisdiction to issue the writ against Madison, there was no executive order for Jefferson to disobey, cementing the precedent uncontested."
+                "answer": 1,
+                "why": "Article III specifies the limited categories of the Supreme Court's original jurisdiction; Congress could not add mandamus suits against executive officers to that list via ordinary statute."
               }
             ]
           }
@@ -106,103 +138,88 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "law-nuremberg",
-    "title": "The Nuremberg Trials: The Birth of International Criminal Law",
+    "id": "law-international",
+    "title": "Public International Law: Sovereignty, Treaties & Customary Norms",
     "category": "Law",
-    "subcategory": "International Law",
+    "subcategory": "International law",
     "level": "Undergraduate",
-    "duration": "5 weeks",
+    "duration": "7 weeks (4 hours/week)",
     "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "An exhaustive analysis of the International Military Tribunal of 1945\u20131946: Robert Jackson's prosecution, the destruction of sovereign immunity, the defense of superior orders, and the creation of Crimes Against Humanity.",
-    "passMark": 70,
+    "description": "An advanced examination of the international legal order governing relations between sovereign states. Students analyze the Article 38 sources of international law, the doctrinal evolution of sovereign equality since the Peace of Westphalia, treaty interpretation under the Vienna Convention, state jurisdiction, immunity, and peaceful dispute resolution before the International Court of Justice.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-12",
     "objectives": [
-      "Analyze the London Charter of 1945 and the jurisdictional categories of the International Military Tribunal.",
-      "Deconstruct the defense of 'Nullum crimen sine lege' (retroactivity) and how Justice Jackson overcame it.",
-      "Evaluate the dismantling of the 'Superior Orders' defense and sovereign immunity for state leaders.",
-      "Trace the direct lineage from the Nuremberg Principles to the 1998 Rome Statute and the International Criminal Court."
+      "Categorize and apply the Article 38(1) ICJ Statute sources: treaties, custom, general principles, and subsidiary means.",
+      "Analyze the twin requirements of customary international law: state practice (usus) and opinio juris sive necessitatis.",
+      "Interpret treaties using the Vienna Convention on the Law of Treaties (VCLT Articles 31-32).",
+      "Evaluate jurisdictional doctrines: territoriality, nationality, passive personality, protective principle, and universal jurisdiction."
     ],
     "modules": [
       {
-        "title": "The London Charter and the Docket of Civilization",
+        "title": "Module 1: The Sources of International Law",
         "lessons": [
           {
-            "id": "nuremberg-l1",
-            "title": "Justice Jackson's Gamble: Due Process vs Summary Execution",
-            "body": "### The Genesis of International Adjudication\n\nIn early 1945, as Allied armies encircled Berlin, the question of what to do with the captured Nazi leadership divided the Grand Alliance. British Prime Minister Winston Churchill argued vigorously for **summary execution**: drawing up a list of top Nazi leaders, verifying their identities, and shooting them within six hours without trial. Churchill argued that their crimes were beyond the competence of ordinary legal process.\n\nSoviet leader Joseph Stalin cynically proposed shooting 50,000 German officers and specialists to break Germany's military power permanently. \n\nIt was United States Secretary of War Henry Stimson and Supreme Court Justice **Robert H. Jackson** who persuaded President Harry Truman that summary vengeance would poison the post-war moral order. In his legendary report to Truman, Jackson insisted:\n> \"To pass undiscriminated execution on men without a trial is to put ourselves on their level... The wrongs which we seek to condemn and punish have been so calculated, so malignant, and so devastating, that civilization cannot tolerate their being ignored, because it cannot survive their being repeated.\"\n\n#### The London Charter of 1945\n\nIn August 1945, the four Allied powers signed the **London Charter**, establishing the **International Military Tribunal (IMT)** at Nuremberg\u2014the spiritual heartland of Nazi party rallies. The Charter created three distinct categories of international crimes:\n\n1. **Crimes Against Peace**: Planning, preparation, initiation, or waging of a war of aggression in violation of international treaties (such as the 1928 Kellogg-Briand Pact).\n2. **War Crimes**: Traditional violations of the laws and customs of war (murder, ill-treatment of prisoners of war, wanton destruction of cities).\n3. **Crimes Against Humanity**: Murder, extermination, enslavement, deportation, and persecution committed against civilian populations before or during war on political, racial, or religious grounds.\n\nThis third category was revolutionary: for the first time in human history, sovereign leaders could be prosecuted for atrocities committed **against their own domestic citizens** inside their own sovereign borders.",
+            "id": "law-i1-l1",
+            "title": "Article 38(1) ICJ Statute: Treaties, Customary Law, and General Principles",
+            "body": "### The Architecture of Global Legal Obligation\n\nUnlike domestic legal orders, international law lacks a centralized sovereign legislature, an executive police force with global jurisdiction, or mandatory universal adjudication. Instead, international legal obligations are founded upon state consent.\n\nThe canonical catalog of international legal sources is codified in **Article 38(1) of the Statute of the International Court of Justice (ICJ)**:\n\n1. **International Conventions (Treaties):** Formal written agreements between states governed by international law (e.g., the UN Charter, Geneva Conventions, UNCLOS).\n2. **International Custom (*Consuetudo*):** General practice accepted as law, constituted by two cumulative components:\n   - *State Practice (diuturnitas / usus):* Extensive, consistent, and representative conduct by states over time.\n   - *Opinio Juris Sive Necessitatis:* The psychological conviction that such practice is rendered obligatory by the existence of a rule of law requiring it (*North Sea Continental Shelf Cases*, ICJ 1969).\n3. **General Principles of Law:** Norms recognized by civilized nations across domestic legal traditions (e.g., *good faith*, *res judicata*, *lex specialis derogat legi generali*).\n4. **Subsidiary Means:** Judicial decisions and the teachings of the most highly qualified publicists (*teachings of the masters*).\n\n```\n          Article 38(1) ICJ Hierarchy:\n            [Jus Cogens Norms] (Peremptory)\n                   \u2193\n      [Treaties]  \u2194  [Customary International Law]\n                   \u2193\n         [General Principles of Law]\n                   \u2193\n   [Judicial Decisions & Academic Commentary]\n```\n\n#### Jus Cogens: Peremptory Norms\nAbove ordinary treaty provisions and bilateral custom sit **jus cogens** (peremptory norms), defined under Article 53 of the Vienna Convention on the Law of Treaties as norms from which no derogation is permitted. Any treaty that conflicts with a peremptory norm (such as the prohibitions against aggressive war, genocide, slavery, and torture) is void *ab initio*.",
             "readings": [
               {
-                "label": "Robert H. Jackson, Opening Statement Before the International Military Tribunal (Nov 21, 1945)",
-                "url": "https://www.roberthjackson.org"
+                "label": "Statute of the International Court of Justice (Article 38)",
+                "url": "https://www.icj-cij.org/statute"
               },
               {
-                "label": "Telford Taylor, The Anatomy of the Nuremberg Trials: A Personal Memoir (1992)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "North Sea Continental Shelf Cases (Germany v. Denmark/Netherlands), ICJ 1969",
+                "url": "https://www.icj-cij.org/case/51"
+              },
+              {
+                "label": "Vienna Convention on the Law of Treaties (1969)",
+                "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"
               }
             ],
             "quiz": [
               {
-                "q": "What alternative course of action did Winston Churchill originally advocate instead of a judicial trial?",
+                "q": "What two elements must be proven to establish the existence of a rule of customary international law?",
                 "options": [
-                  "Summary execution of Nazi leaders without judicial trial within six hours of identity verification.",
-                  "Life exile to Saint Helena.",
-                  "Handing them over to a German domestic court under Weimar law.",
-                  "Pardoning all military commanders who signed surrenders."
+                  "A formal treaty signing and a Security Council resolution.",
+                  "Consistent and general state practice (usus), accompanied by the belief that the practice is legally obligatory (opinio juris).",
+                  "A ruling by the International Criminal Court and approval by the UN Secretary-General.",
+                  "Uniform domestic statutes across all member states of the G20."
                 ],
-                "answer": 0,
-                "why": "Churchill believed Nazi atrocities were acts of state policy beyond normal legal adjudication and favored immediate political executions."
-              },
-              {
-                "q": "Why was the inclusion of 'Crimes Against Humanity' historically unprecedented?",
-                "options": [
-                  "It pierced national sovereignty, making leaders criminally liable for atrocities against their own citizens.",
-                  "It eliminated all requirements for witness testimony in criminal law.",
-                  "It allowed corporations to be sentenced to death.",
-                  "It was written entirely by private non-governmental organizations."
-                ],
-                "answer": 0,
-                "why": "Traditional international law only regulated harm done to citizens of other states during war; Crimes Against Humanity made state terror against domestic citizens an international crime."
+                "answer": 1,
+                "why": "Under settled ICJ jurisprudence, customary law requires both objective widespread state practice and the subjective conviction (opinio juris) that the conduct is mandatory under international law."
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "title": "Module 2: State Jurisdiction and Sovereign Immunity",
+        "lessons": [
           {
-            "id": "nuremberg-l2",
-            "title": "Dismantling 'Superior Orders' and the Ex Post Facto Defense",
-            "body": "### The Legal Battle in Courtroom 600\n\nWhen the trial of twenty-one major Nazi figures (including Hermann G\u00f6ring, Rudolf Hess, and Joachim von Ribbentrop) opened on November 20, 1945, the defense mounted a formidable two-pronged legal assault:\n\n#### 1. The Retroactivity Defense (*Nullum Crimen Sine Lege*)\nDefense counsel argued that prior to 1945, no formal penal code had ever defined 'Crimes Against Peace' as an individualized criminal offense carrying the death penalty. To prosecute them now was an unconstitutional violation of the universal legal maxim: *nullum crimen, nulla poena sine lege* (no crime, no punishment without a pre-existing law).\n\nThe Tribunal rejected this defense:\n> \"The maxim *nullum crimen sine lege* is not a limitation of sovereignty, but is in general a principle of justice. To assert that it is unjust to punish those who in defiance of treaties and assurances have attacked neighboring states without warning is obviously untrue; for in such circumstances the attacker must know that he is doing wrong, and so far from it being unjust to punish him, it would be unjust if his wrong were allowed to go unpunished.\"\n\n#### 2. The Defense of 'Superior Orders' (*Befehlsnotstand*)\nField Marshal Wilhelm Keitel and General Alfred Jodl argued that as military officers, they were bound by their solemn oath to Adolf Hitler and the absolute discipline of the chain of command. Under classic international law, an individual soldier carrying out sovereign state orders enjoyed immunity under the 'Act of State' doctrine.\n\nArticle 8 of the London Charter demolished this defense:\n> *\"The fact that the Defendant acted pursuant to order of his Government or of a superior shall not free him from responsibility, but may be considered in mitigation of punishment.\"*\n\nThe Tribunal established the permanent Nuremberg standard: **Individuals have international duties which transcend the national obligations of obedience imposed by the individual state.** A soldier is not a mindless automaton; when an order is manifestly illegal and criminal, the duty to humanity supersedes the military oath.",
+            "id": "law-i1-l2",
+            "title": "Territoriality, Nationality, and Universal Jurisdiction",
+            "body": "### The Bases of State Jurisdiction\n\nJurisdiction in international law refers to a state's sovereign competence to prescribe, adjudicate, and enforce rules of law. Under the foundational **SS Lotus Case** (PCIJ 1927), a sovereign state possesses wide discretion to exercise jurisdiction within its own territory and may extend its laws extraterritorially unless prohibited by an explicit prohibitive rule of international law.\n\n#### The Five Recognized Heads of Jurisdiction\n1. **Territorial Principle:** Jurisdiction over acts committed on the state's sovereign soil, internal waters, or registered ships/aircraft (Subjective territoriality: where the act begins; Objective/Effects doctrine: where the act produces substantial harm).\n2. **Nationality Principle (Active Personality):** Jurisdiction over offenses committed by the state's own citizens anywhere in the world.\n3. **Passive Personality Principle:** Jurisdiction based on the nationality of the *victim* of the crime (widely utilized in counter-terrorism statutes).\n4. **Protective Principle:** Jurisdiction over acts committed abroad by foreigners that directly threaten the state's national security, currency, or core government integrity (e.g., espionage, counterfeiting official currency).\n5. **Universal Jurisdiction:** Jurisdiction over crimes of such heinous universal concern that any state may prosecute the offender regardless of nationality or location of the offense (e.g., piracy on the high seas, genocide, crimes against humanity, war crimes).",
             "readings": [
               {
-                "label": "Judgments of the International Military Tribunal, Nuremberg (Sept 30 - Oct 1, 1946)",
-                "url": "https://avalon.law.yale.edu/subject_menus/nmt.asp"
+                "label": "SS Lotus Case (France v. Turkey), PCIJ Series A No. 10 (1927)",
+                "url": "https://www.icj-cij.org/pcij-series-a"
               },
               {
-                "label": "Hannah Arendt, Eichmann in Jerusalem: A Report on the Banality of Evil (1963)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Arrest Warrant of 11 April 2000 (DRC v. Belgium), ICJ 2002",
+                "url": "https://www.icj-cij.org/case/121"
               }
             ],
             "quiz": [
               {
-                "q": "How did Article 8 of the London Charter treat the defense of 'superior orders'?",
+                "q": "Which jurisdictional principle permits a state to prosecute an individual for crimes committed abroad with no connection to the prosecuting state's territory, citizens, or direct security?",
                 "options": [
-                  "It eliminated superior orders as a complete defense to guilt, allowing it only as possible mitigation in sentencing.",
-                  "It accepted superior orders as an absolute bar to prosecution for all military officers.",
-                  "It transferred criminal liability exclusively to dead commanders.",
-                  "It required the United Nations to pay the legal fees of officers who followed orders."
+                  "The Protective Principle",
+                  "Universal Jurisdiction",
+                  "Passive Personality Principle",
+                  "Active Nationality Principle"
                 ],
-                "answer": 0,
-                "why": "Article 8 established that obeying sovereign orders does not relieve an individual of criminal liability if moral choice was factually possible."
-              },
-              {
-                "q": "What enduring axiom of modern international criminal law was established by the Nuremberg Judgment?",
-                "options": [
-                  "Crimes against international law are committed by men, not by abstract entities, and only by punishing individuals can international law be enforced.",
-                  "All sovereign states have complete immunity from international tribunals.",
-                  "Victors in war are legally permitted to seize all civilian private property.",
-                  "Military personnel are exempt from human rights treaties during wartime."
-                ],
-                "answer": 0,
-                "why": "The IMT famously affirmed that international crimes are committed by living individuals who must face personal accountability rather than hiding behind the corporate veil of the state."
+                "answer": 1,
+                "why": "Universal jurisdiction applies to offenses against the international community as a whole (hostis humani generis), such as piracy, war crimes, and genocide, allowing any competent domestic court to prosecute."
               }
             ]
           }
@@ -211,103 +228,51 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "law-speech",
-    "title": "Freedom of Speech: From Brandenburg to Online Censorship",
+    "id": "law-criminal-justice",
+    "title": "Criminal Jurisprudence: Actus Reus, Mens Rea & Penal Theory",
     "category": "Law",
-    "subcategory": "Human Rights",
+    "subcategory": "Criminal justice",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "Explore the outer limits of free expression: seditious libel, imminent lawless action, hate speech, the Skokie neo-Nazi march, campus speech codes, and social media deplatforming under the First Amendment.",
-    "passMark": 70,
+    "description": "A rigorous theoretical and doctrinal exploration of substantive criminal law and penal philosophy. Students examine the anatomy of criminal liability\u2014deconstructing the voluntary physical act (actus reus) and culpable mental state (mens rea)\u2014before analyzing general affirmative defenses (duress, self-defense, insanity) and competing moral justifications of punishment.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-18",
     "objectives": [
-      "Trace the evolution of speech doctrine from Oliver Wendell Holmes' 'Clear and Present Danger' to the Brandenburg test.",
-      "Analyze the landmark Skokie litigation protecting deeply offensive political speech.",
-      "Compare the American absolutist speech model with the European 'dignity' and 'hate speech' prohibition models.",
-      "Evaluate digital platform content moderation, deplatforming, and government coercion (Jawboning)."
+      "Deconstruct the dual elements of criminal liability: Actus Reus and Mens Rea.",
+      "Analyze the Model Penal Code culpable mental states: Purpose, Knowledge, Recklessness, and Negligence.",
+      "Evaluate affirmative defenses distinguishing between justifications (self-defense) and excuses (insanity, duress).",
+      "Critique competing theories of state punishment: Retributivism vs Consequentialist Deterrence."
     ],
     "modules": [
       {
-        "title": "The Evolution of the American Free Speech Doctrine",
+        "title": "Module 1: The Core Structure of Criminal Liability",
         "lessons": [
           {
-            "id": "speech-l1",
-            "title": "The Marketplace of Ideas vs Imminent Lawless Action",
-            "body": "### The Path from Schenck to Brandenburg\n\nThe text of the First Amendment appears unequivocal: *\"Congress shall make no law... abridging the freedom of speech, or of the press.\"* Yet for the first 130 years of the American Republic, free speech received minimal judicial protection. \n\nDuring World War I, the federal government enacted the Espionage Act of 1917 and the Sedition Act of 1918 to silence socialist anti-war agitation. In *Schenck v. United States* (1919), Charles Schenck was convicted for mailing leaflets urging draftees to resist military conscription. Writing for a unanimous Supreme Court, Justice **Oliver Wendell Holmes Jr.** coined the infamous **Clear and Present Danger** test:\n> \"The question in every case is whether the words used are used in such circumstances and are of such a nature as to create a clear and present danger that they will bring about the substantive evils that Congress has a right to prevent. It is a question of proximity and degree.\"\n\nHolmes famously compared anti-war pamphlets to *\"falsely shouting fire in a theatre and causing a panic.\"*\n\n#### Holmes' Dissents and the Marketplace of Ideas\n\nHaunted by the potential for state suppression, Holmes underwent an intellectual revolution just eight months later in his dissenting opinion in *Abrams v. United States* (1919). Holmes articulated what became the bedrock philosophical justification for free expression:\n> \"When men have realized that time has upset many fighting faiths, they may come to believe even more than they believe the very foundations of their own conduct that the ultimate good desired is better reached by free trade in ideas\u2014that the best test of truth is the power of the thought to get itself accepted in the competition of the market.\"\n\n#### The Brandenburg Modern Standard\n\nThe modern apex of free speech protection arrived with **Brandenburg v. Ohio** (1969), involving a Ku Klux Klan leader who delivered a televised speech advocating 'revengeance' against Black and Jewish citizens. The Supreme Court overturned his conviction, establishing the binding **Brandenburg Test**:\n\nThe government cannot constitutionally forbid advocacy of the use of force or law violation **except where such advocacy is directed to inciting or producing imminent lawless action and is likely to incite or produce such action.**\n\nUnder Brandenburg, speech must meet three cumulative prongs:\n1. **Intent**: The speaker must subjectively intend to produce illegal action.\n2. **Imminence**: The lawless action must be immediate (minutes or hours, not hypothetical future rebellion).\n3. **Likelihood**: The crowd must be realistically poised to carry out the violence.",
+            "id": "law-cr-l1",
+            "title": "Actus Reus: Voluntary Conduct, Omissions, and Causation",
+            "body": "### The Physical Element of Criminal Offenses\n\nThe ancient Latin maxim *Actus non facit reum nisi mens sit rea*\u2014the act is not culpable unless the mind is guilty\u2014forms the bedrock of Anglo-American and continental criminal law. \n\n#### 1. The Voluntary Act Requirement\nCriminal law punishes voluntary acts, not internal thoughts or involuntary spasms. Under Section 2.01 of the American Law Institute's Model Penal Code (MPC), bodily movements during sleepwalking, hypnosis, epileptic seizures, or involuntary reflexes are not voluntary acts.\n\n#### 2. Liability for Omissions (Negative Acts)\nAs a general rule, Anglo-American common law imposes no duty to rescue a stranger in distress (*the 'Bad Samaritan' principle*). However, an omission generates criminal liability when a legal duty to act exists:\n- **Status Relationship:** Parent to infant child; spouse to spouse.\n- **Contractual Duty:** Lifeguard, train signal operator, or physician.\n- **Statutory Mandate:** Duty to stop and render aid after a traffic accident; duty to file tax returns.\n- **Creation of Peril:** If a person innocently or culpably creates a dangerous situation, they incur a legal duty to take reasonable steps to prevent harm (*R v Miller*, 1983).\n\n#### 3. Principles of Causation\nWhere an offense requires a prohibited result (e.g., homicide), the prosecution must prove two distinct causation branches:\n1. **Factual Causation (Cause-in-Fact):** Established through the *'but-for'* test (*sine qua non*): But for the defendant's act, would the prohibited harm have occurred when it did?\n2. **Proximate / Legal Causation:** Was the result foreseeable and sufficiently related to the defendant's conduct, or was the causal chain broken by an unforeseeable intervening act (*novus actus interveniens*)?",
             "readings": [
               {
-                "label": "Brandenburg v. Ohio, 395 U.S. 444 (1969)",
-                "url": "https://www.oyez.org/cases/1968/492"
+                "label": "Model Penal Code, Selected Provisions (Section 2.01-2.03)",
+                "url": "https://www.law.cornell.edu/wex/model_penal_code"
               },
               {
-                "label": "John Stuart Mill, On Liberty (Chapter 2: Of the Liberty of Thought and Discussion)",
-                "url": "https://www.gutenberg.org"
+                "label": "Stanford Encyclopedia of Philosophy, Theories of Criminal Law",
+                "url": "https://plato.stanford.edu/entries/criminal-law/"
               }
             ],
             "quiz": [
               {
-                "q": "What three cumulative criteria must the state prove under the Brandenburg v. Ohio standard to outlaw speech inciting violence?",
+                "q": "Under common law principles, when does an omission to act constitute the actus reus of a crime?",
                 "options": [
-                  "Intent to incite, imminence of the illegal action, and a high likelihood that violence will actually occur.",
-                  "Offensive language, lack of academic credentials, and publishing online.",
-                  "Disagreement with the president, foreign funding, and organizing in public.",
-                  "Loud volume, refusal to obtain a permit, and using profane language."
+                  "Whenever a bystander possesses the physical capacity to prevent a felony.",
+                  "Only when the defendant was under a pre-existing legal duty to act created by statute, contract, relationship, or creation of peril.",
+                  "In every scenario involving life-threatening danger.",
+                  "Never; criminal law only punishes active physical commissions."
                 ],
-                "answer": 0,
-                "why": "Brandenburg protects abstract advocacy of violence; only speech directed to inciting imminent lawless action that is likely to produce it can be banned."
-              },
-              {
-                "q": "What was the philosophical core of Holmes' 'Marketplace of Ideas' dissent in Abrams v. US?",
-                "options": [
-                  "Truth is best discovered through open, uninhibited intellectual competition rather than state censorship.",
-                  "Newspapers should be subsidized by the government.",
-                  "The government must ban false economic advertisements.",
-                  "Speech rights belong only to property owners."
-                ],
-                "answer": 0,
-                "why": "Holmes argued that the best test of truth is its ability to prevail in free debate rather than through authoritarian state suppression."
-              }
-            ]
-          },
-          {
-            "id": "speech-l2",
-            "title": "The Skokie Controversy and Hate Speech Comparativism",
-            "body": "### Defending the Speech We Loathe\n\nIn 1977, Frank Collin, leader of the National Socialist Party of America, announced plans to hold an outdoor political demonstration in **Skokie, Illinois**\u2014a suburban village where one in six residents was a survivor of Nazi concentration camps. The village enacted local ordinances designed to block the demonstration by banning marches in military-style uniforms, displays of the swastika, and distribution of racially hateful literature.\n\nThe **American Civil Liberties Union (ACLU)** took the controversial decision to represent the neo-Nazis in court (*National Socialist Party of America v. Village of Skokie*, 1977). The ACLU argued that if a town could ban a march because its symbols were deeply traumatizing and offensive to the majority, that same precedent would be used by southern sheriffs to ban civil rights marches by Martin Luther King Jr. because they offended segregationists.\n\nThe Illinois Supreme Court and the federal appellate courts ruled in favor of the neo-Nazis:\n> *\"The display of the swastika, as offensive and repulsive as it is to the residents of Skokie, is symbolic speech protected by the First Amendment. Public speech cannot be silenced simply because listeners will experience intense emotional distress.\"*\n\n#### The Atlantic Divide: American Absolutism vs European Dignity\n\nThe Skokie ruling illustrates the profound chasm between American constitutional jurisprudence and the European legal order:\n- **The US Model (Liberty-First)**: There is no 'hate speech' exception to the First Amendment. Viewpoint discrimination by the state is strictly prohibited. The cure for bad speech is *more speech*, not enforced silence.\n- **The European / German Model (Dignity-First)**: Grounded in the post-WWII German Basic Law (*Article 1: Human dignity shall be inviolable*), legal systems prohibit Holocaust denial, racial incitement (*Volksverhetzung*), and hate speech. Under Article 17 of the ECHR (*Prohibition of Abuse of Rights*), individuals cannot invoke free speech to destroy the democratic rights and human dignity of others.",
-            "readings": [
-              {
-                "label": "National Socialist Party of America v. Village of Skokie, 432 U.S. 43 (1977)",
-                "url": "https://www.oyez.org"
-              },
-              {
-                "label": "Jeremy Waldron, The Harm in Hate Speech (2012)",
-                "url": "https://www.hup.harvard.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why did the ACLU represent the neo-Nazis in the Skokie controversy despite intense public outrage?",
-                "options": [
-                  "To protect the principle of viewpoint neutrality, preventing governments from banning speech based on listener offense.",
-                  "Because the ACLU endorsed the political ideology of the marchers.",
-                  "Because the village of Skokie had offered to pay the ACLU's legal retainers.",
-                  "The marchers had agreed to march without any political banners."
-                ],
-                "answer": 0,
-                "why": "The ACLU argued that allowing local authorities to ban speech based on hostile community reactions would destroy constitutional protection for all controversial minorities."
-              },
-              {
-                "q": "How does German constitutional law treat Holocaust denial compared to American First Amendment law?",
-                "options": [
-                  "Germany criminalizes Holocaust denial as an assault on human dignity, whereas the US First Amendment protects it as free expression.",
-                  "Germany and the US have identical constitutional protections for Holocaust denial.",
-                  "The US Supreme Court sends Holocaust deniers to federal prison.",
-                  "Germany only bans speech on social media websites."
-                ],
-                "answer": 0,
-                "why": "Germany's 'militant democracy' prioritizes human dignity and historical truth, outlawing Holocaust denial under penal code section 130."
+                "answer": 1,
+                "why": "Unlike general moral obligations, criminal omission liability requires an explicit legal duty to act arising from contract, status relationship, statute, or the voluntary assumption of care/creation of peril."
               }
             ]
           }
@@ -316,314 +281,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "law-geneva",
-    "title": "The Geneva Conventions: Drones, War Crimes, and Targeted Killing",
+    "id": "law-human-rights",
+    "title": "International Human Rights Law: Treaties, Regional Courts & Enforcement",
     "category": "Law",
-    "subcategory": "International Law",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "An investigation into the law of armed conflict in asymmetric wars: drone strikes in non-belligerent territory, civilian casualty proportionality, signature strikes, and detention at Guant\u00e1namo Bay.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-20",
-    "objectives": [
-      "Deconstruct the four 1949 Geneva Conventions and the 1977 Additional Protocols.",
-      "Analyze the legal criteria for targeted killing: Distinction, Military Necessity, and Proportionality.",
-      "Evaluate 'Direct Participation in Hostilities' (DPH) in asymmetric guerrilla and counter-terror warfare.",
-      "Critique accountability frameworks for state drone strikes under international human rights law vs IHL."
-    ],
-    "modules": [
-      {
-        "title": "The Architecture of IHL and the Drone Revolution",
-        "lessons": [
-          {
-            "id": "geneva-l1",
-            "title": "The Geneva Conventions and Common Article 3",
-            "body": "### The Legal Restraint of Warfare\n\nAdopted in the ashes of World War II, the four **Geneva Conventions of 1949** form the universal core of International Humanitarian Law (IHL):\n1. **First Convention**: Wounded and sick armed forces in the field.\n2. **Second Convention**: Wounded, sick, and shipwrecked armed forces at sea.\n3. **Third Convention**: Prisoners of War (POWs), mandating humane treatment, interrogation limits, and Red Cross inspection.\n4. **Fourth Convention**: Protection of civilian persons in time of war and occupied territories.\n\n#### Common Article 3: The Miniature Treaty\n\nHistorically, international law applied only to international armed conflicts (IAC) between two sovereign states. In non-international armed conflicts (NIAC / civil wars), governments claimed domestic treason laws allowed them to execute rebels without trial.\n\nThe drafters inserted **Common Article 3** across all four conventions. It establishes an irreducible humanitarian baseline applicable to *all* conflicts:\n- Absolute prohibition of murder, mutilation, torture, and cruel treatment.\n- Prohibition of hostage-taking and outrages upon personal dignity.\n- Prohibition of executions without regular trial before an independent court affording essential judicial guarantees.",
-            "readings": [
-              {
-                "label": "ICRC Commentary on the First Geneva Convention (2016)",
-                "url": "https://www.icrc.org"
-              },
-              {
-                "label": "Hamdan v. Rumsfeld, 548 U.S. 557 (2006)",
-                "url": "https://www.oyez.org/cases/2005/05-184"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What was the landmark significance of Common Article 3 in the 1949 Geneva Conventions?",
-                "options": [
-                  "It established a binding minimum floor of humanitarian protection for non-international (civil) armed conflicts.",
-                  "It made chemical weapons compulsory for naval defense.",
-                  "It abolished the International Red Cross.",
-                  "It granted diplomatic immunity to all naval captains."
-                ],
-                "answer": 0,
-                "why": "Common Article 3 extended the reach of international humanitarian law inside sovereign borders during domestic civil conflicts."
-              }
-            ]
-          },
-          {
-            "id": "geneva-l2",
-            "title": "Targeted Killing, Signature Strikes, and Proportionality",
-            "body": "### Remote War and the Law of Targeting\n\nThe post-9/11 expansion of armed unmanned aerial vehicles (drones) created unprecedented legal dilemmas. When the US or Israel conducts a drone strike against an insurgent commander in Yemen, Somalia, or Pakistan, what legal regime applies?\n\nTwo conflicting frameworks collide:\n1. **International Humanitarian Law (Law of War)**: Combatants may be targeted at any time based on their status, provided collateral civilian damage satisfies the **Proportionality Rule** (not excessive in relation to concrete military advantage).\n2. **International Human Rights Law (Law Enforcement)**: Governed by the right to life (ICCPR Art 6); lethal force is lawful **only as an absolute last resort** to protect human life from imminent attack where non-lethal arrest is impossible.\n\n#### The Controversy of Signature Strikes\nIn 'personality strikes', a verified high-value target is tracked. In **signature strikes**, drones target groups based on behavioral patterns (carrying weapons, military-age males meeting in convoy), sparking severe legal controversy regarding the cardinal IHL principle of **Distinction**.",
-            "readings": [
-              {
-                "label": "Nils Melzer, Targeted Killing in International Law (2008)",
-                "url": "https://global.oup.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How does the legal standard for lethal force differ between Law Enforcement (IHRL) and Armed Conflict (IHL)?",
-                "options": [
-                  "IHRL permits lethal force only as an unavoidable last resort to save life, whereas IHL permits targeting enemy combatants based on status.",
-                  "IHL bans all weapons, while IHRL permits any weapon.",
-                  "IHRL applies only during world wars.",
-                  "There is no legal difference."
-                ],
-                "answer": 0,
-                "why": "Under human rights law, arrest must be attempted first; under the law of armed conflict, enemy combatants may be lawfully targeted without warning."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "law-ecocide",
-    "title": "The Trial of Ecocide: Bhopal, Chernobyl, and Environmental Justice",
-    "category": "Law",
-    "subcategory": "Environmental Law",
-    "level": "Undergraduate",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "An investigation of corporate and state environmental catastrophe: Union Carbide at Bhopal, the Chernobyl nuclear disaster, the struggle to prosecute environmental destruction at the ICC, and the legal personhood of ecosystems.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-22",
-    "objectives": [
-      "Deconstruct the Bhopal industrial catastrophe and the corporate veil shielding multinational parent companies.",
-      "Analyze state liability in transboundary nuclear fallout under the Chernobyl disaster precedent.",
-      "Examine the 2021 Independent Expert Panel definition of 'Ecocide' for inclusion in the Rome Statute.",
-      "Evaluate rights-of-nature jurisprudence granting legal standing to rivers and biomes."
-    ],
-    "modules": [
-      {
-        "title": "Corporate Catastrophe and Transboundary Harm",
-        "lessons": [
-          {
-            "id": "ecocide-l1",
-            "title": "The Bhopal Disaster and the Corporate Veil",
-            "body": "### The World's Deadliest Industrial Disaster\n\nShortly after midnight on December 3, 1984, over 40 tons of deadly methyl isocyanate (MIC) gas leaked from a pesticide plant in Bhopal, India, operated by Union Carbide India Limited (UCIL), a subsidiary of the American multinational **Union Carbide Corporation (UCC)**. The toxic plume settled over sleeping slums, killing over 3,500 people within hours and causing permanent respiratory, neurological, and reproductive disability to more than 500,000 residents.\n\n#### The Jurisdictional Shield: Forum Non Conveniens\n\nWhen victims sued Union Carbide in US federal court, UCC mounted a classic corporate defense:\n1. **The Corporate Veil**: UCC claimed it was a separate corporate entity from its Indian subsidiary and had no direct operational liability.\n2. **Forum Non Conveniens**: UCC argued that US courts were an inconvenient forum and the case should be dismissed to India.\n\nFederal Judge John F. Keenan dismissed the suits to Indian courts. In 1989, under intense executive pressure, the Indian Supreme Court approved a controversial $470 million full-and-final settlement\u2014an average of just $500 per victim. UCC's executives, including CEO Warren Anderson, fled India and were declared proclaimed absconders, evading criminal prosecution until their deaths. Bhopal exposed the catastrophic governance void in transnational corporate liability.",
-            "readings": [
-              {
-                "label": "In re Union Carbide Corp. Gas Plant Disaster, 634 F. Supp. 842 (S.D.N.Y. 1986)",
-                "url": "https://law.justia.com"
-              },
-              {
-                "label": "Bhopal Gas Peedith Mahila U \u0909\u0926\u094d\u092f\u094b\u0917 Sangathan v. Union of India (1989)",
-                "url": "https://indiankanoon.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What legal doctrine did Union Carbide successfully employ to avoid trial in United States courts?",
-                "options": [
-                  "Forum Non Conveniens, arguing the litigation should properly proceed in India.",
-                  "Sovereign Immunity as an agency of the US military.",
-                  "Habeas Corpus relief for its corporate board.",
-                  "Diplomatic asylum."
-                ],
-                "answer": 0,
-                "why": "UCC argued that American courts were an improper and inconvenient forum, shifting the litigation to India where damages and regulatory leverage were far lower."
-              }
-            ]
-          },
-          {
-            "id": "ecocide-l2",
-            "title": "The Proposed Crime of Ecocide at the ICC",
-            "body": "### Criminalizing Wanton Environmental Destruction\n\nIn June 2021, an international panel of twelve prominent jurists co-chaired by Philippe Sands KC drafted a historic legal definition of **Ecocide**, intended to become the fifth crime in the Rome Statute of the International Criminal Court alongside genocide, war crimes, crimes against humanity, and aggression:\n\n> *\"Ecocide means unlawful or wanton acts committed with knowledge that there is a substantial likelihood of severe and either widespread or long-term damage to the environment being caused by those acts.\"*\n\n#### Key Legal Thresholds:\n- **Severe**: Damage involving very serious adverse changes, disruption, or harm to any element of the environment, including grave impacts on human life or natural resources.\n- **Widespread**: Damage extending beyond a limited geographic area, crossing state boundaries, or suffered by an entire ecosystem.\n- **Long-term**: Damage that cannot be redressed through natural recovery within a reasonable period of time.",
-            "readings": [
-              {
-                "label": "Independent Expert Panel for the Legal Definition of Ecocide (2021)",
-                "url": "https://www.stopecocide.earth"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Under the 2021 Independent Expert Panel definition, what mental state (mens rea) is required for Ecocide?",
-                "options": [
-                  "Acting with knowledge that there is a substantial likelihood of severe and widespread/long-term damage.",
-                  "Accidental negligence during ordinary farming.",
-                  "A written pledge to eradicate all plant life.",
-                  "Approval from the World Bank."
-                ],
-                "answer": 0,
-                "why": "The threshold is recklessness with knowledge of substantial likelihood of severe, widespread, or long-term destruction."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "law-privacy",
-    "title": "The Right to Privacy in the Surveillance Age: Snowden to Apple v. FBI",
-    "category": "Law",
-    "subcategory": "Cyberlaw & AI Governance",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "How digital surveillance shattered 18th-century constitutional Fourth Amendment doctrine: NSA mass surveillance, metadata collection, Apple v. FBI on iPhone encryption, and the Third-Party Doctrine.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-25",
-    "objectives": [
-      "Deconstruct Fourth Amendment doctrine from physical trespass (Boyd) to Katz's reasonable expectation of privacy.",
-      "Analyze the Third-Party Doctrine (Smith v. Maryland) and its modern limitation in Carpenter v. United States.",
-      "Evaluate the constitutional standoff in Apple v. FBI over forced software backdoors under the All Writs Act.",
-      "Compare US surveillance jurisprudence with EU Charter protections in Schrems I & II."
-    ],
-    "modules": [
-      {
-        "title": "The Fourth Amendment in Cyberspace",
-        "lessons": [
-          {
-            "id": "privacy-l1",
-            "title": "From Physical Trespass to Katz and Carpenter",
-            "body": "### The Evolution of the Right to Be Let Alone\n\nThe Fourth Amendment was drafted in 1789 to forbid British 'general warrants'\u2014crown officers kicking down doors to search physical homes and papers. For 150 years, courts treated Fourth Amendment protection as strictly contingent on **physical trespass** onto protected property (*Olmstead v. United States*, 1928, holding that wiretapping telephone lines outside a suspect's home was not a search).\n\n#### Katz and the Reasonable Expectation of Privacy\n\nIn **Katz v. United States** (1967), the Supreme Court abandoned physical property boundaries. FBI agents had attached an electronic listening device to the exterior of a public telephone booth used by Charles Katz. The Court held:\n> *\"The Fourth Amendment protects people, not places... What a person knowingly exposes to the public, even in his own home or office, is not a subject of Fourth Amendment protection. But what he seeks to preserve as private, even in an area accessible to the public, may be constitutionally protected.\"*\n\nJustice John Marshall Harlan's concurring opinion formulated the two-prong **Katz Test**:\n1. The person must exhibit an actual (subjective) expectation of privacy.\n2. The expectation must be one that society is prepared to recognize as objectively reasonable.\n\n#### The Crisis of the Third-Party Doctrine: Carpenter v. US\n\nUnder the **Third-Party Doctrine** (*Smith v. Maryland*, 1979), you forfeit your expectation of privacy in information you voluntarily disclose to third parties (like phone numbers dialed to a telephone company or bank transaction records).\n\nIn the smartphone era, this doctrine threatened to abolish all digital privacy. In **Carpenter v. United States** (2018), Chief Justice John Roberts ruled that accessing 127 days of Timothy Carpenter's **Cell Site Location Information (CSLI)** from wireless carriers without a warrant violated the Fourth Amendment. Roberts reasoned that carrying a smartphone is not a truly voluntary disclosure; it is indispensable to modern life, creating an exhaustive, retrospective chronicle of a person's physical movements.",
-            "readings": [
-              {
-                "label": "Katz v. United States, 389 U.S. 347 (1967)",
-                "url": "https://www.oyez.org/cases/1967/35"
-              },
-              {
-                "label": "Carpenter v. United States, 138 S. Ct. 2206 (2018)",
-                "url": "https://www.oyez.org/cases/2017/16-402"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What core legal principle was established in Katz v. United States?",
-                "options": [
-                  "The Fourth Amendment protects people, not places, whenever there is an objectively reasonable expectation of privacy.",
-                  "Wiretapping public telephones is always lawful without a warrant.",
-                  "The police may search any house if it is painted white.",
-                  "Phone companies are branches of the military."
-                ],
-                "answer": 0,
-                "why": "Katz decoupled privacy from physical property trespass, anchoring it in reasonable human privacy expectations."
-              }
-            ]
-          },
-          {
-            "id": "privacy-l2",
-            "title": "The San Bernardino iPhone Showdown: Apple v. FBI",
-            "body": "### Cryptography, Forced Speech, and the All Writs Act\n\nIn December 2015, following the terrorist mass shooting in San Bernardino, California, the FBI recovered a locked iPhone 5C belonging to shooter Syed Rizwan Farook. The device was protected by an alphanumeric passcode and an iOS security feature that would permanently erase the decryption key after ten incorrect passcode attempts.\n\nThe FBI obtained an ex parte magistrate order under the **All Writs Act of 1789** (a catch-all statute allowing federal courts to issue all writs necessary in aid of their jurisdictions), commanding Apple Inc. to write and digitally sign a custom operating system ('GovOS') that would bypass the brute-force attempt limits.\n\n#### Apple's Constitutional Resistance\nApple CEO Tim Cook published an open letter refusing to comply:\n1. **Compelled Speech (First Amendment)**: Computer code is protected creative and intellectual speech (*Bernstein v. US Dept of Justice*). Forcing Apple's engineers to write new software undermining their own product is unconstitutional compelled speech.\n2. **The Danger of a Master Key**: Once a government backdoor exists, it cannot be confined to one device; it jeopardizes the cybersecurity of hundreds of millions of innocent users worldwide.\n3. **Ultra Vires All Writs Act**: An archaic 1789 statute cannot be twisted into sweeping authority to conscript private tech companies into state intelligence arms.\n\nThe standoff ended abruptly on the eve of oral argument when the FBI announced it had paid an undisclosed third-party foreign contractor over $1 million to exploit an unknown zero-day vulnerability in the hardware, leaving the profound constitutional dilemma unresolved.",
-            "readings": [
-              {
-                "label": "Apple Inc.'s Motion to Vacate Order Compelling Assistance, In re Search of an Apple iPhone (C.D. Cal. 2016)",
-                "url": "https://www.eff.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What primary First Amendment argument did Apple raise against the FBI's demand to create GovOS?",
-                "options": [
-                  "Computer source code is protected speech, and the government cannot compel engineers to write code against their beliefs.",
-                  "Apple was an official press publication entitled to journalistic privilege.",
-                  "The FBI had not paid retail price for the iPhone.",
-                  "The First Amendment only protects phone calls, not software."
-                ],
-                "answer": 0,
-                "why": "Decades of cyberlaw precedent hold that software code is expressive speech, making forced creation of a backdoor unconstitutional compelled speech."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "law-rhetoric",
-    "title": "The Art of Legal Rhetoric: Supreme Court Oral Arguments & Dissents",
-    "category": "Law",
-    "subcategory": "Legal Theory",
+    "subcategory": "Human rights",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "Master the architecture of forensic legal persuasion: Lord Atkin's snail in the ginger beer bottle, Justice Robert Jackson's rhetorical fireworks, Antonin Scalia's biting originalist polemics, and Ruth Bader Ginsburg's dissents.",
-    "passMark": 70,
+    "description": "An exhaustive analysis of the normative foundations and enforcement machinery of global human rights. Students study the Universal Declaration of Human Rights, the ICCPR, the ICESCR, the jurisprudence of the European Court of Human Rights in Strasbourg, and the mechanisms of international human rights reporting and sanctions.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-08-28",
     "objectives": [
-      "Deconstruct classical rhetorical appeals (Logos, Ethos, Pathos) in judicial advocacy.",
-      "Analyze Lord Atkin's Neighbour Principle in Donoghue v. Stevenson.",
-      "Examine the craft of the dissenting opinion as an 'appeal to the brooding spirit of the law'.",
-      "Structure and deliver a compelling appellate moot court argument."
+      "Distinguish between civil and political rights (first generation) and economic, social, and cultural rights (second generation).",
+      "Evaluate the proportionality test utilized by the European Court of Human Rights to evaluate rights restrictions.",
+      "Analyze non-derogable rights under Article 4 of the International Covenant on Civil and Political Rights (ICCPR).",
+      "Critique enforcement gaps and sovereign compliance mechanisms under UN treaty monitoring bodies."
     ],
     "modules": [
       {
-        "title": "Forensic Storytelling and the Foundations of Common Law",
+        "title": "Module 1: The Universal Architecture of Human Rights",
         "lessons": [
           {
-            "id": "rhetoric-l1",
-            "title": "Donoghue v. Stevenson: The Snail that Invented Modern Tort Law",
-            "body": "### The Genesis of the Duty of Care\n\nOn August 26, 1928, May Donoghue visited the Wellmeadow Caf\u00e9 in Paisley, Scotland. Her friend ordered an opaque bottle of ginger beer manufactured by David Stevenson. After drinking part of the beverage, the friend poured out the remainder, out floated the decomposing remains of a snail. Donoghue suffered severe gastroenteritis and nervous shock.\n\nUnder the prevailing common law, Donoghue faced an insurmountable legal barrier: **The Privity Rule**. Because her friend had purchased the ginger beer, Donoghue had no contract with Stevenson. English law established that without a contract, a manufacturer owed no general duty to ultimate consumers for negligence.\n\n#### Lord Atkin's Neighbor Principle\n\nLord Atkin saw that industrial mass production required an equitable revolution in common law jurisprudence. Delivering his speech in the House of Lords (*Donoghue v. Stevenson*, 1932), Atkin took the biblical parable of the Good Samaritan and translated it into a foundational legal standard:\n\n> *\"The rule that you are to love your neighbour becomes in law, you must not injure your neighbour; and the lawyer's question, Who is my neighbour? receives a restricted reply. You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour. Who, then, in law, is my neighbour? The answer seems to be\u2014persons who are so closely and directly affected by my act that I ought reasonably to have them in contemplation as being so affected when I am directing my mind to the acts or omissions which are called in question.\"*\n\nWith one paragraph of transcendent rhetorical clarity, Lord Atkin demolished centuries of formalist contractual immunity and created the modern law of **Negligence**.",
+            "id": "law-hr-l1",
+            "title": "The International Bill of Human Rights and the Proportionality Test",
+            "body": "### The Triad of Universal Human Rights\n\nModern international human rights law emerged from the ashes of World War II, repudiating the Westphalian principle that a sovereign state's treatment of its own citizens is purely an internal domestic affair.\n\nThe foundational framework is known as the **International Bill of Human Rights**, comprising:\n1. **Universal Declaration of Human Rights (UDHR, 1948):** Adopted by the UN General Assembly under the leadership of Eleanor Roosevelt; initially conceived as a non-binding moral manifesto, many of its core provisions are now acknowledged as customary international law.\n2. **International Covenant on Civil and Political Rights (ICCPR, 1966):** Legally binding treaty guaranteeing negative rights\u2014liberty from state interference, right to life, freedom from torture, fair trial, freedom of speech and assembly.\n3. **International Covenant on Economic, Social and Cultural Rights (ICESCR, 1966):** Legally binding treaty mandating positive obligations\u2014rights to education, healthcare, fair wages, and housing, subject to 'progressive realization'.\n\n#### The Four-Stage Proportionality Framework\nMost fundamental rights are qualified rather than absolute. When a government restricts a protected right (such as freedom of assembly or privacy), international and regional courts apply the rigorous **proportionality test**:\n\n1. **Legality:** Is the restriction prescribed by accessible and clear law?\n2. **Legitimate Aim:** Does the state pursue an authorized public objective (e.g., national security, public health, protection of the rights of others)?\n3. **Suitability:** Is the restrictive measure logically capable of achieving the stated legitimate aim?\n4. **Necessity & Proportionality Stricto Sensu:** Is this the least restrictive means available? Do the public benefits outweigh the severe intrusion on the fundamental right?",
             "readings": [
               {
-                "label": "Donoghue v. Stevenson [1932] UKHL 100",
-                "url": "https://www.bailii.org/uk/cases/UKHL/1932/100.html"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What legal obstacle prevented May Donoghue from suing David Stevenson under contract law?",
-                "options": [
-                  "The doctrine of privity of contract; her friend purchased the beverage, so Donoghue had no direct contract with the manufacturer.",
-                  "The snail was considered an act of God.",
-                  "The shopkeeper had gone bankrupt.",
-                  "Scottish courts lacked jurisdiction over ginger beer."
-                ],
-                "answer": 0,
-                "why": "Privity of contract dictates that only direct contracting parties can enforce contractual duties, which prompted Atkin to formulate tortious negligence."
-              }
-            ]
-          },
-          {
-            "id": "rhetoric-l2",
-            "title": "The Great Dissents: Scalia and Ginsburg",
-            "body": "### An Appeal to the Brooding Spirit of the Law\n\nChief Justice Charles Evans Hughes famously wrote:\n> *\"A dissent in a court of last resort is an appeal to the brooding spirit of the law, to the intelligence of a future day, when a later decision may possibly correct the error into which the dissenting judge believes the court to have been betrayed.\"*\n\nTwo titans of modern Supreme Court rhetoric demonstrated the power of the dissent:\n- **Justice Antonin Scalia (*Morrison v. Olson*, 1988)**: The Court upheld the Independent Counsel Act 7-1, allowing court-appointed special prosecutors outside presidential control. In one of the most celebrated dissents in American history, Scalia opened with razor-sharp imagery: *\"Frequently an issue of this sort will come before the Court clad, so to speak, in sheep's clothing... But this wolf comes as a wolf.\"* Scalia foresaw that unchecked prosecutorial authority untethered from democratic presidential accountability would inevitably be weaponized for partisan warfare.\n- **Justice Ruth Bader Ginsburg (*Shelby County v. Holder*, 2013)**: Striking down Section 4 of the Voting Rights Act of 1965, the conservative majority argued that racial voter discrimination had vastly decreased since 1965. Ginsburg fired back with brilliant metaphoric prose: *\"Throwing out preclearance when it has worked and is continuing to work to stop discriminatory changes is like throwing away your umbrella in a rainstorm because you are not getting wet.\"*",
-            "readings": [
-              {
-                "label": "Morrison v. Olson, 487 U.S. 654 (1988) (Scalia, J., dissenting)",
-                "url": "https://www.oyez.org"
+                "label": "Universal Declaration of Human Rights (UN, 1948)",
+                "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
               },
               {
-                "label": "Shelby County v. Holder, 570 U.S. 529 (2013) (Ginsburg, J., dissenting)",
-                "url": "https://www.oyez.org"
+                "label": "International Covenant on Civil and Political Rights (OHCHR, 1966)",
+                "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
+              },
+              {
+                "label": "European Court of Human Rights, Guide on Article 8 (Right to Privacy)",
+                "url": "https://www.echr.coe.int/documents/d/echr/guide_art_8_eng"
               }
             ],
             "quiz": [
               {
-                "q": "What famous metaphor did Justice Ginsburg use in Shelby County v. Holder to criticize dismantling the Voting Rights Act?",
+                "q": "What is meant by the doctrine of 'progressive realization' under the ICESCR?",
                 "options": [
-                  "Throwing away your umbrella in a rainstorm because you are not getting wet.",
-                  "Locking the stable door after the horse has bolted.",
-                  "Shooting an arrow into the dark.",
-                  "Building a castle on sand."
+                  "States can indefinitely ignore socio-economic rights without international review.",
+                  "States acknowledge that economic and social rights require financial resources and commit to taking continuous, targeted steps to the maximum of their available resources to fully realize them over time.",
+                  "Economic rights only apply to high-income OECD economies.",
+                  "Courts must immediately enforce every social welfare claim as an absolute immediate injunction."
                 ],
-                "answer": 0,
-                "why": "Ginsburg argued that the decline in voter suppression was precisely due to the Voting Rights Act's preclearance regime, making its abolition reckless."
+                "answer": 1,
+                "why": "Article 2(1) of the ICESCR explicitly recognizes that realizing rights to health and education depends on state resource capacities, requiring progressive and deliberate advancement."
               }
             ]
           }
@@ -632,223 +338,104 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "law-crimminds",
-    "title": "Criminal Minds: Mens Rea, Insanity, and Culpability",
+    "id": "law-humanitarian",
+    "title": "International Humanitarian Law & the Law of Armed Conflict",
     "category": "Law",
-    "subcategory": "Criminal Justice",
-    "level": "Pre-university",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "Examine the philosophical boundary between evil and madness: the M'Naghten Rules, the Hinckley assassination attempt, neuroscientific evidence in court, and whether free will is a legal fiction.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-02",
-    "objectives": [
-      "Deconstruct the historic M'Naghten Rules for the criminal defense of legal insanity.",
-      "Analyze the Hinckley verdict and the shift to 'Guilty But Mentally Ill'.",
-      "Evaluate modern fMRI neuroscience, psychopathy, and brain tumor cases (e.g. Charles Whitman).",
-      "Debate free will vs determinism in philosophical theories of criminal punishment."
-    ],
-    "modules": [
-      {
-        "title": "The Boundary Between Moral Culpability and Disease",
-        "lessons": [
-          {
-            "id": "crimminds-l1",
-            "title": "The M'Naghten Rules and the Insanity Defense",
-            "body": "### The Queen's Assassination Scare\n\nIn 1843, Daniel M'Naghten, a Scottish woodcutter suffering from paranoid delusions that the Tory party was conspiring to assassinate him, shot and killed Edward Drummond, the private secretary to British Prime Minister Sir Robert Peel (whom M'Naghten mistook for Peel).\n\nAt trial, medical experts testified that M'Naghten was driven by profound psychotic delusions. The jury found him not guilty by reason of insanity. Queen Victoria was outraged that an assassin could walk away from the gallows, prompting the House of Lords to summon the judges to formulate definitive legal principles (**The M'Naghten Rules**).\n\n#### The M'Naghten Formula\nTo establish a defense on the ground of insanity:\n> *\"It must be clearly proved that, at the time of the committing of the act, the party accused was labouring under such a defect of reason, from disease of the mind, as not to know the nature and quality of the act he was doing; or, if he did know it, that he did not know he was doing what was wrong.\"*\n\nThe M'Naghten rule is strictly **cognitive**, asking:\n1. Did the defendant know *what* they were doing (e.g., believing they are slicing an orange when cutting a person's throat)?\n2. Did the defendant know it was *legally or morally wrong*?\n\nIt excluded **volitional defects** (*irresistible impulses*)\u2014where an accused understands an act is wrong but is mentally incapable of restraining themselves.",
-            "readings": [
-              {
-                "label": "M'Naghten's Case (1843) 10 Cl & Fin 200",
-                "url": "https://www.bailii.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What two cognitive questions form the core of the historic M'Naghten insanity test?",
-                "options": [
-                  "Did the accused understand the nature and quality of the act, and did they know it was wrong?",
-                  "Was the accused clinically depressed, and did they have an attorney?",
-                  "Did the accused possess a history of juvenile crime, and were they under 18?",
-                  "Was the crime premeditated for more than 48 hours?"
-                ],
-                "answer": 0,
-                "why": "The M'Naghten Rules focus strictly on cognitive defect: whether the accused knew the physical nature of the act and recognized its wrongfulness."
-              }
-            ]
-          },
-          {
-            "id": "crimminds-l2",
-            "title": "Neuroscience in the Courtroom: Brain Tumors and Free Will",
-            "body": "### When the Brain Breaks\n\nIn 1966, Charles Whitman climbed the clock tower at the University of Texas at Austin and murdered sixteen people after stabbing his mother and wife. In his suicide note, Whitman described experiencing uncontrollable, irrational violent impulses and requested an autopsy. Coroners discovered a massive glioblastoma tumor pressing directly against his **amygdala**\u2014the brain's emotional regulation center.\n\nIn 2000, a previously law-abiding 40-year-old schoolteacher suddenly developed uncontrollable pedophilic urges. The day before sentencing, doctors discovered an egg-sized orbitofrontal tumor. Once the tumor was excised, his abnormal impulses completely disappeared; a year later, when urges recurred, scans revealed the tumor had regrown.\n\n#### Neuroethics and Criminal Law\nThese cases pose fundamental questions to criminal jurisprudence:\n- If all human behavior is governed by neurochemistry, neural synapses, and genetic hardwiring, does **Mens Rea** retain any coherent meaning?\n- Should criminal law abandon retribution altogether in favor of an epidemiological model of public safety and quarantine?",
-            "readings": [
-              {
-                "label": "David Eagleman, Incognito: The Secret Lives of the Brain (2011)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How does emerging cognitive neuroscience challenge traditional retributive criminal sentencing?",
-                "options": [
-                  "By demonstrating that brain injuries and neurochemical defects can impair behavioral impulse control, blurring the boundary between free will and organic pathology.",
-                  "By proving that all crimes are caused by computer algorithms.",
-                  "By demonstrating that police officers can read minds with satellites.",
-                  "By eliminating the need for jury trials in commercial cases."
-                ],
-                "answer": 0,
-                "why": "Neuroscientific evidence shows physical brain pathologies directly generate aberrant conduct, challenging the classical assumption of unconstrained rational moral agency."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "law-bigpharma",
-    "title": "Global Patents vs Human Lives: The Fight for Generic AIDS and Vaccine Access",
-    "category": "Law",
-    "subcategory": "Intellectual Property",
-    "level": "Pre-university",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "The epic geopolitical collision between Western pharmaceutical monopolies and the Global South: the South Africa HIV litigation, the 2001 WTO Doha Declaration, and the mRNA COVID-19 patent waiver debate.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-05",
-    "objectives": [
-      "Deconstruct the WTO Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS).",
-      "Analyze the 1998 South Africa lawsuit by 39 Big Pharma companies and the international outcry.",
-      "Evaluate the 2001 Doha Declaration and compulsory licensing mechanisms.",
-      "Debate the South Africa & India TRIPS waiver proposal during the COVID-19 pandemic."
-    ],
-    "modules": [
-      {
-        "title": "The South Africa Lawsuit and the Doha Revolution",
-        "lessons": [
-          {
-            "id": "bigpharma-l1",
-            "title": "39 Drug Companies vs Nelson Mandela",
-            "body": "### The Tragedy of the HIV Pandemic\n\nBy the late 1990s, the Human Immunodeficiency Virus (HIV) was devastating Southern Africa. Over four million South Africans were infected, with thousands dying daily. In the West, the invention of Triple-Cocktail **Antiretroviral (ARV)** therapy in 1996 had transformed HIV from an automatic death sentence into a manageable chronic illness.\n\nHowever, Western pharmaceutical monopolies priced ARVs at over **$10,000 to $15,000 per patient per year**\u2014in a country where average annual income was under $3,000. In response, Nelson Mandela's government enacted the **Medicines and Related Substances Control Amendment Act of 1997**, which permitted **Parallel Importation** (importing genuine patented drugs from other countries where they were sold cheaper) and generic substitution.\n\n#### The Big Pharma Lawsuit\nIn 1998, thirty-nine of the world's largest multinational pharmaceutical corporations, backed by the US Clinton administration and the European Commission, filed a federal lawsuit in Pretoria to strike down the South African statute. They claimed the law violated South Africa's obligations under the **WTO TRIPS Agreement**.\n\nThe lawsuit triggered a global public relations catastrophe for the pharmaceutical industry. Activist groups like the Treatment Action Campaign (TAC) and M\u00e9decins Sans Fronti\u00e8res plastered international headlines with the slogan: *\"Patients Before Patents.\"* Indian generic manufacturer Cipla announced it could manufacture the identical triple ARV combination for **$350 a year**\u2014less than $1 a day. \n\nIn April 2001, humiliated by public condemnation, all thirty-nine pharmaceutical giants unconditionally withdrew their lawsuit.",
-            "readings": [
-              {
-                "label": "Treatment Action Campaign, The Battle for Antiretrovirals in South Africa (2001)",
-                "url": "https://www.tac.org.za"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What was the core goal of the 1997 South African Medicines Act passed by Nelson Mandela's government?",
-                "options": [
-                  "To lower life-saving HIV drug prices through parallel importation and generic substitution.",
-                  "To nationalize all private hospitals in Johannesburg.",
-                  "To ban Western medicine completely.",
-                  "To stop medical research in universities."
-                ],
-                "answer": 0,
-                "why": "The Act sought to bypass monopoly drug pricing during an existential public health emergency using parallel importing and generic equivalents."
-              }
-            ]
-          },
-          {
-            "id": "bigpharma-l2",
-            "title": "The 2001 Doha Declaration on Public Health",
-            "body": "### Rebalancing Trade and Human Rights\n\nFollowing the South Africa debacle, developing nations united at the November 2001 World Trade Organization Ministerial Conference in Qatar to demand structural reform of TRIPS. The result was the historic **Doha Declaration on the TRIPS Agreement and Public Health**:\n\n> *\"We agree that the TRIPS Agreement does not and should not prevent members from taking measures to protect public health... We affirm that the Agreement can and should be interpreted and implemented in a manner supportive of WTO members' right to protect public health and, in particular, to promote access to medicines for all.\"*\n\n#### Core TRIPS Flexibilities:\n1. **Compulsory Licensing**: Every sovereign state has the right to grant compulsory licenses (ordering local manufacture without patentee consent) and the freedom to determine the grounds upon which such licenses are granted.\n2. **National Emergencies**: States have the right to determine what constitutes a national emergency or other circumstances of extreme urgency (explicitly including HIV/AIDS, tuberculosis, and malaria).\n3. **Exhaustion of Rights**: States are free to establish their own regimes for the exhaustion of intellectual property rights, validating parallel importation.",
-            "readings": [
-              {
-                "label": "WTO Declaration on the TRIPS Agreement and Public Health (2001)",
-                "url": "https://www.wto.org/english/thewto_e/minist_e/min01_e/mindecl_trips_e.htm"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What fundamental principle did the 2001 WTO Doha Declaration affirm regarding the TRIPS agreement?",
-                "options": [
-                  "TRIPS must be interpreted and implemented to support public health and promote access to medicines for all.",
-                  "Patents must always supersede the right to health in developing countries.",
-                  "Pharmaceutical companies have the right to veto foreign public health policies.",
-                  "Developing nations must pay double for imported vaccines."
-                ],
-                "answer": 0,
-                "why": "The Doha Declaration firmly established that international intellectual property rights must bend to the sovereign duty to preserve public health."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "law-unclos",
-    "title": "The South China Sea & The UN Law of the Sea (UNCLOS)",
-    "category": "Law",
-    "subcategory": "International Law",
+    "subcategory": "International law",
     "level": "Undergraduate",
-    "duration": "5 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Law, The Paper Crane Academy",
-    "description": "The geopolitics and maritime law of the world's most contested waters: the UN Convention on the Law of the Sea, Exclusive Economic Zones, island-building, freedom of navigation, and the historic 2016 Hague Arbitration (Philippines v. China).",
-    "passMark": 70,
+    "description": "A deep dive into the legal regimes governing warfare. This course deconstructs the Geneva Conventions of 1949, their Additional Protocols, the fundamental principles of distinction, military necessity, and proportionality, the categorization of armed conflicts (IAC vs NIAC), and the international accountability of combatants.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-10",
     "objectives": [
-      "Deconstruct the maritime zones of UNCLOS: Territorial Sea, Contiguous Zone, EEZ, and High Seas.",
-      "Analyze Article 121 distinguishing between fully entitled islands and uninhabitable rocks.",
-      "Evaluate the landmark 2016 South China Sea Arbitration award by the Permanent Court of Arbitration.",
-      "Assess US Freedom of Navigation Operations (FONOPs) vs Chinese Nine-Dash Line historic rights claims."
+      "Distinguish between Jus ad Bellum (legality of resorting to war) and Jus in Bello (rules governing conduct during war).",
+      "Apply the core cardinal principles: Distinction, Proportionality, Military Necessity, and Prohibition of Unnecessary Suffering.",
+      "Categorize International Armed Conflicts (IACs) versus Non-International Armed Conflicts (NIACs).",
+      "Evaluate combatant immunity and prisoner of war (POW) status under the Third Geneva Convention."
     ],
     "modules": [
       {
-        "title": "The Maritime Zones of UNCLOS 1982",
+        "title": "Module 1: The Cardinal Principles of the Geneva Conventions",
         "lessons": [
           {
-            "id": "unclos-l1",
-            "title": "Territorial Seas vs Exclusive Economic Zones",
-            "body": "### The Constitution for the Oceans\n\nConcluded in 1982 after nine years of negotiation, the **United Nations Convention on the Law of the Sea (UNCLOS)** divides ocean space into precise legal zones measured from a coastal state's baselines:\n\n1. **Internal Waters**: Harbors and bays behind the baseline; sovereign state territory with no right of innocent passage for foreign vessels.\n2. **Territorial Sea (0 - 12 Nautical Miles)**: Full state sovereignty over water, airspace, and seabed, subject only to the **Right of Innocent Passage** for foreign ships (passage that is not prejudicial to peace, good order, or security of the coastal state).\n3. **Exclusive Economic Zone / EEZ (12 - 200 Nautical Miles)**: The coastal state does **not** have full territorial sovereignty. Instead, it possesses **Sovereign Rights** to explore, exploit, conserve, and manage all natural resources (fisheries, oil, gas) in the waters and seabed. Foreign states retain high seas freedoms of navigation and overflight.\n4. **The High Seas (Beyond 200 NM)**: Res communis\u2014the common heritage of mankind; open to all nations, with no state capable of subjecting any part to sovereignty.",
+            "id": "law-ihl-l1",
+            "title": "Distinction, Proportionality, and Military Necessity",
+            "body": "### The Strict Independence of Jus in Bello\n\nA foundational axiom of modern international humanitarian law (IHL) is the complete separation between **Jus ad Bellum** (the legality of entering armed conflict under Article 2(4) and 51 of the UN Charter) and **Jus in Bello** (the rules regulating how warfare is conducted, codified primarily in the Hague Regulations and the four Geneva Conventions of 1949).\n\nRegardless of which side unlawfully initiated the conflict, both the aggressor and the defending state are bound identically by the laws of armed conflict.\n\n#### The Three Core Pillars of IHL\n1. **The Principle of Distinction (Article 48, Additional Protocol I):** Belligerents must at all times distinguish between the civilian population and combatants, and between civilian objects and military objectives. Attacks may only be directed against military objectives. Direct targeting of civilians is a grave breach and a war crime.\n2. **The Principle of Proportionality (Article 51(5)(b), Additional Protocol I):** An attack against an otherwise legitimate military target is strictly unlawful if it is expected to cause incidental loss of civilian life, injury to civilians, or damage to civilian objects that would be *excessive in relation to the concrete and direct military advantage anticipated*.\n3. **Military Necessity:** Belligerents may only apply the amount and kind of force necessary to achieve the legitimate military defeat of the enemy in the shortest time with the least expenditure of life and resources. It never justifies violations of positive peremptory IHL prohibitions.",
             "readings": [
               {
-                "label": "United Nations Convention on the Law of the Sea (UNCLOS) (1982)",
+                "label": "ICRC, The Geneva Conventions of 12 August 1949 Overview",
+                "url": "https://www.icrc.org/en/war-and-law/treaties-customary-law/geneva-conventions"
+              },
+              {
+                "label": "Protocol Additional to the Geneva Conventions (Protocol I, 1977)",
+                "url": "https://ihl-databases.icrc.org/en/ihl-treaties/api-1977"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "Under the principle of proportionality in IHL, when is an attack on a legitimate military objective deemed unlawful?",
+                "options": [
+                  "Whenever any civilian casualty occurs, regardless of numbers.",
+                  "When the expected incidental civilian harm is excessive in relation to the concrete and direct military advantage anticipated.",
+                  "Only when high-ranking political officials are affected.",
+                  "Never; legitimate military targets may be struck with unlimited force."
+                ],
+                "answer": 1,
+                "why": "IHL does not ban all incidental civilian casualties, but it makes an attack criminal if the expected civilian harm is excessive in relation to the anticipated direct military gain."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law-ocean-governance",
+    "title": "The Law of the Sea & Global Maritime Governance (UNCLOS)",
+    "category": "Law",
+    "subcategory": "International law",
+    "level": "Pre-university",
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Law, The Paper Crane Academy",
+    "description": "An exhaustive examination of the 'Constitution for the Oceans': the United Nations Convention on the Law of the Sea (UNCLOS 1982). Students explore the delineation of maritime zones, baseline calculations, innocent passage through territorial seas, resource exploitation in the Exclusive Economic Zone (EEZ), the continental shelf, and maritime dispute arbitrations.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Calculate baselines and delineate the five major maritime zones under UNCLOS.",
+      "Distinguish between sovereign territorial waters, the Exclusive Economic Zone, and the High Seas.",
+      "Analyze navigation rights: Innocent passage vs transit passage through international straits.",
+      "Evaluate landmark international maritime arbitrations (e.g., South China Sea Arbitration 2016)."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Maritime Zonation and Sovereign Rights",
+        "lessons": [
+          {
+            "id": "law-los-l1",
+            "title": "From Territorial Seas to the High Seas: The Five Zones of UNCLOS",
+            "body": "### The Spatial Architecture of the Oceans\n\nSigned in Montego Bay in 1982 after decades of negotiations, UNCLOS settled centuries of conflict between the doctrine of *Mare Liberum* (freedom of the seas, championed by Hugo Grotius) and *Mare Clausum* (enclosed sovereign sea claims).\n\nUNCLOS establishes a sliding scale of sovereign control, measured in nautical miles (NM) from the coastal baseline (typically the low-water mark along the coast):\n\n```\nLand \u2190 Baseline \u2192 12 NM [Territorial Sea] \u2192 24 NM [Contiguous Zone] \u2192 200 NM [EEZ] \u2192 [High Seas]\nFull Sovereignty       Innocent Passage       Customs/Fiscal Checks    Resource Rights  Global Commons\n```\n\n1. **Internal Waters:** Landward of the baseline (ports, rivers, bays). The coastal state exercises absolute, unconditional territorial sovereignty; foreign vessels have no automatic right of entry.\n2. **Territorial Sea (Up to 12 NM):** Full state sovereignty extends to the waters, seabed, subsoil, and airspace. However, foreign vessels enjoy the universal right of **innocent passage**\u2014passage that is continuous, expeditious, and not prejudicial to the peace, good order, or security of the coastal state.\n3. **Contiguous Zone (Up to 24 NM):** Coastal states may exercise limited control necessary to prevent and punish infringement of its customs, fiscal, immigration, or sanitary laws committed within its territory or territorial sea.\n4. **Exclusive Economic Zone (EEZ, Up to 200 NM):** The coastal state does not own the water column as sovereign territory, but possesses exclusive **sovereign rights for exploring and exploiting, conserving and managing natural resources** (fisheries, oil, gas, offshore wind) in the waters, seabed, and subsoil. Foreign states retain complete freedoms of navigation and overflight.\n5. **The High Seas (Beyond 200 NM):** Open to all nations; no state may validly purport to subject any part of them to its sovereignty (*res communis* / common heritage of mankind).",
+            "readings": [
+              {
+                "label": "United Nations Convention on the Law of the Sea (UNCLOS, 1982)",
                 "url": "https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf"
-              }
-            ],
-            "quiz": [
+              },
               {
-                "q": "What sovereign rights does a coastal state possess in its 200-nautical-mile Exclusive Economic Zone (EEZ)?",
-                "options": [
-                  "Sovereign rights over natural resources (fishing, oil, minerals), while other nations retain freedom of navigation.",
-                  "Complete absolute territorial ownership forbidding all foreign ships from sailing through.",
-                  "The right to charge transit tolls to commercial airplanes.",
-                  "Ownership of all foreign ships passing through."
-                ],
-                "answer": 0,
-                "why": "In an EEZ, coastal states control economic resources, but foreign vessels preserve high-seas navigation and overflight liberties."
-              }
-            ]
-          },
-          {
-            "id": "unclos-l2",
-            "title": "The 2016 South China Sea Arbitration (Philippines v. China)",
-            "body": "### The Nine-Dash Line Standoff\n\nThe South China Sea handles over $3 trillion in annual global trade and contains rich fisheries and subsea hydrocarbon deposits. The People's Republic of China claimed historical sovereignty over approximately 90% of the sea, demarcated on maps by an expansive **Nine-Dash Line**.\n\nBeginning in 2013, China engaged in massive artificial island-building dredging campaigns on submerged reefs in the Spratly Islands (Mischief Reef, Subi Reef, Fiery Cross Reef), constructing military airstrips and radar domes.\n\n#### The Philippines Invokes Compulsory Arbitration\nIn 2013, the Philippines initiated arbitral proceedings under UNCLOS Annex VII before the **Permanent Court of Arbitration (PCA)** in The Hague. China refused to participate, arguing the PCA lacked jurisdiction.\n\nIn a unanimous, landmark award on July 12, 2016, the Tribunal issued a sweeping legal ruling:\n1. **Invalidity of the Nine-Dash Line**: The Tribunal ruled that China's historic rights claim to resources within the Nine-Dash Line was extinguished to the extent it was incompatible with UNCLOS. UNCLOS supercedes prior historic claims.\n2. **Islands vs Rocks (Article 121)**: Article 121(3) states that *\"Rocks which cannot sustain human habitation or economic life of their own shall have no exclusive economic zone or continental shelf.\"* The Tribunal held that **none** of the Spratly features are legal islands capable of generating a 200 NM EEZ; they are at most rocks (generating only 12 NM territorial sea) or low-tide elevations generating zero maritime zones.\n3. **Artificial Islands**: Building artificial structures on submerged reefs does not convert low-tide elevations into islands under international law. China had unlawfully infringed the Philippines' sovereign rights in its EEZ.",
-            "readings": [
-              {
-                "label": "The South China Sea Arbitration (The Republic of Philippines v. The People's Republic of China), Award (PCA 2016)",
+                "label": "Permanent Court of Arbitration, South China Sea Award (2016)",
                 "url": "https://pca-cpa.org/en/cases/7/"
               }
             ],
             "quiz": [
               {
-                "q": "What did the Permanent Court of Arbitration rule regarding China's 'Nine-Dash Line' in the 2016 arbitration?",
+                "q": "What rights does a coastal state exercise within its 200-nautical-mile Exclusive Economic Zone (EEZ)?",
                 "options": [
-                  "The historic rights claim was extinguished to the extent it exceeded the maritime zones permitted under UNCLOS.",
-                  "The Nine-Dash Line was declared the permanent international border of Asia.",
-                  "The Philippines was ordered to pay $10 billion in restitution to China.",
-                  "The court declared all oceans to be Chinese territorial waters."
+                  "Complete territorial sovereignty including the right to prohibit foreign merchant ships from navigating.",
+                  "Sovereign rights over natural resources (fishing, seabed minerals, energy), while other states retain freedom of navigation and overflight.",
+                  "No special rights beyond those of any other nation on the high seas.",
+                  "The power to annex foreign vessels without legal justification."
                 ],
-                "answer": 0,
-                "why": "The Tribunal held that when China ratified UNCLOS, it accepted that convention's comprehensive maritime boundaries, superseding prior vague historic claims."
+                "answer": 1,
+                "why": "The EEZ is a sui generis regime: the coastal state controls economic resources, but foreign vessels retain freedom of navigation and overflight."
               }
             ]
           }
@@ -857,77 +444,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-weimar",
-    "title": "How Democracies Die: Weimar Germany, Hungary, and Constitutional Coups",
-    "category": "Politics",
-    "subcategory": "Comparative Politics",
+    "id": "law-environmental",
+    "title": "International Environmental Law & Climate Litigation",
+    "category": "Law",
+    "subcategory": "Environmental law",
     "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "How free societies collapse from within: the death of the Weimar Republic under Article 48, Adolf Hitler's legal Enabling Act of 1933, Viktor Orb\u00e1n's illiberal state, and modern democratic resilience.",
-    "passMark": 70,
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Law, The Paper Crane Academy",
+    "description": "An in-depth study of the rapid evolution of international environmental law from transboundary pollution treaties to modern climate litigation. Students examine landmark principles including the precautionary principle, polluter pays, and common but differentiated responsibilities (CBDR), alongside domestic and international court battles holding governments and corporations accountable for greenhouse gas emissions.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-14",
     "objectives": [
-      "Deconstruct the structural design flaws of the Weimar Constitution (Article 48 emergency powers).",
-      "Analyze the Reichstag Fire Decree and the Enabling Act of 1933 as a model of the 'legal' constitutional coup.",
-      "Compare historical fascism with 21st-century competitive authoritarianism in Hungary and Turkey.",
-      "Formulate institutional guardrails and civil society strategies to protect democratic norms."
+      "Analyze the foundational Trail Smelter arbitration and the 'no-harm' principle in customary environmental law.",
+      "Deconstruct the treaty architecture from the 1992 Rio Declaration to the 2015 Paris Agreement.",
+      "Evaluate the application of the Precautionary Principle and the Polluter Pays Principle.",
+      "Critique ground-breaking strategic climate lawsuits (e.g., Urgenda, Neubauer, Shell)."
     ],
     "modules": [
       {
-        "title": "The Collapse of Weimar and the Enabling Act",
+        "title": "Module 1: Principles of Transboundary Environmental Responsibility",
         "lessons": [
           {
-            "id": "weimar-l1",
-            "title": "The Suicide of a Constitution: Weimar's Article 48",
-            "body": "### The Tragedy of the Weimar Republic\n\nDrafted in 1919 by progressive jurists like Hugo Preuss, the Weimar Constitution was heralded as the most democratic charter in Europe: universal suffrage, proportional representation, direct presidential elections, and a generous bill of social rights. Yet fourteen years later, it collapsed into the most monstrous totalitarian dictatorship in human history.\n\nThe fatal structural vulnerability lay in **Article 48 (Notverordnung)**:\n> *\"If public security and order are seriously disturbed or endangered within the German Reich, the President of the Reich may take all necessary measures to restore public security and order, with the assistance of the armed forces if necessary.\"*\n\nArticle 48 also empowered the President to temporarily suspend core fundamental rights, including personal liberty, freedom of expression, freedom of assembly, and the privacy of postal communications.\n\n#### Governance by Emergency Decree\n\nFollowing the Great Depression of 1929, the German Reichstag fractured into irreconcilable extremist camps (Nazis on the far-right, Communists on the far-left). Incapable of sustaining a parliamentary coalition, Chancellor Heinrich Br\u00fcning and President Paul von Hindenburg bypassed parliament entirely, ruling through Article 48 emergency decrees.\n\nBy 1932, the Reichstag had become a legislative ghost town; democracy was already dead in practice long before Hitler assumed power. The lesson of Weimar is clear: **when emergency rule becomes ordinary administration, constitutional democracy ceases to exist.**",
+            "id": "law-env-l1",
+            "title": "The No-Harm Rule, Precaution, and the Paris Agreement Architecture",
+            "body": "### The Evolution from Nuisance to Global Commons\n\nInternational environmental law originated with the seminal **Trail Smelter arbitration** (US v. Canada, 1938/1941), where sulfur dioxide fumes from a Canadian smelter damaged crops in Washington State. The arbitral tribunal formulated the bedrock **no-harm rule**:\n\n> *\"No state has the right to use or permit the use of its territory in such a manner as to cause injury by fumes in or to the territory of another or the properties or persons therein.\"*\n\n#### Core Normative Principles (Rio 1992)\n1. **The Precautionary Principle (Principle 15):** Where there are threats of serious or irreversible damage, lack of full scientific certainty shall not be used as a reason for postponing cost-effective measures to prevent environmental degradation.\n2. **Common But Differentiated Responsibilities and Respective Capabilities (CBDR-RC):** Recognizes that while all states share a common duty to protect the planetary biosphere, developed states bear a historical responsibility for cumulative greenhouse gas emissions and possess greater financial/technological capacity to remediate harm.\n3. **The Polluter Pays Principle:** The polluter should, in principle, bear the costs of pollution, ensuring that ecological externalities are internalised into industrial costs.\n\n#### The Strategic Litigation Revolution\nFrustrated by slow multilateral negotiations, non-governmental organizations and youth plaintiffs have launched pioneering rights-based climate litigation:\n- **Urgenda Foundation v. State of the Netherlands (2019):** The Dutch Supreme Court held that the government's failure to reduce emissions by at least 25% by 2020 violated Articles 2 (Right to Life) and 8 (Right to Private and Family Life) of the European Convention on Human Rights.\n- **Neubauer v. Germany (Federal Constitutional Court, 2021):** Struck down parts of Germany's Climate Protection Act because delaying major emission reductions past 2030 offloaded an unconstitutional burden of fundamental freedom restrictions onto the shoulders of future youth generations.",
             "readings": [
               {
-                "label": "Richard J. Evans, The Coming of the Third Reich (2003)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Trail Smelter Arbitration (US v. Canada), 1938/1941",
+                "url": "https://legal.un.org/riaa/cases/vol_III/1905-1982.pdf"
               },
               {
-                "label": "Karl Dietrich Bracher, The German Dictatorship (1970)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Urgenda Foundation v. The State of the Netherlands (2019 Judgment)",
+                "url": "https://www.urgenda.nl/en/climate-case/"
+              },
+              {
+                "label": "UNFCCC, The Paris Agreement (2015)",
+                "url": "https://unfccc.int/process-and-meetings/the-paris-agreement"
               }
             ],
             "quiz": [
               {
-                "q": "What fatal structural defect did Article 48 introduce into the Weimar constitutional order?",
+                "q": "What was the landmark legal precedent established by the Dutch Supreme Court in Urgenda v. State of the Netherlands?",
                 "options": [
-                  "It allowed the President to govern by unilateral decree and suspend civil liberties without parliamentary consent.",
-                  "It banned all political parties except the monarchists.",
-                  "It mandated that the military budget be controlled by the French government.",
-                  "It eliminated all supreme court judicial reviews."
+                  "States have no legal duty under human rights treaties to combat global warming.",
+                  "A sovereign state owes a legally binding duty of care under human rights law (Articles 2 and 8 ECHR) to take adequate preventive measures against dangerous climate change.",
+                  "Only international arbitral tribunals possess jurisdiction over carbon emissions.",
+                  "Carbon taxes are unconstitutional under European Union single-market rules."
                 ],
-                "answer": 0,
-                "why": "Article 48 provided a legal off-ramp from democracy, allowing conservative elites to normalize emergency rule and bypass the elected assembly."
-              }
-            ]
-          },
-          {
-            "id": "weimar-l2",
-            "title": "The Reichstag Fire and the Enabling Act of 1933",
-            "body": "### The Anatomy of a Constitutional Coup\n\nOn January 30, 1933, President Hindenburg appointed Adolf Hitler Chancellor of a coalition cabinet. Hitler did not seize power through an armed march on Berlin. Instead, he executed a meticulously legalistic constitutional coup over the course of fifty-three days.\n\n#### Step 1: The Reichstag Fire Decree (February 28, 1933)\nOn the night of February 27, the Reichstag building was consumed by arson. Claiming the fire was the signal for a communist revolution, Hitler persuaded Hindenburg to invoke Article 48, signing the **Reichstag Fire Decree** (*Verordnung zum Schutz von Volk und Staat*). It permanently suspended all constitutional civil liberties, legalized indefinite detention without trial, and authorized the federal government to take over state governments.\n\n#### Step 2: The Enabling Act (March 23, 1933)\nWith thousands of communist and social democratic deputies jailed, assaulted, or driven underground, Hitler presented the **Enabling Act** (*Erm\u00e4chtigungsgesetz*) to the Reichstag meeting at the Kroll Opera House:\n- Formally titled: *Law to Remedy the Distress of the People and the Reich*.\n- It granted the Cabinet (Hitler) the authority to enact laws **without the consent of the Reichstag**, even if those laws deviated from the Weimar Constitution.\n\nUnder intense intimidation by armed SA and SS stormtroopers lining the aisles, the Catholic Centre Party capitulated, voting with the Nazis to achieve the required two-thirds constitutional amendment majority. Only Otto Wels and the Social Democrats (SPD) voted against.\n\nWith a two-thirds parliamentary vote, the Weimar Republic legally voted itself out of existence, demonstrating that **a constitution cannot save a society that lacks the political will to defend it.**",
-            "readings": [
-              {
-                "label": "Ian Kershaw, Hitler: 1889-1936 Hubris (1998)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How did the Enabling Act of 1933 formally dismantle German constitutional democracy?",
-                "options": [
-                  "It transferred full plenary legislative power to Hitler's cabinet, allowing decrees to bypass the Reichstag and violate the constitution.",
-                  "It merged Germany with the Austrian Empire by naval treaty.",
-                  "It required all members of parliament to swear personal loyalty to the British Crown.",
-                  "It disbanded the police department."
-                ],
-                "answer": 0,
-                "why": "The Enabling Act was a suicide pact: the Reichstag voted away its own constitutional function, concentrating total lawmaking power in the Chancellor."
+                "answer": 1,
+                "why": "The Dutch Supreme Court confirmed that the positive obligations under Articles 2 and 8 of the ECHR require the state to protect citizens from the real and imminent threat of dangerous climate change."
               }
             ]
           }
@@ -936,81 +501,51 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-propaganda",
-    "title": "The Psychology of Propaganda: From Edward Bernays to Cambridge Analytica",
-    "category": "Politics",
-    "subcategory": "Media & Democracy",
+    "id": "law-contract-civil",
+    "title": "Contract Law & The Architecture of Civil Obligations",
+    "category": "Law",
+    "subcategory": "Legal systems and jurisprudence",
     "level": "Pre-university",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "How mass consciousness is manufactured: Sigmund Freud's nephew Edward Bernays and public relations, Walter Lippmann's manufactured consent, Goebbels' principles, and the algorithmic psychometrics of Cambridge Analytica.",
-    "passMark": 70,
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Law, The Paper Crane Academy",
+    "description": "An analytical study of how legal systems enforce voluntary promises. This course investigates the core elements of contract formation (offer, acceptance, consideration, intention to create legal relations), vitiating factors that unravel agreements (misrepresentation, duress, undue influence, mistake), and the principles governing breach, damages, and specific performance.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-17",
     "objectives": [
-      "Analyze Edward Bernays' application of psychoanalysis to commercial and political manipulation.",
-      "Deconstruct Walter Lippmann's concept of 'Manufacturing Consent' and the democratic public.",
-      "Examine the OCEAN psychometric profiling used by Cambridge Analytica in the 2016 Brexit and US elections.",
-      "Evaluate algorithmic filter bubbles, synthetic disinformation, and deepfakes."
+      "Differentiate between valid offers and invitations to treat in commercial transactions.",
+      "Apply the common law doctrine of consideration and promissory estoppel.",
+      "Analyze vitiating factors: Fraudulent misrepresentation, economic duress, and mutual mistake.",
+      "Calculate contractual expectation damages and explain the limits of remoteness (Hadley v Baxendale)."
     ],
     "modules": [
       {
-        "title": "The Invention of Public Relations and Manufactured Consent",
+        "title": "Module 1: Formation and the Doctrine of Consideration",
         "lessons": [
           {
-            "id": "propaganda-l1",
-            "title": "Edward Bernays and the Torches of Freedom",
-            "body": "### Engineering Human Desires\n\nIn 1928, Edward Bernays\u2014the nephew of psychoanalyst Sigmund Freud\u2014published his explosive manifesto **Propaganda**. Bernays opened with brutal candor:\n> *\"The conscious and intelligent manipulation of the organized habits and opinions of the masses is an important element in democratic society. Those who manipulate this unseen mechanism of society constitute an invisible government which is the true ruling power of our country.\"*\n\nBernays recognized that humans are not primarily rational creatures governed by logic and empirical evidence. We are driven by subconscious, irrational instincts: sexual desire, fear, vanity, and the desperate yearning for social belonging.\n\n#### The 'Torches of Freedom' Campaign (1929)\nHired by the American Tobacco Company to break the social taboo against women smoking in public, Bernays did not advertise the taste or quality of cigarettes. Instead, he consulted psychoanalyst A.A. Brill, who explained that cigarettes symbolized male power and phallic independence.\n\nDuring the 1929 Easter Sunday Parade in New York City, Bernays hired glamorous debutantes to march down Fifth Avenue, discreetly lighting Lucky Strike cigarettes before waiting press photographers. Bernays leaked to newspapers that suffragette activists were lighting **'Torches of Freedom'** in protest against male dominance. The story went viral worldwide; smoking became a symbol of female liberation, and cigarette sales to women skyrocketed. Bernays proved that **to control behavior, you must link products and political ideas to deep, unconscious emotional identities.**",
+            "id": "law-con-l1",
+            "title": "Offer, Acceptance, and the Exchange of Consideration",
+            "body": "### The Legal Enforceability of Promises\n\nIn private law, a contract is a legally enforceable agreement that generates mutual rights and obligations (*vinculum juris*). \n\n#### 1. Offer vs Invitation to Treat\nAn offer is an expression of willingness to contract on specified terms, made with the intention that it shall become binding as soon as it is accepted. It must be distinguished from an **invitation to treat** (*invitatio ad offerendum*)\u2014an invitation for the other party to make an offer. \n- Displays of goods on shop shelves or in shop windows are merely invitations to treat (*Pharmaceutical Society of Great Britain v Boots Chemists*, 1953).\n- Advertisements are generally invitations to treat, unless they make a clear unilateral promise intended to be legally binding upon performance (*Carlill v Carbolic Smoke Ball Co*, 1893).\n\n#### 2. The Doctrine of Consideration\nThe distinctive feature of common law contracts (unlike civil law systems based on French *cause* or German *Rechtsgesch\u00e4ft*) is **consideration**: something of value in the eye of the law given in exchange for a promise (*quid pro quo*).\n- Consideration must be *sufficient* (have economic value), but need not be *adequate* (courts will not inquire whether you made a foolish bargain; a peppercorn is good consideration).\n- **Past consideration is no consideration:** An act performed before a promise is made cannot serve as legal consideration for that subsequent promise (*Roscorla v Thomas*, 1842).\n- **Promissory Estoppel:** Where a party makes a clear promise not to enforce strict legal rights, intending the other party to rely on it, equity prevents the promisor from reneging on that promise where it would be inequitable (*Central London Property Trust v High Trees House*, 1947).",
             "readings": [
               {
-                "label": "Edward Bernays, Propaganda (1928)",
-                "url": "https://www.gutenberg.org"
+                "label": "Carlill v Carbolic Smoke Ball Co [1893] 1 QB 256",
+                "url": "https://www.bailii.org/ew/cases/EWCA/Civ/1892/1.html"
               },
               {
-                "label": "Walter Lippmann, Public Opinion (1922)",
-                "url": "https://www.gutenberg.org"
+                "label": "Cornell LII, Contract Law Overview",
+                "url": "https://www.law.cornell.edu/wex/contract"
               }
             ],
             "quiz": [
               {
-                "q": "What was Edward Bernays' core insight regarding mass psychological manipulation?",
+                "q": "Why was the advertisement in Carlill v Carbolic Smoke Ball Co held to be a binding contract rather than a mere sales puff?",
                 "options": [
-                  "People are guided by subconscious emotional desires and social identities rather than rational intellectual arguments.",
-                  "People will only buy products advertised in mathematical journals.",
-                  "All propaganda must be spoken by military commanders.",
-                  "Newspapers are ineffective at changing public opinion."
+                  "Because it was published in a major newspaper.",
+                  "Because the company explicitly stated it had deposited \u00a31,000 in the Alliance Bank to demonstrate its sincerity, creating a unilateral offer to anyone who performed the conditions.",
+                  "Because Mrs. Carlill had signed a physical deed prior to using the product.",
+                  "Because all commercial advertisements are automatically enforceable warranties."
                 ],
-                "answer": 0,
-                "why": "Bernays leveraged his uncle Freud's theories, realizing that linking policies or products to unconscious emotional drives bypasses rational resistance."
-              }
-            ]
-          },
-          {
-            "id": "propaganda-l2",
-            "title": "Cambridge Analytica: Microtargeting and Weaponized Data",
-            "body": "### The Data Gold Rush\n\nIn the 2016 US Presidential Election and the UK Brexit referendum, the military defense contractor SCL Group and its political arm, **Cambridge Analytica**, revolutionized modern political warfare by fusing big data with behavioral psychology.\n\n#### The OCEAN Psychometric Model\nWorking with Cambridge University psychologist Aleksandr Kogan, Cambridge Analytica harvested the personal data and Facebook friends networks of over 87 million users through a personality quiz app (*thisisyourdigitallife*).\n\nThey scored millions of voters across the **OCEAN** personality dimensions:\n- **O**: Openness to experience\n- **C**: Conscientiousness\n- **E**: Extraversion\n- **A**: Agreeableness\n- **N**: Neuroticism\n\n#### Algorithmic Microtargeting\nInstead of broadcasting generic campaign advertisements, Cambridge Analytica served individualized, psychologically tailored ads designed to manipulate specific emotional triggers:\n- High-Neuroticism voters were served dark, apocalyptic imagery of violent migrant crime to trigger primal fear.\n- Low-Agreeableness, high-Conscientiousness voters were served detailed constitutional arguments and economic statistics.\n- Key demographic targets were served negative attack ads designed to suppress their turnout on election day.\n\nThe scandal exposed that social media platforms are not mere bulletin boards; they are **behavioral modification machines** capable of steering democratic outcomes through surveillance capitalism.",
-            "readings": [
-              {
-                "label": "Christopher Wylie, Mindf*ck: Cambridge Analytica and the Plot to Break America (2019)",
-                "url": "https://www.penguinrandomhouse.com"
-              },
-              {
-                "label": "Shoshana Zuboff, The Age of Surveillance Capitalism (2019)",
-                "url": "https://www.publicaffairsbooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How did Cambridge Analytica use the OCEAN psychometric model in election campaigns?",
-                "options": [
-                  "By tailoring psychological political ads to individual personality vulnerabilities to trigger fear, anger, or voter apathy.",
-                  "By hacking into electronic voting machines and changing vote counts directly.",
-                  "By mailing printed paper flyers to random telephone directory listings.",
-                  "By producing Hollywood documentary films."
-                ],
-                "answer": 0,
-                "why": "Cambridge Analytica weaponized personal psychological profiles, serving micro-targeted messaging that manipulated individual emotional triggers."
+                "answer": 1,
+                "why": "The deposit of \u00a31,000 in the bank proved objective legal intent to be bound, converting the advertisement into an enforceable unilateral offer accepted by performance."
               }
             ]
           }
@@ -1019,163 +554,51 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-rawls",
-    "title": "The Duel of Justice: John Rawls vs Robert Nozick",
-    "category": "Politics",
-    "subcategory": "Political Philosophy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "The defining philosophical clash of modern political thought: John Rawls' Veil of Ignorance and the Difference Principle vs Robert Nozick's libertarian entitlement theory and self-ownership.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-21",
-    "objectives": [
-      "Deconstruct John Rawls' thought experiment: The Original Position and the Veil of Ignorance.",
-      "Analyze the Two Principles of Justice: Equal Liberty and the Difference Principle (Maximin).",
-      "Evaluate Robert Nozick's libertarian critique in Anarchy, State, and Utopia.",
-      "Critique Nozick's Wilt Chamberlain argument against patterned theories of distributive justice."
-    ],
-    "modules": [
-      {
-        "title": "Rawls' Theory of Justice and the Veil of Ignorance",
-        "lessons": [
-          {
-            "id": "rawls-l1",
-            "title": "The Original Position and the Veil of Ignorance",
-            "body": "### Rebuilding Political Philosophy\n\nPublished in 1971, John Rawls' *A Theory of Justice* rescued Anglo-American political philosophy from utilitarianism. Utilitarianism (Bentham and Mill) calculates justice as the maximization of total aggregate happiness (*the greatest good for the greatest number*). Rawls identified the fatal flaw of utilitarianism: **it fails to take seriously the distinction between persons**, permitting the oppression or sacrifice of an innocent minority if doing so increases overall collective utility.\n\n#### The Thought Experiment: The Original Position\nRawls proposes a thought experiment: imagine a constitutional convention where free and equal persons gather to design the fundamental social contract. \n\nTo ensure absolute impartiality, parties are placed behind a **Veil of Ignorance**. Behind this veil, you do not know:\n- Your race, ethnicity, or gender.\n- Your wealth, social class, or family background.\n- Your natural talents, intelligence, or physical abilities.\n- Your religious beliefs or conception of the good life.\n\n#### The Two Principles of Justice\nRawls argues that rational, self-interested agents operating under risk aversion behind the veil would choose a **Maximin Strategy** (maximizing the minimum position, designing society as if your worst enemy were deciding your place in it). They would agree on two lexicographically ordered principles:\n\n1. **The Equal Liberty Principle**: Each person has an equal right to the most extensive scheme of equal basic liberties (speech, vote, conscience) compatible with a similar scheme for all.\n2. **The Social and Economic Principle**: Inequalities are permissible only if they satisfy two conditions:\n   - *Fair Equality of Opportunity*: Offices and positions must be open to all under conditions of fair opportunity.\n   - *The Difference Principle*: Inequalities must be to the **greatest benefit of the least advantaged** members of society.",
-            "readings": [
-              {
-                "label": "John Rawls, A Theory of Justice (1971)",
-                "url": "https://www.hup.harvard.edu"
-              },
-              {
-                "label": "Michael Sandel, Justice: What's the Right Thing to Do? (2009)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the primary function of the 'Veil of Ignorance' in Rawls' philosophy?",
-                "options": [
-                  "To eliminate bias by preventing parties from knowing their personal wealth, race, gender, and talents when choosing rules of justice.",
-                  "To keep government legislative deliberations completely secret from the press.",
-                  "To enforce compulsory religious modesty laws.",
-                  "To blindfold judges during courtroom cross-examinations."
-                ],
-                "answer": 0,
-                "why": "The Veil of Ignorance strips away morally arbitrary advantages, ensuring that participants choose principles that are fair to all positions."
-              },
-              {
-                "q": "What does Rawls' 'Difference Principle' mandate regarding economic inequality?",
-                "options": [
-                  "Economic inequalities are justified only if they work to the greatest benefit of the least advantaged members of society.",
-                  "All wealth must be distributed with absolute, mathematical mathematical equality.",
-                  "The state must confiscate 100% of inheritance.",
-                  "Inequality is natural and the state should never intervene in markets."
-                ],
-                "answer": 0,
-                "why": "The Difference Principle permits inequality (such as incentives for surgeons or engineers) only if that inequality improves the position of the worst-off."
-              }
-            ]
-          },
-          {
-            "id": "rawls-l2",
-            "title": "Nozick's Counterattack: Self-Ownership and Wilt Chamberlain",
-            "body": "### Anarchy, State, and Utopia\n\nIn 1974, Harvard philosopher Robert Nozick published the libertarian manifesto *Anarchy, State, and Utopia*. Nozick opened with an uncompromising Kantian axiom:\n> *\"Individuals have rights, and there are things no person or group may do to them (without violating their rights). So strong and far-reaching are these rights that they raise the question of what, if anything, the state and its officials may do.\"*\n\nNozick defended the **Minimal State** (the 'night-watchman state') limited strictly to protecting against force, theft, fraud, and breach of contracts. Any state redistribution of wealth beyond this is morally equivalent to **forced labor**.\n\n#### The Wilt Chamberlain Argument\nNozick attacked all 'patterned' or 'end-state' theories of distributive justice (like Rawls' Difference Principle or socialist equality):\n\n1. Imagine society begins in your preferred just distribution ($D_1$), whether egalitarian or Rawlsian.\n2. Legendary basketball star Wilt Chamberlain signs a contract: for every home game, twenty-five cents from each ticket goes directly to him.\n3. During the season, one million fans happily drop a quarter into a special box to watch him play.\n4. Society is now in distribution $D_2$: Chamberlain has $250,000, and everyone else has slightly less.\n\nNozick asks: **Is $D_2$ unjust?** \nEvery transaction was completely voluntary between consenting adults acting with their own rightfully acquired resources. To restore the original distribution $D_1$, the state would have to continuously and violently intrude into people's lives, forcibly seizing Chamberlain's money and forbidding voluntary trade.\n\nNozick concluded: **Liberty upsets patterns.** You cannot maintain a patterned theory of justice without constant tyrannical interference in individual freedom.",
-            "readings": [
-              {
-                "label": "Robert Nozick, Anarchy, State, and Utopia (1974)",
-                "url": "https://www.basicbooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the core conclusion of Robert Nozick's Wilt Chamberlain thought experiment?",
-                "options": [
-                  "Voluntary exchanges between consenting individuals will inevitably disrupt any patterned distribution of wealth, meaning redistribution violates liberty.",
-                  "Athletes are overpaid and should be taxed at 90%.",
-                  "Basketball tickets should be distributed free by the government.",
-                  "Contracts without government seals are legally void."
-                ],
-                "answer": 0,
-                "why": "Nozick demonstrated that maintaining any predetermined pattern of wealth equality requires continuous, coercive state interference in voluntary human transactions."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pol-machiavelli",
-    "title": "Machiavelli's Masterclass: Power, Treachery, and The Prince",
-    "category": "Politics",
-    "subcategory": "Political Philosophy",
+    "id": "law-tort-liability",
+    "title": "Tort Law: Negligence, Strict Liability & Civil Wrongs",
+    "category": "Law",
+    "subcategory": "Legal systems and jurisprudence",
     "level": "Pre-university",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "The shocking realism of Niccol\u00f2 Machiavelli: Virt\u00f9 vs Fortuna, Cesare Borgia's ruthless statecraft, why it is safer to be feared than loved, and the amoral mechanics of state survival.",
-    "passMark": 70,
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Law, The Paper Crane Academy",
+    "description": "An inquiry into the law of private civil wrongs. Students study the four elements of actionable negligence (duty of care, breach, causation, and remoteness), the neighbor principle formulated in Donoghue v Stevenson, vicarious liability, product liability, and the economic policy functions of tort law in allocating accidental losses.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-08-26",
     "objectives": [
-      "Deconstruct Machiavelli's break from Christian teleology and classical virtue ethics.",
-      "Analyze the interplay of Virt\u00f9 (skill, audacity) and Fortuna (chance, circumstance).",
-      "Examine historical case studies in The Prince: Cesare Borgia and Agathocles the Sicilian.",
-      "Compare The Prince with Machiavelli's republican treatise, Discourses on Livy."
+      "Deconstruct the four pillars of negligence: Duty of Care, Breach, Causation, and Remoteness of Damage.",
+      "Apply the 'Neighbor Principle' from Donoghue v Stevenson and the Caparo tripartite test.",
+      "Analyze the objective standard of the reasonable person and the Learned Hand formula (B < PL).",
+      "Evaluate strict liability doctrines under Rylands v Fletcher and statutory consumer product liability."
     ],
     "modules": [
       {
-        "title": "The Brutal Mechanics of Political Survival",
+        "title": "Module 1: The Modern Tort of Negligence",
         "lessons": [
           {
-            "id": "machi-l1",
-            "title": "Cesare Borgia and the Lesson of Remirro de Orco",
-            "body": "### The Cruel Efficiency of State Consolidation\n\nIn Chapter VII of *The Prince*, Machiavelli examines his ideal model of political leadership: **Cesare Borgia** (Duke Valentino), the ruthless son of Pope Alexander VI who conquered the fractured, anarchic Romagna region in Northern Italy.\n\nWhen Borgia arrived, Romagna was ruled by corrupt petty lords who robbed their subjects and left the province in chaos. To restore absolute public order, Borgia appointed **Remirro de Orco**, a cruel, uncompromising Spanish lieutenant, and granted him dictatorial powers. De Orco swiftly pacified the province through public executions, terror, and relentless discipline.\n\n#### The Masterstroke of Theatrical Justice\nBorgia understood that while de Orco's cruelty had established order, it had also earned the hatred of the populace. Hatred is the supreme danger to a ruler. Borgia needed to demonstrate that the brutality belonged to de Orco alone, not to the Duke.\n\nOne morning in Cesena, the townspeople awoke to find Remirro de Orco's body cut in two on the public piazza, with a block of wood and a bloody knife placed beside him. Machiavelli dryly records the psychological effect:\n> *\"The brutality of this spectacle kept the people of Romagna at once appeased and stupefied.\"*\n\nIn one theatrical stroke, Borgia accomplished three objectives:\n1. He eliminated a dangerous, ambitious subordinate.\n2. He satisfied the people's desire for vengeance.\n3. He terrified every potential dissident by demonstrating the absolute, chilling power of the Duke.",
+            "id": "law-tort-l1",
+            "title": "The Neighbor Principle and the Duty of Care",
+            "body": "### The Genesis of Modern Negligence\n\nUntil the 1930s, English and Commonwealth tort law was fractured into separate categories based on specific privity of contract or recognized relationships.\n\nIn **Donoghue v Stevenson** [1932] AC 562, Mrs. Donoghue drank ginger beer from an opaque bottle manufactured by Stevenson. Unknown to her, a decomposed snail was inside the bottle. She suffered severe gastroenteritis and nervous shock. Because her friend had bought the drink, Donoghue had no contract with either the cafe owner or the manufacturer.\n\n#### Lord Atkin's Neighbor Principle\nLord Atkin formulated a universal moral and legal standard:\n> *\"The rule that you are to love your neighbour becomes in law, you must not injure your neighbour... You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour. Who, then, in law is my neighbour? The answer seems to be\u2014persons who are so closely and directly affected by my act that I ought reasonably to have them in contemplation as being so affected.\"*\n\n#### The Learned Hand Formula of Breach\nOnce a duty of care is established, the plaintiff must prove that the defendant **breached** that duty by falling below the standard of the reasonable person. In *United States v Carroll Towing Co* (1947), Judge Learned Hand expressed this through an algebraic economic formula:\n\n$$\\text{Liability exists if: } B < P \\times L$$\n\nWhere:\n- **$B$ (Burden):** The cost of taking adequate precautions against the risk.\n- **$P$ (Probability):** The likelihood that the harm will occur if precautions are not taken.\n- **$L$ (Loss / Gravity):** The severity of the injury if the risk materializes.\n\nIf the financial or practical burden ($B$) of eliminating the risk is less than the expected harm ($P \\times L$), failure to take the precaution constitutes actionable negligence.",
             "readings": [
               {
-                "label": "Niccol\u00f2 Machiavelli, The Prince (Chs. 7, 8, 17)",
-                "url": "https://www.gutenberg.org"
+                "label": "Donoghue v Stevenson [1932] UKHL 100",
+                "url": "https://www.bailii.org/uk/cases/UKHL/1932/100.html"
+              },
+              {
+                "label": "United States v. Carroll Towing Co., 159 F.2d 169 (2d Cir. 1947)",
+                "url": "https://casetext.com/case/united-states-v-carroll-towing-co"
               }
             ],
             "quiz": [
               {
-                "q": "Why did Cesare Borgia execute his own lieutenant, Remirro de Orco, on the public square in Cesena?",
+                "q": "Under the Learned Hand formula (B < PL), when has a defendant breached their duty of care?",
                 "options": [
-                  "To purge the hatred caused by the harsh pacification of Romagna and project terrifying, supreme authority.",
-                  "Because Remirro had converted to Protestantism.",
-                  "Remirro had lost a major battle against the French army.",
-                  "Remirro had stolen the papal treasury."
+                  "Whenever an accident occurs, regardless of cost.",
+                  "When the burden (B) of taking precautions is less than the probability (P) multiplied by the gravity of the resulting harm (L).",
+                  "Only when the defendant intentionally intended to harm the plaintiff.",
+                  "When the plaintiff was partially responsible for their own misfortune."
                 ],
-                "answer": 0,
-                "why": "Borgia used de Orco to do the brutal work of pacification, then executed him to dissociate himself from the cruelty while terrifying potential rivals."
-              }
-            ]
-          },
-          {
-            "id": "machi-l2",
-            "title": "The Lion and the Fox: Morality and the State",
-            "body": "### Learning How Not to Be Good\n\nIn Chapter XVIII of *The Prince*, Machiavelli dismantles the medieval ideal of the virtuous Christian king:\n> *\"A prince, and especially a new prince, cannot observe all those things for which men are considered good, being often forced, in order to maintain the state, to act against faith, against charity, against humanity, against religion.\"*\n\nA ruler must know how to deploy both the natures of beasts:\n1. **The Lion**: To terrify the wolves with raw, overwhelming military strength.\n2. **The Fox**: To recognize the traps, deceit, and political conspiracies that strength alone cannot foresee.\n\nA prince must not keep his word when doing so operates against his interest and the conditions that led him to make the pledge have vanished. Above all, a ruler must master the art of **Appearing**: to appear merciful, faithful, humane, and religious to the public gaze, while remaining cold, adaptable, and lethal behind the curtain of power.",
-            "readings": [
-              {
-                "label": "Isaiah Berlin, The Question of Machiavelli, The New York Review of Books (1971)",
-                "url": "https://www.nybooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What metaphor does Machiavelli employ in Chapter 18 to describe the dual nature required of a successful ruler?",
-                "options": [
-                  "The Lion (strength against wolves) and the Fox (cunning to recognize traps).",
-                  "The Eagle and the Serpent.",
-                  "The Shepherd and the Sheepdog.",
-                  "The Sun and the Moon."
-                ],
-                "answer": 0,
-                "why": "Machiavelli emphasizes that pure brute force (the lion) is blind to hidden traps, while pure cunning (the fox) cannot defend against armed enemies."
+                "answer": 1,
+                "why": "The Learned Hand formula balances economic efficiency and reasonable care: if a modest precaution could prevent a severe, likely danger, failing to take it is negligent."
               }
             ]
           }
@@ -1184,77 +607,112 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-gerrymander",
-    "title": "Elections & Gerrymandering: The Mathematics of Stolen Majorities",
+    "id": "law-jurisprudence",
+    "title": "Jurisprudence: Natural Law, Legal Positivism & Critical Legal Studies",
+    "category": "Law",
+    "subcategory": "Legal systems and jurisprudence",
+    "level": "Undergraduate",
+    "duration": "7 weeks (4 hours/week)",
+    "instructor": "Faculty of Law, The Paper Crane Academy",
+    "description": "An inquiry into the philosophy of law. This course engages the eternal debate between Natural Law theorists (who insist on a necessary moral threshold for legal validity) and Legal Positivists (who insist on the separation of law as it is from law as it ought to be). Students examine Aquinas, John Austin, H.L.A. Hart, Ronald Dworkin, Lon Fuller, and modern Critical Legal Studies.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Distinguish between Natural Law Theory (Lex iniusta non est lex) and Legal Positivism.",
+      "Analyze H.L.A. Hart's Concept of Law: Primary rules, secondary rules, and the Rule of Recognition.",
+      "Evaluate Lon Fuller's internal morality of law and the procedural demands of legal order.",
+      "Critique Ronald Dworkin's 'interpretive turn' and the thesis of one right legal answer."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Hart-Fuller Debate and the Separation Thesis",
+        "lessons": [
+          {
+            "id": "law-jur-l1",
+            "title": "The Separation of Law and Morality: H.L.A. Hart vs Lon Fuller",
+            "body": "### What Is Law? The Central Question of Jurisprudence\n\nJurisprudence addresses the philosophical foundations of legal systems. The pivotal divide in 20th-century legal philosophy was fought between Oxford legal positivist **H.L.A. Hart** and Harvard natural law scholar **Lon L. Fuller** in the pages of the 1958 *Harvard Law Review*.\n\n#### 1. Legal Positivism and the Separation Thesis\nLegal positivism insists upon the **Separation Thesis**: there is no necessary conceptual connection between the law as it *is* and the law as it *ought to be*.\n- In *The Concept of Law* (1961), Hart refuted John Austin's older 'command theory' (law as orders backed by threats of a sovereign).\n- Instead, Hart showed that a legal system is an intricate union of:\n  - **Primary Rules:** Rules that mandate or prohibit conduct (e.g., criminal prohibitions against theft or violence).\n  - **Secondary Rules:** Rules about rules, enabling the system to evolve:\n    - *Rules of Change:* How new laws are enacted or repealed.\n    - *Rules of Adjudication:* Empowering judges to resolve disputes.\n    - *The Rule of Recognition:* The ultimate empirical social rule accepted by legal officials that identifies which standards count as valid law.\n\n#### 2. Natural Law and Fuller's 'Internal Morality of Law'\nFuller argued that law is the enterprise of subjecting human conduct to the governance of rules. To count as a legal system at all, a legal order must satisfy eight procedural moral virtues:\n1. Generality (rules must not be ad hoc).\n2. Promulgation (rules must be publicized).\n3. Non-retroactivity (laws must look forward, not punish past acts).\n4. Clarity (intelligibility).\n5. Non-contradiction.\n6. Possibility of compliance (no commanding the impossible).\n7. Constancy through time.\n8. Congruence between official action and declared rule.",
+            "readings": [
+              {
+                "label": "H.L.A. Hart, Positivism and the Separation of Law and Morals (1958)",
+                "url": "https://www.jstor.org/stable/1338225"
+              },
+              {
+                "label": "Lon L. Fuller, Positivism and Fidelity to Law: A Reply to Professor Hart (1958)",
+                "url": "https://www.jstor.org/stable/1338226"
+              },
+              {
+                "label": "Stanford Encyclopedia of Philosophy, Legal Positivism",
+                "url": "https://plato.stanford.edu/entries/legal-positivism/"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What is the core claim of the 'Separation Thesis' in Legal Positivism?",
+                "options": [
+                  "Courts must be physically located away from legislative assemblies.",
+                  "There is no necessary conceptual connection between the legal validity of a rule and its moral righteousness.",
+                  "Religious statutes are superior to international treaties.",
+                  "Laws can only be enacted by direct popular referenda."
+                ],
+                "answer": 1,
+                "why": "The separation thesis asserts that an iniquitous or immoral statute may still be legally valid if it meets the formal procedural criteria of the legal system's Rule of Recognition."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-political-philosophy",
+    "title": "Classical & Modern Political Philosophy: Foundations of the State",
     "category": "Politics",
-    "subcategory": "Electoral Politics",
+    "subcategory": "Political philosophy",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "7 weeks (4 hours/week)",
     "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "How politicians choose their voters: the history of Elbridge Gerry's salamander, modern algorithmic redistricting, cracking and packing, the Efficiency Gap, and the Supreme Court's Rucho v. Common Cause abdication.",
-    "passMark": 70,
+    "description": "An inquiry into the foundational questions of political authority: Why should citizens obey the state? What is justice? Students examine the classical Greek polis (Plato and Aristotle), the emergence of the modern social contract (Hobbes, Locke, Rousseau), and contemporary theories of distributive justice (Rawls and Nozick).",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-08-30",
     "objectives": [
-      "Trace the origin of gerrymandering from 1812 Massachusetts to modern GIS supercomputer algorithms.",
-      "Deconstruct the twin mathematical techniques of 'Cracking' and 'Packing'.",
-      "Calculate the Efficiency Gap to quantify partisan asymmetry in electoral maps.",
-      "Analyze Rucho v. Common Cause and the Supreme Court's refusal to adjudicate partisan gerrymanders."
+      "Compare Plato's philosopher-king in The Republic with Aristotle's constitutional polity in The Politics.",
+      "Analyze the state of nature and social contract theories of Thomas Hobbes, John Locke, and Jean-Jacques Rousseau.",
+      "Evaluate John Rawls's 'Original Position' and the Difference Principle versus Robert Nozick's entitlement theory.",
+      "Synthesize concepts of negative versus positive liberty formulated by Isaiah Berlin."
     ],
     "modules": [
       {
-        "title": "Cartographic Warfare and the Efficiency Gap",
+        "title": "Module 1: The Social Contract Tradition: Hobbes, Locke, and Rousseau",
         "lessons": [
           {
-            "id": "gerry-l1",
-            "title": "The Origins of Gerrymandering and Rucho v. Common Cause",
-            "body": "### Elbridge Gerry's Monster\n\nIn 1812, Massachusetts Governor Elbridge Gerry signed a redistricting bill designed to entrench his Democratic-Republican party in the state senate. One district was carved into such a contorted, grotesque shape that political satirist Gilbert Stuart sketched a head, wings, and claws onto the map, proclaiming it looked like a salamander. An editor famously retorted: *\"Call it a Gerrymander!\"*\n\nFor over two centuries, partisan redistricting was restrained only by primitive technology and geographical boundaries. In the 21st century, the advent of **Geographic Information Systems (GIS)** and granular voter behavioral data transformed redistricting into an exact algorithmic science. Majority parties can draw legislative maps that guarantee legislative majorities even when losing the popular vote by 10 points.\n\n#### The Supreme Court Abdicates: Rucho v. Common Cause (2019)\nIn 2016 in North Carolina, the Republican-led legislature openly declared their intent to draw a map yielding 10 Republican and 3 Democratic congressional seats: *\"I propose that we draw the map to help Republicans... because I do not believe it's possible to draw a map with 11 Republicans and 2 Democrats.\"*\n\nIn a devastating 5-4 decision (*Rucho v. Common Cause*, 2019), Chief Justice John Roberts ruled that **partisan gerrymandering represents a non-justiciable political question**. Roberts held that while extreme partisan gerrymandering is incompatible with democratic principles, federal courts possess no constitutional standard to determine what degree of partisanship is 'fair'. The decision slammed federal courtroom doors shut, leaving reform entirely to state supreme courts and independent citizen redistricting commissions.",
+            "id": "pol-phil-l1",
+            "title": "The State of Nature and the Sovereign Leviathan",
+            "body": "### The Justification of Sovereign Authority\n\nThe social contract tradition seeks to answer a radical question: How can free individuals be legitimately subjected to political coercion? To investigate this, contract theorists imagine a pre-political hypothetical condition: **the State of Nature**.\n\n#### 1. Thomas Hobbes: The Leviathan (1651)\nWriting amidst the carnage of the English Civil War, Hobbes posited a radically materialist view of human psychology. In the absence of a common power to keep all in awe, human beings exist in a state of perpetual war of every man against every man (*bellum omnium contra omnes*):\n- Driven by competition for resources, fear (*diffidence*), and the pursuit of glory.\n- In this state, there is no industry, no navigation, no culture, and:\n  > *\"The life of man, solitary, poor, nasty, brutish, and short.\"*\n- To escape this intolerable anarchy, rational self-interest drives individuals to surrender their natural liberty through a covenant to an absolute sovereign\u2014the **Leviathan**\u2014who guarantees physical security.\n\n#### 2. John Locke: The Second Treatise of Civil Government (1689)\nLocke envisioned a fundamentally different state of nature governed by the **Law of Nature**, which dictates that no one ought to harm another in their life, health, liberty, or possessions.\n- However, the state of nature suffers from severe 'inconveniences': the lack of an established known law, an indifferent judge, and execution power.\n- Individuals form civil society for the mutual preservation of their **Property** (life, liberty, and estate).\n- Because sovereignty remains conditional upon protecting natural rights, Locke formulates the revolutionary **Right of Revolution**: when a government systematically breaches trust, citizens are absolved from obedience.\n\n#### 3. Jean-Jacques Rousseau: The Social Contract (1762)\nRousseau famously proclaimed:\n> *\"Man is born free, and everywhere he is in chains.\"*\n- Rousseau rejects both Hobbesian absolutism and Lockean property protection. He proposes that individuals alienate themselves totally to the whole community, creating a collective moral body directed by the **General Will** (*volont\u00e9 g\u00e9n\u00e9rale*), which aims exclusively at the common good rather than private factional interests.",
             "readings": [
               {
-                "label": "Rucho v. Common Cause, 139 S. Ct. 2484 (2019)",
-                "url": "https://www.oyez.org/cases/2018/18-422"
+                "label": "Thomas Hobbes, Leviathan, Chapters XIII & XIV (1651)",
+                "url": "https://www.gutenberg.org/ebooks/3207"
               },
               {
-                "label": "David Daley, Ratf**ked: Why Your Vote Doesn't Count (2016)",
-                "url": "https://wwnorton.com"
+                "label": "John Locke, Second Treatise of Government (1689)",
+                "url": "https://www.gutenberg.org/ebooks/7370"
+              },
+              {
+                "label": "Stanford Encyclopedia of Philosophy, Social Contract Theory",
+                "url": "https://plato.stanford.edu/entries/contractarianism/"
               }
             ],
             "quiz": [
               {
-                "q": "What did the US Supreme Court rule regarding partisan gerrymandering in Rucho v. Common Cause (2019)?",
+                "q": "Why does John Locke argue that individuals leave the state of nature to form a commonwealth?",
                 "options": [
-                  "Partisan gerrymandering is a non-justiciable political question beyond the reach of federal courts.",
-                  "Partisan gerrymandering is a federal criminal felony punishable by immediate removal from office.",
-                  "All states must immediately switch to proportional representation.",
-                  "District maps must be drawn by the United Nations electoral team."
+                  "To surrender all individual freedoms to an absolute monarch.",
+                  "Because the state of nature lacks established laws, impartial judges, and an executive power to protect private property and natural rights.",
+                  "Because human nature is inherently incapable of rational cooperation.",
+                  "To conquer neighboring sovereign nations."
                 ],
-                "answer": 0,
-                "why": "The conservative majority held that federal judges lack manageable constitutional standards to adjudicate partisan gerrymandering, leaving it to state politics."
-              }
-            ]
-          },
-          {
-            "id": "gerry-l2",
-            "title": "Cracking, Packing, and the Efficiency Gap Formula",
-            "body": "### The Mathematical Architecture of Map Rigging\n\nPartisan cartographers employ two complementary tactics:\n1. **Cracking**: Spreading opposition voters across multiple districts in minority concentrations (e.g. 40-45%), ensuring their votes are wasted and they win zero seats.\n2. **Packing**: Cramming opposition voters into a few overwhelming districts (e.g. 85-90% majority), forcing them to waste thousands of surplus votes in blowout victories.\n\n#### The Efficiency Gap\nTo provide federal judges with an objective metric, political scientists Nicholas Stephanopoulos and Eric McGhee formulated the **Efficiency Gap (EG)**.\n\nAn election produces two types of **Wasted Votes**:\n- *Lost Votes*: Cast for a losing candidate.\n- *Surplus Votes*: Cast for a winning candidate beyond the 50% + 1 needed to win.\n\n$$\text{Efficiency Gap} = \frac{\text{Wasted Votes (Party A)} - \text{Wasted Votes (Party B)}}{\text{Total Votes Cast}}$$\n\nA neutral map produces an Efficiency Gap near zero. When the Efficiency Gap exceeds **7%**, historical data shows the gerrymandered party's majority becomes self-perpetuating throughout the ten-year redistricting cycle, creating a permanent structural minority rule.",
-            "readings": [
-              {
-                "label": "Stephanopoulos & McGhee, Partisan Gerrymandering and the Efficiency Gap, University of Chicago Law Review (2015)",
-                "url": "https://chicagounbound.uchicago.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "In the Efficiency Gap formula, what constitutes a 'wasted vote'?",
-                "options": [
-                  "Any vote cast for a losing candidate, plus any vote cast for a winning candidate beyond the threshold needed to win.",
-                  "A ballot with spelling errors.",
-                  "Votes cast by citizens without college degrees.",
-                  "Mail-in ballots received after 5:00 PM."
-                ],
-                "answer": 0,
-                "why": "The Efficiency Gap measures systemic vote waste: ballots that yielded no representation (losers) or excessive margin (packed winners)."
+                "answer": 1,
+                "why": "Locke emphasizes that although the state of nature is not a state of constant war, the lack of an impartial arbiter creates insecurity, prompting individuals to institute government to preserve their life, liberty, and estate."
               }
             ]
           }
@@ -1263,77 +721,51 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-revolutions",
-    "title": "Revolutions & Street Power: The Anatomy of Mass Mobilization",
+    "id": "pol-comparative-systems",
+    "title": "Comparative Political Systems: Democracies, Authoritarianisms & Hybrid Regimes",
     "category": "Politics",
-    "subcategory": "Political Mobilization",
+    "subcategory": "Democracy and governance",
     "level": "Undergraduate",
-    "duration": "5 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "How regimes fall: Crane Brinton's anatomy of revolution, Gene Sharp's 198 methods of nonviolent action, the Arab Spring, and Erica Chenoweth's 3.5% rule.",
-    "passMark": 70,
+    "description": "A comparative analysis of political regime types and state structures. Students examine democratic institutions across presidential, parliamentary, and semi-presidential systems, analyze the survival strategies of non-democratic regimes (military juntas, single-party states, personalist dictatorships), and investigate competitive authoritarianism.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-01",
     "objectives": [
-      "Analyze Crane Brinton's classical stages of revolution (moderate, radical/terror, thermidor).",
-      "Evaluate Gene Sharp's strategic nonviolent resistance doctrine.",
-      "Deconstruct Erica Chenoweth's empirical discovery: the 3.5% Rule of nonviolent success.",
-      "Examine why the 2011 Arab Spring succeeded in Tunisia but collapsed into civil war in Syria and Libya."
+      "Categorize regime types using Robert Dahl's Polyarchy framework (contestation and inclusiveness).",
+      "Compare the institutional dynamics of presidentialism versus parliamentarism (Juan Linz's perils of presidentialism).",
+      "Analyze the mechanics of 'Competitive Authoritarianism' formulated by Levitsky and Way.",
+      "Evaluate coalition bargaining dynamics and government stability in multi-party systems."
     ],
     "modules": [
       {
-        "title": "The Dynamics of Nonviolent Insurgency",
+        "title": "Module 1: The Democratic Continuum and Executive Architectures",
         "lessons": [
           {
-            "id": "revo-l1",
-            "title": "Gene Sharp and the Pillars of Support",
-            "body": "### Power Is Not Monolithic\n\nFor decades, military strategists assumed that state power was an indestructible monolith rooted in police batons, tanks, and prisons. Political philosopher **Gene Sharp** (often termed the 'Machiavelli of Nonviolence') overturned this assumption in his seminal trilogy *The Politics of Nonviolent Action* (1973).\n\nSharp argued that all state power is fundamentally relational: rulers possess authority only because subjects obey. The ruler's power rests on institutional **Pillars of Support**:\n1. Police and Armed Forces\n2. Bureaucracy and Civil Servants\n3. Economic and Financial Elites\n4. Media and Communications Infrastructure\n5. Labor Unions and Transportation Networks\n\n#### The Strategy of Disintegration\nArmed guerrilla insurgencies reinforce the regime: they allow autocrats to justify military crackdowns, consolidate army loyalty, and terrify the middle class into seeking security.\n\nNonviolent mass campaigns operate by **eroding the pillars of support from underneath**. When civil servants refuse to process decrees, transit workers strike, and police officers refuse orders to fire on unarmed grandmothers and students, the dictator's power dissolves overnight (*The Loyalty Shift*). Sharp cataloged 198 specific nonviolent tactics, from mock funerals to consumer boycotts and general strikes, utilized in Serbia's Otpor movement, the Baltic Singing Revolution, and Ukraine's Euromaidan.",
+            "id": "pol-sys-l1",
+            "title": "Parliamentarism vs Presidentialism: Juan Linz and Institutional Perils",
+            "body": "### Comparative Executive Architectures\n\nIn comparative politics, the institutional relationship between the executive and the legislature forms the primary axis of democratic classification.\n\n#### 1. The Parliamentary System\nIn parliamentary democracies (e.g., the United Kingdom, Germany, India, Japan):\n- The executive is fused with and drawn directly from the legislative assembly.\n- The Prime Minister or Chancellor is not directly elected by the public, but holds office by maintaining the **confidence** of a parliamentary majority.\n- If the majority fractures, a government falls via a **motion of no confidence**, triggering either a new coalition negotiation or snap elections.\n- Divided government is constitutionally impossible: the executive by definition commands a working legislative majority.\n\n#### 2. The Presidential System\nIn presidential regimes (e.g., the United States, Brazil, Mexico):\n- The President is elected independently of the legislature for a fixed calendar term.\n- Both the executive and legislative branches possess independent **dual democratic legitimacy**\u2014both can claim a direct mandate from the people.\n- The President cannot dissolve the legislature, and the legislature cannot remove the President except through extraordinary quasi-criminal impeachment thresholds.\n\n#### Juan Linz's 'Perils of Presidentialism'\nIn a landmark 1990 essay in the *Journal of Democracy*, political scientist Juan Linz observed that historically, presidential democracies outside the United States suffered far higher rates of democratic breakdown and military coups. Linz identified three systemic perils:\n1. **Rigidity:** Fixed presidential terms make it impossible to swiftly replace an incompetent or deeply unpopular leader during an acute national crisis.\n2. **Zero-Sum Politics (Winner-Take-All):** In presidential contests, 50.1% wins 100% of executive power; losers are completely shut out of governance for 4-6 years, heightening systemic political polarization.\n3. **Dual Democratic Legitimacy & Deadlock:** When the presidency is held by one party and the legislature by another, and they disagree fundamentally on policy, the constitution provides no institutional mechanism to resolve the deadlock, inviting military or extra-constitutional intervention.",
             "readings": [
               {
-                "label": "Gene Sharp, From Dictatorship to Democracy (1993)",
-                "url": "https://www.aeinstein.org"
+                "label": "Juan J. Linz, The Perils of Presidentialism, Journal of Democracy (1990)",
+                "url": "https://www.journalofdemocracy.org/articles/the-perils-of-presidentialism/"
               },
               {
-                "label": "Erica Chenoweth & Maria J. Stephan, Why Civil Resistance Works (2011)",
-                "url": "https://cup.columbia.edu"
+                "label": "Arend Lijphart, Patterns of Democracy (Yale University Press)",
+                "url": "https://yalebooks.yale.edu/book/9780300172027/patterns-of-democracy/"
               }
             ],
             "quiz": [
               {
-                "q": "What is Gene Sharp's core theoretical insight regarding political power?",
+                "q": "According to Juan Linz, why do presidential systems exhibit greater institutional vulnerability to democratic breakdown than parliamentary systems?",
                 "options": [
-                  "State power is not a monolith; it relies completely on the obedience of institutional 'pillars of support' that can be withdrawn.",
-                  "Dictators cannot be overthrown without nuclear weapons.",
-                  "Revolutions only happen when foreign armies invade.",
-                  "Nonviolent action only works in wealthy, developed democracies."
+                  "Because presidents are appointed by supreme courts rather than voters.",
+                  "Because dual democratic legitimacy creates irreconcilable gridlock between executive and legislative majorities with no constitutional mechanism to break the impasse.",
+                  "Because parliamentary systems have no written constitutions.",
+                  "Because presidential cabinets are too large to make swift decisions."
                 ],
-                "answer": 0,
-                "why": "Sharp proved that rulers depend on the cooperation of domestic institutions (police, civil service, workers); when that consent is withheld, regimes collapse."
-              }
-            ]
-          },
-          {
-            "id": "revo-l2",
-            "title": "Erica Chenoweth's 3.5% Rule",
-            "body": "### The Empirical Proof of Nonviolent Superiority\n\nIn 2011, political scientists Erica Chenoweth and Maria Stephan published groundbreaking research analyzing **323 violent and nonviolent political campaigns** from 1900 to 2006. Their empirical findings shattered conventional military wisdom:\n\n1. **Double the Success Rate**: Nonviolent civil resistance campaigns were **more than twice as likely to succeed** (53%) as armed violent insurgencies (26%).\n2. **The 3.5% Rule**: **No government has ever resisted a campaign that achieved the active and sustained participation of just 3.5% of its population.**\n\n#### Why Nonviolence Outperforms Violence\n- **Lower Barriers to Participation**: Armed conflict requires young, physically fit men willing to kill and die. Nonviolent protests can be joined by women, children, elderly citizens, doctors, and factory workers.\n- **Triggering Defections**: Security forces find it far harder to shoot peaceful neighbors and religious leaders than armed insurgents. Police and military defections were 46 times more likely in nonviolent campaigns.\n- **Democratic Transition**: Regimes overthrown by nonviolent movements are four times more likely to transition into durable democracies five years later than those overthrown by armed rebellions, which frequently replace one military junta with another.",
-            "readings": [
-              {
-                "label": "Erica Chenoweth, Civil Resistance: What Everyone Needs to Know (2021)",
-                "url": "https://global.oup.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the key threshold identified by Erica Chenoweth's '3.5% Rule'?",
-                "options": [
-                  "No government has withstood a sustained nonviolent campaign engaging 3.5% of the national population.",
-                  "Military forces require 3.5% casualty rates to surrender.",
-                  "Only 3.5% of revolutions result in stable democracies.",
-                  "Protest marches must take up 3.5% of the capital city's surface area."
-                ],
-                "answer": 0,
-                "why": "Chenoweth's global historical dataset found that mobilizing 3.5% of a population creates overwhelming systemic disruption that triggers security force defections."
+                "answer": 1,
+                "why": "Linz argued that when an independently elected president confronts a hostile legislature with its own democratic mandate, neither has constitutional supremacy over the other, frequently precipitating constitutional crises."
               }
             ]
           }
@@ -1342,156 +774,161 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-arendt",
-    "title": "Hannah Arendt: Totalitarianism, Mass Society, and the Banality of Evil",
+    "id": "pol-democratic-backsliding",
+    "title": "Democratic Backsliding, Institutional Capture & Populism",
     "category": "Politics",
-    "subcategory": "Political Philosophy",
+    "subcategory": "Democracy and governance",
     "level": "Undergraduate",
-    "duration": "5 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "An investigation of Hannah Arendt's monumental philosophy: The Origins of Totalitarianism, loneliness in mass society, the destruction of shared factual reality, and Adolf Eichmann's trial in Jerusalem.",
-    "passMark": 70,
+    "description": "An urgent inquiry into the contemporary crisis of liberal democracy. Moving beyond classical military coups, this course explores how elected leaders dismantle constitutional checks from within\u2014weaponizing the law, capturing supreme courts, curtailing independent media, and exploiting cultural grievances through populist rhetoric.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-04",
     "objectives": [
-      "Deconstruct Arendt's structural definition of Totalitarianism (Nazism and Stalinism).",
-      "Analyze the connection between atomization, social loneliness, and susceptibility to conspiratorial ideology.",
-      "Evaluate the controversial thesis of 'The Banality of Evil' in Eichmann in Jerusalem.",
-      "Apply Arendt's critique of post-truth politics to contemporary democratic crises."
+      "Distinguish between classical authoritarian breakdowns (coups d'\u00e9tat) and incremental democratic erosion.",
+      "Analyze the 'autocratic legalism' playbook: court packing, electoral law revision, and tax investigations.",
+      "Examine Cas Mudde's ideational definition of populism (pure people vs corrupt elite).",
+      "Evaluate institutional and civil society safeguards that foster democratic resilience."
     ],
     "modules": [
       {
-        "title": "The Origins of Totalitarianism and the Destruction of Truth",
+        "title": "Module 1: How Modern Democracies Erode from Within",
         "lessons": [
           {
-            "id": "arendt-l1",
-            "title": "Loneliness, Atomization, and the Allure of Ideology",
-            "body": "### A Radically New Form of Government\n\nPublished in 1951, Hannah Arendt's *The Origins of Totalitarianism* established that 20th-century totalitarian regimes (Hitler's Germany and Stalin's Soviet Union) were fundamentally different from classical tyrannies, military dictatorships, or absolute monarchies.\n\nTraditional dictators seek a monopoly on political power: they demand that citizens *refrain* from political opposition. Totalitarianism seeks **total domination**: it demands the complete subordination of every sphere of human existence\u2014culture, family, science, and the inner conscience\u2014into a state of perpetual ideological mobilization.\n\n#### The Soil of Totalitarianism: Loneliness and Atomization\nArendt identified modern industrial alienation as the psychological breeding ground for totalitarian capture:\n> *\"What prepares men for totalitarian domination in the non-totalitarian world is the fact that loneliness, once a borderline experience usually suffered in certain marginal social conditions, has become an everyday experience of the ever-growing masses of our century.\"*\n\nWhen traditional social institutions (churches, craft guilds, neighborhood communities) dissolve, individuals become atomized, isolated, and politically helpless. In this state of acute existential alienation, people crave an all-encompassing ideological narrative that promises consistency, answers every riddle of history, and provides a tribe to belong to.\n\n#### The Death of Factual Truth\nArendt's most prescient warning concerned the systematic assault on objective reality:\n> *\"The ideal subject of totalitarian rule is not the convinced Nazi or the convinced Communist, but people for whom the distinction between fact and fiction (i.e., the reality of experience) and the distinction between true and false (i.e., the standards of thought) no longer exist.\"*",
+            "id": "pol-back-l1",
+            "title": "Autocratic Legalism and the Erosion of Unwritten Democratic Norms",
+            "body": "### The Subversion of Democratic Institutions\n\nIn the 20th century, democracies predominantly died at the hands of men with guns: violent military coups (*golpes de estado*), tanks surrounding presidential palaces, and martial law decrees.\n\nIn the 21st century, as Harvard political scientists Steven Levitsky and Daniel Ziblatt demonstrate in *How Democracies Die* (2018), democratic backsliding occurs at the ballot box. Elected leaders use the very instruments of democracy to subvert it slowly, legally, and invisibly:\n\n#### The Three Tactics of 'Autocratic Legalism'\n1. **Capturing the Referees:** Packing constitutional courts, appointing partisan loyalists to supreme auditing bodies, and purging public prosecutors to ensure that government corruption goes unpunished while political opponents face immediate criminal scrutiny.\n2. **Sidelining Opponents and the Press:** Rather than outright banning opposition parties or shutting down television stations, illiberal governments use state advertising revenues, tax audits, and regulatory licenses to starve independent media, while subsidizing friendly oligarchs to buy up news networks.\n3. **Tilting the Playing Field:** Rewriting electoral rules, redrawing constituencies, and controlling campaign financing so that even when opposition parties win a majority of popular votes, they cannot win a legislative majority.\n\n#### The Unwritten Guardrails of Democracy\nConstitutions alone cannot protect democracy. Written laws must be reinforced by two vital unwritten democratic norms:\n1. **Mutual Toleration:** The agreement that political rivals are not existential enemies or traitors, but legitimate political competitors who have an equal right to govern if they win elections.\n2. **Institutional Forbearance:** The self-restraint of political actors from exercising legal powers to the absolute legal maximum when doing so would subvert the underlying spirit of the democratic order (avoiding 'constitutional hardball').",
+            "readings": [
+              {
+                "label": "Steven Levitsky & Daniel Ziblatt, How Democracies Die (Crown, 2018)",
+                "url": "https://www.penguinrandomhouse.com/books/562246/how-democracies-die-by-steven-levitsky-and-daniel-ziblatt/"
+              },
+              {
+                "label": "Kim Lane Scheppele, Autocratic Legalism, 85 University of Chicago Law Review (2018)",
+                "url": "https://lawreview.uchicago.edu/print-archive/autocratic-legalism"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What is 'autocratic legalism' as defined by contemporary constitutional scholars?",
+                "options": [
+                  "A sudden military overthrow of an elected government.",
+                  "The process whereby elected leaders use formally legal and constitutional procedures to incrementally hollow out democratic checks and balances.",
+                  "The voluntary dissolution of a supreme court by its chief justice.",
+                  "A transition from a monarchy to an anarchic commune."
+                ],
+                "answer": 1,
+                "why": "Autocratic legalism occurs when authoritarians use existing legal statutes, constitutional amendments, and administrative regulations to consolidate power without ever overtly breaking the formal law."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-electoral-systems",
+    "title": "Electoral Systems, Gerrymandering & Representation",
+    "category": "Politics",
+    "subcategory": "Elections and political institutions",
+    "level": "Pre-university",
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "An investigation of the mathematical and institutional mechanics of elections. This course explores how different voting systems (First-Past-The-Post, Proportional Representation, Ranked Choice / Single Transferable Vote) translate citizen preferences into legislative seats, alongside the spatial mechanics of partisan gerrymandering and voter suppression.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Contrast Single-Member Plurality (FPTP) with Party-List Proportional Representation and STV.",
+      "Explain Duverger's Law and the mechanical and psychological factors shaping party systems.",
+      "Analyze techniques of partisan gerrymandering: Packing and Cracking.",
+      "Calculate measures of partisan asymmetry such as the Efficiency Gap."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Electoral Mechanics and Duverger's Law",
+        "lessons": [
+          {
+            "id": "pol-elec-l1",
+            "title": "Plurality vs Proportionality: Duverger's Law and Seat Allocation",
+            "body": "### The Political Consequences of Electoral Systems\n\nElectoral systems are the institutional translation engines of democracy: they convert votes cast by citizens into seats won by parties and politicians.\n\n#### 1. Majoritarian / Plurality Systems (First-Past-The-Post / FPTP)\nIn single-member district plurality systems (e.g., US House, UK House of Commons, India's Lok Sabha):\n- The territory is divided into discrete geographic districts, each electing one representative.\n- The candidate who wins a plurality (the most votes, even if far short of an absolute majority) wins the entire seat.\n- All votes cast for losing candidates are mathematically discarded.\n\n#### 2. Proportional Representation (PR)\nIn proportional systems (e.g., Netherlands, Sweden, Israel):\n- Multi-member districts or a single national district are used.\n- Seats are awarded in close proportion to the total percentage of the national popular vote won by each party list, subject to an electoral threshold (e.g., 5% in Germany).\n\n#### Duverger's Law\nFormulated by French sociologist Maurice Duverger in the 1950s, this is one of the most famous empirical regularities in political science:\n> *\"The simple-majority single-ballot system favours the two-party system.\"*\n\nDuverger demonstrated that this occurs through two compounding effects:\n1. **The Mechanical Effect:** Plurality systems severely penalize third parties whose vote share is distributed evenly across the country, denying them seats unless their vote is concentrated geographically.\n2. **The Psychological Effect:** Voters realize that voting for their preferred third-party candidate is likely a 'wasted vote', leading them to strategically defect to the lesser of two viable evils. Politicians, in turn, choose to organize within the two major broad-tent parties.",
+            "readings": [
+              {
+                "label": "Maurice Duverger, Political Parties: Their Organization and Activity (1954)",
+                "url": "https://www.britannica.com/topic/Duvergers-law"
+              },
+              {
+                "label": "ACE Electoral Knowledge Network, Comparative Electoral Systems Guide",
+                "url": "https://aceproject.org/ace-en/topics/es"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What two mechanisms drive Duverger's Law towards a two-party system under First-Past-The-Post?",
+                "options": [
+                  "A constitutional ban on third parties and mandatory voter registration.",
+                  "The mechanical penalization of third parties under plurality seat rules and the psychological strategic voting that avoids wasting votes on non-viable candidates.",
+                  "Universal proportional quotas and presidential veto power.",
+                  "Compulsory voting and hereditary legislative appointments."
+                ],
+                "answer": 1,
+                "why": "Duverger identified the mechanical hurdle of winning a plurality in single-member districts combined with the psychological reluctance of voters to throw away their vote on uncompetitive third parties."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-totalitarianism-power",
+    "title": "Totalitarianism & Ideological Power: The Thought of Hannah Arendt",
+    "category": "Politics",
+    "subcategory": "Political philosophy",
+    "level": "Undergraduate",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "A close philosophical examination of 20th-century political catastrophe through the seminal works of Hannah Arendt. Students analyze The Origins of Totalitarianism, the destruction of the public sphere, the manipulation of loneliness and atomization, Eichmann in Jerusalem and the 'banality of evil', and Arendt's vision of political action in The Human Condition.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Distinguish totalitarianism from classical tyranny and authoritarian military dictatorship.",
+      "Analyze the psychological preconditions of totalitarian rule: Loneliness, atomization, and terror.",
+      "Deconstruct Arendt's controversial thesis on the 'Banality of Evil' regarding Adolf Eichmann.",
+      "Synthesize Arendt's concept of the vita activa: Labor, Work, and Action in the public sphere."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Totalitarian Phenomenon and the Banality of Evil",
+        "lessons": [
+          {
+            "id": "pol-ar-l1",
+            "title": "Ideology, Terror, and the Banality of Evil",
+            "body": "### The Novel Form of Modern Tyranny\n\nIn *The Origins of Totalitarianism* (1951), Hannah Arendt argued that Nazi Germany and Stalinist Soviet Union were not mere continuations of classical despotism. Classical tyrants sought to monopolize political power while leaving social, artistic, and private life largely unmolested. Totalitarianism seeks total subjugation of the entire human being:\n\n1. **The Destruction of the Common World:** Totalitarian regimes weaponize all-encompassing ideological fictions that replace complex factual reality with a single pseudo-scientific narrative (e.g., racial struggle in Nazism; historical dialectical materialism in Stalinism).\n2. **Loneliness and Atomization:** Totalitarianism requires the systematic destruction of all secondary associations\u2014churches, independent trade unions, civic clubs, and even the family unit. Once isolated, atomized individuals lose the capacity for critical common-sense judgment.\n3. **Terror as the Essence of the Regime:** Terror is not merely an instrument to eliminate political opponents; it is the permanent operational principle of the state, used to enforce total ideological conformity even when all actual opposition has ceased.\n\n#### The Banality of Evil (1963)\nCovering the 1961 trial of Nazi bureaucrat Adolf Eichmann in Jerusalem for *The New Yorker*, Arendt was struck not by a monstrous demonic sadist, but by an utterly ordinary, mediocre bureaucrat who spoke in stock phrases and clich\u00e9s:\n- Eichmann had surrendered the fundamental human capacity to **think**\u2014to pause and imagine reality from the perspective of another person.\n- Evil on an industrial scale was performed by men whose primary motive was organizational diligence, career advancement, and obedience to administrative routine.\n- Hence Arendt's haunting conclusion: the most catastrophic evil in history was committed by thoughtless bureaucrats who had abdicated moral conscience.",
             "readings": [
               {
                 "label": "Hannah Arendt, The Origins of Totalitarianism (1951)",
-                "url": "https://www.harcourtbooks.com"
+                "url": "https://www.penguinrandomhouse.com/books/299690/the-origins-of-totalitarianism-by-hannah-arendt/"
               },
-              {
-                "label": "Hannah Arendt, Truth and Politics, The New Yorker (1967)",
-                "url": "https://www.newyorker.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "According to Hannah Arendt, what psychological condition among mass populations prepares them for totalitarian domination?",
-                "options": [
-                  "Acute loneliness and social atomization that leaves individuals craving a totalizing ideological narrative.",
-                  "Excessive consumption of classical literature.",
-                  "High levels of international travel.",
-                  "Over-investment in local municipal municipal elections."
-                ],
-                "answer": 0,
-                "why": "Arendt argued that isolated, atomized individuals who have lost meaningful social ties are the easiest recruits for totalitarian mass movements."
-              }
-            ]
-          },
-          {
-            "id": "arendt-l2",
-            "title": "Eichmann in Jerusalem: The Banality of Evil",
-            "body": "### The Bureaucrat of Extermination\n\nIn 1961, Israeli Mossad agents captured Adolf Eichmann, the SS Obersturmbannf\u00fchrer responsible for organizing the logistics of the deportation of millions of European Jews to death camps. Covered by Hannah Arendt for *The New Yorker*, the trial in Jerusalem was anticipated as an encounter with a demonic monster.\n\nInstead, Arendt observed a petty, unremarkable, middle-class bureaucratic clerk. Sitting in his glass booth, Eichmann spoke in canned administrative clich\u00e9s, insisting: *\"I was only following orders... I never killed a Jew, or a non-Jew. I never gave an order to kill a Jew.\"*\n\n#### The Banality of Evil\nArendt coined her most provocative phrase: **The Banality of Evil**. She did not mean that Eichmann's crimes were ordinary or trivial; they were cosmic in their horror. \n\nRather, she observed that **radical evil does not require demonic, sadistic pathology.** It can be committed by terrifyingly normal people who simply surrender their capacity for **independent critical thought** (*thoughtlessness*). Eichmann was not Iago or Macbeth; he was an ambitious paper-pusher who subordinated his moral judgment to bureaucratic protocol and career promotion, demonstrating that modern bureaucratic systems enable mass atrocities without individual moral guilt.",
-            "readings": [
               {
                 "label": "Hannah Arendt, Eichmann in Jerusalem: A Report on the Banality of Evil (1963)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What did Hannah Arendt mean by the controversial phrase 'The Banality of Evil'?",
-                "options": [
-                  "Monstrous atrocities can be executed by ordinary, thoughtless bureaucrats who uncritically surrender moral judgment to bureaucratic duty.",
-                  "Mass murder is an unimportant historical event.",
-                  "All Nazi soldiers were completely innocent of wrongdoing.",
-                  "Evil should be ignored by the criminal legal system."
-                ],
-                "answer": 0,
-                "why": "Arendt argued that Eichmann lacked demonic malice; his defining trait was profound thoughtlessness\u2014an inability to imagine the moral reality of his actions."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pol-deepstate",
-    "title": "The Administrative State Debate: Bureaucracy, Technocracy, and Power",
-    "category": "Politics",
-    "subcategory": "Public Policy",
-    "level": "Undergraduate",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "Max Weber's iron cage of bureaucracy, the expansion of administrative agencies (EPA, SEC, FDA), the non-delegation doctrine, Chevron deference, and the modern constitutional crisis over the 'Deep State'.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-08",
-    "objectives": [
-      "Deconstruct Max Weber's theory of rational-legal authority and the 'Iron Cage' of bureaucracy.",
-      "Analyze the New Deal revolution and the creation of the fourth branch of government.",
-      "Evaluate the rise and fall of the Chevron Deference doctrine and the Major Questions Doctrine.",
-      "Debate technocratic expert governance vs democratic accountability in modern regulatory states."
-    ],
-    "modules": [
-      {
-        "title": "Rational Bureaucracy and Constitutional Friction",
-        "lessons": [
-          {
-            "id": "admin-l1",
-            "title": "Max Weber and the Iron Cage of Bureaucracy",
-            "body": "### Rational-Legal Authority\n\nSociologist Max Weber identified three pure types of legitimate political authority:\n1. **Traditional Authority**: Sanctity of immemorial customs and hereditary rulers (patriarchs, feudal kings).\n2. **Charismatic Authority**: Devotion to the exceptional heroism, sanctity, or magnetic personality of an individual leader (prophets, revolutionaries).\n3. **Rational-Legal Authority**: Legality of enacted rules and the right of officials elevated under those rules to issue commands.\n\n#### The Indispensable Machine\nWeber observed that modern civilization is defined by the inexorable rise of **Bureaucracy**\u2014the purest manifestation of rational-legal rule. Characterized by strict hierarchy, written files, technical specialization, and impersonal rules, bureaucracy is technically superior to all other forms of administration: *\"Precision, speed, unambiguity, knowledge of the files, continuity, discretion, unity, strict subordination... these are raised to the optimum point.\"*\n\nYet Weber warned of a tragic dilemma: the **Iron Cage** (*stahlhartes Geh\u00e4use*). Bureaucratic rationality calcifies society into a soul-crushing labyrinth of rules administered by *\"specialists without spirit, sensualists without heart.\"* In modern politics, this raises a profound challenge: who rules\u2014the elected representatives chosen by the people, or the permanent, unelected technocrats who manage the administrative apparatus?",
-            "readings": [
-              {
-                "label": "Max Weber, Economy and Society (1922)",
-                "url": "https://www.ucpress.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the defining trait of Max Weber's 'rational-legal authority'?",
-                "options": [
-                  "Obedience is owed to impersonal, legally enacted rules and procedural offices rather than to a personal monarch.",
-                  "Commands are obeyed because of magical or divine omens.",
-                  "All government decisions are made by popular plebiscites on Twitter.",
-                  "Military generals rule without written laws."
-                ],
-                "answer": 0,
-                "why": "Rational-legal authority legitimacy rests on formal legality and objective procedural competence rather than tradition or personal charisma."
-              }
-            ]
-          },
-          {
-            "id": "admin-l2",
-            "title": "The Fall of Chevron: Regulating the Fourth Branch",
-            "body": "### The Death of Agency Deference\n\nFor forty years, administrative law in the United States was anchored in **Chevron U.S.A. Inc. v. Natural Resources Defense Council, Inc.** (1984). Under the two-step **Chevron Deference** doctrine:\n- *Step 1*: Has Congress spoken directly to the precise question at issue? If yes, the statutory text governs.\n- *Step 2*: If the statute is silent or ambiguous, courts must defer to the administrative agency's reasonable interpretation.\n\nThe rationale was clear: expert agencies (like the EPA or FDA) have scientific and technical competence that generalist judges lack, and agencies are accountable to the elected President.\n\n#### The Loper Bright Revolution (2024)\nConservative jurists long attacked Chevron as an unconstitutional abdication of the judicial role under Article III and Section 706 of the Administrative Procedure Act (APA), which mandates that *courts* shall decide all relevant questions of law.\n\nIn **Loper Bright Enterprises v. Raimondo** (2024), the Supreme Court formally overruled Chevron in a 6-3 decision. Chief Justice Roberts declared:\n> *\"Courts must exercise their independent judgment in deciding whether an administrative agency has acted within its statutory authority... Chevron's presumption is misguided because agencies have no special competence in resolving statutory ambiguities.\"*\n\nCombined with the **Major Questions Doctrine** (requiring clear congressional authorization for regulations of vast economic and political significance, *West Virginia v. EPA*), the decision dramatically curtailed the regulatory power of administrative agencies, reallocating authority to federal judges.",
-            "readings": [
-              {
-                "label": "Loper Bright Enterprises v. Raimondo, 603 U.S. ___ (2024)",
-                "url": "https://www.oyez.org"
+                "url": "https://www.penguinrandomhouse.com/books/299689/eichmann-in-jerusalem-by-hannah-arendt/"
               },
               {
-                "label": "West Virginia v. EPA, 597 U.S. 697 (2022)",
-                "url": "https://www.oyez.org/cases/2021/20-1530"
+                "label": "Stanford Encyclopedia of Philosophy, Hannah Arendt",
+                "url": "https://plato.stanford.edu/entries/arendt/"
               }
             ],
             "quiz": [
               {
-                "q": "What was the landmark legal effect of the Supreme Court overruling Chevron in Loper Bright (2024)?",
+                "q": "What did Hannah Arendt mean by the phrase 'the banality of evil' in her report on Adolf Eichmann?",
                 "options": [
-                  "Federal courts will no longer defer to federal agencies' interpretations of ambiguous statutes, restoring independent judicial interpretation.",
-                  "All federal administrative agencies were dissolved.",
-                  "Agencies were given the power to write constitutional amendments.",
-                  "Congress was banned from passing environmental statutes."
+                  "That the Holocaust was not a serious crime.",
+                  "That catastrophic evil can be carried out by ordinary, thoughtless individuals who mechanically execute bureaucratic orders without critical moral reflection.",
+                  "That only low-level soldiers were responsible for war crimes.",
+                  "That evil is an unavoidable biological instinct in all human societies."
                 ],
-                "answer": 0,
-                "why": "Overruling Chevron means federal courts must exercise independent judgment over statutory meaning rather than deferring to agency expertise."
+                "answer": 1,
+                "why": "Arendt's thesis was that Eichmann was not a fanatical demonic monster, but a terrifyingly normal bureaucrat whose evil stemmed from an utter failure to think from the standpoint of others."
               }
             ]
           }
@@ -1500,152 +937,51 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "pol-nationalism",
-    "title": "The Politics of Nationalism & Identity: Imagined Communities",
+    "id": "pol-political-ideologies",
+    "title": "Political Ideologies: Liberalism, Conservatism, Socialism & Nationalism",
     "category": "Politics",
-    "subcategory": "Political Sociology",
-    "level": "Undergraduate",
-    "duration": "4 weeks",
+    "subcategory": "Political ideologies",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "Benedict Anderson's Imagined Communities, Ernest Gellner on industrialization and nation-building, the tragedy of the Yugoslav wars, and why globalization ignited a worldwide populist nationalist backlash.",
-    "passMark": 70,
+    "description": "A systematic survey of the major ideological worldviews that have defined the modern political landscape. Students deconstruct the core axioms, views on human nature, conceptions of freedom, and policy visions of Classical and Modern Liberalism, Traditional and Social Conservatism, Democratic Socialism, and Civic versus Ethnic Nationalism.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-12",
     "objectives": [
-      "Deconstruct Benedict Anderson's thesis: the nation as an 'Imagined Community' birthed by print-capitalism.",
-      "Compare Civic Nationalism (Habermas' constitutional patriotism) vs Ethnic Nationalism (Herder's blood and soil).",
-      "Analyze the collapse of Yugoslavia and ethnic mobilization in the Srebrenica genocide.",
-      "Examine modern right-wing populist nationalisms in Western democracies."
+      "Compare classical liberalism (Locke, Smith) with modern welfare liberalism (Rawls, Keynes).",
+      "Analyze the conservative emphasis on tradition, social order, and organic community (Edmund Burke).",
+      "Deconstruct democratic socialism and social democracy's critique of unregulated capitalism.",
+      "Distinguish between inclusive civic nationalism and exclusionary ethnic/cultural nationalism."
     ],
     "modules": [
       {
-        "title": "Constructing the Nation and the Roots of Conflict",
+        "title": "Module 1: The Spectrum of Political Ideologies",
         "lessons": [
           {
-            "id": "nation-l1",
-            "title": "Benedict Anderson and Print-Capitalism",
-            "body": "### The Invention of the Nation\n\nWhat is a nation? Why are millions of citizens willing to die for a strip of land and a piece of colored cloth? In his 1983 classic **Imagined Communities**, political scientist Benedict Anderson defined the nation as:\n> *\"An imagined political community\u2014and imagined as both inherently limited and sovereign.\"*\n\nAnderson explains each term with precision:\n- **Imagined**: Members of even the smallest nation will never know, meet, or hear of most of their fellow citizens, yet in the minds of each lives the image of their communion.\n- **Limited**: Every nation has finite, elastic boundaries beyond which lie other nations; no nation aspires to encompass all of humanity like world religions.\n- **Sovereign**: Born during the Enlightenment as the divine right of monarchs crumbled, nations dream of sovereign self-determination.\n- **Community**: Regardless of actual inequalities, the nation is conceived as a deep, horizontal comradeship.\n\n#### The Role of Print-Capitalism\nAnderson argued that nations were not primordial ancient tribes awakened from sleep. They were created by **Print-Capitalism** in the 16th to 18th centuries. The mass printing of novels and daily newspapers in standardized vernacular languages (rather than elite Latin) allowed millions of strangers to read the same texts simultaneously, creating a shared, synchronous national consciousness.",
+            "id": "pol-ideo-l1",
+            "title": "Liberalism vs Conservatism: Individual Autonomy vs Organic Social Order",
+            "body": "### The Ideological Architecture of the West\n\nPolitical ideologies are coherent sets of normative ideas and values that provide a worldview, diagnose social injustices, and prescribe a program of political action.\n\n#### 1. The Liberal Tradition\nLiberalism places the moral primacy of the **individual** at the center of political life:\n- **Classical Liberalism:** Championed by John Locke, Adam Smith, and J.S. Mill. It insists on negative liberty (freedom from state interference), private property, free markets, and the night-watchman state (*laissez-faire*).\n- **Modern / Social Liberalism:** Developed in the late 19th and 20th centuries by T.H. Green, Leonard Hobhouse, and John Rawls. It recognizes that poverty, disease, and unregulated monopolies restrict real human freedom just as severely as state censorship. It embraces positive liberty: the state must guarantee baseline education, social welfare, and healthcare so that all citizens possess the substantive capability to flourish.\n\n#### 2. The Conservative Tradition\nModern conservatism emerged in Edmund Burke's *Reflections on the Revolution in France* (1790) as a critique of radical abstract utopianism:\n- Society is not a mechanical machine that can be dismantled and reconstructed overnight according to abstract intellectual theories.\n- Society is an organic contract between three generations: *the dead, the living, and those yet to be born*.\n- Burke warned that destroying ancient institutions (churches, traditions, common-law habits) unleashes anarchy and military despotism. Conservatism values custom, prudence, social order, and gradual evolutionary reform (*reform in order to preserve*).",
             "readings": [
               {
-                "label": "Benedict Anderson, Imagined Communities: Reflections on the Origin and Spread of Nationalism (1983)",
-                "url": "https://www.versobooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why does Benedict Anderson define the nation as an 'imagined' community?",
-                "options": [
-                  "Citizens will never meet most fellow members, yet maintain a mental image of horizontal communion.",
-                  "Nations do not physically exist on maps.",
-                  "National borders are drawn entirely by computer simulations.",
-                  "Nations are fictional creations invented by novelists."
-                ],
-                "answer": 0,
-                "why": "The community is 'imagined' because members cannot have face-to-face contact with millions of compatriots, relying on shared media to construct solidarity."
-              }
-            ]
-          },
-          {
-            "id": "nation-l2",
-            "title": "Civic vs Ethnic Nationalism and the Yugoslav Collapse",
-            "body": "### The Dark Side of the Nation-State\n\nPolitical philosophy distinguishes between two contrasting forms of national solidarity:\n- **Civic Nationalism**: Grounded in political citizenship, the rule of law, and shared constitutional values (*J\u00fcrgen Habermas' Verfassungspatriotismus* / constitutional patriotism). Anyone who pledges allegiance to the constitution is a full member, regardless of ancestry or religion.\n- **Ethnic Nationalism**: Grounded in inherited blood, language, historical myth, and shared ancestry (*Jus Sanguinis*). Membership is hereditary and exclusionary.\n\n#### The Tragedy of Yugoslavia\nIn the 1990s, the disintegration of the multi-ethnic Socialist Federal Republic of Yugoslavia demonstrated how political entrepreneurs (Slobodan Milo\u0161evi\u0107, Franjo Tu\u0111man) can weaponize ethnic nationalism. Reviving ancient historical grievances (such as the 1389 Battle of Kosovo), political elites shattered decades of peaceful coexistence between Serbs, Croats, and Bosniaks, triggering the horrific **Bosnian War**, ethnic cleansing, and the **1995 Srebrenica Genocide**, proving that ethnic nationalism, when unconstrained by constitutionalism, leads directly to mass atrocities.",
-            "readings": [
-              {
-                "label": "Michael Ignatieff, Blood and Belonging: Journeys into the New Nationalism (1993)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the defining distinction between Civic Nationalism and Ethnic Nationalism?",
-                "options": [
-                  "Civic nationalism defines belonging by political adherence to constitutional laws, whereas ethnic nationalism defines belonging by blood, ancestry, and culture.",
-                  "Civic nationalism applies only in island nations.",
-                  "Ethnic nationalism allows automatic citizenship for all immigrants.",
-                  "Civic nationalism bans political parties."
-                ],
-                "answer": 0,
-                "why": "Civic nationalism is inclusive and legalistic; ethnic nationalism is exclusive and grounded in ancestral descent."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pol-feminism",
-    "title": "Feminist Political Theory: Power, Patriarchy, and the State",
-    "category": "Politics",
-    "subcategory": "Political Theory",
-    "level": "Undergraduate",
-    "duration": "4 weeks",
-    "instructor": "Faculty of Politics, The Paper Crane Academy",
-    "description": "An analysis of feminist political thought: Mary Wollstonecraft's rights of woman, Simone de Beauvoir's The Second Sex, the radical feminist critique of the state (Catharine MacKinnon), and Kimberl\u00e9 Crenshaw's Intersectionality.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-15",
-    "objectives": [
-      "Trace the historical waves of feminism from liberal egalitarianism to radical and intersectional frameworks.",
-      "Deconstruct Simone de Beauvoir's foundational existentialist claim: 'One is not born, but rather becomes, a woman.'",
-      "Evaluate Catharine MacKinnon's feminist critique of law and state power as male dominance.",
-      "Apply Kimberl\u00e9 Crenshaw's legal doctrine of Intersectionality to constitutional discrimination law."
-    ],
-    "modules": [
-      {
-        "title": "The Evolution of Feminist Political Jurisprudence",
-        "lessons": [
-          {
-            "id": "fem-l1",
-            "title": "The Personal Is Political: From De Beauvoir to MacKinnon",
-            "body": "### Demystifying the Neutral State\n\nIn 1949, French existentialist philosopher Simone de Beauvoir published *The Second Sex* (*Le Deuxi\u00e8me Sexe*), uttering the most famous sentence in feminist philosophy:\n> *\"On ne na\u00eet pas femme: on le devient.\"* (\"One is not born, but rather becomes, a woman.\")\n\nDe Beauvoir dismantled biological determinism, demonstrating that gender is a socially constructed hierarchy: man establishes himself as the **Subject and the Absolute**, while woman is defined only in relation to him as the **Other** (*L'Autre*).\n\n#### Radical Feminism and the Law\nIn the late 20th century, legal scholar **Catharine MacKinnon** launched a devastating critique of liberal constitutionalism in *Toward a Feminist Theory of the State* (1989). Liberal law portrays itself as neutral, objective, and blind to gender. MacKinnon argued that:\n> *\"Law sees and treats women the way men see and treat women. The state is male in the feminist sense: the law sees and treats women the way men see and treat women... Objectivity is the male point of view.\"*\n\nMacKinnon argued that the liberal separation of the **public sphere** (regulated by constitutional law) and the **private sphere** (the domestic home, shielded from state intrusion) was an ideological fiction that insulated domestic violence, marital rape, and unpaid care work from judicial remedies. The famous second-wave slogan **The Personal Is Political** established that private domestic power dynamics are matters of fundamental constitutional justice.",
-            "readings": [
-              {
-                "label": "Simone de Beauvoir, The Second Sex (1949)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Edmund Burke, Reflections on the Revolution in France (1790)",
+                "url": "https://www.gutenberg.org/ebooks/15679"
               },
               {
-                "label": "Catharine A. MacKinnon, Toward a Feminist Theory of the State (1989)",
-                "url": "https://www.hup.harvard.edu"
+                "label": "John Stuart Mill, On Liberty (1859)",
+                "url": "https://www.gutenberg.org/ebooks/34901"
               }
             ],
             "quiz": [
               {
-                "q": "What was Catharine MacKinnon's fundamental critique of liberal legal neutrality?",
+                "q": "What was Edmund Burke's central critique of the French Revolution in Reflections on the Revolution in France?",
                 "options": [
-                  "The law's claim to neutral objectivity is an illusion that conceals and institutionalizes the male point of view and male dominance.",
-                  "Women should be completely exempt from criminal law.",
-                  "Only female judges should be allowed to preside over contract disputes.",
-                  "The state should abolish all written laws."
+                  "The French monarchs were too lenient on tax evasion.",
+                  "Radical revolutionaries rashly destroyed complex, organic social institutions and inherited traditions in the name of abstract intellectual theories, inevitably paving the way for tyranny.",
+                  "Private property should be abolished completely.",
+                  "France should have adopted an American presidential constitution."
                 ],
-                "answer": 0,
-                "why": "MacKinnon demonstrated that legal 'neutrality' reflects male power relations, leaving private patriarchal subordination shielded from justice."
-              }
-            ]
-          },
-          {
-            "id": "fem-l2",
-            "title": "Kimberl\u00e9 Crenshaw and the Architecture of Intersectionality",
-            "body": "### The Legal Blindspot: DeGraffenreid v. General Motors\n\nIn 1989, legal scholar **Kimberl\u00e9 Crenshaw** published her groundbreaking article *Demarginalizing the Intersection of Race and Sex*, introducing the transformative concept of **Intersectionality**.\n\nCrenshaw began by analyzing the 1976 legal case **DeGraffenreid v. General Motors**:\n- Five Black women sued General Motors under Title VII of the Civil Rights Act of 1964, alleging systemic employment discrimination.\n- GM had historically not hired Black women prior to 1964. During the 1970 recession, GM used a strict 'last-hired, first-fired' seniority policy, firing all Black women.\n- The federal court dismissed their claim. The court held that GM did not discriminate against *women* (because GM hired white female secretaries) and did not discriminate against *Blacks* (because GM hired Black male factory workers).\n\n#### The Traffic Intersection Metaphor\nCrenshaw showed that anti-discrimination law conceptualized discrimination along a single categorical axis (either race *or* gender). Black women suffered a compound, distinct injury situated at the intersection:\n> *\"Discrimination, like traffic through an intersection, may flow in one direction, and it may flow in another. If an accident happens in an intersection, it can be caused by cars coming from any number of directions and, sometimes, from all of them. But if a Black woman is harmed because she is in the intersection, her injury is resulted from both.\"*\n\nIntersectionality revolutionized political science, sociology, and constitutional jurisprudence worldwide, establishing that systems of oppression (race, class, gender, sexuality, disability) do not operate independently; they are mutually constitutive.",
-            "readings": [
-              {
-                "label": "Kimberl\u00e9 Crenshaw, Demarginalizing the Intersection of Race and Sex, University of Chicago Legal Forum (1989)",
-                "url": "https://chicagounbound.uchicago.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What legal limitation did Kimberl\u00e9 Crenshaw identify in the DeGraffenreid v. General Motors case?",
-                "options": [
-                  "Courts treated race and sex as mutually exclusive categories, rendering invisible the distinct compound discrimination faced by Black women.",
-                  "General Motors was exempt from all federal laws.",
-                  "The plaintiffs lacked standing because they were not shareholders.",
-                  "The Civil Rights Act of 1964 had expired."
-                ],
-                "answer": 0,
-                "why": "Single-axis legal frameworks failed to recognize that discrimination at the intersection of race and gender cannot be reduced to gender alone or race alone."
+                "answer": 1,
+                "why": "Burke argued that societies are delicate organic fabrics built across generations; sweeping away established customs in pursuit of abstract perfection results in social collapse and military rule."
               }
             ]
           }
@@ -1654,81 +990,361 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "ir-thucydides",
-    "title": "Thucydides' Trap: Great Power Rivalry from Sparta to US & China",
+    "id": "pol-political-economy",
+    "title": "Political Economy: States, Markets & the Welfare State",
+    "category": "Politics",
+    "subcategory": "Political economy",
+    "level": "Undergraduate",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "An investigation of the deep interplay between politics and economics. This course examines how state authority structures markets, the historical rise and retreat of the welfare state, G\u00f8sta Esping-Andersen's 'Three Worlds of Welfare Capitalism', and the comparative institutional analysis of Liberal Market Economies (LMEs) vs Coordinated Market Economies (CMEs).",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Analyze the foundational debates between mercantilism, classical economics, and Keynesianism.",
+      "Deconstruct G\u00f8sta Esping-Andersen's typology: Liberal, Corporatist/Conservative, and Social Democratic welfare regimes.",
+      "Compare Varieties of Capitalism: Hall and Soskice's LMEs vs CMEs.",
+      "Evaluate the political determinants of income inequality and labor union density."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Architecture of Welfare Capitalism",
+        "lessons": [
+          {
+            "id": "pol-pe-l1",
+            "title": "Esping-Andersen's Three Worlds of Welfare Capitalism",
+            "body": "### De-Commodification and Social Stratification\n\nIn *The Three Worlds of Welfare Capitalism* (1990), Danish sociologist G\u00f8sta Esping-Andersen fundamentally reshaped political economy by arguing that the welfare state cannot be measured simply by how much money a government spends. Instead, welfare states must be evaluated by **de-commodification**: the degree to which a citizen can freely maintain a socially acceptable livelihood independent of direct participation in the labor market.\n\n#### The Three Welfare Regime Clusters\n1. **The Liberal Welfare Regime (e.g., United States, United Kingdom, Australia):**\n   - Dominance of the free market; commodification remains high.\n   - Means-tested assistance targeting only the demonstrably destitute.\n   - Low benefit levels accompanied by stigma; encouragement of private market solutions (private pensions, employer-sponsored health insurance).\n2. **The Corporatist / Conservative Regime (e.g., Germany, France, Austria, Italy):**\n   - State-organized social insurance programs tied directly to occupational employment history and status.\n   - Benefits are earnings-related rather than universal; designed to maintain existing status differentials and social hierarchies.\n   - Built on the principle of *subsidiarity*: the state intervenes only when the traditional male-breadwinner family unit fails.\n3. **The Social Democratic Regime (e.g., Sweden, Norway, Denmark, Finland):**\n   - Highest degree of de-commodification; universalist principles applied to all citizens as a basic social right.\n   - Universal healthcare, state child-care, elder-care, and heavily subsidized higher education.\n   - Pursues equality of the highest standard rather than minimal safety nets, actively pre-empting market inequalities.",
+            "readings": [
+              {
+                "label": "G\u00f8sta Esping-Andersen, The Three Worlds of Welfare Capitalism (Princeton University Press, 1990)",
+                "url": "https://press.princeton.edu/books/paperback/9780691028576/the-three-worlds-of-welfare-capitalism"
+              },
+              {
+                "label": "Peter A. Hall & David Soskice, Varieties of Capitalism (Oxford University Press, 2001)",
+                "url": "https://academic.oup.com/book/7403"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What does G\u00f8sta Esping-Andersen mean by 'de-commodification' in welfare state analysis?",
+                "options": [
+                  "The privatization of state-owned manufacturing companies.",
+                  "The extent to which an individual can survive at a decent standard of living independently of their immediate participation in the labor market.",
+                  "The elimination of paper currency in favor of barter trade.",
+                  "The total deregulation of agricultural commodity futures."
+                ],
+                "answer": 1,
+                "why": "De-commodification measures the degree of freedom citizens have from market dependence for their fundamental survival (e.g. through sickness benefits, parental leave, universal healthcare, and unemployment insurance)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-revolutions-movements",
+    "title": "Revolutions, Social Movements & Collective Action",
+    "category": "Politics",
+    "subcategory": "Democracy and governance",
+    "level": "Pre-university",
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "An investigation into how mass political change occurs outside formal electoral channels. Students analyze structural theories of social revolution (Theda Skocpol), Mancur Olson's collective action dilemma, Erica Chenoweth's empirical study of nonviolent civil resistance, and the dynamics of digital social movements.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Evaluate Theda Skocpol's structural theory of state breakdown in France, Russia, and China.",
+      "Analyze Mancur Olson's free-rider problem in collective mobilization.",
+      "Compare the strategic efficacy of nonviolent civil resistance versus violent armed insurgency (Chenoweth & Stephan).",
+      "Deconstruct contemporary decentralized protest movements (Arab Spring, Black Lives Matter, Euromaidan)."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Dynamics of Revolution and Civil Resistance",
+        "lessons": [
+          {
+            "id": "pol-rev-l1",
+            "title": "Why Civil Resistance Works: The 3.5% Rule of Erica Chenoweth",
+            "body": "### The Strategic Power of Nonviolent Action\n\nFor decades, political science assumed that toppling an entrenched authoritarian regime required armed force or external military invasion. In *Why Civil Resistance Works* (2011), political scientists Erica Chenoweth and Maria J. Stephan conducted a landmark empirical study of 323 major violent and nonviolent campaigns between 1900 and 2006.\n\n#### The Core Empirical Findings\n1. **Nonviolent Campaigns are Twice as Likely to Succeed:** Nonviolent campaigns succeeded in achieving their primary goals 53% of the time, compared to only 26% for violent armed insurgencies.\n2. **The 3.5% Threshold:** Chenoweth discovered that no government in the historical dataset was able to withstand a nonviolent campaign that mobilized active, sustained participation from **3.5% of the national population** at its peak (e.g., the People Power Revolution in the Philippines in 1986).\n\n#### Why Nonviolence Outperforms Violence\n1. **Lower Barriers to Participation:** Armed rebellion requires physical youth, military training, weaponry, and willingness to kill. Nonviolent resistance (strikes, boycotts, mass marches, civil disobedience) allows participation across genders, ages, and socioeconomic backgrounds.\n2. **Encouraging Security Force Defections:** When an insurgency uses violence, regime police and soldiers rally around the government out of self-defense. When protesters remain strictly nonviolent in the face of brutal state violence (*the backfire effect*), military commanders and ordinary conscripts increasingly refuse orders to open fire, fracturing the regime's coercive apparatus from within.",
+            "readings": [
+              {
+                "label": "Erica Chenoweth & Maria J. Stephan, Why Civil Resistance Works (Columbia University Press, 2011)",
+                "url": "https://cup.columbia.edu/book/why-civil-resistance-works/9780231156820"
+              },
+              {
+                "label": "Theda Skocpol, States and Social Revolutions (Cambridge University Press, 1979)",
+                "url": "https://www.cambridge.org/core/books/states-and-social-revolutions/465B409E513DBCE547F5D4807BA76BD0"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What primary strategic advantage explains why nonviolent civil resistance campaigns historically achieve higher success rates than violent armed insurgencies?",
+                "options": [
+                  "They have access to heavier military weapons.",
+                  "They have far lower barriers to broad public participation, enabling mass mobilization that induces loyalty shifts and defections among state security forces.",
+                  "They are always supported by foreign covert agencies.",
+                  "They operate entirely in secret without public demonstrations."
+                ],
+                "answer": 1,
+                "why": "Chenoweth & Stephan show that mass participation creates leverage across the entire economy and society, making security force defections far more likely when protesters remain disciplined and nonviolent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-propaganda-public-opinion",
+    "title": "Propaganda, Information Warfare & Public Opinion",
+    "category": "Politics",
+    "subcategory": "Democracy and governance",
+    "level": "Pre-university",
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "A critical examination of how mass persuasion, psychological operations, and algorithmic information environments shape democratic politics. Students study Walter Lippmann's Public Opinion, Herman and Chomsky's Manufacturing Consent, and the contemporary crisis of generative AI disinformation, deepfakes, and computational propaganda.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Analyze Walter Lippmann's critique of the 'omnicompetent citizen' and the role of stereotypes in media.",
+      "Deconstruct Herman & Chomsky's 'Propaganda Model' and its five editorial filters.",
+      "Evaluate the mechanics of computational propaganda: Bot networks, algorithmic microtargeting, and echo chambers.",
+      "Design regulatory and educational strategies for democratic resilience against synthetic disinformation."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Media, Power, and the Manufacturing of Consent",
+        "lessons": [
+          {
+            "id": "pol-prop-l1",
+            "title": "Lippmann, Chomsky, and the Construction of Political Reality",
+            "body": "### Public Opinion in Mass Democracy\n\nIn *Public Opinion* (1922), veteran journalist Walter Lippmann diagnosed an uncomfortable reality for democratic theory. The classical ideal of the democratic citizen assumes an 'omnicompetent' individual who reads public bills, studies foreign trade balances, and casts an informed rational ballot.\n\nIn modern mass society, however, the real environment is too large, too complex, and too fleeting for direct human acquaintance. Instead, citizens construct a **pseudo-environment** inside their minds, mediated by simplified symbols, stereotypes, and media narratives:\n> *\"The world that we have to deal with politically is out of sight, out of mind, out of touch. It has to be explored, reported, and imagined.\"*\n\n#### The Propaganda Model of Herman & Chomsky\nIn *Manufacturing Consent* (1988), Edward S. Herman and Noam Chomsky formulated the **Propaganda Model**, arguing that corporate mass media operates through structural institutional filters rather than overt state censorship:\n1. **Size, Ownership, and Profit Orientation:** Major media outlets are large corporate enterprises tied to multinational parent corporations.\n2. **Advertising as Primary Revenue:** Media firms do not sell news to consumers; they sell consumer attention to corporate advertisers.\n3. **Sourcing of Mass Media News:** Overreliance on official government and corporate public relations briefings as cheap, authoritative sources.\n4. **Flak:** Organized legal, political, and commercial retaliation against journalists who challenge elite consensus.\n5. **Ideological Control:** Defining an external existential enemy to enforce patriotic conformity.",
+            "readings": [
+              {
+                "label": "Walter Lippmann, Public Opinion (1922)",
+                "url": "https://www.gutenberg.org/ebooks/6456"
+              },
+              {
+                "label": "Edward S. Herman & Noam Chomsky, Manufacturing Consent (Pantheon Books, 1988)",
+                "url": "https://www.penguinrandomhouse.com/books/79659/manufacturing-consent-by-edward-s-herman-and-noam-chomsky/"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "According to Herman & Chomsky's Propaganda Model, what is the fundamental product sold by commercial mass media?",
+                "options": [
+                  "Objective investigative truth sold to citizens.",
+                  "Audiences of consumers sold to commercial corporate advertisers.",
+                  "Secret government documents sold to foreign intelligence agencies.",
+                  "Printed books sold directly to public libraries."
+                ],
+                "answer": 1,
+                "why": "Under commercial media economics, the primary business model is packaging reader and viewer demographics and selling their attention to advertisers."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pol-feminist-gender-theory",
+    "title": "Feminist Political Theory & the Politics of Gender",
+    "category": "Politics",
+    "subcategory": "Political philosophy",
+    "level": "Pre-university",
+    "duration": "5 weeks (3 hours/week)",
+    "instructor": "Faculty of Politics, The Paper Crane Academy",
+    "description": "An exploration of feminist critiques of classical political theory and public policy. Students examine the historical waves of feminism, the deconstruction of the public/private divide ('the personal is political'), Kimberl\u00e9 Crenshaw's theory of intersectionality, and the institutional design of gender parity in national parliaments.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Differentiate between liberal, radical, Marxist, and intersectional feminist theories.",
+      "Deconstruct the classical public/private dichotomy in political thought (Susan Moller Okin).",
+      "Apply Kimberl\u00e9 Crenshaw's analytical framework of intersectionality to legal and political discrimination.",
+      "Evaluate electoral gender quotas (reserved seats vs candidate list quotas) globally."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Challenging the Canonical Political Tradition",
+        "lessons": [
+          {
+            "id": "pol-fem-l1",
+            "title": "The Personal is Political: Dismantling the Public/Private Divide",
+            "body": "### The Feminist Critique of Traditional Political Theory\n\nFrom Aristotle and Locke to Rousseau and John Rawls, classical political philosophy consistently rested upon a profound foundational omission: the strict demarcation between the **Public Sphere** (the realm of citizenship, contracts, law, and politics) and the **Private Sphere** (the domestic home, family, reproduction, and care work).\n\nTraditional theorists assumed that justice applies only in the public sphere, treating the family as a natural, pre-political hierarchy outside the jurisdiction of justice.\n\n#### 1. Susan Moller Okin: Justice, Gender, and the Family (1989)\nOkin challenged this foundational assumption, demonstrating that:\n- The private family is not a natural haven free of power; it is an economic and social institution constructed and sustained by state laws (marriage statutes, divorce rules, tax codes, child custody).\n- If the family is structured around unequal gendered division of unpaid labor, women cannot participate as equal citizens in the public sphere. Therefore: **A just society cannot exist without a just family**.\n\n#### 2. Kimberl\u00e9 Crenshaw: The Theory of Intersectionality (1989)\nIn a ground-breaking 1989 article, legal scholar Kimberl\u00e9 Crenshaw introduced **intersectionality** (*DeGraffenreid v. General Motors*):\n- Antidiscrimination law conceptualized discrimination as either solely racial or solely gender-based.\n- Black women suffered unique, compound forms of marginalization that fell between the cracks of traditional civil rights frameworks.\n- Intersectionality provides a crucial analytical lens to understand how race, gender, class, disability, and nationality interact to create interlocking systems of power and oppression.",
+            "readings": [
+              {
+                "label": "Susan Moller Okin, Justice, Gender, and the Family (Basic Books, 1989)",
+                "url": "https://www.perseusbooks.com/titles/susan-moller-okin/justice-gender-and-the-family/9780465037032/"
+              },
+              {
+                "label": "Kimberl\u00e9 Crenshaw, Demarginalizing the Intersection of Race and Sex (1989)",
+                "url": "https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What was the central argument of Susan Moller Okin regarding the classical public/private divide in political theory?",
+                "options": [
+                  "The state should completely take over all childcare duties by decree.",
+                  "The domestic family is an institutional creation shaped by state laws and gendered division of labor; true political justice cannot exist while treating the family as an exempt private sanctuary.",
+                  "Women should solely participate in local municipal elections.",
+                  "The family has no connection to political economy."
+                ],
+                "answer": 1,
+                "why": "Okin demonstrated that inequalities inside the home (unpaid labor, domestic power) directly dictate and restrict women's public opportunities, meaning justice must apply inside the family as well as the state."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ir-theories",
+    "title": "Theories of International Relations: Realism, Liberal Institutionalism & Constructivism",
     "category": "International Relations",
-    "subcategory": "Geopolitics",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
+    "subcategory": "International relations theory",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "Graham Allison's Thucydides' Trap: what happens when a rising power threatens to displace an established hegemon? Athens and Sparta, Wilhelmine Germany and Britain, and the 21st-century US-China collision course over Taiwan.",
-    "passMark": 70,
+    "description": "An essential foundation in international relations theory. This course dissects the core theoretical paradigms that scholars and policymakers use to interpret the international system: classical and structural realism, liberal institutionalism, democratic peace theory, constructivism, and critical security studies.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-11",
     "objectives": [
-      "Deconstruct Thucydides' History of the Peloponnesian War and the Melian Dialogue ('the strong do what they can').",
-      "Analyze Graham Allison's historical dataset of 16 great power rivalries across 500 years.",
-      "Evaluate structural flashpoints between the US and China in the Indo-Pacific (Taiwan, semiconductors).",
-      "Formulate strategic off-ramps and diplomatic guardrails to prevent catastrophic great-power war."
+      "Contrast the structural realist emphasis on anarchy and the balance of power with liberal institutional cooperation.",
+      "Analyze Alexander Wendt's constructivist thesis that 'anarchy is what states make of it'.",
+      "Evaluate the explanatory power and limitations of the Democratic Peace Theory.",
+      "Apply competing theoretical paradigms to contemporary great-power rivalries and interstate conflicts."
     ],
     "modules": [
       {
-        "title": "The Peloponnesian Model and Allison's Thesis",
+        "title": "Module 1: Realism and Neorealism: Anarchy, Power, and the Security Dilemma",
         "lessons": [
           {
-            "id": "thucy-l1",
-            "title": "The Melian Dialogue and the Peloponnesian Trap",
-            "body": "### The Father of Political Realism\n\nIn 431 BCE, the Greek city-state system was engulfed by the Peloponnesian War. Athenian general and historian Thucydides identified the fundamental structural driver of the catastrophe in one immortal sentence:\n> *\"It was the rise of Athens and the fear that this instilled in Sparta that made war inevitable.\"*\n\nThis is the classic definition of **The Security Dilemma**: steps taken by a rising power to secure its rightful prestige and commerce are perceived by an established hegemon as an existential threat to its security, driving both into a spiral of competitive armaments and alliance mobilization.\n\n#### The Melian Dialogue (416 BCE)\nDuring the war, Athens demanded that the small neutral island of Melos surrender and pay tribute. The Melians appealed to justice, the gods, and fair play, arguing that neutrality posed no danger to Athens.\n\nThe Athenian envoys replied with the most famous formulation of raw power politics in human literature:\n> *\"Right, as the world goes, is only in question between equals in power; while **the strong do what they can, and the weak suffer what they must**.\"*\n\nWhen the Melians refused to submit, Athens besieged the city, executed every adult male, and sold the women and children into slavery. Thucydides recorded this not to celebrate brutality, but to deliver a chilling diagnostic warning: **international politics without institutional rules is an amoral jungle where power alone dictates survival.**",
+            "id": "ir-th-l1",
+            "title": "Anarchy and the Structural Foundations of Realist Thought",
+            "body": "### The Anarchic Structure of International Politics\n\nIn International Relations (IR), **realism** is the oldest and most influential theoretical tradition. Realism begins with a fundamental structural assumption: **international anarchy**. In IR theory, \"anarchy\" does not signify chaos or lawlessness, but rather the **absence of an overarching global sovereign or central government** capable of enforcing contracts, protecting states, and monopolizing legitimate violence.\n\n```\nDomestic Politics (Hobbesian Leviathan):\n[State Government] \u2192 Monopoly on violence \u2192 Enforces law & order\n        \u2193\n    Citizens (Civil society)\n\nInternational Politics (Anarchic System):\n[State A]  \u2190\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Self-Help System \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2192  [State B]\n     \u2196                                             \u2197\n                       [State C]\n    (No World Government to protect states from one another)\n```\n\n#### 1. Classical Realism vs Structural Realism (Neorealism)\nThe realist tradition diverged into two principal branches in the 20th century:\n\n- **Classical Realism (Hans Morgenthau, *Politics Among Nations*, 1948):**\n  - Morgenthau argued that international politics is governed by objective laws that have their roots in human nature.\n  - Humans possess an innate *animus dominandi* (lust for power).\n  - States, led by human beings, continuously seek to accumulate power and pursue their national interest defined in terms of power.\n\n- **Structural Realism / Neorealism (Kenneth Waltz, *Theory of International Politics*, 1979):**\n  - Waltz revolutionized IR by decoupling realism from human nature and rooting it strictly in the **structure of the international system**.\n  - Three defining features of the international system:\n    1. *Ordering Principle:* Anarchy (decentralized, anarchic rather than hierarchical).\n    2. *Character of the Units:* Functionally undifferentiated sovereign states (all states must perform the same basic functions of defense, taxation, and survival).\n    3. *Distribution of Capabilities:* The primary variable that explains systemic outcomes is the distribution of power across states (unipolar, bipolar, multipolar).\n\n#### 2. The Security Dilemma (John Herz & Robert Jervis)\nBecause the international system is a \"self-help\" system where states cannot reliably outsource their survival, states must arm themselves.\n- **The Dilemma:** When State A increases its military capabilities purely for defensive purposes, State B cannot observe State A's internal intentions. State B only perceives State A's rising offensive capacity.\n- State B responds by arming itself in turn.\n- The unintended paradoxical outcome: both states spend immense resources, yet both end up feeling *less* secure than before.\n\n```\nState A increases defense \u2192 State B perceives a potential threat\n       \u2191                                     \u2193\nState A feels threatened \u2190 State B responds by building armaments\n              (The Spiral of Insecurity)\n```",
             "readings": [
               {
-                "label": "Thucydides, History of the Peloponnesian War (Book V: The Melian Dialogue)",
-                "url": "https://www.gutenberg.org"
+                "label": "Kenneth N. Waltz, Theory of International Politics (Addison-Wesley, 1979)",
+                "url": "https://www.worldcat.org/title/theory-of-international-politics/oclc/4933758"
+              },
+              {
+                "label": "Robert Jervis, Cooperation Under the Security Dilemma (World Politics, 1978)",
+                "url": "https://www.jstor.org/stable/2009958"
+              },
+              {
+                "label": "Hans J. Morgenthau, Politics Among Nations (1948)",
+                "url": "https://archive.org/details/in.ernet.dli.2015.54921"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What is the defining distinction between Kenneth Waltz's Neorealism and Hans Morgenthau's Classical Realism?",
+                "options": [
+                  "Neorealism relies on the UN Charter, while Classical Realism relies on customary international law.",
+                  "Neorealism locates the cause of state behavior in the anarchic structure and distribution of capabilities of the international system, whereas Classical Realism locates it in human nature.",
+                  "Neorealism argues that international law completely prevents interstate wars.",
+                  "Neorealism focuses exclusively on domestic economic tax policies."
+                ],
+                "answer": 1,
+                "why": "Waltz formulated a structural theory: states pursue security not because of biological human aggression, but because the anarchic system compels rational self-help and survival strategies."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Module 2: Liberal Institutionalism and Constructivism",
+        "lessons": [
+          {
+            "id": "ir-th-l2",
+            "title": "Institutions, Interdependence, and Social Construction",
+            "body": "### Moving Beyond Realism: Cooperation and Identity\n\nWhile realists see international relations as an inescapable cycle of conflict, rival paradigms demonstrate how cooperation evolves and how ideas shape the material world.\n\n#### 1. Neoliberal Institutionalism (Robert Keohane, *After Hegemony*, 1984)\nNeoliberal institutionalists accept the realist assumption that states are rational, self-interested actors operating under anarchy. However, they reach an optimistic conclusion:\n- **Overcoming Collective Action Problems:** In an anarchic world, states fail to cooperate because of the fear of cheating (*Prisoner's Dilemma*).\n- **The Role of International Regimes & Institutions (UN, WTO, IMF):**\n  - Reduce transaction costs of negotiating multilateral agreements.\n  - Increase transparency and provide credible information, diminishing information asymmetry.\n  - Establish clear focal points and dispute settlement mechanisms.\n  - Create the \"shadow of the future\" (repeated interactions make cheating costly).\n\n#### 2. The Democratic Peace Theory (Michael Doyle)\nOriginating in Immanuel Kant's 1795 essay *Perpetual Peace*, this empirical finding demonstrates that while democracies go to war with autocracies as often as any other states, **established liberal democracies almost never go to war with one another**.\n- *Institutional Explanations:* Democratic leaders face electoral accountability, legislative checks, and public resistance to war costs.\n- *Normative Explanations:* Shared liberal democratic norms favor peaceful compromise and the legal settlement of disputes over armed coercion.\n\n#### 3. Social Constructivism (Alexander Wendt)\nIn his seminal 1992 article *\"Anarchy is What States Make of It\"*, Alexander Wendt challenged the materialist determinism of realism:\n- Neorealism assumes state interests are exogenous and predetermined by military power.\n- Constructivism demonstrates that **material power only acquires meaning through social relationships, shared ideas, and identities**.\n  - Example: 500 British nuclear warheads do not terrify the United States, but 5 North Korean nuclear warheads generate supreme existential alarm. Why? Not because of material yield, but because of shared identity, historical relationship, and meaning.\n- Anarchy is not a structural prison; it is a social construct that can evolve from Hobbesian (enemies) to Lockean (rivals) to Kantian (friends).",
+            "readings": [
+              {
+                "label": "Robert O. Keohane, After Hegemony: Cooperation and Discord in the World Political Economy (1984)",
+                "url": "https://press.princeton.edu/books/paperback/9780691122489/after-hegemony"
+              },
+              {
+                "label": "Alexander Wendt, Anarchy is What States Make of It (International Organization, 1992)",
+                "url": "https://www.jstor.org/stable/2706858"
+              },
+              {
+                "label": "Michael W. Doyle, Kant, Liberal Legacies, and Foreign Affairs (Philosophy & Public Affairs, 1983)",
+                "url": "https://www.jstor.org/stable/2265298"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What core thesis does Alexander Wendt advance with the aphorism 'Anarchy is what states make of it'?",
+                "options": [
+                  "States must abolish domestic police forces to achieve international peace.",
+                  "Anarchy does not inherently dictate conflict; the meaning of anarchy is determined by the intersubjective understandings, cultures, and identities states construct together.",
+                  "International trade is the sole factor determining state survival.",
+                  "Nuclear weapons make all international treaties automatically binding."
+                ],
+                "answer": 1,
+                "why": "Constructivism asserts that structural anarchy does not mechanically cause conflict or security dilemmas; rather, interaction, identity, and social learning construct whether states view each other as mortal enemies or allies."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ir-grand-strategy",
+    "title": "Grand Strategy & Great Power Competition: Power Transitions, Hegemony & Alliances",
+    "category": "International Relations",
+    "subcategory": "Strategic studies",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of International Relations, The Paper Crane Academy",
+    "description": "An advanced examination of how major powers coordinate diplomatic, economic, military, and informational levers to secure national interests. Analyzes power transition theory, the Thucydides Trap, offshore balancing vs primacy, alliance management, and systemic rivalries.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Define grand strategy and articulate the relationship between ends, ways, and means.",
+      "Analyze Power Transition Theory (Organski) and Graham Allison's Thucydides Trap thesis.",
+      "Evaluate competing grand strategies: primacy, selective engagement, offshore balancing, and restraint.",
+      "Assess the geopolitical dynamics of the contemporary multipolar and bipolar competitive environments."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Architecture of Grand Strategy and Hegemonic Transitions",
+        "lessons": [
+          {
+            "id": "ir-gs-l1",
+            "title": "Ends, Ways, and Means: Formulating National Grand Strategy",
+            "body": "### Defining Grand Strategy\n\nGrand strategy is the highest level of national statecraft. While military strategy concerns the application of armed force to win wars, **grand strategy orchestrates all instruments of national power\u2014diplomatic, informational, military, and economic (the DIME framework)\u2014to achieve long-term security, prosperity, and systemic influence in peacetime and war**.\n\n```\n    [National Objectives & Values (Ends)]\n                      \u2193\n [Diplomatic, Information, Military, Economic Resources (Means)]\n                      \u2193\n  [Operational Concepts, Alliances & Policies (Ways)]\n```\n\n#### 1. Power Transition Theory (A.F.K. Organski)\nDeveloped in 1958, Power Transition Theory challenges the classic balance-of-power assumption that military parity maintains peace.\n- Instead, Organski argues that **war is most likely when a dissatisfied rising power approaches parity with the established hegemon**.\n- **The Pyramidal System:**\n  1. *Dominant Power:* Sits at the apex, having written the rules, established international institutions, and built the currency and trade architecture.\n  2. *Satisfied Great Powers:* Benefit from the status quo.\n  3. *Dissatisfied Rising Powers:* Rapid internal industrial and technological growth causes their capabilities to expand much faster than their systemic status, prestige, and influence.\n  4. *The Danger Zone:* As the rising power's growth curve intersects with the dominant power's trajectory, the probability of systemic war peaks.\n\n```\nRelative Power\n    ^\n    |             / Rising Dissatisfied Power\n    |            /\n    |    -------*------- Established Hegemon\n    |          /  \u2191 (Danger Zone: War of Transition)\n    |         /\n    +-----------------------------> Time\n```\n\n#### 2. The 'Thucydides Trap' (Graham Allison)\nDrawing on the ancient historian Thucydides' classic explanation of the Peloponnesian War\u2014*\"What made war inevitable was the growth of Athenian power and the fear which this caused in Sparta\"*\u2014scholars analyze whether rapid shifts in structural power can be managed without catastrophic collision.\n- The established hegemon experiences structural anxiety, fearing encirclement and loss of primacy.\n- The rising power demands equal recognition and a sphere of influence commensurate with its newly acquired power.",
+            "readings": [
+              {
+                "label": "Paul Kennedy, The Rise and Fall of the Great Powers (Random House, 1987)",
+                "url": "https://www.worldcat.org/title/rise-and-fall-of-the-great-powers/oclc/16086705"
               },
               {
                 "label": "Graham Allison, Destined for War: Can America and China Escape Thucydides's Trap? (2017)",
-                "url": "https://www.hmhbooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What fundamental geopolitical dynamic is termed 'Thucydides' Trap'?",
-                "options": [
-                  "When a rising power threatens to displace an established ruling power, structural stress makes violent conflict highly probable.",
-                  "When democratic states refuse to trade with monarchies.",
-                  "When a country spends more than 50% of its budget on naval ships.",
-                  "When international courts ban all bilateral treaties."
-                ],
-                "answer": 0,
-                "why": "Thucydides' Trap describes the structural friction between a rising challenger and an anxious incumbent hegemon."
-              }
-            ]
-          },
-          {
-            "id": "thucy-l2",
-            "title": "The US-China Rivalry: Taiwan and the Silicon Shield",
-            "body": "### The 21st-Century Crucible\n\nHarvard political scientist Graham Allison reviewed the last 500 years of history and identified **16 cases** where a rising power challenged a ruling power. In **12 of those 16 cases, the result was catastrophic war** (including Britain vs Wilhelmine Germany in 1914).\n\nToday, the United States and the People's Republic of China stand face to face across the Pacific in the ultimate modern test of the trap.\n\n#### Flashpoint: Taiwan and the Silicon Shield\nTaiwan represents the convergence of three explosive pressures:\n1. **Ideological and Historical Legitimacy**: Beijing views Taiwan as an inalienable renegade province whose 'reunification' is essential to the 'Great Rejuvenation of the Chinese Nation'. For the US, Taiwan is a vibrant democracy anchoring the First Island Chain.\n2. **Geostrategic Chokepoint**: Control of Taiwan allows the PLA Navy to project power directly into the Western Pacific, bypassing US containment lines.\n3. **The Semiconductor Monopoly**: The Taiwan Semiconductor Manufacturing Company (TSMC) produces over **90% of the world's most advanced microchips** (under 3nm). An invasion or blockade of Taiwan would instantly paralyze the global economy, shutting down auto manufacturing, AI datacenters, and modern military avionics worldwide.\n\nEscaping the trap requires what Allison and Henry Kissinger termed **Co-opetition**: establishing strict crisis communication hotlines, reciprocal military transparency, and clear strategic guardrails while competing economically.",
-            "readings": [
-              {
-                "label": "Henry Kissinger, On China (2011)",
-                "url": "https://www.penguinrandomhouse.com"
+                "url": "https://www.belfercenter.org/thucydides-trap/overview-3"
               },
               {
-                "label": "Chris Miller, Chip War: The Fight for the World's Most Critical Technology (2022)",
-                "url": "https://www.simonandschuster.com"
+                "label": "A.F.K. Organski, World Politics (Knopf, 1958)",
+                "url": "https://www.worldcat.org/title/world-politics/oclc/388277"
               }
             ],
             "quiz": [
               {
-                "q": "Why is Taiwan described as possessing a 'Silicon Shield' in international relations?",
+                "q": "According to A.F.K. Organski's Power Transition Theory, when is catastrophic systemic war between major powers most probable?",
                 "options": [
-                  "Its dominant production of the world's most advanced semiconductor chips makes a military conflict economically catastrophic for both the US and China.",
-                  "Its coastline is covered in physical silicon mineral rocks.",
-                  "Its military tanks are coated in liquid silicon armor.",
-                  "It has a monopoly on manufacturing solar panels."
+                  "When the dominant hegemon holds an overwhelming, insurmountable military advantage.",
+                  "When a dissatisfied, rapidly growing challenger approaches power parity with the established dominant power.",
+                  "When both states sign a multilateral human rights declaration.",
+                  "When third-party neutral states establish sovereign wealth funds."
                 ],
-                "answer": 0,
-                "why": "Taiwan's TSMC manufactures over 90% of cutting-edge microchips, making an invasion an existential supply shock to all global superpowers."
+                "answer": 1,
+                "why": "Power Transition Theory posits that systemic stability is highest under clear hegemonic predominance, and lowest when a dissatisfied rising state catches up to the incumbent hegemon."
               }
             ]
           }
@@ -1737,77 +1353,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "ir-cuban",
-    "title": "The Cuban Missile Crisis: 13 Days on the Brink of Nuclear War",
+    "id": "ir-un-global-governance",
+    "title": "The United Nations & Global Governance: Multilateralism, the Security Council & Sovereignty",
     "category": "International Relations",
-    "subcategory": "Strategic Studies",
+    "subcategory": "Global governance",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "October 1962: the closest humanity has ever come to global thermonuclear extinction. U-2 spy plane photos, Kennedy's ExComm deliberations, the naval quarantine, and the secret Turkey missile deal.",
-    "passMark": 70,
+    "description": "A rigorous study of the institutional architecture of global governance. Covers the origins and structure of the United Nations, the legal and political dynamics of the UN Security Council veto (Article 27), Chapter VII enforcement powers, the General Assembly, and the tension between national sovereignty and the Responsibility to Protect (R2P).",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-15",
     "objectives": [
-      "Deconstruct the secret Soviet deployment of nuclear ballistic missiles to Cuba (Operation Anadyr).",
-      "Analyze President John F. Kennedy's ExComm options: Airstrike, Invasion, or Naval Quarantine.",
-      "Evaluate Black Saturday (October 27, 1962): the shooting down of Rudolf Anderson's U-2 and the Vasili Arkhipov incident.",
-      "Examine the private diplomacy between Robert Kennedy and Anatoly Dobrynin that resolved the crisis."
+      "Analyze the institutional framework of the UN Charter, focusing on Chapters VI, VII, and VIII.",
+      "Evaluate the geopolitical impact of the Permanent Five (P5) veto power in the UN Security Council.",
+      "Assess the legal and normative evolution of the 'Responsibility to Protect' (R2P) adopted at the 2005 World Summit.",
+      "Debate proposals for Security Council reform and multilateral institutional renewal."
     ],
     "modules": [
       {
-        "title": "Operation Anadyr and the ExComm Debates",
+        "title": "Module 1: The UN Architecture: Security Council, General Assembly, and Chapter VII",
         "lessons": [
           {
-            "id": "cuban-l1",
-            "title": "U-2 Discovery and the ExComm Options",
-            "body": "### The Photos That Froze the World\n\nOn the morning of October 16, 1962, CIA National Photographic Interpretation Center analysts presented President John F. Kennedy with high-altitude photos taken by a U-2 spy plane over San Crist\u00f3bal, Cuba. The images revealed medium-range ballistic missile (MRBM) launch pads, nuclear warhead bunkers, and SS-4 missiles capable of striking Washington D.C., New York City, and 80 million Americans within twenty minutes of launch.\n\nSoviet Premier Nikita Khrushchev had executed **Operation Anadyr**\u2014a secret deployment of 40,000 Soviet troops and dozens of nuclear warheads just 90 miles off the Florida coast, seeking to counter US Jupiter missiles based in Turkey and prevent another US-backed invasion of Cuba following the 1961 Bay of Pigs disaster.\n\n#### Inside the ExComm Debates\nKennedy immediately assembled **ExComm** (the Executive Committee of the National Security Council), secretly tape-recording their deliberations. ExComm fractured into two fierce camps:\n\n1. **The Hawks (Joint Chiefs of Staff & General Curtis LeMay)**: Demanded an immediate, massive surprise airstrike on the missile silos followed by a full-scale amphibious invasion of Cuba. LeMay dismissed diplomacy as appeasement, insisting the Soviets would not retaliate. (Unbeknownst to the Joint Chiefs, the Soviets in Cuba already possessed tactical nuclear battlefield rockets with pre-delegated local authority to fire upon invading American forces).\n2. **The Doves / Moderates (Robert McNamara & Robert Kennedy)**: Urged a **Naval Blockade**. To avoid an act of war under international law, they carefully branded the blockade a **'Quarantine'**\u2014preventing offensive military shipments while giving Khrushchev diplomatic space to de-escalate without losing face.",
+            "id": "ir-un-l1",
+            "title": "The UN Charter: Collective Security vs Great Power Veto",
+            "body": "### The Architecture of the United Nations\n\nFounded in San Francisco in 1945 following the catastrophic collapse of the League of Nations and the devastation of World War II, the United Nations was engineered to *\"save succeeding generations from the scourge of war\"*.\n\n#### 1. The Structure of Authority under the UN Charter\n- **The Security Council (UNSC):** Entrusted with primary responsibility for the maintenance of international peace and security under **Article 24**.\n  - Composed of 15 members: 10 non-permanent members elected for two-year terms, and **5 Permanent Members (P5)**: China, France, the Russian Federation, the United Kingdom, and the United States.\n  - **The Veto Power (Article 27(3)):** Decisions on substantive matters require an affirmative vote of nine members including the concurring votes of the permanent members. A single negative vote ('veto') by any P5 state blocks the adoption of a resolution.\n  - **Binding Authority (Article 25):** Unlike the General Assembly, Security Council resolutions adopted under Chapter VII are legally binding on all 193 UN Member States.\n- **The General Assembly (UNGA):** The chief deliberative, policymaking, and representative organ. Every sovereign state has one vote. Resolutions of the UNGA are non-binding recommendations, with key budgetary and institutional exceptions.\n\n```\nUN Charter Enforcement Ladder:\nChapter VI: Pacific Settlement of Disputes (Negotiation, Mediation, Conciliation)\n    \u2193\nArticle 39: Determination of a Threat to the Peace, Breach of the Peace, or Act of Aggression\n    \u2193\nArticle 41: Measures Not Involving Armed Force (Economic sanctions, arms embargoes, severed diplomatic ties)\n    \u2193\nArticle 42: Military Enforcement Actions (\"take such action by air, sea, or land forces as may be necessary\")\n```\n\n#### 2. The Responsibility to Protect (R2P)\nAdopted unanimously at the **2005 UN World Summit**, R2P sought to resolve the fundamental conflict between Westphalian state sovereignty (**Article 2(7)** non-intervention) and human rights:\n- **Pillar 1:** The primary responsibility of the state to protect its own population from genocide, war crimes, ethnic cleansing, and crimes against humanity.\n- **Pillar 2:** The commitment of the international community to assist states in fulfilling this responsibility.\n- **Pillar 3:** The timely and decisive collective response through the Security Council under Chapter VII should a national authority manifestly fail to protect its population.",
             "readings": [
               {
-                "label": "Robert F. Kennedy, Thirteen Days: A Memoir of the Cuban Missile Crisis (1969)",
-                "url": "https://www.wwnorton.com"
+                "label": "Charter of the United Nations (1945)",
+                "url": "https://www.un.org/en/about-us/un-charter/full-text"
               },
               {
-                "label": "Ernest R. May & Philip D. Zelikow, The Kennedy Tapes: Inside the White House During the Cuban Missile Crisis (2001)",
-                "url": "https://www.hup.harvard.edu"
+                "label": "2005 World Summit Outcome Document (A/RES/60/1, paras 138-139 on R2P)",
+                "url": "https://digitallibrary.un.org/record/559995"
+              },
+              {
+                "label": "Michael Barnett, Eyewitness to a Genocide: The United Nations and Rwanda (Cornell, 2002)",
+                "url": "https://www.cornellpress.cornell.edu/book/9780801488672/eyewitness-to-a-genocide/"
               }
             ],
             "quiz": [
               {
-                "q": "Why did President Kennedy choose a 'Naval Quarantine' rather than an immediate airstrike on the Cuban missile silos?",
+                "q": "Under Article 25 of the UN Charter, what distinguishes resolutions of the Security Council from standard resolutions of the General Assembly?",
                 "options": [
-                  "To prevent immediate thermonuclear retaliation and buy time to negotiate Khrushchev's peaceful withdrawal.",
-                  "Because the US Navy had no fighter jets in 1962.",
-                  "Because Cuba had already surrendered.",
-                  "Because Congress had ordered all troops home."
+                  "Security Council resolutions apply only to non-governmental organizations.",
+                  "Security Council decisions are legally binding on all UN Member States, whereas General Assembly resolutions are generally non-binding political recommendations.",
+                  "General Assembly resolutions automatically dispatch peacekeeping troops without a vote.",
+                  "Security Council resolutions require the unanimous consent of all 193 member states."
                 ],
-                "answer": 0,
-                "why": "A surprise airstrike risked killing Soviet soldiers and triggering an automatic Soviet invasion of West Berlin or nuclear strikes; the quarantine created critical diplomatic pause."
-              }
-            ]
-          },
-          {
-            "id": "cuban-l2",
-            "title": "Black Saturday and the Secret Turkish Missile Deal",
-            "body": "### The Brink of Apocalypse\n\nSaturday, October 27, 1962\u2014known to history as **Black Saturday**\u2014was the most dangerous day in human history. \n\nIn Cuba, a Soviet surface-to-air missile battery shot down an American U-2 spy plane, killing pilot Major Rudolf Anderson. The Pentagon urged immediate retaliatory airstrikes on the Soviet missile site the next morning. \n\nSimultaneously in the Caribbean, US destroyers dropped signaling depth charges on the Soviet submarine *B-59*. Deep underwater, cut off from radio communication and with suffocating cabin temperatures, Captain Valentin Savitsky believed World War III had already begun and ordered the launch of the sub's ten-kiloton nuclear torpedo. Under Soviet protocol, launching required unanimous consent from three officers. Second-in-command **Vasili Arkhipov** refused to consent, single-handedly preventing a nuclear exchange that would have ignited global atomic war.\n\n#### The Secret Deal in Washington\nThat evening, Attorney General Robert Kennedy held a secret, off-the-record meeting with Soviet Ambassador Anatoly Dobrynin at the Department of Justice:\n1. **Public Terms**: The USSR would dismantle and withdraw all offensive missiles from Cuba under UN verification. In return, the US pledged never to invade Cuba.\n2. **The Secret Codicil**: JFK agreed that within six months, the US would quietly dismantle and withdraw its **Jupiter nuclear missiles stationed in Turkey**, bordering the Soviet Union. Crucially, this component was kept strictly secret to protect Kennedy from domestic political attacks.\n\nKhrushchev accepted. Nuclear war was averted by the narrowest of margins, proving that **in nuclear crises, survival depends on granting your adversary an honorable retreat.**",
-            "readings": [
-              {
-                "label": "Graham Allison & Philip Zelikow, Essence of Decision: Explaining the Cuban Missile Crisis (2nd ed. 1999)",
-                "url": "https://www.pearson.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What secret concession made by President Kennedy was critical to resolving the Cuban Missile Crisis?",
-                "options": [
-                  "A secret pledge to withdraw American Jupiter ballistic missiles from Turkey within six months.",
-                  "A promise to cede Puerto Rico to the Soviet Union.",
-                  "Agreeing to share US atomic bomb blueprints with Moscow.",
-                  "Resigning from the presidency before 1964."
-                ],
-                "answer": 0,
-                "why": "JFK secretly traded the obsolete Jupiter missiles in Turkey for the Cuban missiles, allowing Khrushchev to claim a reciprocal security victory to his Politburo."
+                "answer": 1,
+                "why": "Article 25 explicitly mandates that UN Member States agree to accept and carry out the decisions of the Security Council in accordance with the Charter."
               }
             ]
           }
@@ -1816,73 +1410,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "ir-versailles",
-    "title": "The Treaty of Versailles: How the 1919 Peace Created World War II",
+    "id": "ir-nuclear-strategy",
+    "title": "Nuclear Strategy, Deterrence & Non-Proliferation: From MAD to the Second Nuclear Age",
     "category": "International Relations",
-    "subcategory": "Diplomatic History",
+    "subcategory": "Security studies",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "The fateful peace conference at the Hall of Mirrors: Wilson's Fourteen Points, Clemenceau's quest for vengeance, Article 231 (the War Guilt Clause), astronomical reparations, and John Maynard Keynes' prophetic warning.",
-    "passMark": 70,
+    "description": "A comprehensive analysis of nuclear strategy, strategic stability, and arms control regimes. Examines the revolution of nuclear deterrence, Mutually Assured Destruction (MAD), counterforce vs countervalue targeting, the Nuclear Non-Proliferation Treaty (NPT), and contemporary risks of tactical escalation and hypersonic systems.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-08-19",
     "objectives": [
-      "Analyze the conflicting geopolitical goals of the 'Big Three' (Wilson, Clemenceau, Lloyd George) in 1919.",
-      "Deconstruct Article 231 (the War Guilt Clause) and its catastrophic psychological impact in Germany.",
-      "Evaluate John Maynard Keynes' The Economic Consequences of the Peace.",
-      "Trace how the Versailles settlement directly fueled the rise of the Weimar far-right and Adolf Hitler."
+      "Understand the logic of nuclear deterrence and Bernard Brodie's 'nuclear revolution'.",
+      "Analyze the strategic requirements for second-strike capability and the nuclear triad (ICBMs, SLBMs, strategic bombers).",
+      "Examine the core pillars of the 1968 Nuclear Non-Proliferation Treaty (NPT) and IAEA safeguards.",
+      "Evaluate modern nuclear challenges: tactical nuclear weapons, missile defense destabilization, and hypersonic glide vehicles."
     ],
     "modules": [
       {
-        "title": "The Carthaginian Peace and the Seeds of Fascism",
+        "title": "Module 1: The Nuclear Revolution, Deterrence, and Second-Strike Capability",
         "lessons": [
           {
-            "id": "versailles-l1",
-            "title": "The Clash of Visions: Wilsonian Idealism vs French Retribution",
-            "body": "### The Gathering in the Hall of Mirrors\n\nIn January 1919, leaders of thirty-two nations assembled in Paris to reconstruct a shattered world after the slaughter of twenty million soldiers and civilians in World War I. The conference was dominated by the **Big Three**:\n\n- **Woodrow Wilson (United States)**: The academic idealist who arrived with his **Fourteen Points**, championing national self-determination, open diplomacy, freedom of the seas, and a **League of Nations** to replace power politics with collective security.\n- **Georges Clemenceau ('The Tiger' of France)**: Representing a nation that had lost an entire generation of young men and suffered northern industrial destruction. Clemenceau cared nothing for Wilsonian sermons; his sole objective was to permanently dismember, demilitarize, and bankrupt Germany so it could never wage war again (*A Carthaginian Peace*).\n- **David Lloyd George (Great Britain)**: Caught between public domestic pressure to *\"squeeze the German lemon until the pips squeak\"* and economic realism that a ruined Germany would destroy European trade and invite Russian Bolshevism.\n\n#### The Diktat of Versailles\nGerman delegates were completely barred from negotiations. When presented with the finished treaty in May 1919 in the Hall of Mirrors, they were given an ultimatum: sign within five days or face an Allied military invasion.\n\nThe treaty stripped Germany of 13% of its European territory, all overseas colonies, Alsace-Lorraine, the Polish Corridor, and 75% of its iron ore deposits. Its army was capped at 100,000 volunteers, its general staff abolished, and its navy scuttled.",
+            "id": "ir-nuc-l1",
+            "title": "The Logic of Mutually Assured Destruction and Strategic Stability",
+            "body": "### The Nuclear Revolution\n\nIn 1946, military strategist Bernard Brodie wrote the immortal words that established the field of nuclear strategy:\n> *\"Thus far the chief purpose of our military establishment has been to win wars. From now on its chief purpose must be to avert them. It can have almost no other useful purpose.\"*\n\n#### 1. Deterrence vs Defense (Thomas Schelling, *Arms and Influence*, 1966)\n- **Defense:** The capability to physically resist, parry, or repel an enemy's armed assault.\n- **Deterrence:** The psychological prevention of action through the threat of unacceptable retaliatory harm. Deterrence operates on the calculus of the adversary: `Perceived Cost \u00d7 Probability > Expected Gain`.\n\n#### 2. The Nuclear Triad and Second-Strike Survivability\nFor deterrence to function under Mutually Assured Destruction (MAD), a state must possess a credible **assured second-strike capability**: the ability to absorb an enemy's maximum surprise preemptive nuclear attack (*first strike*) and still retain sufficient survivable nuclear forces to inflict catastrophic, unacceptable destruction in retaliation.\n\n```\nThe Nuclear Triad Architecture:\n1. Intercontinental Ballistic Missiles (ICBMs):\n   - Fast responsiveness, high accuracy, but fixed silo vulnerability (\"nuclear sponge\").\n2. Submarine-Launched Ballistic Missiles (SLBMs):\n   - Near-complete stealth and invulnerability submerged in deep oceans; the ultimate guarantor of second strike.\n3. Strategic Bombers (Air-Launched Cruise Missiles & Gravity Bombs):\n   - Flexible, recallable in flight, visible signaling mechanism during geopolitical crises.\n```\n\n#### 3. Counterforce vs Countervalue Targeting\n- **Countervalue:** Targeting an adversary's population centers, industrial base, and major cities. Maximizes civilian horror to preserve deterrence.\n- **Counterforce:** Targeting an adversary's military assets, missile silos, airfields, command bunkers, and nuclear launchers. Counterforce creates the dangerous temptation of a \"splendid first strike\", potentially eroding crisis stability.\n\n#### 4. The Nuclear Non-Proliferation Treaty (NPT, 1968)\nThe cornerstone of global nuclear non-proliferation is built upon a Grand Bargain between Nuclear-Weapon States (P5) and Non-Nuclear-Weapon States:\n- **Pillar 1 (Non-Proliferation):** Non-nuclear states pledge never to acquire or develop nuclear weapons (verified by the International Atomic Energy Agency, IAEA).\n- **Pillar 2 (Disarmament - Article VI):** Nuclear states commit to pursue negotiations in good faith on effective measures relating to cessation of the nuclear arms race and to nuclear disarmament.\n- **Pillar 3 (Peaceful Uses - Article IV):** Inalienable right of all signatories to develop and use nuclear energy for peaceful civil power generation.",
             "readings": [
               {
-                "label": "Margaret MacMillan, Paris 1919: Six Months That Changed the World (2001)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Bernard Brodie, The Absolute Weapon: Atomic Power and World Order (1946)",
+                "url": "https://www.osti.gov/biblio/4405230"
+              },
+              {
+                "label": "Thomas C. Schelling, Arms and Influence (Yale University Press, 1966)",
+                "url": "https://yalebooks.yale.edu/book/9780300143409/arms-and-influence/"
+              },
+              {
+                "label": "Treaty on the Non-Proliferation of Nuclear Weapons (NPT, 1968)",
+                "url": "https://www.un.org/disarmament/wmd/nuclear/npt/text"
               }
             ],
             "quiz": [
               {
-                "q": "Why did German delegates refer to the Treaty of Versailles as a 'Diktat'?",
+                "q": "What is the critical technical and operational purpose of maintaining a nuclear triad, specifically submarine-launched ballistic missiles (SLBMs)?",
                 "options": [
-                  "They were excluded from negotiations and forced to sign under threat of immediate military invasion.",
-                  "It was written entirely in Latin shorthand.",
-                  "It was dictated directly by the League of Nations council in Geneva.",
-                  "It was signed on a warship in the Mediterranean."
+                  "Submarines are the least expensive military equipment to manufacture.",
+                  "To guarantee an undetectable, survivable second-strike retaliatory capability even if land silos and air bases are destroyed in a surprise first strike.",
+                  "To conduct conventional border patrols during peacetime trade negotiations.",
+                  "To completely eliminate the need for diplomatic embassies abroad."
                 ],
-                "answer": 0,
-                "why": "Germany was given no opportunity to negotiate terms and had the harsh treaty imposed by Allied ultimatum."
-              }
-            ]
-          },
-          {
-            "id": "versailles-l2",
-            "title": "Article 231 and Keynes' Economic Prophecy",
-            "body": "### The War Guilt Clause and Financial Ruin\n\nThe most toxic clause in the treaty was **Article 231**, the infamous **War Guilt Clause**:\n> *\"The Allied and Associated Governments affirm and Germany accepts the responsibility of Germany and her allies for causing all the loss and damage to which the Allied and Associated Governments and their nationals have been subjected as a consequence of the war imposed upon them by the aggression of Germany and her allies.\"*\n\nIn 1921, the Allied Reparations Commission set Germany's financial liability at **132 billion gold marks** (roughly $33 billion at the time, or over $500 billion today).\n\n#### John Maynard Keynes Resigns in Protest\nYoung British Treasury representative **John Maynard Keynes** resigned from the Paris delegation in disgust and published a blistering global bestseller, *The Economic Consequences of the Peace* (1919). \n\nKeynes issued an astonishingly accurate prophecy:\n> *\"If we aim deliberately at the impoverishment of Central Europe, vengeance, I dare predict, will not limp. Nothing can then delay for very long that final civil war between the forces of Reaction and the despairing convulsions of Revolution, before which the horrors of the late German war will fade into nothing.\"*\n\nThe treaty directly birthed the poisonous right-wing **Dolchsto\u00dflegende (Stab-in-the-Back Myth)**\u2014the false conspiracy theory that the German military was never defeated on the Western Front, but was betrayed from behind by socialist, liberal, and Jewish politicians in Berlin who signed the shameful Armistice, providing Adolf Hitler with his primary propaganda battering ram.",
-            "readings": [
-              {
-                "label": "John Maynard Keynes, The Economic Consequences of the Peace (1919)",
-                "url": "https://www.gutenberg.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What did John Maynard Keynes predict would happen if the Allies imposed crushing economic reparations on Germany?",
-                "options": [
-                  "Economic collapse in Central Europe would inevitably spark political extremism, reaction, and a catastrophic second European war.",
-                  "Germany would become an agrarian British colony.",
-                  "The French Franc would become the sole global reserve currency.",
-                  "The League of Nations would conquer Russia."
-                ],
-                "answer": 0,
-                "why": "Keynes foresaw that bankrupting Germany would destroy the continental economy and foster vengeful radical fascism."
+                "answer": 1,
+                "why": "SLBMs patrolling invisibly underwater ensure that an adversary cannot hope to launch a disarming first strike, thereby maintaining strategic crisis stability through assured retaliation."
               }
             ]
           }
@@ -1891,472 +1467,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "ir-sanctions",
-    "title": "Economic Warfare: Sanctions, SWIFT, and Dollar Hegemony",
+    "id": "ir-diplomacy-statecraft",
+    "title": "Diplomacy, Statecraft & Multilateral Negotiation: Diplomatic Law & Crisis Management",
     "category": "International Relations",
-    "subcategory": "International Political Economy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "How the US Department of the Treasury became the Pentagon of the 21st century: secondary sanctions, the weaponization of the SWIFT messaging network, freezing $300 billion in Russian central bank reserves, and the global de-dollarization counter-movement.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-24",
-    "objectives": [
-      "Analyze the architecture of US financial hegemony rooted in the petrodollar and clearing houses (CHIPS/Fedwire).",
-      "Evaluate the mechanics of primary vs extraterritorial secondary sanctions (OFAC).",
-      "Deconstruct the unprecedented freezing of Russian Central Bank foreign exchange reserves in 2022.",
-      "Assess BRICS initiatives to construct alternative non-dollar payment rails (mBridge, CIPS)."
-    ],
-    "modules": [
-      {
-        "title": "The Weaponization of the Global Financial System",
-        "lessons": [
-          {
-            "id": "sanc-l1",
-            "title": "Dollar Hegemony and the SWIFT Chokepoint",
-            "body": "### The Ultimate Tool of Coercive Statecraft\n\nIn modern international statecraft, financial sanctions have largely replaced aircraft carriers as the first weapon of coercion. This power derives from **US Dollar Hegemony**:\n- Over 85% of global foreign exchange transactions involve the US Dollar.\n- Over 58% of global central bank foreign exchange reserves are held in dollar-denominated assets.\n\nUnder US law, any transaction denominated in US dollars\u2014even between an Austrian bank and a South Korean importer\u2014must settle through an American correspondent bank using **CHIPS** (Clearing House Interbank Payments System) or the Federal Reserve's **Fedwire**. The moment funds touch a US server for a fraction of a millisecond, the US Department of the Treasury's **Office of Foreign Assets Control (OFAC)** asserts extraterritorial legal jurisdiction.\n\n#### Weaponizing the Plumbing: SWIFT\nBased in Belgium, the **Society for Worldwide Interbank Financial Telecommunication (SWIFT)** is the financial world's messaging backbone, connecting over 11,000 banks across 200 nations. While technically a neutral private cooperative, US and European pressure has repeatedly weaponized SWIFT:\n- In 2012, SWIFT disconnected Iranian banks to compel nuclear negotiations.\n- In 2022, major Russian financial institutions were severed following the invasion of Ukraine. Disconnection from SWIFT effectively blinds a bank, rendering international commercial transfers extraordinarily slow, expensive, and opaque.",
-            "readings": [
-              {
-                "label": "Henry Farrell & Abraham L. Newman, Weaponized Interdependence: How Global Economic Networks Shape State Coercion (2019)",
-                "url": "https://www.mitpressjournals.org"
-              },
-              {
-                "label": "Daniel W. Drezner, The Sanctions Paradox (1999)",
-                "url": "https://www.cambridge.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How does the US Treasury assert jurisdiction over international transactions between two non-American companies?",
-                "options": [
-                  "If the transaction is denominated in US dollars, it clears through an American correspondent bank, triggering US legal jurisdiction.",
-                  "The US military physically boards all container ships.",
-                  "All international wire transfers require written permission from the US Congress.",
-                  "The United Nations assigns all banking regulatory powers to Washington."
-                ],
-                "answer": 0,
-                "why": "Dollar clearing through US correspondent banks creates the jurisdictional hook used by OFAC to penalize foreign companies via secondary sanctions."
-              }
-            ]
-          },
-          {
-            "id": "sanc-l2",
-            "title": "Freezing Central Bank Reserves and the De-Dollarization Shock",
-            "body": "### Crossing the Financial Rubicon\n\nIn February 2022, following Russia's invasion of Ukraine, the G7 nations crossed what financial analysts had long considered an unthinkable boundary: they **froze approximately $300 billion of the Central Bank of the Russian Federation's foreign exchange reserves** held in European and American custodial banks (like Euroclear).\n\nFor centuries, sovereign central bank reserves were treated as sacrosanct under the doctrine of **Sovereign Immunity**. Freezing them demonstrated that paper foreign reserves held in Western jurisdictions are not risk-free cash; they are **unsecured electronic IOUs** that can be canceled by political decree.\n\n#### The De-Dollarization Backlash\nWhile the sanctions crippled Russia's access to foreign assets, they ignited a massive geopolitical immune response across non-Western capitals (China, India, Saudi Arabia, Brazil):\n- Central banks around the world accelerated purchases of physical gold stored in their own domestic vaults.\n- Bilateral trade settlement in local currencies (RMB-Ruble, Rupee-Dirham, Yuan-Riyal) expanded dramatically.\n- The BRICS bloc accelerated development of **mBridge**\u2014a multi-central bank digital currency platform built on distributed ledger technology to bypass the Western banking system entirely.\n\nFinancial statecraft faces a classic paradox: **the more aggressively you weaponize an economic network, the greater the incentive for other powers to build an alternative world outside your reach.**",
-            "readings": [
-              {
-                "label": "Agathe Demarais, Backfire: How Sanctions Reshape the World Against U.S. Interests (2022)",
-                "url": "https://cup.columbia.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What unintended geopolitical consequence resulted from freezing $300 billion of Russian central bank reserves?",
-                "options": [
-                  "It signaled to non-Western central banks that dollar reserves carry sovereign political risk, accelerating gold purchases and alternative payment rails.",
-                  "It caused all nations to immediately adopt the US Dollar as their only currency.",
-                  "It dissolved the BRICS trade coalition.",
-                  "It led to the immediate privatization of all Russian banks."
-                ],
-                "answer": 0,
-                "why": "The unprecedented freeze undermined the assumed neutrality of reserve currencies, encouraging emerging economies to diversify away from Western clearing systems."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ir-nuclear",
-    "title": "Nuclear Strategy & MAD: Game Theory on the Brink of Armageddon",
-    "category": "International Relations",
-    "subcategory": "Strategic Studies",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "The terrifying mathematics of Mutually Assured Destruction (MAD): John von Neumann's game theory, Herman Kahn thinking about the unthinkable, the nuclear triad, second-strike capability, and hypersonic counterforce escalation.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-27",
-    "objectives": [
-      "Analyze the strategic logic of Mutually Assured Destruction (MAD) and the Nuclear Triad.",
-      "Apply Game Theory concepts: The Prisoner's Dilemma, Chicken, and Thomas Schelling's 'Strategy of Conflict'.",
-      "Evaluate countervalue (targeting cities) vs counterforce (targeting missile silos) nuclear doctrines.",
-      "Assess modern risks: hypersonic glide vehicles, tactical nuclear weapons, and AI-enabled command systems."
-    ],
-    "modules": [
-      {
-        "title": "Game Theory and the Logic of Deterrence",
-        "lessons": [
-          {
-            "id": "nuclear-l1",
-            "title": "The Prisoner's Dilemma and Thomas Schelling's Game of Chicken",
-            "body": "### Thinking About the Unthinkable\n\nIn 1945, the atomic bomb revolutionized international politics. As military theorist Bernard Brodie observed in *The Absolute Weapon* (1946):\n> *\"Thus far the chief purpose of our military establishment has been to win wars. From now on its chief purpose must be to avert them. It can have almost no other useful purpose.\"*\n\nDuring the Cold War, the RAND Corporation in Santa Monica assembled mathematicians (John von Neumann, Albert Wohlstetter) and economists (**Thomas Schelling**) to model nuclear conflict through **Game Theory**.\n\n#### The Game of Chicken\nSchelling modeled nuclear brinkmanship on the teenage daredevil game of **Chicken**: two cars speed head-on toward each other along a narrow country road; the first driver to swerve is the 'chicken', but if neither swerves, both perish in a lethal head-on collision.\n\nHow do you win a game of Chicken?\nSchelling proved that rationality is a weakness: if your adversary knows you are rational, they will hold their course, expecting you to swerve to save your life. \n\nTo win, you must commit **The Rationality of Irrationality**:\n1. Conspicuously throw the steering wheel out the window in full view of your opponent.\n2. Signal irrevocably that you have stripped yourself of the physical ability to swerve.\n3. The burden of avoiding mutual destruction is now shifted 100% onto your adversary.\n\nIn nuclear strategy, this logic led to automated launch-on-warning protocols and the terrifying Soviet **Dead Hand (Perimetr)** system\u2014an automated computer command that would launch the entire Soviet nuclear arsenal even if the Kremlin leadership were dead.",
-            "readings": [
-              {
-                "label": "Thomas C. Schelling, The Strategy of Conflict (1960)",
-                "url": "https://www.hup.harvard.edu"
-              },
-              {
-                "label": "Herman Kahn, On Thermonuclear War (1960)",
-                "url": "https://www.routledge.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What counter-intuitive principle did Thomas Schelling identify in his analysis of the 'Game of Chicken' in nuclear strategy?",
-                "options": [
-                  "Binding yourself irrevocably and appearing willing to accept mutual catastrophe forces the other rational player to swerve.",
-                  "The player with the most diplomatic diplomats always wins.",
-                  "Both players should immediately turn off their car engines.",
-                  "Nuclear weapons cannot deter conventional warfare."
-                ],
-                "answer": 0,
-                "why": "Schelling demonstrated that demonstrably eliminating your own ability to back down forces the adversary to bear the full burden of avoiding mutual destruction."
-              }
-            ]
-          },
-          {
-            "id": "nuclear-l2",
-            "title": "The Nuclear Triad and Second-Strike Survivability",
-            "body": "### The Architecture of Stability\n\nWhy did the Cold War never turn into World War III? The foundation of nuclear peace is **Mutually Assured Destruction (MAD)**, which requires an absolute, invulnerable **Second-Strike Capability**.\n\nIf Country A can launch a surprise first-strike that wipes out 100% of Country B's nuclear missiles on the ground, Country A has a powerful rational incentive to strike first during a crisis (*First-Strike Instability*).\n\n#### The Nuclear Triad\nTo eliminate this incentive, superpowers constructed the **Nuclear Triad**, deploying warheads across three survivable platforms:\n1. **Land-Based ICBMs (Intercontinental Ballistic Missiles)**: Hardened in deep underground concrete silos, acting as a 'nuclear sponge' that an enemy must target with hundreds of warheads.\n2. **Strategic Heavy Bombers (B-52, B-2, Tu-160)**: Can be scrambled into the air on warning, kept on airborne alert, and recalled if diplomacy succeeds.\n3. **SSBNs (Nuclear-Powered Ballistic Missile Submarines)**: The apex of deterrence. Patrolling invisibly in the deep ocean for months at a time, submarines (Ohio-class, Vanguard, Borei) cannot be located or destroyed in a first strike. Even if an entire continent is incinerated, a single submarine can retaliate by vaporizing twenty-four enemy cities.\n\nBecause both sides knew with 100% certainty that launching a first strike was an act of suicide, second-strike capability preserved the nuclear taboo for eighty years.",
-            "readings": [
-              {
-                "label": "Albert Wohlstetter, The Delicate Balance of Terror, Foreign Affairs (1959)",
-                "url": "https://www.foreignaffairs.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why are nuclear ballistic missile submarines (SSBNs) considered the most critical leg of the Nuclear Triad?",
-                "options": [
-                  "Their stealth and invulnerability in the deep ocean guarantee a devastating second-strike capability, eliminating an adversary's incentive to launch a surprise first strike.",
-                  "They are cheaper to build than land silos.",
-                  "They can be navigated by civilian commercial sailors.",
-                  "They do not require nuclear fuel."
-                ],
-                "answer": 0,
-                "why": "Submarines cannot be targeted in a preemptive first strike, guaranteeing that retaliation is mathematically certain and thereby deterring attack."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ir-sykespicot",
-    "title": "The Making of the Modern Middle East: Sykes-Picot and Imperial Borders",
-    "category": "International Relations",
-    "subcategory": "Diplomatic History",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "How the secret British-French pencil lines of 1916 created the modern Middle East: the fall of the Ottoman Empire, T.E. Lawrence and the Arab Revolt, the Balfour Declaration, and artificial borders that ignited century-long regional conflict.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-03",
-    "objectives": [
-      "Analyze the secret 1916 Sykes-Picot Agreement and imperial spheres of influence.",
-      "Deconstruct conflicting British wartime pledges: the McMahon-Hussein Correspondence, the Balfour Declaration, and the Arab Revolt.",
-      "Evaluate the League of Nations Mandate System in Iraq, Syria, Lebanon, and Palestine.",
-      "Trace how artificial colonial borders created institutional fragility, sectarianism, and the rise of ISIS."
-    ],
-    "modules": [
-      {
-        "title": "A Line in the Sand and Contradictory Promises",
-        "lessons": [
-          {
-            "id": "sykes-l1",
-            "title": "The Secret Map of Mark Sykes and Fran\u00e7ois Georges-Picot",
-            "body": "### Drawing Borders with a Ruler\n\nIn May 1916, at the height of World War I, British diplomat Sir Mark Sykes and French diplomat Fran\u00e7ois Georges-Picot concluded a secret agreement to carve up the crumbling **Ottoman Empire** into imperial spheres of control:\n- **France** claimed direct rule and influence over coastal Syria, Lebanon, and Cilicia.\n- **Great Britain** claimed Mesopotamia (Baghdad and Basra), the port of Haifa, and influence across Jordan and the Gulf.\n- **Palestine** was designated for an international administration.\n\nWith a grease pencil across a map from the 'e' in Acre to the last 'k' in Kirkuk, two European aristocrats drew artificial borders that paid zero heed to demographic, tribal, linguistic, or religious realities. Sunni, Shia, and Kurdish populations were forcibly welded together into artificial states (like Iraq), while ancient trade corridors and cultural zones were severed.\n\n#### Three Contradictory Pledges\nTo win World War I, the British Empire simultaneously made three irreconcilable diplomatic promises:\n1. **The McMahon-Hussein Correspondence (1915-1916)**: Pledged British recognition of an independent unified Arab kingdom from Syria to Yemen in exchange for Sharif Hussein of Mecca launching the **Arab Revolt** against the Turks.\n2. **The Sykes-Picot Agreement (1916)**: Secretly divided that very same territory between Britain and France.\n3. **The Balfour Declaration (1917)**: Declared British support for the establishment in Palestine of a *\"national home for the Jewish people.\"*\n\nWhen Vladimir Lenin's Bolsheviks stormed the Tsar's foreign ministry archives in late 1917 and published the secret Sykes-Picot treaty in *Izvestia*, the revelation exposed Allied wartime duplicity and permanently radicalized Arab political consciousness.",
-            "readings": [
-              {
-                "label": "David Fromkin, A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East (1989)",
-                "url": "https://www.macmillan.com"
-              },
-              {
-                "label": "James Barr, A Line in the Sand: The Anglo-French Struggle for the Middle East (2011)",
-                "url": "https://www.bloomsbury.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What was the fundamental diplomatic contradiction of British wartime Middle Eastern statecraft between 1915 and 1917?",
-                "options": [
-                  "Britain simultaneously promised the same Ottoman lands to Arab leaders (McMahon), split them secretly with France (Sykes-Picot), and backed a Jewish national home (Balfour).",
-                  "Britain signed a military alliance with the Ottoman Sultan while fighting in France.",
-                  "Britain surrendered all naval bases in the Mediterranean to Spain.",
-                  "Britain refused to purchase Middle Eastern petroleum."
-                ],
-                "answer": 0,
-                "why": "The British Empire issued mutually incompatible promises to Arab nationalists, French imperialists, and the Zionist movement to secure wartime alliances."
-              }
-            ]
-          },
-          {
-            "id": "sykes-l2",
-            "title": "The Mandate System and the Fragmentation of Iraq and Syria",
-            "body": "### Imperialism Under the Guise of Tutelage\n\nAt the 1919 Paris Peace Conference, direct colonial annexation was out of fashion due to Woodrow Wilson's anti-imperial rhetoric. To square the circle, the League of Nations invented the **Mandate System** (Article 22 of the League Covenant):\n- Former Ottoman territories were classified as **Class A Mandates**\u2014allegedly recognized as provisionally independent nations subject to British and French administrative 'advice and assistance' until they were 'able to stand alone'.\n\nIn practice, mandates were colonies by another name:\n- **French Mandate for Syria and Lebanon**: France applied a classic divide-and-rule strategy, carving up Syria into separate sectarian mini-states (an Alawite state, a Druze state, the State of Damascus, and Greater Lebanon).\n- **British Mandate for Mesopotamia (Iraq)**: Britain glued together three distinct Ottoman provinces (*vilayets*): Shia-majority Basra, Sunni-majority Baghdad, and Kurdish-majority Mosul. To suppress a violent nationwide anti-British uprising in 1920, Winston Churchill installed Hashemite King Faisal on the throne and authorized the Royal Air Force to police rebellious villages with poison gas and aerial bombardment.\n\nWhen the Islamic State (ISIS) bulldozed the border post between Iraq and Syria in June 2014, releasing a video titled *The End of Sykes-Picot*, they were exploiting a century of legitimate regional grievance against artificial colonial cartography.",
-            "readings": [
-              {
-                "label": "Eugene Rogan, The Arabs: A History (2009)",
-                "url": "https://www.basicbooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "How did the League of Nations 'Class A Mandates' operate in practice in post-Ottoman territories?",
-                "options": [
-                  "They operated as disguised British and French colonial administrations, drawing artificial borders that sowed lasting sectarian instability.",
-                  "They held immediate democratic elections with universal suffrage.",
-                  "They merged all Arab territories into a single secular republic.",
-                  "They were governed directly by the International Court of Justice."
-                ],
-                "answer": 0,
-                "why": "The mandate system masked Anglo-French colonial control under paternalistic League of Nations rhetoric, fracturing the region into unstable statelets."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ir-hybrid",
-    "title": "Hybrid Warfare: Cyber, Disinformation, and Grey Zones",
-    "category": "International Relations",
-    "subcategory": "Security Studies",
-    "level": "Undergraduate",
-    "duration": "4 weeks",
-    "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "Warfare beneath the threshold of armed conflict: Russia's 'Little Green Men' in Crimea, the Gerasimov Doctrine, Stuxnet and cyber sabotage, and how authoritarian powers weaponize democratic open societies.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-07",
-    "objectives": [
-      "Deconstruct the concept of the 'Grey Zone' and why it paralyzes traditional collective defense (NATO Article 5).",
-      "Analyze the 2014 annexation of Crimea and the deployment of deniable military proxies ('Little Green Men').",
-      "Evaluate cyber warfare operations under international law (the Tallinn Manual and Stuxnet).",
-      "Assess strategies for democratic societal resilience against cognitive and cyber subversion."
-    ],
-    "modules": [
-      {
-        "title": "Operating in the Grey Zone Beneath Article 5",
-        "lessons": [
-          {
-            "id": "hybrid-l1",
-            "title": "The Gerasimov Doctrine and the Crimean Coup",
-            "body": "### Blurring the Line Between War and Peace\n\nIn February 2013, General Valery Gerasimov, Chief of the Russian General Staff, published an influential article in the *Military-Industrial Courier*. Gerasimov observed:\n> *\"The very 'rules of war' have comparatively changed. The role of non-military means of achieving political and strategic goals has grown, and, in many cases, they have exceeded the power of force of weapons in their effectiveness... A perfectly thriving state can, in a matter of months and even days, be transformed into an arena of fierce armed conflict, become a victim of foreign intervention, and be plunged into a web of chaos, humanitarian catastrophe, and civil war.\"*\n\nThis strategy\u2014termed **Hybrid Warfare** or **Non-Linear War**\u2014operates in the **Grey Zone**: the ambiguous space between peacetime diplomatic competition and open military hostilities.\n\n#### The 2014 Crimean Masterclass\nIn February 2014, unmarked Russian special operations forces wearing sterile green uniforms without insignia seized government buildings, airports, and military bases across the Crimean peninsula. Russian President Vladimir Putin denied they were Russian troops, claiming they were local 'self-defense militias' who bought their combat gear in surplus shops.\n\nBy deploying **plausible deniability** and operating just below the threshold of unambiguous military invasion, Russia paralyzed NATO decision-making. NATO's **Article 5** collective defense treaty requires consensus that an 'armed attack' has occurred; while diplomats argued over who the 'Little Green Men' were, Crimea was annexed without firing a single major shot.",
-            "readings": [
-              {
-                "label": "Mark Galeotti, The Vory: Russia's Super Mafia (2018)",
-                "url": "https://yalebooks.yale.edu"
-              },
-              {
-                "label": "NATO Strategic Communications Centre of Excellence, Hybrid War (2014)",
-                "url": "https://stratcomcoe.org"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the primary operational objective of 'Grey Zone' tactics in hybrid warfare?",
-                "options": [
-                  "To achieve strategic political and territorial goals while staying below the threshold of open war that triggers collective defense treaties like NATO Article 5.",
-                  "To sign bilateral trade treaties with neighboring states.",
-                  "To deploy traditional battle tanks in mass daylight formations.",
-                  "To surrender military command to the United Nations."
-                ],
-                "answer": 0,
-                "why": "Grey zone tactics use ambiguity, cyber operations, and deniable proxies to avoid crossing the clear threshold of an 'armed attack'."
-              }
-            ]
-          },
-          {
-            "id": "hybrid-l2",
-            "title": "Cyber Sabotage: From Estonia to Stuxnet",
-            "body": "### Warfare in the Fifth Domain\n\nCyberspace is now recognized as a warfighting domain alongside land, sea, air, and space. Two historic operations demonstrated the destructive power of digital weapons:\n\n1. **The 2007 Cyberattacks on Estonia**: Following the relocation of a Soviet war memorial in Tallinn, massive Distributed Denial-of-Service (DDoS) botnet attacks bombarded Estonian banks, parliamentary networks, and news outlets, shutting down the digital infrastructure of Europe's most e-enabled state for three weeks.\n2. **Operation Olympic Games (Stuxnet, 2010)**: Discovered at Iran's Natanz uranium enrichment facility, Stuxnet was the world's first true **cyber-kinetic weapon**. Jointly engineered by US and Israeli intelligence, the computer worm covertly infiltrated air-gapped industrial control systems (Siemens PLCs). Stuxnet took over the frequency converter drives, spinning 1,000 uranium centrifuges to self-destructive speeds while feeding false 'normal' sensor telemetry back to nuclear technicians' computer monitors, setting back Iran's nuclear program by years without dropping a single bomb.\n\n#### The Tallinn Manual\nUnder the international law of armed conflict (codified in the NATO CCDCOE **Tallinn Manual 2.0**), cyber operations that cause physical damage or death equivalent to a kinetic attack constitute an unlawful 'use of force' under UN Charter Article 2(4), conferring the sovereign right to **self-defense (Article 51)** using kinetic or cyber means.",
-            "readings": [
-              {
-                "label": "Michael N. Schmitt (ed.), Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations (2017)",
-                "url": "https://www.cambridge.org"
-              },
-              {
-                "label": "Kim Zetter, Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon (2014)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What made the Stuxnet computer worm historically unprecedented in the evolution of warfare?",
-                "options": [
-                  "It was the first verified digital weapon designed to cross from cyberspace into the physical world to cause kinetic destruction to physical industrial infrastructure.",
-                  "It was the first computer virus written in Python.",
-                  "It was sent as an email attachment to all NATO generals.",
-                  "It stole credit card numbers from commercial online banks."
-                ],
-                "answer": 0,
-                "why": "Stuxnet demonstrated that malicious code could physically destroy critical centrifuge hardware, pioneering the era of physical cyber-sabotage."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ir-empires",
-    "title": "Grand Strategy & Imperial Overstretch: Why Empires Collapse",
-    "category": "International Relations",
-    "subcategory": "Strategic Studies",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "Paul Kennedy's Rise and Fall of the Great Powers: the economic foundations of military strength, the trap of imperial overstretch, Halford Mackinder's Heartland Theory, and whether the American Century is coming to an end.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-11",
-    "objectives": [
-      "Deconstruct Paul Kennedy's thesis: the fatal mismatch between imperial commitments and economic productive capacity.",
-      "Analyze Halford Mackinder's Heartland Theory ('Who rules East Europe commands the Heartland...').",
-      "Examine historical case studies of imperial exhaustion: Habsburg Spain, the British Empire, and the Soviet Union.",
-      "Evaluate whether modern US defense spending and sovereign debt indicate terminal imperial overstretch."
-    ],
-    "modules": [
-      {
-        "title": "The Dynamics of Rise, Dominance, and Exhaustion",
-        "lessons": [
-          {
-            "id": "empires-l1",
-            "title": "Paul Kennedy and Imperial Overstretch",
-            "body": "### The Law of Imperial Overreach\n\nPublished in 1987, British historian Paul Kennedy's *The Rise and Fall of the Great Powers* established an enduring historical law governing superpower competition over the past 500 years (from Habsburg Spain and Napoleonic France to the British Empire and the Soviet Union):\n\n**Wealth is needed to underpin military power, but the acquisition of military power inevitably drains wealth.**\n\nKennedy identified a recurring cyclical pattern:\n1. **Economic Rise**: A rising power achieves technological, industrial, and commercial superiority (e.g. Victorian Britain's industrial revolution; post-WWII American manufacturing).\n2. **Hegemonic Expansion**: Economic dominance leads the power to acquire worldwide commitments, garrisons, naval bases, and treaty alliances to protect its commercial interests.\n3. **The Emergence of Competitors**: Over time, technological innovations diffuse abroad to rival powers with lower labor costs and larger populations.\n4. **Imperial Overstretch**: The established empire now spends an ever-increasing percentage of its national wealth maintaining global garrisons, fighting peripheral brushfire wars, and subsidizing defense obligations, starving domestic infrastructure and innovation.\n5. **Decline**: Crushed beneath sovereign debt, the empire finds that its military expenditures outstrip its real economic capacity, leading to sudden strategic retreat or collapse.",
-            "readings": [
-              {
-                "label": "Paul Kennedy, The Rise and Fall of the Great Powers: Economic Change and Military Conflict from 1500 to 2000 (1987)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is 'Imperial Overstretch' according to Paul Kennedy?",
-                "options": [
-                  "When a great power's global military commitments and foreign bases require more wealth than its domestic economy can sustainably generate.",
-                  "When an empire attempts to build walls around its entire border.",
-                  "When an army marches too quickly through desert terrain.",
-                  "When a king has too many children to inherit the throne."
-                ],
-                "answer": 0,
-                "why": "Imperial overstretch occurs when external security commitments outpace the underlying economic and productive engine supporting the military."
-              }
-            ]
-          },
-          {
-            "id": "empires-l2",
-            "title": "Mackinder's Heartland Theory and the World-Island",
-            "body": "### The Geographic Pivot of History\n\nIn 1904, British geographer Sir Halford Mackinder presented a paper to the Royal Geographical Society that founded modern geopolitical strategy: *The Geographical Pivot of History*.\n\nMackinder divided global geography into three strategic spheres:\n1. **The World-Island**: The continuous landmass of Europe, Asia, and Africa, containing the vast majority of human population and natural resources.\n2. **The Heartland (The Pivot Area)**: The immense fortress territory stretching from the Volga to the Yangtze and the Arctic to the Himalayas\u2014impregnable to maritime sea-power and guarded by icy seas and mountain barriers.\n3. **The Outer / Insular Crescent**: Maritime maritime powers (Britain, the United States, Japan, Australia).\n\n#### The Mackinder Dictum\nIn 1919, Mackinder formulated his famous geopolitical law:\n> *\"Who rules East Europe commands the Heartland;*\n> *Who rules the Heartland commands the World-Island;*\n> *Who rules the World-Island commands the World.\"*\n\nMackinder warned that if a single continental land power (or a Sino-Russian Eurasian alliance) were to consolidate the agricultural, mineral, and industrial resources of the Heartland, it could build an invincible fleet that would inevitably overwhelm the fragmented maritime rimland of Western Europe and the Americas. This insight directly animated George Kennan's **Containment Strategy** during the Cold War and remains the strategic bedrock of NATO and Indo-Pacific alliances today.",
-            "readings": [
-              {
-                "label": "Halford J. Mackinder, Democratic Ideals and Reality: A Study in the Politics of Reconstruction (1919)",
-                "url": "https://www.gutenberg.org"
-              },
-              {
-                "label": "Nicholas J. Spykman, The Geography of the Peace (1944)",
-                "url": "https://www.routledge.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What core geographic territory did Halford Mackinder identify as the 'Heartland' in global geopolitics?",
-                "options": [
-                  "The central Eurasian landmass from Eastern Europe to Siberia, invulnerable to hostile maritime naval power.",
-                  "The Caribbean Sea and Panama Canal.",
-                  "The British Isles and the English Channel.",
-                  "The Sahara Desert."
-                ],
-                "answer": 0,
-                "why": "Mackinder identified Eurasia's interior as the geopolitical pivot whose vast resource wealth could enable a continental power to dominate the World-Island."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ir-unsc",
-    "title": "The United Nations Security Council: Power, Vetoes, and Gridlock",
-    "category": "International Relations",
-    "subcategory": "International Organisations",
+    "subcategory": "Diplomacy",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "An investigation of the world's most powerful diplomatic body: the P5 permanent veto (Article 27), Chapter VII enforcement powers, peacekeeping failures from Rwanda to Srebrenica, and the struggle for Security Council expansion.",
-    "passMark": 70,
+    "description": "An exhaustive practical and theoretical study of diplomatic communication, bilateral and multilateral negotiation, diplomatic immunities, and crisis bargaining. Covers the Vienna Convention on Diplomatic Relations, backchannel communication, track-two diplomacy, and brinkmanship.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-14",
     "objectives": [
-      "Deconstruct the architecture of the UN Charter: Chapter VI (pacific settlement) vs Chapter VII (coercive sanctions and force).",
-      "Analyze the origins and consequences of the P5 veto power (US, Russia, China, UK, France).",
-      "Evaluate landmark peacekeeping crises: UNAMIR in Rwanda (1994) and UNPROFOR in Bosnia.",
-      "Assess reform proposals including the G4 nations (India, Japan, Germany, Brazil) and the Ezulwini Consensus."
+      "Master the legal foundations of diplomatic law codified in the 1961 Vienna Convention on Diplomatic Relations.",
+      "Analyze formal negotiation frameworks: BATNA, ZOPA, integrative bargaining vs distributive bargaining.",
+      "Evaluate historical crisis management strategies during the Cuban Missile Crisis and Berlin Ultimatum.",
+      "Examine modern multilateral summitry, communiqu\u00e9s, and track-two backchannel diplomacy."
     ],
     "modules": [
       {
-        "title": "The Veto and Chapter VII Enforcement",
+        "title": "Module 1: Diplomatic Law, Immunities, and Multilateral Negotiation",
         "lessons": [
           {
-            "id": "unsc-l1",
-            "title": "Chapter VII Powers and the Sovereign Veto",
-            "body": "### The Teeth of the United Nations\n\nUnlike the League of Nations, which required unanimous voting and lacked enforcement mechanisms, the **United Nations Security Council (UNSC)** was designed in 1945 by Franklin D. Roosevelt and Winston Churchill to possess genuine enforcement teeth.\n\nUnder **Chapter VII of the UN Charter**, the Security Council holds extraordinary, legally binding authority over all 193 member states:\n- **Article 39**: Determines the existence of any threat to the peace, breach of the peace, or act of aggression.\n- **Article 41**: Imposes mandatory non-military measures (economic sanctions, embargoes, travel bans, financial freezes).\n- **Article 42**: Authorizes military enforcement action by land, air, or sea forces to restore international peace and security.\n\n#### The P5 Veto: Article 27(3)\nTo ensure the world's major military powers would join and remain in the United Nations, the Charter granted the five victorious World War II allies (the **Permanent Five / P5**: US, USSR/Russia, China, UK, France) the **Veto Power**. Under Article 27(3), substantive decisions require nine votes, including the concurring votes of all five permanent members. A single negative vote from any P5 state instantly kills a resolution, paralyzing collective security whenever great power interests collide.",
+            "id": "ir-dip-l1",
+            "title": "The Vienna Convention on Diplomatic Relations (1961) and Statecraft",
+            "body": "### The Legal Sanctity of Diplomacy\n\nDiplomacy is the peaceful dialogue and negotiation among states through accredited representatives. For international communication to endure during times of bitter ideological or military hostility, sovereign states developed the sacred principle of **diplomatic inviolability**.\n\n#### 1. The Vienna Convention on Diplomatic Relations (VCDR, 1961)\nThe VCDR codifies ancient customary international rules guaranteeing that diplomats can perform their official functions without fear of harassment or coercion by the host state:\n- **Inviolability of the Mission Premises (Article 22):** The premises of the diplomatic mission (the embassy) are inviolable. Agents of the host receiving state may not enter them without the explicit consent of the head of the mission. The host state has a special duty to protect the mission against any intrusion or damage.\n- **Inviolability of the Diplomatic Agent (Article 29):** The person of a diplomatic agent is immune from any form of arrest or detention.\n- **Immunity from Jurisdiction (Article 31):** Diplomats enjoy complete immunity from the criminal jurisdiction of the receiving state, as well as broad immunity from civil and administrative jurisdiction.\n- **Remedies for Abuse (*Persona Non Grata* - Article 9):** If a diplomat commits a serious crime, espionages, or violates local laws, the receiving state cannot arrest them; instead, it may at any time declare that person *persona non grata* (PNG). The sending state must immediately recall the diplomat; if it refuses, the host state strips their diplomatic status.\n\n#### 2. Negotiation Architecture: Getting to Yes\nIn international statecraft, bilateral and multilateral negotiations operate on core game-theoretic and bargaining principles:\n- **BATNA (Best Alternative to a Negotiated Agreement):** The course of action a state will take if ongoing negotiations fail. A state will never accept a treaty worse than its BATNA.\n- **ZOPA (Zone of Possible Agreement):** The bargaining space that exists between the minimum acceptable terms (*reservation prices*) of the negotiating parties.\n- **Distributive Bargaining (Zero-Sum):** Haggling over the division of a fixed resource (e.g., border demarcation or financial compensation).\n- **Integrative Bargaining (Positive-Sum):** Expanding the pie by trading across issues with differing priorities (e.g., linking trade concessions to environmental standards or security guarantees).",
             "readings": [
               {
-                "label": "United Nations Charter, Chapter VII (Articles 39-51)",
-                "url": "https://www.un.org/en/about-us/un-charter/chapter-7"
+                "label": "Vienna Convention on Diplomatic Relations (1961)",
+                "url": "https://legal.un.org/ilc/texts/instruments/english/conventions/9_1_1961.pdf"
+              },
+              {
+                "label": "Roger Fisher and William Ury, Getting to Yes: Negotiating Agreement Without Giving In (Penguin, 1981)",
+                "url": "https://www.worldcat.org/title/getting-to-yes/oclc/7733857"
+              },
+              {
+                "label": "G.R. Berridge, Diplomacy: Theory and Practice (Palgrave Macmillan, 5th ed. 2015)",
+                "url": "https://link.springer.com/book/10.1057/9781137445513"
               }
             ],
             "quiz": [
               {
-                "q": "What unique legal power does the UN Security Council possess under Chapter VII that other UN bodies lack?",
+                "q": "If a registered accredited diplomat commits a serious crime in the receiving host nation, what is the lawful remedy available to the receiving state under Article 9 of the Vienna Convention on Diplomatic Relations?",
                 "options": [
-                  "The authority to issue legally binding resolutions authorizing mandatory economic sanctions and military force.",
-                  "The power to rewrite national constitutions.",
-                  "The power to appoint domestic supreme court judges.",
-                  "The power to collect income taxes from global citizens."
+                  "Imprison the diplomat in a maximum security domestic penitentiary.",
+                  "Declare the diplomat 'persona non grata' (PNG) and compel their recall or expel them if not recalled.",
+                  "Subpoena the diplomat to stand trial in local municipal small claims court.",
+                  "Confiscate the embassy building and convert it into a government office."
                 ],
-                "answer": 0,
-                "why": "Security Council Chapter VII resolutions are binding on all member states under international law, backed by the authority to enforce compliance."
-              }
-            ]
-          },
-          {
-            "id": "unsc-l2",
-            "title": "Peacekeeping Failures: Rwanda and the Responsibility to Protect",
-            "body": "### From Srebrenica to R2P\n\nDuring the 1990s, the Security Council suffered catastrophic moral failures:\n- **Rwanda (1994)**: As 800,000 Tutsis were slaughtered in 100 days, the Security Council refused to reinforce General Rom\u00e9o Dallaire's UNAMIR mission, voting instead to withdraw most peacekeepers due to US and Western reluctance after the Black Hawk Down incident in Somalia.\n- **Srebrenica (1995)**: Dutch peacekeepers in a designated UN 'Safe Area' stood by helplessly as Bosnian Serb forces massacred 8,000 Bosniak men and boys.\n\n#### The Responsibility to Protect (R2P)\nIn response, the 2005 UN World Summit adopted **R2P (Responsibility to Protect)**, shifting sovereignty from a right of absolute non-intervention to a positive duty to protect citizens from genocide, war crimes, ethnic cleansing, and crimes against humanity. If a state is manifestly failing to protect its population, the international community has the collective duty to intervene through the Security Council.",
-            "readings": [
-              {
-                "label": "Rom\u00e9o Dallaire, Shake Hands with the Devil: The Failure of Humanity in Rwanda (2003)",
-                "url": "https://www.randomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What fundamental conceptual shift did the Responsibility to Protect (R2P) doctrine introduce to international law?",
-                "options": [
-                  "Sovereignty is no longer an absolute shield against intervention; it is a duty to protect populations from mass atrocities.",
-                  "All sovereign borders were permanently erased.",
-                  "The UN Secretary-General was made commander-in-chief of all national armies.",
-                  "Military budgets were placed under UNESCO."
-                ],
-                "answer": 0,
-                "why": "R2P reframes sovereignty as a conditional responsibility; when a state commits or fails to halt mass atrocities, sovereignty gives way to collective international protection."
+                "answer": 1,
+                "why": "Because diplomats enjoy personal inviolability and absolute criminal immunity under Articles 29 and 31, the receiving state's designated legal remedy is expulsion via persona non grata."
               }
             ]
           }
@@ -2365,73 +1524,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "ir-coldwar",
-    "title": "The Secret History of the Cold War: Spies, Proxy Wars, and Berlin",
+    "id": "ir-middle-east-geopolitics",
+    "title": "Geopolitics of the Modern Middle East: State Fragility, Energy & Regional Rivalries",
     "category": "International Relations",
-    "subcategory": "Diplomatic History",
+    "subcategory": "Regional security",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of International Relations, The Paper Crane Academy",
-    "description": "The shadow struggle between Washington and Moscow: George Kennan's Long Telegram, the Berlin Airlift, Operation Gladio, covert CIA coups in Iran and Chile, and how the Soviet empire unraveled.",
-    "passMark": 70,
+    "description": "An in-depth geopolitical analysis of the contemporary Middle East. Examines the post-Ottoman state system (Sykes-Picot), petro-politics and the resource curse, the Arab-Israeli conflict, the Iranian Revolution and regional proxy networks, sectarianism vs regime survival, and the aftermath of the Arab Spring.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-16",
     "objectives": [
-      "Deconstruct George Kennan's 1946 Long Telegram and the US strategy of Containment.",
-      "Analyze the Berlin crises, the Berlin Airlift, and the construction of the Berlin Wall in 1961.",
-      "Evaluate covert proxy war operations: Operation Ajax (Iran 1953) and Operation PBSUCCESS (Guatemala 1954).",
-      "Examine Mikhail Gorbachev's Glasnost and Perestroika and the peaceful collapse of the Soviet Union in 1991."
+      "Trace the historical creation of the modern Middle Eastern state borders from the Sykes-Picot Agreement to the Mandate system.",
+      "Analyze the geopolitical rivalry between Saudi Arabia and the Islamic Republic of Iran across Yemen, Iraq, Syria, and Lebanon.",
+      "Evaluate the strategic dynamics of maritime chokepoints: Strait of Hormuz, Bab el-Mandeb, and the Suez Canal.",
+      "Assess the Abraham Accords and shifting regional alliances in a post-unipolar era."
     ],
     "modules": [
       {
-        "title": "Containment and the Iron Curtain",
+        "title": "Module 1: Historical Legacies, Chokepoints, and Regional Power Balances",
         "lessons": [
           {
-            "id": "coldwar-l1",
-            "title": "George Kennan's Long Telegram and the Strategy of Containment",
-            "body": "### The Blueprint of the Cold War\n\nIn February 1946, American diplomat George F. Kennan sent an 8,000-word cable from the US Embassy in Moscow back to Washington\u2014the famous **Long Telegram**. Kennan diagnosed the Soviet worldview:\n- Rooted in traditional Russian imperial insecurity combined with Marxist-Leninist dogma.\n- Incurably hostile to the capitalist West, viewing conflict between capitalism and socialism as permanent.\n- Highly sensitive to the logic of force: the Soviets will probe and advance where soft, but will systematically retreat when confronted with determined, patient counterforce.\n\n#### The Doctrine of Containment\nKennan formulated what became the grand strategy of the United States for the next forty-five years: **Containment**. Rather than launching a catastrophic third world war (*Rollback*) or appeasing Soviet expansionism, the West must patiently contain Soviet power at key industrial perimeter points (Western Europe and Japan) until the internal economic, moral, and ideological contradictions of the Soviet system caused it to collapse from within.",
+            "id": "ir-me-l1",
+            "title": "State Formation, Chokepoints, and the Regional Cold War",
+            "body": "### The Geopolitical Crucible of the Middle East\n\nThe Middle East's contemporary geopolitical landscape is defined by the intersection of colonial border legacies, strategic maritime chokepoints, oil and gas reserves, and overlapping sectarian and state rivalries.\n\n#### 1. The Post-WWI Legacy: Sykes-Picot and Artificial Statehood\nFollowing the dissolution of the Ottoman Empire in 1918, British and French diplomats (Mark Sykes and Fran\u00e7ois Georges-Picot) partitioned the Levant and Mesopotamia into imperial spheres of influence:\n- **Artificial Boundaries:** Borders were drafted with straight lines across tribal, ethnic, and sectarian continuums, uniting disparate populations (e.g., Sunni, Shia, Kurds in Iraq) and dividing others across sovereign boundaries.\n- **Weak State Legitimacy:** The resulting post-colonial states frequently suffered from chronic legitimacy deficits, relying on authoritarian security apparatuses (*mukhabarat* states) or sectarian patronage to maintain regime cohesion.\n\n#### 2. Maritime Chokepoints and Global Energy Security\nThe global economy depends on uninterrupted maritime transit through three vital regional chokepoints:\n- **The Strait of Hormuz:** Connecting the Persian Gulf to the Gulf of Oman. Approximately 20\u201321 million barrels of crude oil pass through this 21-mile-wide strait daily (nearly 20% of global petroleum consumption).\n- **Bab el-Mandeb:** Connecting the Red Sea to the Gulf of Aden. Essential gateway controlling all European-Asian container traffic transiting the Suez Canal.\n- **The Suez Canal:** Artificial waterway facilitating ~12% of global trade and 30% of global container ship traffic.\n\n```\nGlobal Trade Pipeline:\nIndian Ocean \u2192 Bab el-Mandeb \u2192 Red Sea \u2192 Suez Canal \u2192 Mediterranean Sea \u2192 Europe\n                      \u2191\nPersian Gulf \u2192 Strait of Hormuz \u2192 Global Energy Markets\n```\n\n#### 3. The Saudi-Iranian Regional Rivalry\nSince the **1979 Iranian Revolution**, the Persian Gulf and Levant have been the arena of a structural regional rivalry:\n- **Ideological Dimensions:** Revolutionary pan-Islamism vs traditional monarchical legitimacy; Shia and Sunni sectarian identity politics mobilized as instruments of state power.\n- **Asymmetric Proxy Warfare:** Rather than direct interstate war, competition unfolds via non-state proxy actors and militias in Lebanon (Hezbollah), Yemen (Houthis), Iraq (PMF), and Syria.",
             "readings": [
               {
-                "label": "George F. Kennan ('X'), The Sources of Soviet Conduct, Foreign Affairs (1947)",
-                "url": "https://www.foreignaffairs.com"
+                "label": "Eugene Rogan, The Arabs: A History (Basic Books, 2009)",
+                "url": "https://www.basicbooks.com/titles/eugene-rogan/the-arabs/9780465032488/"
+              },
+              {
+                "label": "F. Gregory Gause III, The International Relations of the Persian Gulf (Cambridge, 2009)",
+                "url": "https://www.cambridge.org/core/books/international-relations-of-the-persian-gulf/D215EB046F97187192A478C4E9C16838"
+              },
+              {
+                "label": "U.S. Energy Information Administration (EIA), World Oil Transit Chokepoints",
+                "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
               }
             ],
             "quiz": [
               {
-                "q": "What was the central strategic recommendation of George Kennan's Long Telegram?",
+                "q": "Why is the Strait of Hormuz regarded as the world's most critical maritime energy chokepoint?",
                 "options": [
-                  "Patient, long-term containment of Soviet expansionist tendencies until internal contradictions collapsed the regime.",
-                  "An immediate preemptive nuclear strike on Moscow in 1946.",
-                  "A complete withdrawal of American forces from Europe.",
-                  "Signing an immediate economic union treaty with Stalin."
+                  "It is the only passage connecting the Atlantic and Pacific oceans.",
+                  "Approximately 20% of the world's total petroleum liquid consumption transits through this narrow passage daily.",
+                  "It is entirely frozen during winter months.",
+                  "All international commercial aircraft must refuel on its islands."
                 ],
-                "answer": 0,
-                "why": "Kennan argued that Soviet ideology was fragile and that firm, patient containment would eventually cause the Soviet system to exhaust itself."
-              }
-            ]
-          },
-          {
-            "id": "coldwar-l2",
-            "title": "The Berlin Wall and the Collapse of 1989",
-            "body": "### The Epicenter of Divided Europe\n\nBerlin sat 110 miles inside Soviet-occupied East Germany, yet was divided among the four Allied powers. Between 1949 and 1961, over 2.7 million skilled professionals, doctors, and engineers fled the communist German Democratic Republic (GDR) into democratic West Berlin\u2014an existential hemorrhage known as the *Brain Drain*.\n\nOn the night of August 13, 1961, East German troops laid rolls of barbed wire, beginning construction of the **Berlin Wall** (*Antifaschistischer Schutzwall*). For twenty-eight years, the Wall stood as the grim concrete symbol of European division.\n\n#### The Unraveling of 1989\nWhen Mikhail Gorbachev assumed power in 1985, the Soviet economy was suffocating under military overspending and economic stagnation. Gorbachev introduced:\n- **Glasnost (Openness)**: Freedom of speech and historical truth.\n- **Perestroika (Restructuring)**: Decentralizing state economic planning.\n- **The Sinatra Doctrine**: Replacing the Brezhnev Doctrine, Gorbachev declared that Warsaw Pact nations could 'do it their way'\u2014Moscow would not deploy tanks to crush anti-communist revolutions.\n\nOn the night of November 9, 1989, confused East German spokesman G\u00fcnter Schabowski mistakenly announced on live television that travel restrictions were lifted 'immediately'. Millions of Berliners flooded checkpoints, armed with hammers and chisels, peacefully tearing down the Wall and ending the Cold War without firing a single shot.",
-            "readings": [
-              {
-                "label": "Mary Elise Sarotte, The Collapse: The Accidental Opening of the Berlin Wall (2014)",
-                "url": "https://www.basicbooks.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What was the critical diplomatic shift signaled by Mikhail Gorbachev's 'Sinatra Doctrine'?",
-                "options": [
-                  "The USSR would no longer intervene militarily to prop up communist regimes in Eastern Europe.",
-                  "All Soviet citizens were required to listen to Western jazz music.",
-                  "The Warsaw Pact would invade West Germany.",
-                  "The Soviet Union would adopt the British pound as currency."
-                ],
-                "answer": 0,
-                "why": "Gorbachev abandoned the Brezhnev Doctrine of military intervention, allowing Eastern European nations to peacefully choose their own political systems."
+                "answer": 1,
+                "why": "The Strait of Hormuz is the single sea route connecting the Persian Gulf's massive oil producers (Saudi Arabia, Iraq, UAE, Kuwait, Iran) to the open ocean, carrying a fifth of global petroleum supply."
               }
             ]
           }
@@ -2440,156 +1581,336 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "econ-fed",
-    "title": "The Secret Architecture of Central Banking: The Fed & Modern Money",
-    "category": "Public Policy and Economics",
+    "id": "ir-hybrid-warfare",
+    "title": "Hybrid Warfare, Cyber Conflicts & Gray-Zone Operations: Asymmetric Strategy",
+    "category": "International Relations",
+    "subcategory": "Modern conflict",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of International Relations, The Paper Crane Academy",
+    "description": "An investigation into modern non-linear conflict below the threshold of conventional war. Explores gray-zone coercion, offensive cyber operations, information warfare and algorithmic disinformation, mercenary and proxy networks, and critical infrastructure vulnerability under the Law of Armed Conflict.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Define gray-zone conflict and hybrid warfare, distinguishing them from traditional interstate warfare.",
+      "Analyze the Tallinn Manual 2.0 framework for applying international law to cyber operations.",
+      "Evaluate weaponized information ecosystems, cognitive warfare, and election interference.",
+      "Assess the legal and operational challenges of attributing cyber attacks and asymmetric proxy actions."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Gray Zone: Cyber Warfare, Proxies, and Threshold Coercion",
+        "lessons": [
+          {
+            "id": "ir-hw-l1",
+            "title": "Gray-Zone Coercion and International Cyber Law",
+            "body": "### Operating Below the Threshold of War\n\nTraditional international law draws a sharp binary line between **Peace** and **War** (e.g., UN Charter Article 2(4) prohibition on the threat or use of force vs Article 51 self-defense). In contemporary statecraft, revisionist powers exploit the vast ambiguous continuum in between: **The Gray Zone**.\n\n```\nWarfare Spectrum:\n[Diplomatic Competition] \u2500\u2500\u2192 [GRAY ZONE] \u2500\u2500\u2192 [Armed Conflict / Conventional War]\n                              \u2022 Cyber attacks\n                              \u2022 Disinformation\n                              \u2022 Unmarked proxies\n                              \u2022 Maritime militia\n                              (Calibrated to avoid Article 5 triggers)\n```\n\n#### 1. Characteristics of Gray-Zone Operations\n- **Sub-Threshold:** Coercive actions intentionally calibrated to remain just below the legal threshold that would trigger armed response or collective self-defense alliances (such as NATO Article 5).\n- **Gradualism / Salami Slicing:** Small, incremental steps (e.g., building artificial islands in the South China Sea, small cyber intrusions, economic coercion) where no single action warrants a major military retaliation, but cumulative gains fundamentally alter the status quo.\n- **Plausible Deniability:** Reliance on non-state proxies, private military companies (PMCs), paramilitary coast guards, or anonymous cyber operators.\n\n#### 2. Cyber Warfare and International Law: The Tallinn Manual 2.0\nIn 2013 and 2017, international legal scholars under the auspices of the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) produced the **Tallinn Manual**:\n- **Application of the UN Charter:** The prohibition on the threat or use of force (**Article 2(4)**) applies to cyberspace.\n- **Scale and Effects Test (Nicaragua standard):** A cyber operation constitutes an \"armed attack\" giving rise to the inherent right of individual or collective self-defense (**Article 51**) if its *scale and effects* are comparable to those of a kinetic armed attack (e.g., remotely causing a nuclear meltdown, dam collapse, or massive power grid failure resulting in loss of life and physical destruction).\n- **The Attribution Problem:** Technical obfuscation, VPN bouncing, and cutouts make definitive legal attribution challenging, allowing adversaries to exploit evidentiary delays.",
+            "readings": [
+              {
+                "label": "Michael N. Schmitt (ed.), Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations (Cambridge, 2017)",
+                "url": "https://www.cambridge.org/core/books/tallinn-manual-20-on-the-international-law-applicable-to-cyber-operations/E215456A8F1A08ED85D10557DF06EE3C"
+              },
+              {
+                "label": "Frank G. Hoffman, Conflict in the 21st Century: The Rise of Hybrid Wars (Potomac Institute, 2007)",
+                "url": "https://www.potomacinstitute.org/images/stories/publications/potomac_hybridwar_0108.pdf"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "Under the Tallinn Manual 2.0 and international jurisprudence, when does a state-sponsored cyber operation legally qualify as an 'armed attack' under Article 51 of the UN Charter?",
+                "options": [
+                  "Whenever any computer code crosses an international border.",
+                  "When the scale and physical effects of the cyber attack are comparable to a kinetic armed attack, causing death, injury, or severe physical destruction.",
+                  "Only when the cyber attack is announced in advance on television.",
+                  "Cyber operations can never violate international law because the UN Charter was written in 1945."
+                ],
+                "answer": 1,
+                "why": "International legal consensus utilizes the 'scale and effects' test: if the cyber attack causes catastrophic physical destruction or loss of life equivalent to a bomb or missile, it triggers the right to self-defense."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ir-economic-sanctions",
+    "title": "Economic Sanctions, Financial Warfare & Geoeconomics: Dollar Primacy & Chokepoints",
+    "category": "International Relations",
+    "subcategory": "Geoeconomics",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of International Relations, The Paper Crane Academy",
+    "description": "An exhaustive analysis of economic statecraft and financial weapons. Explores primary and secondary sanctions, the weaponization of the US dollar clearing system and SWIFT, export controls on critical semiconductors, retaliatory resource embargoes, and de-dollarization.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Understand the mechanics of primary and secondary economic sanctions administered by bodies like the US OFAC.",
+      "Examine how the international banking architecture (CHIPS, Fedwire, SWIFT) creates asymmetric financial power.",
+      "Analyze the efficacy of economic sanctions: compliance costs, humanitarian carve-outs, and unintended evasion networks.",
+      "Evaluate geoeconomic countermeasures, currency swap agreements, and trends toward de-dollarization."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Weaponization of Global Interdependence and Financial Plumbing",
+        "lessons": [
+          {
+            "id": "ir-es-l1",
+            "title": "Weaponized Interdependence: SWIFT, Dollar Clearing, and Secondary Sanctions",
+            "body": "### Geoeconomics and Weaponized Interdependence\n\nFor decades, globalization was assumed to foster universal peace through mutual economic vulnerability. In their landmark 2019 study, political scientists Henry Farrell and Abraham Newman overturned this assumption with the theory of **Weaponized Interdependence**:\n- Globalized economic networks are not decentralized webs; they are **hub-and-spoke topologies**.\n- States that hold jurisdictional control over the physical or financial central hubs can weaponize the network for asymmetric coercion, surveillance, and economic strangulation.\n\n```\nHub-and-Spoke Financial Architecture:\n[Foreign Bank A] \u2500\u2500\u2510\n[Foreign Bank B] \u2500\u2500\u253c\u2500\u2500\u2192 [ US Dollar Clearing Hub (CHIPS / Fedwire) ] \u2190\u2500\u2500 [US Treasury / OFAC]\n[Foreign Bank C] \u2500\u2500\u2518    (Jurisdiction over dollar transactions)\n```\n\n#### 1. The Anatomy of Modern Financial Warfare\n- **The US Dollar Clearing Privilege:** Over 85% of foreign exchange transactions globally involve the US dollar. Because all dollar clearing must ultimately settle through accounts at US-regulated correspondent banks, the US Treasury's Office of Foreign Assets Control (**OFAC**) asserts jurisdictional reach over foreign transactions denominated in dollars.\n- **Secondary Sanctions (Extraterritorial Jurisdiction):** The most potent weapon in economic statecraft. A secondary sanction tells a third-party foreign bank or enterprise (e.g., in Germany, Japan, or India): *\"You can conduct business with the sanctioned target, or you can do business with the $25-trillion United States financial market. You cannot do both.\"* Almost all international corporations voluntarily comply to avoid exclusion from the dollar system.\n- **SWIFT (Society for Worldwide Interbank Financial Telecommunication):** Belgium-based financial messaging system connecting over 11,000 banks. Disconnecting a country's major banking institutions from SWIFT isolates them from frictionless international trade payments.\n\n#### 2. Limits and Backlash: The Paradox of Sanctions\n- **Economic Bypasses:** High reliance on unilateral financial coercion incentivizes target states and rivals to construct alternative settlement mechanisms (e.g., China's CIPS, Russia's SPFS, bilateral local currency settlement, gold accumulation).\n- **Evasion Hubs:** Target states construct \"ghost fleets\", front companies in intermediate jurisdictions, and cryptocurrency laundering networks.",
+            "readings": [
+              {
+                "label": "Henry Farrell and Abraham L. Newman, Weaponized Interdependence: How Global Economic Networks Shape State Coercion (2019)",
+                "url": "https://www.mitpressjournals.org/doi/full/10.1162/isec_a_00351"
+              },
+              {
+                "label": "Daniel W. Drezner, The Sanctions Paradox: Economic Statecraft and International Relations (Cambridge, 1999)",
+                "url": "https://www.cambridge.org/core/books/sanctions-paradox/264A6BF373BE899C1283B4F30AA7036D"
+              },
+              {
+                "label": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC) Overview",
+                "url": "https://home.treasury.gov/policy-issues/office-of-foreign-assets-control-sanctions-programs-and-information"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What mechanism makes 'secondary sanctions' so uniquely coercive against multinational corporations based in neutral third-party countries?",
+                "options": [
+                  "They dispatch foreign naval forces to seize the company's domestic factories.",
+                  "They present third-party firms with an ultimatum: cease business with the sanctioned entity or lose access to the United States financial system and dollar clearing.",
+                  "They automatically revoke the company's patent trademarks across all continents.",
+                  "They require the company's directors to run for public political office."
+                ],
+                "answer": 1,
+                "why": "Secondary sanctions force foreign third parties to choose between doing business with the targeted sanctioned entity or retaining access to the indispensable US financial market and dollar settlement systems."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ir-peacekeeping-reconstruction",
+    "title": "Conflict Resolution, UN Peacekeeping & Post-War State Reconstruction",
+    "category": "International Relations",
+    "subcategory": "Conflict resolution",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of International Relations, The Paper Crane Academy",
+    "description": "An empirical exploration of peace processes, multilateral peacekeeping, disarmament, and post-conflict institution-building. Examines traditional (Chapter VI) vs robust peace enforcement (Chapter VII), DDR programs, transitional justice mechanisms, and the liberal peacebuilding critique.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Distinguish between peacekeeping, peacemaking, peacebuilding, and peace enforcement.",
+      "Analyze the core principles of UN peacekeeping: consent of the parties, impartiality, and non-use of force except in self-defense.",
+      "Evaluate Disarmament, Demobilization, and Reintegration (DDR) strategies.",
+      "Critique post-conflict statebuilding frameworks and transitional justice mechanisms (Truth Commissions vs Criminal Tribunals)."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Generations of Peacekeeping and the Peacebuilding Dilemma",
+        "lessons": [
+          {
+            "id": "ir-pk-l1",
+            "title": "From Blue Helmets to Robust Mandates: The Evolution of UN Operations",
+            "body": "### The Evolution of UN Peace Operations\n\nUN peacekeeping was not explicitly envisioned in the original text of the UN Charter. It emerged dynamically during the 1956 Suez Crisis as an inventive compromise\u2014often called **\"Chapter Six and a Half\"** by former Secretary-General Dag Hammarskj\u00f6ld\u2014falling between the pacific settlement of disputes (Chapter VI) and military enforcement (Chapter VII).\n\n#### 1. The Trinity of Traditional Peacekeeping\nTraditional First-Generation peacekeeping (e.g., UNEF I, UNFICYP in Cyprus) operated under three strict principles:\n1. **Consent of the Host Parties:** The deployment must be formally consented to by the warring factions.\n2. **Impartiality:** Peacekeepers must not take sides or advance the interests of one belligerent over another.\n3. **Non-use of Force:** Weapons may only be fired in self-defense.\n\n#### 2. Multidimensional Peacekeeping and Peace Enforcement (1990s to Present)\nThe catastrophic failures in Bosnia (Srebrenica genocide, 1995) and Rwanda (1994) exposed the tragic impotence of traditional peacekeeping in civil conflicts where there was \"no peace to keep\":\n- **Robust Mandates (Chapter VII):** Modern UN missions (e.g., MONUSCO in DR Congo, MINUSMA in Mali) are authorized by the Security Council under Chapter VII to \"use all necessary means\" to protect civilians under imminent threat of physical violence.\n- **Multidimensional Missions:** Beyond standing on ceasefire lines, missions now execute security sector reform (SSR), monitor human rights, facilitate elections, and support judicial capacity.\n\n```\nPost-Conflict Peacebuilding Cycle:\n[Ceasefire Agreement] \u2500\u2500\u2192 [DDR: Disarm, Demobilize, Reintegrate Fighters]\n                                      \u2193\n[Democratic Elections] \u2190\u2500\u2500 [Transitional Justice & Rule of Law Capacity]\n```\n\n#### 3. Disarmament, Demobilization, and Reintegration (DDR)\nSustainable peace requires dismantling armed non-state actors:\n- **Disarmament:** The physical collection, documentation, and destruction of small arms and heavy weaponry.\n- **Demobilization:** Discharging combatants from military command structures and housing them in cantonment sites.\n- **Reintegration:** The long-term economic and social assimilation of former combatants into civilian employment and communities to prevent recidivism.",
+            "readings": [
+              {
+                "label": "United Nations Peacekeeping, Principles of Peacekeeping",
+                "url": "https://peacekeeping.un.org/en/principles-of-peacekeeping"
+              },
+              {
+                "label": "Roland Paris, At War's End: Building Peace After Civil Conflict (Cambridge, 2004)",
+                "url": "https://www.cambridge.org/core/books/at-wars-end/9A1FDEEBE7BC1B0E177D59A65D6EDDCA"
+              },
+              {
+                "label": "Boutros Boutros-Ghali, An Agenda for Peace (United Nations, 1992)",
+                "url": "https://www.un.org/ruleoflaw/blog/document/an-agenda-for-peace-preventive-diplomacy-peacemaking-and-peace-keeping/"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What are the three classic foundational principles of traditional UN peacekeeping formulated during the Cold War?",
+                "options": [
+                  "Unconditional preemption, nuclear deterrence, and unilateral invasion.",
+                  "Consent of the parties, impartiality, and non-use of force except in self-defense and defense of the mandate.",
+                  "Total state sovereignty, judicial immunity, and territorial partition.",
+                  "Mandatory military conscription, trade embargoes, and regime change."
+                ],
+                "answer": 1,
+                "why": "Consent, impartiality, and the restrictive use of force form the tripartite cornerstone of legitimate UN peacekeeping operations."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ir-cold-war-order",
+    "title": "The Cold War and the Evolution of the Post-1989 International Order",
+    "category": "International Relations",
+    "subcategory": "International history",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of International Relations, The Paper Crane Academy",
+    "description": "An authoritative historical and strategic survey of the international system from the Yalta Conference to the contemporary era. Covers containment policy, NATO vs the Warsaw Pact, proxy warfare in the Third World, the collapse of the Soviet Union, the 'unipolar moment', and the emergence of multipolarity.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Analyze the ideological and geopolitical roots of the Cold War and George Kennan's Long Telegram.",
+      "Examine the stability of bipolarity versus multipolarity in systemic IR theory.",
+      "Evaluate the strategic implications of the 1991 dissolution of the USSR and Charles Krauthammer's 'Unipolar Moment'.",
+      "Assess the contemporary transition from post-Cold War liberal internationalism to competitive multipolarity."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Bipolarity, Containment, and the Post-Cold War Trajectory",
+        "lessons": [
+          {
+            "id": "ir-cw-l1",
+            "title": "From Kennan's Containment to the Post-Soviet Hegemonic Transition",
+            "body": "### The Long Bipolar Struggle and Its Aftermath\n\nThe Cold War (1947\u20131991) was an existential systemic rivalry between two ideological, military, and economic superpowers: the United States and the Union of Soviet Socialist Republics.\n\n#### 1. The Strategy of Containment (George Kennan, 1946\u20131947)\nIn his famed **Long Telegram** and subsequent *Foreign Affairs* essay signed \"X\", diplomat George F. Kennan diagnosed Soviet foreign policy:\n- Soviet ideology viewed capitalism and socialism as fundamentally irreconcilable.\n- However, unlike Nazi Germany, Soviet leadership was cautious, calculated, and sensitive to the logic of force.\n- **The Policy:** The US should pursue a policy of *\"firm and vigilant containment of Russian expansive tendencies\"*, maintaining a counter-force at every point where the Soviets showed signs of encroaching on the free world, until internal economic and political contradictions caused Soviet power to mellow or collapse from within.\n\n#### 2. Systemic Bipolarity and the Cold War Order\nNeorealist scholars like Kenneth Waltz argued that **bipolarity is inherently more stable than multipolarity**:\n- In multipolar systems, alliances are fluid, miscalculations are frequent, and states can drag allies into catastrophic wars (*buck-passing* and *chain-ganging*).\n- In a bipolar system, there is no ambiguity about who the adversary is. The superpowers balance internally through their own massive economies and nuclear arsenals rather than fragile, shifting coalitions.\n\n```\nCold War Bipolar Structure:\n[ Western Bloc / NATO ] <===== Ideological & Nuclear Standoff =====> [ Eastern Bloc / Warsaw Pact ]\n      (Capitalism, Liberalism)                                             (State Socialism, Leninism)\n                                          \u2193\n               Third World Proxy Conflicts (Korea, Vietnam, Angola, Afghanistan)\n```\n\n#### 3. The 'Unipolar Moment' and Modern Multipolarity\nWhen the Soviet Union disintegrated in December 1991, systemic international relations entered unprecedented territory:\n- **The Unipolar Moment (Charles Krauthammer):** For the first time since the Roman Empire, a single state possessed unmatched military, technological, economic, and cultural dominance without any peer rival.\n- **The End of History? (Francis Fukuyama):** The thesis that Western liberal democracy represented the endpoint of ideological evolution and the final form of human government.\n- **The Return of Great Power Rivalry:** By the 2020s, economic expansion, regional military modernization, and revisionist challenges concluded the unipolar era, establishing an asymmetrical multipolar system characterized by competitive geoeconomics, technological divergence, and contesting visions of world order.",
+            "readings": [
+              {
+                "label": "George F. Kennan ('X'), The Sources of Soviet Conduct (Foreign Affairs, 1947)",
+                "url": "https://www.foreignaffairs.com/articles/russian-federation/1947-07-01/sources-soviet-conduct"
+              },
+              {
+                "label": "John Lewis Gaddis, The Cold War: A New History (Penguin, 2005)",
+                "url": "https://www.penguinrandomhouse.com/books/293233/the-cold-war-by-john-lewis-gaddis/"
+              },
+              {
+                "label": "Charles Krauthammer, The Unipolar Moment (Foreign Affairs, 1990/1991)",
+                "url": "https://www.foreignaffairs.com/articles/1991-02-01/unipolar-moment"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What was the central recommendation of George F. Kennan's 'Containment' doctrine regarding the Soviet Union?",
+                "options": [
+                  "To launch an immediate preemptive nuclear strike against Moscow.",
+                  "To apply patient, persistent counter-pressure against Soviet expansionism until internal structural contradictions caused the regime to mellow or collapse.",
+                  "To immediately dissolve the United Nations and NATO.",
+                  "To adopt Soviet economic planning models in the United States."
+                ],
+                "answer": 1,
+                "why": "Kennan recognized that the USSR was sensitive to the logic of power; firm containment of expansion would allow domestic economic and political contradictions within the Soviet system to eventually cause its internal decay."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "econ-micro-market-failures",
+    "title": "Principles of Microeconomics: Price Theory, Externalities & Market Failures",
+    "category": "Public Policy & Economics",
+    "subcategory": "Microeconomics",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
+    "description": "A rigorous foundation in microeconomic theory and welfare economics. Explores consumer optimization, producer behavior, competitive equilibrium, elasticity, and the fundamental welfare theorems, before systematically investigating the causes and remedies for market failures: externalities, public goods, common-pool resources, and asymmetric information.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Model supply and demand equilibria, price elasticity, and deadweight loss from market distortions.",
+      "Analyze the First and Second Fundamental Theorems of Welfare Economics.",
+      "Evaluate corrective policy instruments for negative externalities: Pigouvian taxes versus Coaseian property rights bargaining.",
+      "Distinguish public goods and common-pool resources using rivalry and excludability matrices."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Competitive Equilibrium, Welfare Theorems, and Externalities",
+        "lessons": [
+          {
+            "id": "econ-mic-l1",
+            "title": "Welfare Economics and Market Failures: Pigou vs Coase",
+            "body": "### The Efficiency of Markets and When They Fail\n\nIn classical microeconomics, competitive markets allocate scarce resources efficiently. Under the **First Fundamental Theorem of Welfare Economics**, every competitive equilibrium is **Pareto optimal**: no individual can be made better off without making at least one individual worse off, provided there are complete markets, perfect information, and no externalities.\n\nHowever, real-world markets frequently fail to achieve Pareto efficiency. The four primary sources of market failure are:\n1. **Market Power (Monopoly/Oligopoly):** Firms set prices above marginal cost (`P > MC`), causing underproduction and deadweight loss.\n2. **Externalities:** Uncompensated impacts of production or consumption on third parties.\n3. **Public Goods & Common-Pool Resources:** Non-excludability leads to free-riding or tragedy of the commons.\n4. **Information Asymmetries:** Adverse selection and moral hazard disrupt trade.\n\n```\nGoods Classification Matrix:\n                   Excludable                    Non-Excludable\n            +-----------------------------+-----------------------------+\nRivalrous   | Private Goods               | Common-Pool Resources       |\n            | (Food, housing, clothing)   | (Fish stocks, clean water)  |\n            +-----------------------------+-----------------------------+\nNon-Rival   | Club Goods / Natural Monop. | Public Goods                |\n            | (Cable television, patents) | (National defense, air)     |\n            +-----------------------------+-----------------------------+\n```\n\n#### 1. Negative Externalities and Pigouvian Taxation (Arthur Pigou, 1920)\nWhen a factory emits sulfur dioxide while manufacturing steel, it incurs a private marginal cost (*PMC*), but imposes an uncompensated environmental cost on society (*Marginal External Cost, MEC*).\n- **The Market Outcome:** `Price = PMC`. Because `PMC < SMC` (Social Marginal Cost), the market produces **too much steel at too low a price**, generating deadweight welfare loss.\n- **The Pigouvian Solution:** The government levies a corrective per-unit tax exactly equal to the marginal damage at the socially optimal output: `Tax = MEC`. This \"internalizes the externality\", aligning private incentives with social welfare.\n\n#### 2. The Coase Theorem (Ronald Coase, *The Problem of Social Cost*, 1960)\nNobel laureate Ronald Coase demonstrated an alternative to state regulation:\n- **The Theorem:** If property rights are clearly defined and enforceable, and **transaction costs are zero (or negligible)**, private parties will negotiate efficiently to resolve externalities without government intervention, regardless of how property rights are initially assigned.\n- **The Caveat:** In the real world, transaction costs (lawyers, coordination among millions of affected citizens) are almost never zero, which explains why statutory regulation remains essential for widespread public harms like atmospheric pollution.",
+            "readings": [
+              {
+                "label": "Ronald H. Coase, The Problem of Social Cost (Journal of Law and Economics, 1960)",
+                "url": "https://www.jstor.org/stable/724810"
+              },
+              {
+                "label": "Arthur C. Pigou, The Economics of Welfare (Macmillan, 1920)",
+                "url": "https://www.econlib.org/library/NPDBooks/Pigou/pgEW.html"
+              },
+              {
+                "label": "Hal R. Varian, Intermediate Microeconomics: A Modern Approach (W.W. Norton, 9th ed.)",
+                "url": "https://wwnorton.com/books/9780393123968"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "Under the Coase Theorem, what condition must be satisfied for private parties to negotiate an efficient solution to an externality without government taxation?",
+                "options": [
+                  "The government must set minimum price floors on all manufactured products.",
+                  "Property rights must be clearly assigned, and transaction costs must be zero or negligible.",
+                  "Both parties must belong to the same labor union.",
+                  "The industry must be a state-owned natural monopoly."
+                ],
+                "answer": 1,
+                "why": "Coase showed that with zero transaction costs and well-defined property rights, parties will bargain to the Pareto-efficient allocation regardless of initial entitlement distribution."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "econ-macro-central-banking",
+    "title": "Macroeconomic Policy, Inflation & Central Banking: Monetary Transmission & Multipliers",
+    "category": "Public Policy & Economics",
     "subcategory": "Macroeconomics",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "How modern money is created: the secret Jekyll Island gathering of 1910, fractional reserve banking, quantitative easing, fiat currency, and the dual mandate of the Federal Reserve.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-13",
-    "objectives": [
-      "Deconstruct the creation of modern money: fractional reserve banking and commercial bank credit creation.",
-      "Analyze the Federal Reserve's dual mandate (price stability vs maximum sustainable employment).",
-      "Evaluate unconventional monetary policy: Quantitative Easing (QE) and zero-bound interest rates.",
-      "Debate Central Bank Digital Currencies (CBDCs) and the future of sovereign monetary sovereignty."
-    ],
-    "modules": [
-      {
-        "title": "The Creation of Money and Central Bank Powers",
-        "lessons": [
-          {
-            "id": "fed-l1",
-            "title": "How Money Is Born: Fractional Reserve and Bank Credit",
-            "body": "### The Great Monetary Misconception\n\nMost citizens believe central banks print physical cash, or that commercial banks act as mere middlemen, lending out the savings deposited by savers. In modern economics, this is an illusion.\n\nAs the Bank of England famously affirmed in its 2014 quarterly bulletin: **commercial banks create money out of thin air whenever they issue a loan.**\n> *\"Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower's bank account, thereby creating new money.\"*\n\n#### Fractional Reserve Banking and the Central Bank\nUnder fractional reserve banking, a bank must hold only a tiny fraction of liquid central bank reserves (e.g., 10%) against its total deposit liabilities. When you take out a $500,000 mortgage to buy a house, the bank does not transfer someone else's deposited savings. It types $500,000 into your account, expanding the broad money supply ($M_2$).\n\nThe central bank (The Federal Reserve, European Central Bank, Bank of England) regulates this private credit engine using three levers:\n1. **The Policy Interest Rate (Federal Funds Rate)**: The cost of borrowing overnight reserves, dictating the baseline cost of borrowing for the entire economy.\n2. **Open Market Operations (OMO)**: Buying or selling government treasury bonds to inject or drain liquidity from commercial bank balances.\n3. **The Reserve Requirement**: The minimum regulatory cushion banks must maintain at the central bank.",
-            "readings": [
-              {
-                "label": "Bank of England, Money Creation in the Modern Economy (2014)",
-                "url": "https://www.bankofengland.co.uk"
-              },
-              {
-                "label": "Liaquat Ahamed, Lords of Finance: The Bankers Who Broke the World (2009)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "According to modern monetary economics, how is the vast majority of broad money (M2) created?",
-                "options": [
-                  "By private commercial banks extending loans, which creates new deposits out of thin air.",
-                  "By government printing presses printing physical paper dollar bills.",
-                  "By mining gold and storing it in Fort Knox.",
-                  "By taxing foreign multinational corporations."
-                ],
-                "answer": 0,
-                "why": "Over 90% of money in modern economies is electronic commercial bank credit generated whenever banks issue loans."
-              }
-            ]
-          },
-          {
-            "id": "fed-l2",
-            "title": "Quantitative Easing: The $8 Trillion Balance Sheet Revolution",
-            "body": "### Hitting the Zero Lower Bound\n\nFollowing the catastrophic 2008 Wall Street crash, the Federal Reserve slashed its benchmark interest rate to 0% (the **Zero Lower Bound**). The economy was still in a deflationary death spiral. Standard monetary policy had exhausted its ammunition.\n\nUnder Chairman Ben Bernanke, the Fed unleashed **Quantitative Easing (QE)**:\nInstead of adjusting interest rates, the central bank created digital central bank money and purchased trillions of dollars of long-term government bonds and mortgage-backed securities (MBS) directly from private financial institutions.\n\n#### The Mechanics and Consequences of QE\n1. **Lowering Long-Term Yields**: By buying massive tranches of bonds, the Fed drove bond prices up and long-term interest rates down, lowering rates on 30-year home mortgages and corporate credit.\n2. **The Portfolio Balance Channel**: Investors who sold low-yielding bonds to the Fed redeployed their cash into riskier assets (equities, corporate bonds, venture capital, and real estate), igniting the longest stock market bull run in history.\n3. **The Inequality Debate**: While QE prevented a 1930s-style Great Depression, critics argue it massively widened the wealth gap: the wealthiest 10% who own 89% of stock market assets saw their net worth explode, while wage earners received zero return on bank savings accounts.",
-            "readings": [
-              {
-                "label": "Ben S. Bernanke, 21st Century Monetary Policy: The Federal Reserve from the Great Inflation to COVID-19 (2022)",
-                "url": "https://wwnorton.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the primary mechanism through which Quantitative Easing (QE) stimulates the economy?",
-                "options": [
-                  "The central bank creates digital reserves to purchase long-term government bonds, lowering long-term interest rates and pushing capital into risk assets.",
-                  "The central bank mails $10,000 cash checks to every registered voter.",
-                  "The government nationalizes all private mortgage banks.",
-                  "The central bank bans commercial banks from charging interest on credit cards."
-                ],
-                "answer": 0,
-                "why": "QE bypasses short-term rate limits by directly purchasing long-dated assets, flattening the yield curve and stimulating investment."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "econ-nudge",
-    "title": "Behavioral Economics: Choice Architecture and Nudge Theory",
-    "category": "Public Policy and Economics",
-    "subcategory": "Behavioral Science",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "How governments and corporations steer human behavior without mandates: Daniel Kahneman's System 1 and System 2, Richard Thaler's Nudge Theory, default architecture in organ donation, and the ethics of behavioral paternalism.",
-    "passMark": 70,
+    "description": "An advanced exploration of macroeconomic stabilization, monetary policy transmission channels, and fiscal policy. Covers central bank balance sheet mechanics, quantitative easing, interest rate policy (the Taylor Rule), the Phillips Curve trade-off, inflation targeting, and sovereign debt sustainability.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-18",
     "objectives": [
-      "Deconstruct Daniel Kahneman and Amos Tversky's Prospect Theory and dual-process cognitive psychology.",
-      "Analyze Richard Thaler and Cass Sunstein's concept of 'Libertarian Paternalism'.",
-      "Evaluate empirical case studies: default opt-out retirement savings (Save More Tomorrow) and organ donation.",
-      "Critique the ethics of government 'Nudge Units' and dark patterns in commercial software."
+      "Analyze the monetary transmission mechanism: how changes in policy rates affect commercial credit, exchange rates, and aggregate demand.",
+      "Evaluate the Taylor Rule and inflation-targeting frameworks used by modern independent central banks.",
+      "Understand the mechanics of unconventional monetary policy: Quantitative Easing (QE) and forward guidance.",
+      "Calculate fiscal multipliers and evaluate Keynesian stimulus versus debt sustainability constraints."
     ],
     "modules": [
       {
-        "title": "System 1 vs System 2 and Heuristics",
+        "title": "Module 1: Central Banking, Monetary Transmission, and the Inflation Fight",
         "lessons": [
           {
-            "id": "nudge-l1",
-            "title": "Thinking, Fast and Slow: The Death of Homo Economicus",
-            "body": "### The Rational Actor Myth\n\nClassical economics was built upon **Homo Economicus**\u2014the fictional assumption that humans are perfectly rational, hyper-calculating optimization machines who evaluate all probabilistic outcomes to maximize utility.\n\nPsychologists Daniel Kahneman and Amos Tversky demolished this model, winning the 2002 Nobel Memorial Prize in Economic Sciences. In *Thinking, Fast and Slow* (2011), Kahneman revealed the dual-system architecture of the human brain:\n- **System 1 (Fast Thinking)**: Operates automatically, fast, subconscious, with little or no effort and no sense of voluntary control (emotional, associative, heuristic-driven).\n- **System 2 (Slow Thinking)**: Allocates attention to effortful mental operations, conscious deliberation, complex calculations, and self-control.\n\n#### Systematic Cognitive Biases\nBecause System 2 is lazy and energy-expensive, humans rely on System 1 **heuristics** (mental shortcuts), producing predictable, systematic irrationalities:\n1. **Loss Aversion**: The psychological pain of losing $100 is twice as intense as the joy of gaining $100.\n2. **Present Bias / Hyperbolic Discounting**: We irrationally overvalue immediate gratification (eating sugar, scrolling TikTok) while heavily discounting catastrophic future costs (diabetes, debt).\n3. **Status Quo Bias**: Humans overwhelmingly stick with the default option, even when switching costs are zero.",
+            "id": "econ-mac-l1",
+            "title": "Central Bank Operations, Monetary Policy Transmission, and the Taylor Rule",
+            "body": "### The Architecture of Modern Macroeconomic Stabilization\n\nModern central banks\u2014such as the Federal Reserve, the European Central Bank, and the Bank of England\u2014serve as the monetary authorities of their economies. They operate primarily through open market operations to steer short-term benchmark interest rates, aiming to maintain price stability and full employment.\n\n```\nMonetary Transmission Mechanism:\n[Central Bank Policy Rate] \n       \u2193 (Changes interbank overnight rates)\n[Commercial Bank Lending Rates / Mortgage Rates / Bond Yields]\n       \u2193 (Influences corporate borrowing & household spending)\n[Aggregate Demand (Consumption + Investment)]\n       \u2193\n[Output Gap & Inflation Pressure]\n```\n\n#### 1. Central Bank Tools: Conventional vs Unconventional\n- **Conventional Tools:**\n  - *Short-Term Policy Rate (e.g., Federal Funds Rate):* The rate commercial banks pay to borrow reserves overnight.\n  - *Reserve Requirements & Standing Facilities:* Corridor systems determining floor and ceiling rates.\n- **Unconventional Tools (Post-2008 & Post-2020):**\n  - *The Zero Lower Bound (ZLB):* When the policy rate hits ~0%, central banks cannot stimulate further through conventional rate cuts alone.\n  - *Quantitative Easing (QE):* The large-scale purchase of long-dated government bonds and mortgage-backed securities using newly created central bank reserves. QE compresses long-term yields, lowers mortgage costs, and boosts asset valuations.\n  - *Forward Guidance:* Explicit communication regarding the future path of interest rates to anchor market expectations.\n\n#### 2. The Taylor Rule (John B. Taylor, 1993)\nA foundational monetary policy rule that models how central banks should adjust nominal interest rates in response to changes in inflation and economic output:\n\n`i = r* + \u03c0 + 0.5(\u03c0 - \u03c0*) + 0.5(y - y*)`\n\nWhere:\n- `i` = Target nominal policy interest rate.\n- `r*` = Neutral real interest rate.\n- `\u03c0` = Current inflation rate; `\u03c0*` = Central bank's target inflation rate (typically 2%).\n- `y - y*` = Output gap (percent deviation of actual GDP from potential GDP).\n\n**The Taylor Principle:** When inflation rises by 1%, the central bank must raise the nominal interest rate by *more than 1%* (a coefficient > 1.0) so that the *real interest rate* (`r = i - \u03c0`) rises, curbing borrowing and aggregate demand to cool inflation.",
             "readings": [
               {
-                "label": "Daniel Kahneman, Thinking, Fast and Slow (2011)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "John B. Taylor, Discretion versus Policy Rules in Practice (Carnegie-Rochester Conference Series, 1993)",
+                "url": "https://www.sciencedirect.com/science/article/abs/pii/016722319390009L"
               },
               {
-                "label": "Amos Tversky & Daniel Kahneman, Prospect Theory: An Analysis of Decision under Risk, Econometrica (1979)",
-                "url": "https://www.jstor.org"
+                "label": "Ben S. Bernanke, The Courage to Act: A Memoir of a Crisis and Its Aftermath (W.W. Norton, 2015)",
+                "url": "https://wwnorton.com/books/9780393247213"
+              },
+              {
+                "label": "Mervyn King, The End of Alchemy: Money, Banking, and the Future of the Global Economy (2016)",
+                "url": "https://wwnorton.com/books/9780393247022"
               }
             ],
             "quiz": [
               {
-                "q": "What is the core insight of Kahneman and Tversky's 'Loss Aversion'?",
+                "q": "What is the critical insight of the 'Taylor Principle' in central banking monetary policy?",
                 "options": [
-                  "The psychological pain of a financial loss is approximately twice as intense as the pleasure of an equivalent gain.",
-                  "People only care about losing money if it was inherited.",
-                  "Humans are completely risk-neutral in all gambling scenarios.",
-                  "Investors always buy stocks at the lowest price."
+                  "The central bank should always keep nominal interest rates at exactly zero percent.",
+                  "When inflation rises by 1 percentage point, the central bank must raise the nominal policy rate by more than 1 percentage point so that the real interest rate increases, effectively restraining aggregate demand.",
+                  "Central banks should purchase corporate stocks whenever foreign currencies appreciate.",
+                  "Commercial banks must hold 100% of deposits in physical gold."
                 ],
-                "answer": 0,
-                "why": "Loss aversion proves that humans are asymmetric decision-makers, driven far more by the dread of loss than the hope of gain."
-              }
-            ]
-          },
-          {
-            "id": "nudge-l2",
-            "title": "Choice Architecture and Libertarian Paternalism",
-            "body": "### The Power of the Default\n\nIn 2008, economist Richard Thaler and legal scholar Cass Sunstein published **Nudge: Improving Decisions About Health, Wealth, and Happiness**. They proposed **Libertarian Paternalism**:\n- *Libertarian*: People must remain completely free to choose whatever option they prefer; choices must not be banned or financially penalized.\n- *Paternalism*: The choice architect (government, employer, doctor) designs the environment to steer people toward choices that make their lives longer, healthier, and better.\n\n#### The Magic of Opt-Out Architecture\nConsider organ donation in Europe:\n- In **Germany (Opt-In)**: Citizens must actively register at the DMV to become organ donors. Only **12%** of citizens are registered, despite 85% expressing public approval in polls.\n- In **Austria (Opt-Out / Presumed Consent)**: Citizens are organ donors by default; if you do not want to be a donor, you simply check a box to opt out. The donor consent rate is **99.98%**.\n\nThe difference has nothing to do with morality, religion, or civic virtue; it is **100% driven by choice architecture**. By harnessing the status quo bias, governments around the world established 'Nudge Units' (the UK Behavioral Insights Team) to auto-enroll millions of workers into workplace pensions (*Save More Tomorrow*), saving billions in retirement security without passing a single coercive mandate.",
-            "readings": [
-              {
-                "label": "Richard H. Thaler & Cass R. Sunstein, Nudge: The Final Edition (2021)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why does an opt-out default dramatically increase organ donation rates compared to an opt-in system?",
-                "options": [
-                  "It leverages human status-quo bias and inertia; people accept the default because switching requires cognitive effort.",
-                  "Opt-out systems pay citizens $5,000 in cash.",
-                  "Opt-out systems threaten non-donors with prison time.",
-                  "It requires a signed permit from a bishop."
-                ],
-                "answer": 0,
-                "why": "Choice architecture proves that defaults possess enormous gravitational pull: humans rarely expend effort to change a pre-set default option."
+                "answer": 1,
+                "why": "If the central bank raises nominal rates by less than the increase in inflation, the real interest rate actually falls, perversely stimulating borrowing and accelerating inflation."
               }
             ]
           }
@@ -2598,152 +1919,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "econ-piketty",
-    "title": "Capital, Wealth, and Inequality: Thomas Piketty's r > g",
-    "category": "Public Policy and Economics",
-    "subcategory": "Political Economy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "The economic sensation of the 21st century: Thomas Piketty's Capital in the Twenty-First Century, the inequality formula r > g, historical capital-income ratios, patrimonial capitalism, and global wealth taxes.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-22",
-    "objectives": [
-      "Deconstruct Piketty's fundamental law of capitalism: r > g (Rate of Return vs Economic Growth).",
-      "Analyze centuries of historical wealth and tax data across Britain, France, Germany, and the US.",
-      "Evaluate why the mid-20th century equality compression (1914\u20131975) was a historical anomaly.",
-      "Critique proposals for a progressive global tax on capital and billionaire minimum tax rates."
-    ],
-    "modules": [
-      {
-        "title": "The Laws of Capitalism and Patrimonial Wealth",
-        "lessons": [
-          {
-            "id": "piketty-l1",
-            "title": "The Master Formula: r > g",
-            "body": "### The Mathematics of Divergence\n\nIn 2014, French economist Thomas Piketty stunned the economics profession with *Capital in the Twenty-First Century*, synthesizing two centuries of archival tax records from across the Western world. Piketty distilled the central contradiction of market capitalism into a simple mathematical inequality:\n\n$$\\mathbf{r > g}$$\n\nWhere:\n- $\\mathbf{r}$ = The average annual rate of return on capital (profits, dividends, interest, rents, capital gains), which historically hovers around **4% to 5%**.\n- $\\mathbf{g}$ = The rate of economic growth (the annual expansion of output, wages, and national income), which in mature developed economies rarely exceeds **1% to 2%**.\n\n#### The Return of Patrimonial Capitalism\nWhen the rate of return on capital significantly exceeds the growth rate of the economy:\n1. Wealth accumulated in the past (inherited capital, real estate, corporate equities) grows faster than output and wages earned by human labor.\n2. The past devours the future: inherited wealth concentrates into a narrow hereditary oligarchy (**Patrimonial Capitalism**), reducing meritocracy and social mobility to a romantic illusion.\n3. Society reverts to the Gilded Age of 19th-century Europe depicted in the novels of Jane Austen and Honor\u00e9 de Balzac, where marriage to an heir yielded ten times more wealth than a lifetime of skilled labor as a lawyer or doctor.",
-            "readings": [
-              {
-                "label": "Thomas Piketty, Capital in the Twenty-First Century (2014)",
-                "url": "https://www.hup.harvard.edu"
-              },
-              {
-                "label": "Branko Milanovic, Global Inequality: A New Approach for the Age of Globalization (2016)",
-                "url": "https://www.hup.harvard.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "In Thomas Piketty's inequality formula r > g, what happens when the rate of return on capital (r) exceeds the economic growth rate (g)?",
-                "options": [
-                  "Inherited wealth grows significantly faster than wages and labor income, causing long-term wealth concentration in a narrow elite.",
-                  "All workers receive automatic 10% wage increases.",
-                  "The stock market collapses into zero value.",
-                  "Inflation falls permanently to zero."
-                ],
-                "answer": 0,
-                "why": "When r > g, accumulated fortunes compound faster than national income, ensuring that capital owners capture an ever-growing slice of national wealth."
-              }
-            ]
-          },
-          {
-            "id": "piketty-l2",
-            "title": "The 20th-Century Anomaly and the Global Wealth Tax",
-            "body": "### The Illusion of Natural Equality\n\nFor decades, economists relied on Simon Kuznets' famous **Kuznets Curve** (1955), which posited that while industrialization initially increases inequality, advanced capitalist democracies naturally become more equal over time as education and technology spread.\n\nPiketty proved that Kuznets was wrong: **the equality of the mid-20th century was an accidental historical anomaly, not a natural feature of capitalism.**\n\nBetween 1914 and 1945, the traditional fortunes of the European aristocracy were physically obliterated by:\n- Two World Wars and physical destruction of capital assets.\n- Hyperinflation and debt default.\n- Punitive top marginal income tax rates (up to 91% under Eisenhower in the US and 98% in the UK) and steep inheritance taxes enacted to fund the war effort.\n\n#### The Policy Antidote: A Global Wealth Tax\nOnce deregulation, tax cuts (Reagan and Thatcher), and capital mobility arrived after 1980, the natural equilibrium of $r > g$ returned with vengeance. \n\nTo prevent a slide into modern oligarchy, Piketty proposes a **Progressive Global Tax on Capital** combined with automatic cross-border banking data exchanges (FATCA, CRS) to eliminate offshore tax havens (Switzerland, the Cayman Islands, Delaware), ensuring that global wealth pays an annual progressive levy to fund education and green infrastructure.",
-            "readings": [
-              {
-                "label": "Gabriel Zucman, The Hidden Wealth of Nations: The Scourge of Tax Havens (2015)",
-                "url": "https://press.uchicago.edu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why was economic inequality so low in Western nations between 1945 and 1975?",
-                "options": [
-                  "World Wars, hyperinflation, and historically high progressive marginal tax rates destroyed old fortunes.",
-                  "Private capital ownership was outlawed by the United Nations.",
-                  "Computers made all human labor equally valuable.",
-                  "Gold mining ceased completely."
-                ],
-                "answer": 0,
-                "why": "Piketty showed that mid-century equality was created by violent geopolitical shocks and 90%+ top marginal tax rates, not natural market forces."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "econ-cartels",
-    "title": "The Economics of the Illicit Narcotics Trade & the Drug War",
-    "category": "Public Policy and Economics",
-    "subcategory": "Development Economics",
+    "id": "econ-policy-analysis",
+    "title": "The Public Policy Process: Problem Definition, Cost-Benefit Analysis & Implementation",
+    "category": "Public Policy & Economics",
+    "subcategory": "Public policy analysis",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "An investigation of the multi-billion-dollar transnational drug economy: supply elasticity, interdiction economics, why arresting kingpins increases violence, money laundering in global banks, and Portugal's decriminalization experiment.",
-    "passMark": 70,
+    "description": "A comprehensive practical methodology for public policy design and evaluation. Teaches Bardach's Eightfold Path, quantitative cost-benefit analysis (discount rates, net present value, value of a statistical life), regulatory impact assessments, policy feedback loops, and implementation hurdles.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-08-25",
     "objectives": [
-      "Apply microeconomic supply and demand elasticity to illicit narcotics markets.",
-      "Analyze the 'Balloon Effect' and the 'Hydra Effect' in counter-narcotics enforcement.",
-      "Deconstruct money laundering architectures through major transnational financial institutions.",
-      "Evaluate empirical public health outcomes of Portugal's 2001 decriminalization policy."
+      "Master Eugene Bardach's Eightfold Path for practical policy formulation.",
+      "Execute rigorous Cost-Benefit Analysis (CBA) including discounting, Net Present Value (NPV), and sensitivity analysis.",
+      "Understand the ethical and statistical methodologies for estimating the Value of a Statistical Life (VSL).",
+      "Analyze street-level bureaucracy and the common causes of policy implementation failure."
     ],
     "modules": [
       {
-        "title": "The Inelastic Market and Counter-Narcotics Dynamics",
+        "title": "Module 1: The Policy Cycle and Quantitative Cost-Benefit Analysis",
         "lessons": [
           {
-            "id": "cartels-l1",
-            "title": "Inelastic Demand and the Interdiction Paradox",
-            "body": "### The Flawed Economics of the War on Drugs\n\nSince President Richard Nixon declared the **War on Drugs** in 1971, the United States and international partners have spent over **$1 trillion** on interdiction, crop eradication, border militarization, and mass incarceration. Yet drugs are cheaper, purer, and more widely available today than at any point in history.\n\nThe explanation lies in basic microeconomics: **Price Inelasticity of Demand**.\n\nFor addicted consumers, narcotics are not discretionary luxury goods; they are chemical necessities. When the demand curve is steeply **inelastic**, seizing 20% of cocaine shipments at sea does not stop consumption:\n1. Interdiction temporarily restricts supply.\n2. Because demand is inelastic, consumer prices rise sharply.\n3. Total cartel revenue actually **increases**, creating astronomical profit margins that incentivize new traffickers to enter the market.\n\n#### The Balloon Effect and the Hydra Effect\n- **The Balloon Effect**: Squeezing coca cultivation in Colombia simply pushes production into Peru and Bolivia; blocking Caribbean smuggling corridors pushes trafficking into Mexican overland routes.\n- **The Kingpin Strategy (The Hydra Effect)**: When Mexican and US authorities capture or kill a top cartel boss (like El Chapo), the cartel does not dissolve. Instead, it fractures into violent rival factions warring for control of local trafficking plazas, dramatically increasing national homicide rates.",
+            "id": "econ-pol-l1",
+            "title": "Bardach's Eightfold Path and the Mechanics of Cost-Benefit Analysis",
+            "body": "### The Policy Analyst's Craft\n\nPublic policy analysis is the systematic evaluation of technical, political, and economic options to address pressing societal problems. \n\n#### 1. Eugene Bardach's Eightfold Path\nDeveloped at UC Berkeley's Goldman School of Public Policy, this framework provides the industry standard workflow for policy analysts:\n1. **Define the Problem:** Formulate the problem in terms of deficits and excesses (e.g., *\"Too many children under five lack immunization in rural district X\"* rather than a preconceived solution).\n2. **Assemble Evidence:** Collect quantitative data, statutes, and academic evaluations.\n3. **Construct the Alternatives:** Formulate 3\u20134 viable policy alternatives (including the baseline *\"do nothing\"*).\n4. **Select the Criteria:** Choose evaluative metrics (efficiency, equity, political feasibility, administrative simplicity).\n5. **Project the Outcomes:** Forecast the impacts of each alternative over a 5\u201320 year horizon.\n6. **Confront the Trade-Offs:** Clarify what society gains and forfeits when choosing Alternative A over B.\n7. **Stop, Focus, Narrow, Deepen, Decide:** Make an explicit recommendation.\n8. **Tell Your Story:** Deliver a concise executive memorandum for decision-makers.\n\n#### 2. Cost-Benefit Analysis (CBA) and Discounting\nGovernment agencies use CBA to determine whether the aggregate social benefits of a regulation exceed its costs:\n- **Net Present Value (NPV):** Future costs and benefits must be converted into present-day dollars using a social discount rate (`r`):\n  `NPV = \u2211 [ (Benefit_t - Cost_t) / (1 + r)^t ]`\n  - A higher discount rate undervalues long-term future benefits (e.g., climate change mitigation 50 years from now).\n- **The Value of a Statistical Life (VSL):** In transportation safety, environmental protection, and healthcare, policies reduce mortality risk. VSL is not the price of a human life; it is society's willingness to pay for small risk reductions aggregated across a population.\n  - *Example:* If individuals are willing to pay $100 on average to reduce their annual risk of dying in a transit accident by 1 in 100,000, then `VSL = $100 / (1/100,000) = $10,000,000`.",
             "readings": [
               {
-                "label": "Tom Wainwright, Narconomics: How to Run a Drug Cartel (2016)",
-                "url": "https://www.publicaffairsbooks.com"
+                "label": "Eugene Bardach and Eric M. Patashnik, A Practical Guide for Policy Analysis: The Eightfold Path (CQ Press, 6th ed. 2019)",
+                "url": "https://us.sagepub.com/en-us/nam/a-practical-guide-for-policy-analysis/book266014"
+              },
+              {
+                "label": "Anthony E. Boardman et al., Cost-Benefit Analysis: Concepts and Practice (Cambridge, 5th ed. 2018)",
+                "url": "https://www.cambridge.org/core/books/costbenefit-analysis/9F5594DA14C0334CA0953EE3C0A983E3"
+              },
+              {
+                "label": "U.S. Office of Management and Budget (OMB), Circular A-4: Regulatory Analysis",
+                "url": "https://www.whitehouse.gov/omb/information-regulatory-affairs/circulars/"
               }
             ],
             "quiz": [
               {
-                "q": "Why does law enforcement interdiction often fail to reduce the street consumption of illicit narcotics?",
+                "q": "In regulatory Cost-Benefit Analysis, what happens to the projected present value of long-term environmental benefits 50 years into the future when an agency uses a very high discount rate?",
                 "options": [
-                  "Because demand for addictive drugs is price inelastic; supply seizures raise retail prices and generate higher revenues for cartels.",
-                  "Because all narcotics are manufactured legally by the United Nations.",
-                  "Because police forces are forbidden from making arrests at borders.",
-                  "Because cartels have no financial overhead costs."
+                  "The present value of those future benefits dramatically shrinks, making long-term investments appear economically unviable.",
+                  "The present value of future benefits approaches infinity.",
+                  "The discount rate has zero mathematical effect on net present value.",
+                  "It forces private firms to double their dividend payments."
                 ],
                 "answer": 0,
-                "why": "Inelastic demand means consumers continue buying regardless of price spikes, turning law enforcement seizures into an effective profit subsidy for cartels."
-              }
-            ]
-          },
-          {
-            "id": "cartels-l2",
-            "title": "Portugal's Decriminalization Experiment",
-            "body": "### Reframing Crime as a Public Health Issue\n\nIn 2000, Portugal was facing a catastrophic public health crisis: 1 in every 100 citizens was addicted to heroin, and the nation suffered the highest rate of drug-related HIV transmission in the European Union.\n\nIn 2001, Portugal enacted **Law 30/2000**, becoming the first country in the world to **decriminalize the acquisition, possession, and personal use of all illicit drugs** (including cocaine, heroin, and cannabis) up to a ten-day supply. Crucially:\n- Decriminalization was **not** legalization: selling or trafficking drugs remained a serious criminal felony.\n- Personal possession was shifted from the criminal court to civil **Commissions for the Dissuasion of Drug Addiction** (consisting of a lawyer, a social worker, and a medical psychologist).\n- Instead of prison sentences and criminal records, users were directed to voluntary rehabilitation, methadone treatment, and employment counseling.\n\n#### The Results\nOpponents predicted Portugal would become a drug-tourism dystopia. Twenty years of empirical data proved the opposite:\n- Drug overdose deaths plummeted by **over 80%**, dropping to the lowest rates in all of Western Europe.\n- New HIV infections among intravenous drug users collapsed from 1,000 cases a year to under 40.\n- Incarceration rates fell, court costs plummeted, and police resources were redirected to dismantling transnational wholesale smuggling networks.",
-            "readings": [
-              {
-                "label": "Caitlin Hughes & Alex Stevens, What Can We Learn from the Portuguese Decriminalization of Illicit Drugs? British Journal of Criminology (2010)",
-                "url": "https://academic.oup.com/bjc"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What was the landmark outcome of Portugal's 2001 drug decriminalization policy?",
-                "options": [
-                  "Drug overdose deaths and new HIV infections among drug users plummeted by over 80%.",
-                  "Drug use increased by 500% across all schools.",
-                  "The Portuguese government began selling heroin in post offices.",
-                  "Portugal was expelled from the European Union."
-                ],
-                "answer": 0,
-                "why": "Decriminalization combined with medical harm reduction dramatically lowered overdose fatalities and transmission of blood-borne diseases."
+                "why": "Because future values are divided by (1 + r)^t, a high discount rate 'r' exponentially reduces the present value of benefits realized in distant future decades."
               }
             ]
           }
@@ -2752,77 +1976,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "econ-climate",
-    "title": "The Economics of Climate Collapse: Carbon Taxes vs Cap-and-Trade",
-    "category": "Public Policy and Economics",
-    "subcategory": "Energy & Climate Policy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
+    "id": "econ-inequality-capital",
+    "title": "Wealth Distribution, Inequality & Capital in the 21st Century: The Piketty Thesis",
+    "category": "Public Policy & Economics",
+    "subcategory": "Economic inequality",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "Nicholas Stern's greatest market failure in human history: carbon pricing mechanics, the EU Emissions Trading System (ETS), Border Carbon Adjustments, and the economics of the clean energy transition.",
-    "passMark": 70,
+    "description": "An empirical and theoretical examination of income and wealth distribution in modern economies. Dissects Thomas Piketty's r > g thesis, the Kuznets curve, the labor share of national income, super-managers and executive compensation, intergenerational wealth transfers, and progressive tax policy.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-08-29",
     "objectives": [
-      "Deconstruct climate change as an unpriced negative externality (Pigouvian taxation).",
-      "Compare price-based instruments (Carbon Taxes) vs quantity-based instruments (Cap-and-Trade).",
-      "Analyze the EU Carbon Border Adjustment Mechanism (CBAM) to prevent carbon leakage.",
-      "Evaluate William Nordhaus' DICE model and the social cost of carbon discount rate debate."
+      "Critically evaluate Thomas Piketty's fundamental inequality law: r > g (return on capital exceeds economic growth).",
+      "Analyze the historical evolution of the Gini coefficient, Palma ratio, and wealth deciles over two centuries.",
+      "Examine the drivers of wage polarization: skill-biased technological change vs institutional erosion (union density, minimum wage).",
+      "Debate wealth tax proposals, inheritance taxation, and global corporate minimum tax agreements."
     ],
     "modules": [
       {
-        "title": "Market Failures and Pricing Greenhouse Gases",
+        "title": "Module 1: The Dynamics of Capital Accumulation and Wealth Concentration",
         "lessons": [
           {
-            "id": "climate-l1",
-            "title": "Nicholas Stern: The Greatest Market Failure in Human History",
-            "body": "### The Economics of Atmospheric Dumping\n\nIn 2006, former World Bank Chief Economist Sir Nicholas Stern published the landmark **Stern Review on the Economics of Climate Change** for the British Treasury. Stern opened with an iconic diagnosis:\n> *\"Climate change is the greatest market failure the world has ever seen.\"*\n\nIn neoclassical economics, markets allocate resources efficiently only when prices reflect the full social costs of production. For two centuries, industrial capitalism treated the Earth's atmosphere as a **free open sewer** for greenhouse gas emissions.\n\nWhen an airline burns jet fuel or a power plant burns coal, it generates a **Negative Externality**:\n- The private benefit (revenue, electricity) goes directly to the company.\n- The social cost (flooding, wildfires, agricultural drought, sea-level rise) is externalized onto third parties and future generations who never consented to the transaction.\n\n#### The Pigouvian Solution: Internalizing the Externality\nNamed after British economist Arthur Pigou, a **Pigouvian Tax** levies a fee directly on greenhouse gas emissions equal to the **Social Cost of Carbon (SCC)**. By putting a price on pollution, the market mechanism is restored: clean zero-carbon alternatives (solar, wind, nuclear, geothermal) become cheaper than fossil fuels, driving capital into clean technologies without bureaucratic picking of winners.",
+            "id": "econ-in-l1",
+            "title": "Piketty's r > g and the Structural Dynamics of Wealth Concentration",
+            "body": "### Capital, Inequality, and Historical Dynamics\n\nIn 2013, French economist Thomas Piketty published *Capital in the Twenty-First Century*, synthesizing three centuries of tax records across twenty countries. His work transformed economic discourse by refuting the mid-20th century **Kuznets Curve hypothesis** (which claimed that industrial development naturally leads first to rising inequality, and then automatically to egalitarian compression).\n\n```\nThe Kuznets Curve (Disproved by late 20th-century data):\nInequality\n    ^         /---\\\n    |        /     \\\n    |       /       \\   \u2190 (Kuznets hypothesized inequality falls automatically)\n    |      /         \\\n    +------------------------> Economic Development\n```\n\nInstead, Piketty demonstrated that the egalitarian compression observed between 1914 and 1970 was an anomalous historical accident caused by the physical destruction of capital in World Wars I and II, bankruptcies during the Great Depression, and confiscatory wartime taxation\u2014not natural market equilibrium.\n\n#### 1. The Fundamental Inequality Law: `r > g`\nPiketty posits that when the **rate of return on capital (`r`)** significantly exceeds the **rate of economic growth (`g`)**, wealth concentration intensifies automatically:\n- **`r` (Return on Capital):** The average annual yield on real estate, stocks, corporate bonds, dividends, and interest (historically around 4%\u20135%).\n- **`g` (Economic Growth):** The annual rate of output growth from population increase and technological productivity (typically 1%\u20132% in mature economies).\n- **The Implication:** Inherited wealth accumulates much faster than output and wages. Fortunes grow exponentially through compounding returns, causing society to revert to a **patrimonial capitalism** dominated by inherited dynasties rather than meritocratic talent.\n\n#### 2. Measuring Economic Inequality\n- **The Gini Coefficient:** A metric ranging from 0 (perfect equality: everyone earns the exact same) to 1 (perfect inequality: one person owns all national wealth).\n- **The Palma Ratio:** The ratio of the richest 10% of the population's share of gross national income divided by the poorest 40%'s share.\n- **Top 1% Wealth Share:** Reflects extreme concentration at the apex of the pyramid.",
             "readings": [
               {
-                "label": "Nicholas Stern, The Economics of Climate Change: The Stern Review (2006)",
-                "url": "https://www.cambridge.org"
+                "label": "Thomas Piketty, Capital in the Twenty-First Century (Harvard University Press, 2014)",
+                "url": "https://www.hup.harvard.edu/books/9780674979857"
               },
               {
-                "label": "William D. Nordhaus, The Climate Casino: Risk, Uncertainty, and Economics for a Warming World (2013)",
-                "url": "https://yalebooks.yale.edu"
+                "label": "Emmanuel Saez and Gabriel Zucman, The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay (W.W. Norton, 2019)",
+                "url": "https://wwnorton.com/books/9781324004042"
+              },
+              {
+                "label": "World Inequality Report 2022 (World Inequality Lab)",
+                "url": "https://wir2022.wid.world/"
               }
             ],
             "quiz": [
               {
-                "q": "Why did Sir Nicholas Stern describe climate change as the 'greatest market failure the world has ever seen'?",
+                "q": "What is the economic consequence when the rate of return on capital (r) consistently exceeds the rate of economic growth (g), according to Thomas Piketty?",
                 "options": [
-                  "Greenhouse gas emissions represent an unpriced negative externality where market prices fail to reflect catastrophic social costs.",
-                  "Solar panel manufacturers went bankrupt in the 19th century.",
-                  "Central banks refused to print green-colored dollar bills.",
-                  "International trade agreements banned coal mining in 1950."
+                  "Wealth inequality naturally and automatically vanishes without any policy changes.",
+                  "Inherited wealth grows significantly faster than wages and economic output, leading to increasing concentration of wealth and the rise of patrimonial capitalism.",
+                  "All corporations immediately declare bankruptcy.",
+                  "Consumer inflation declines to negative fifty percent."
                 ],
-                "answer": 0,
-                "why": "Markets failed because polluters were allowed to emit carbon for free, shifting the catastrophic damage costs onto society and future generations."
-              }
-            ]
-          },
-          {
-            "id": "climate-l2",
-            "title": "Carbon Tax vs Cap-and-Trade: The EU ETS and CBAM",
-            "body": "### Choosing the Regulatory Instrument\n\nEconomists debate two primary mechanisms to price carbon:\n1. **Carbon Tax (Price Certainty)**: The state sets an explicit fee per ton of $CO_2$ emitted (e.g. $50/ton). The price is predictable, enabling businesses to plan capital investments, but the exact total emissions reduction is uncertain.\n2. **Cap-and-Trade (Quantity Certainty)**: The government sets a hard statutory cap on total national emissions, issuing tradeable allowances that decline every year. Companies must surrender one allowance per ton emitted; efficient companies can sell surplus permits to heavy polluters in an open market.\n\n#### The EU Emissions Trading System (EU ETS)\nLaunched in 2005, the EU ETS covers over 10,000 power stations and industrial plants. By allowing permit prices to rise to over \u20ac100 per ton, the EU drove coal power almost entirely out of Western Europe.\n\n#### Preventing Carbon Leakage: CBAM\nIf the EU imposes strict carbon prices, European steelmakers might relocate factories to countries without carbon taxes (India or China) and export dirty steel back to Europe (**Carbon Leakage**). \n\nTo prevent this, the EU introduced the **Carbon Border Adjustment Mechanism (CBAM)** in 2023\u2014a carbon tariff levied on imports of steel, cement, aluminum, fertilizer, and electricity at the border based on the carbon embedded in their production. CBAM effectively forces foreign trading partners to price their own carbon or surrender tariff revenues to Brussels.",
-            "readings": [
-              {
-                "label": "European Commission, The Carbon Border Adjustment Mechanism (2023)",
-                "url": "https://taxation-customs.ec.europa.eu"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the primary objective of the European Union's Carbon Border Adjustment Mechanism (CBAM)?",
-                "options": [
-                  "To prevent 'carbon leakage' by placing a carbon tariff on imported goods produced in nations with lax environmental laws.",
-                  "To ban all international trade with North America.",
-                  "To fund space exploration programs.",
-                  "To subsidize coal extraction in Germany."
-                ],
-                "answer": 0,
-                "why": "CBAM levels the playing field by taxing imported carbon-intensive goods, preventing European industries from relocating abroad to evade environmental regulations."
+                "answer": 1,
+                "why": "When r > g, inherited wealth compounds faster than the economy creates new output, concentrating national wealth in the hands of capital holders at the expense of wage earners."
               }
             ]
           }
@@ -2831,160 +2033,169 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "econ-antitrust",
-    "title": "Silicon Valley Monopolies: Antitrust Law & Big Tech",
-    "category": "Public Policy and Economics",
-    "subcategory": "Public Policy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
+    "id": "econ-financial-crises",
+    "title": "Financial Crises, Systemic Risk & Banking Regulation: From 1929 to Basel III",
+    "category": "Public Policy & Economics",
+    "subcategory": "Financial regulation",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "Lina Khan's Amazon Antitrust Paradox: why Robert Bork's Consumer Welfare Standard is broken, network effects, self-preferencing algorithms, predatory pricing, and the historic antitrust trials against Google and Apple.",
-    "passMark": 70,
+    "description": "An in-depth inquiry into banking architecture, systemic financial crises, and macroprudential regulation. Covers the anatomy of bank runs, maturity transformation, the shadow banking system, securitization, Minsky's Financial Instability Hypothesis, Dodd-Frank, and the Basel capital accords.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-03",
     "objectives": [
-      "Deconstruct the Chicago School of Antitrust and Robert Bork's Consumer Welfare Standard (low consumer prices).",
-      "Analyze Lina Khan's 2017 Yale Law Journal article 'Amazon's Antitrust Paradox'.",
-      "Evaluate network effects, multi-sided digital platforms, and predatory data acquisition.",
-      "Assess the landmark 2024 DOJ antitrust ruling against Google's search monopoly."
+      "Model maturity transformation and bank runs using the Diamond-Dybvig framework.",
+      "Analyze Hyman Minsky's Financial Instability Hypothesis (Hedge, Speculative, and Ponzi finance).",
+      "Deconstruct the structural causes of the 2008 Global Financial Crisis: subprime securitization, CDOs, and CDS swaps.",
+      "Evaluate regulatory solutions: capital adequacy ratios (Basel III), stress tests, and resolution mechanisms ('living wills')."
     ],
     "modules": [
       {
-        "title": "The Rise and Crisis of the Consumer Welfare Standard",
+        "title": "Module 1: The Anatomy of Bank Runs and Systemic Fragility",
         "lessons": [
           {
-            "id": "antitrust-l1",
-            "title": "Robert Bork and the Chicago School Revolution",
-            "body": "### How Antitrust Forgot Monopoly Power\n\nThe Sherman Antitrust Act was enacted in 1890 to break up the abusive trusts of Standard Oil and J.P. Morgan, protecting democratic liberty, small businesses, and open market competition from predatory robber barons.\n\nIn the late 1970s, conservative legal scholar **Robert Bork** and the University of Chicago School of Economics staged a doctrinal revolution with *The Antitrust Paradox* (1978). Bork argued that the sole legitimate objective of antitrust law is **Consumer Welfare**, measured almost exclusively by **short-term consumer prices and economic efficiency**:\n> *\"If a monopoly lowers prices for consumers through economies of scale, it is efficient, pro-competitive, and perfectly legal under the Sherman Act.\"*\n\nFor forty years, federal judges and regulators adopted Bork's doctrine. Horizontal mergers were rubber-stamped, and predatory monopolies were ignored as long as prices did not rise.\n\n#### The Digital Blindspot\nIn the internet era, Big Tech platforms (Google, Facebook, Amazon) built staggering monopolies while offering consumer services for **free** ($0 price for search and social media) or heavily discounted prices. Under Bork's Consumer Welfare Standard, these monopolies were legally invisible: if consumer prices were zero, how could there be consumer harm?",
+            "id": "econ-fc-l1",
+            "title": "The Diamond-Dybvig Model, Minsky Moments, and Basel Regulations",
+            "body": "### The Inherent Fragility of Banking\n\nCommercial banks perform a vital economic function known as **maturity transformation**: they accept short-term, liquid deposits (which depositors can withdraw on demand) and transform them into long-term, illiquid loans (30-year mortgages, corporate project financing).\n\n```\nMaturity Transformation:\n[Liquid, Short-Term Liabilities] \u2500\u2500\u2192 [Bank Balance Sheet] \u2500\u2500\u2192 [Illiquid, Long-Term Assets]\n(Demand deposits, wholesale repo)                                 (Mortgages, commercial loans)\n```\n\n#### 1. The Diamond-Dybvig Model of Bank Runs (1983)\nNobel laureates Douglas Diamond and Philip Dybvig demonstrated that maturity transformation exposes banks to self-fulfilling panic:\n- Because the bank's assets are illiquid and cannot be liquidated instantly at full value, if all depositors believe *other* depositors are going to withdraw their money, it is individually rational for everyone to run to the bank first.\n- **Institutional Solutions:**\n  - *Deposit Insurance (FDIC):* Guarantees retail deposits up to a statutory limit, removing the panic incentive.\n  - *Lender of Last Resort (Bagehot's Dictum):* The central bank lends freely to solvent institutions against good collateral at a penalty rate during liquidity panics.\n\n#### 2. Minsky's Financial Instability Hypothesis\nEconomist Hyman Minsky demonstrated that *\"stability breeds instability\"*:\n- Long periods of economic tranquility lead banks, investors, and borrowers to underestimate risk and take on excessive debt leverage.\n- Debt financing progresses through three stages:\n  1. **Hedge Finance:** Cash flows cover both principal and interest payments.\n  2. **Speculative Finance:** Cash flows cover only interest; principal must be rolled over.\n  3. **Ponzi Finance:** Cash flows cannot even cover interest; the debtor relies on endless asset price inflation to refinance.\n- **The Minsky Moment:** Asset prices stop rising, Ponzi borrowers default, leverage unwinds catastrophically, and liquidity freezes across the entire interbank system.\n\n#### 3. Post-Crisis Architecture: Basel III Capital Requirements\nTo prevent systemic collapse without relying on taxpayer bailouts:\n- **Common Equity Tier 1 (CET1):** Banks must maintain high-quality equity capital equal to at least 4.5%\u20137% of risk-weighted assets.\n- **Liquidity Coverage Ratio (LCR):** Banks must hold enough High-Quality Liquid Assets (cash, sovereign debt) to withstand a 30-day acute liquidity stress scenario.\n- **Capital Conservation & Counter-Cyclical Buffers:** Requiring banks to build extra equity cushions during economic booms that can be drawn down during recessions.",
             "readings": [
               {
-                "label": "Robert H. Bork, The Antitrust Paradox: A Policy at War with Itself (1978)",
-                "url": "https://www.basicbooks.com"
+                "label": "Douglas W. Diamond and Philip H. Dybvig, Bank Runs, Deposit Insurance, and Liquidity (JPE, 1983)",
+                "url": "https://www.jstor.org/stable/1837095"
               },
               {
-                "label": "Tim Wu, The Curse of Bigness: Antitrust in the New Gilded Age (2018)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Hyman P. Minsky, Stabilizing an Unstable Economy (Yale University Press, 1986)",
+                "url": "https://www.worldcat.org/title/stabilizing-an-unstable-economy/oclc/12808796"
+              },
+              {
+                "label": "Bank for International Settlements (BIS), Basel III: International Regulatory Framework for Banks",
+                "url": "https://www.bis.org/bcbs/basel3.htm"
               }
             ],
             "quiz": [
               {
-                "q": "What was the core metric of Robert Bork's 'Consumer Welfare Standard' in modern antitrust law?",
+                "q": "What fundamental structural vulnerability does the Diamond-Dybvig model identify in commercial banking?",
                 "options": [
-                  "Short-term consumer price effects and economic efficiency.",
-                  "The number of workers employed by a corporation.",
-                  "The environmental sustainability of factories.",
-                  "The political donations of corporate executives."
+                  "Banks hold too much physical currency in their safes.",
+                  "Maturity transformation: banks fund long-term illiquid loans with short-term demand deposits, creating the risk of self-fulfilling panic runs.",
+                  "Banks are legally prohibited from lending money to private corporations.",
+                  "Central banks only operate during daylight hours."
                 ],
-                "answer": 0,
-                "why": "Bork narrowed antitrust to consumer prices; if a corporate merger or monopoly did not raise prices for consumers, it was deemed lawful."
+                "answer": 1,
+                "why": "Because banks cannot immediately liquidate long-term loans without fire-sale losses, a sudden surge in demand for liquidity can trigger catastrophic insolvency in otherwise solvent banks."
               }
             ]
-          },
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "econ-behavioral-economics",
+    "title": "Behavioral Economics, Choice Architecture & Nudge Theory: Heuristics & Policy",
+    "category": "Public Policy & Economics",
+    "subcategory": "Behavioral science",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
+    "description": "An empirical exploration of how human psychology shapes economic decision-making. Contrasts traditional rational-choice *Homo economicus* with cognitive realities: prospect theory, loss aversion, hyperbolic discounting, and heuristics. Explores behavioral policy interventions, default rules, and nudge units.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Contrast the neoclassical rational-actor model with Daniel Kahneman and Amos Tversky's Prospect Theory.",
+      "Analyze cognitive biases: loss aversion, framing effects, availability heuristic, and present bias.",
+      "Master the principles of Choice Architecture and Libertarian Paternalism (Thaler & Sunstein).",
+      "Evaluate the ethics and efficacy of government 'Nudge Units' in organ donation, retirement savings, and tax compliance."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: Cognitive Biases, Prospect Theory, and Choice Architecture",
+        "lessons": [
           {
-            "id": "antitrust-l2",
-            "title": "Lina Khan's Amazon Paradox and the New Brandeisians",
-            "body": "### The Amazon Antitrust Paradox\n\nIn 2017, while still a law student at Yale, **Lina Khan** published an article in the *Yale Law Journal* that ignited a revolution across global competition law: *Amazon's Antitrust Paradox*.\n\nKhan demonstrated that judging monopolies solely by consumer prices is blind to digital platform power:\n1. **Predatory Pricing for Market Share**: Amazon weaponized Wall Street patient capital, absorbing billions in losses (such as slashing diaper prices by 30% to drive Quidsi/Diapers.com into bankruptcy) to starve rivals and capture unassailable market dominance.\n2. **The Dual Role Conflict of Interest**: Amazon acts as both the **referee** (the marketplace platform hosting millions of independent third-party merchants) and a **competitor** (selling its own AmazonBasics products). Amazon mined merchant sales data, identified profitable products, cloned them, and rigged search algorithms to self-preference its own goods.\n3. **Network Effects and Lock-In**: Once a platform achieves critical mass, two-sided network effects create insurmountable barriers to entry for competitors.\n\nAppointed Chair of the Federal Trade Commission (FTC) in 2021, Khan spearheaded the **New Brandeisian Movement** (named after Justice Louis Brandeis), arguing that antitrust must protect competitive market structure, workers' wages, and democracy itself from coercive concentrated private power.",
+            "id": "econ-be-l1",
+            "title": "Prospect Theory, Loss Aversion, and Choice Architecture",
+            "body": "### Beyond Homo Economicus\n\nNeoclassical economic models assume *Homo economicus*: perfectly rational agents with limitless computational capacity, fully ordered preferences, and absolute self-control. Behavioral economics, pioneered by psychologists Daniel Kahneman and Amos Tversky and economist Richard Thaler, replaces this fiction with empirical observations of actual human cognition.\n\n#### 1. Kahneman & Tversky's Prospect Theory (1979)\nProspect theory models how individuals actually evaluate risk and uncertainty:\n- **Reference Dependence:** People do not evaluate outcomes based on absolute wealth, but as **gains or losses relative to an arbitrary psychological reference point**.\n- **Loss Aversion:** The psychological pain of losing $100 is roughly **twice as intense** as the pleasure of gaining $100.\n- **Diminishing Sensitivity & Probability Weighting:** People are risk-averse when facing potential gains (preferring a sure $500 over a 50% chance of $1,000), but become risk-seeking when facing potential losses (preferring a 50% gamble of losing $1,000 over a sure loss of $500).\n\n```\nProspect Theory Value Function:\n      Value (Pleasure)\n             ^\n             |          /-- (Diminishing sensitivity for gains)\n             |        /\n             |      /\n- Losses <---+---> Gains\n           / |\n          /  | (Loss aversion: steeper curve for losses)\n         /   |\n        v\n    Value (Pain)\n```\n\n#### 2. Choice Architecture and Nudge Theory (Thaler & Sunstein, 2008)\nBecause human decisions are sensitive to context, how choices are presented\u2014**Choice Architecture**\u2014fundamentally dictates behavior:\n- **Libertarian Paternalism:** Interventions should steer choices in directions that make choosers better off (paternalistic), while preserving freedom of choice and allowing individuals to opt out easily at zero cost (libertarian).\n- **The Power of Defaults:** When automatic enrollment in retirement 401(k) plans replaced opt-in enrollment (employees are enrolled by default and must click to opt out), participation jumped from 37% to 86%. Similar default rules transform organ donor registration rates across European nations.",
             "readings": [
               {
-                "label": "Lina M. Khan, Amazon's Antitrust Paradox, Yale Law Journal (2017)",
+                "label": "Daniel Kahneman, Thinking, Fast and Slow (Farrar, Straus and Giroux, 2011)",
+                "url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+              },
+              {
+                "label": "Richard H. Thaler and Cass R. Sunstein, Nudge: The Final Edition (Penguin, 2021)",
+                "url": "https://www.penguinrandomhouse.com/books/673801/nudge-by-richard-h-thaler-and-cass-r-sunstein/"
+              },
+              {
+                "label": "Amos Tversky and Daniel Kahneman, Prospect Theory: An Analysis of Decision under Risk (Econometrica, 1979)",
+                "url": "https://www.jstor.org/stable/1914185"
+              }
+            ],
+            "quiz": [
+              {
+                "q": "What is the defining psychological finding of 'loss aversion' in Kahneman and Tversky's Prospect Theory?",
+                "options": [
+                  "People are completely indifferent between financial profits and losses.",
+                  "The psychological pain of suffering a monetary loss is roughly twice as intense as the pleasure experienced from an equivalent monetary gain.",
+                  "Individuals only make financial decisions based on astrological calculations.",
+                  "People will always choose the most expensive health insurance plan."
+                ],
+                "answer": 1,
+                "why": "Empirical experiments demonstrate that losses loom larger than gains: losing $100 causes approximately twice the psychological displeasure as winning $100 causes pleasure."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "econ-antitrust-tech",
+    "title": "Antitrust Policy & the Regulation of Big Tech: Networks, Monopsony & Competition",
+    "category": "Public Policy & Economics",
+    "subcategory": "Industrial organization",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
+    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
+    "description": "A critical examination of competition policy in digital platform markets. Examines the history of antitrust from the Sherman Act (1890) to the Chicago School consumer welfare standard, network effects, two-sided platform markets, data lock-in, predatory acquisitions, and the New Brandeisian regulatory revival.",
+    "passMark": 75,
+    "certificate": true,
+    "objectives": [
+      "Trace the statutory foundation of competition law: Sherman Act Sections 1 and 2, and Clayton Act Section 7.",
+      "Critique Robert Bork's Chicago School 'Consumer Welfare Standard' in zero-price digital platform markets.",
+      "Analyze Lina Khan's 'Amazon's Antitrust Paradox' and the New Brandeis school of competition policy.",
+      "Evaluate regulatory remedies: structural breakups, data portability, interoperability mandates, and the EU Digital Markets Act (DMA)."
+    ],
+    "modules": [
+      {
+        "title": "Module 1: The Evolution of Antitrust: From Standard Oil to Digital Platforms",
+        "lessons": [
+          {
+            "id": "econ-at-l1",
+            "title": "The Consumer Welfare Standard vs The New Brandeis Movement",
+            "body": "### Competition Policy in the Age of Digital Monopolies\n\nAntitrust law protects competitive market structures from monopolistic abuses. In the United States, modern antitrust rests on the **Sherman Antitrust Act of 1890** (**Section 1** banning conspiracies in restraint of trade; **Section 2** prohibiting monopolization and attempts to monopolize).\n\n#### 1. The Rise and Limits of the Chicago School (Robert Bork, 1978)\nFor four decades, American antitrust was dominated by Robert Bork's **Consumer Welfare Standard**:\n- An arrangement violates antitrust laws **only if it harms consumers through higher prices, reduced output, or diminished quality**.\n- If a merger lowers production costs or delivers lower prices to shoppers, it is presumed pro-competitive, regardless of how many small competitors are crushed.\n\n#### 2. Lina Khan and 'Amazon's Antitrust Paradox' (2017)\nIn a revolutionary *Yale Law Journal* article, legal scholar Lina Khan (later Chair of the Federal Trade Commission) exposed the blind spots of the Consumer Welfare Standard in modern digital platform markets:\n- **The Zero-Price Conundrum:** Many tech giants provide products for free to consumers (search, social media, navigation) or subsidize prices below cost for years to capture market share. Under Bork's price-centric standard, a firm offering free services appears incapable of causing antitrust harm.\n- **Structural Hazards of Two-Sided Platforms:**\n  - *Network Effects:* As more users join a platform, the platform becomes exponentially more valuable, creating a \"winner-take-all\" tipping dynamic.\n  - *Dual Role (Platform Host + Merchant Competitor):* Platforms control the marketplace infrastructure while simultaneously competing against third-party merchants whose data they observe and exploit.\n  - *Killer Acquisitions:* Incumbents acquire nascent startup rivals before they can evolve into competitive threats (e.g., acquisitions of Instagram and WhatsApp).\n\n```\nPlatform Dual Role Conflict:\n[ Digital Platform Marketplace ] \u2500\u2500 Controls algorithms, ranking & user data\n        \u251c\u2500\u2500 Hosts 10,000 independent merchant vendors\n        \u2514\u2500\u2500 Sells platform's own copycat private-label brands (Promoted to top)\n```\n\n#### 3. New Regulatory Tools: Interoperability and the EU DMA\nIn response, policymakers designed proactive *ex-ante* regulations:\n- **The EU Digital Markets Act (DMA):** Designates systemic platforms as \"gatekeepers\", prohibiting self-preferencing and mandating interoperability for core messaging services.",
+            "readings": [
+              {
+                "label": "Lina M. Khan, Amazon's Antitrust Paradox (Yale Law Journal, 2017)",
                 "url": "https://www.yalelawjournal.org/article/amazons-antitrust-paradox"
               },
               {
-                "label": "United States v. Google LLC, Memorandum Opinion (D.D.C. Aug 5, 2024)",
-                "url": "https://www.justice.gov"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What structural conflict of interest did Lina Khan identify in Amazon's digital platform business model?",
-                "options": [
-                  "Amazon operates the underlying marketplace for third-party sellers while simultaneously competing against those sellers using their proprietary sales data.",
-                  "Amazon delivers packages using government post offices.",
-                  "Amazon refuses to accept credit cards.",
-                  "Amazon only sells books in English."
-                ],
-                "answer": 0,
-                "why": "Khan showed that acting as both the marketplace platform and a competing retailer creates an unfair, predatory conflict of interest."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "econ-crash2008",
-    "title": "The Great Financial Crash of 2008: Subprime, CDOs, and Wall Street",
-    "category": "Public Policy and Economics",
-    "subcategory": "Macroeconomics",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
-    "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "The catastrophic collapse of the global financial system: subprime predatory mortgages, Collateralized Debt Obligations (CDOs), Credit Default Swaps, the failure of credit rating agencies, Lehman Brothers bankruptcy, and TARP bailouts.",
-    "passMark": 70,
-    "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-06",
-    "objectives": [
-      "Deconstruct securitization: Mortgages, Mortgage-Backed Securities (MBS), and Collateralized Debt Obligations (CDOs).",
-      "Analyze systemic risk and counterparty contagion through Credit Default Swaps (AIG).",
-      "Evaluate structural conflicts of interest in credit rating agencies (Moody's and S&P).",
-      "Examine regulatory post-mortems: Too Big to Fail, the Dodd-Frank Act, and moral hazard."
-    ],
-    "modules": [
-      {
-        "title": "The Securitization Machine and the Subprime Bubble",
-        "lessons": [
-          {
-            "id": "crash-l1",
-            "title": "Securitization: How Bad Mortgages Became AAA Gold",
-            "body": "### The Machine of Financial Alchemy\n\nFor generations, banking was simple: a local savings bank lent money to a homebuyer and held the mortgage for thirty years. If the borrower defaulted, the bank lost money. This aligned the lender's interest with responsible underwriting.\n\nIn the early 2000s, Wall Street invented the **Originate-to-Distribute Model**:\n1. Mortgage brokers issued high-risk **Subprime Mortgages** (NINJA loans: No Income, No Job, No Assets) to unqualified buyers.\n2. The brokers immediately sold the mortgages to investment banks (Lehman Brothers, Bear Stearns, Merrill Lynch).\n3. Wall Street bundled thousands of these toxic loans together into **Mortgage-Backed Securities (MBS)** and **Collateralized Debt Obligations (CDOs)**, slicing them into risk tranches.\n\n#### The Complicity of the Rating Agencies\nTo sell CDOs to pension funds and insurance companies that were legally required to invest only in ultra-safe assets, Wall Street needed an imprimatur of safety. The credit rating agencies (**Moody's, Standard & Poor's, Fitch**) were paid lucrative fees directly by the investment banks whose bonds they were rating. Corrupted by conflicts of interest, rating agencies stamped billions of dollars of toxic subprime garbage with **AAA ratings**\u2014the same rating given to United States Treasury bonds.",
-            "readings": [
-              {
-                "label": "Michael Lewis, The Big Short: Inside the Doomsday Machine (2010)",
-                "url": "https://wwnorton.com"
+                "label": "Robert H. Bork, The Antitrust Paradox: A Policy at War with Itself (Basic Books, 1978)",
+                "url": "https://www.worldcat.org/title/antitrust-paradox/oclc/3843516"
               },
               {
-                "label": "Financial Crisis Inquiry Commission, The Financial Crisis Inquiry Report (2011)",
-                "url": "https://www.govinfo.gov"
+                "label": "European Commission, The Digital Markets Act: Ensuring Fair and Open Digital Markets",
+                "url": "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en"
               }
             ],
             "quiz": [
               {
-                "q": "What was the fatal incentive flaw of the 'Originate-to-Distribute' mortgage model prior to 2008?",
+                "q": "Why does Lina Khan argue that Robert Bork's traditional 'Consumer Welfare Standard' fails to address antitrust harms in digital tech platforms like Amazon or Google?",
                 "options": [
-                  "Lenders who originated predatory mortgages bore zero risk of default because they immediately packaged and sold the loans to Wall Street.",
-                  "Banks were legally forbidden from charging interest on home loans.",
-                  "All homebuyers were required to put down 50% cash down payments.",
-                  "The Federal Reserve banned mortgage securitization."
+                  "Because tech companies only operate in Antarctica.",
+                  "Because the standard focuses narrowly on short-term consumer price increases, rendering it blind to predatory pricing, market lock-in, and anti-competitive platform dominance where consumer services are provided at zero monetary price.",
+                  "Because antitrust statutes were legally repealed in 1980.",
+                  "Because online shopping has no economic value."
                 ],
-                "answer": 0,
-                "why": "Lenders made lucrative fees on origination volume without caring about creditworthiness, since defaults were passed on to investors."
-              }
-            ]
-          },
-          {
-            "id": "crash-l2",
-            "title": "Contagion: The Fall of Lehman Brothers and AIG",
-            "body": "### The Dominoes Fall\n\nThe fatal accelerant of the crisis was the **Credit Default Swap (CDS)**\u2014a private derivative contract that acted as insurance against a bond default. \n\nMultinational insurance giant **American International Group (AIG)** sold tens of billions of dollars in CDS protection on subprime CDOs to banks like Goldman Sachs. AIG pocketed billions in premiums while posting almost no collateral, betting that the American housing market would never suffer a nationwide drop in home prices.\n\n#### September 2008: The Panic\nIn 2007, the housing bubble popped; subprime defaults skyrocketed. \n- On September 15, 2008, investment bank **Lehman Brothers** filed for Chapter 11 bankruptcy with $613 billion in debt\u2014the largest bankruptcy in world history.\n- The global interbank lending market froze completely overnight. Nobody knew which bank was solvent.\n- AIG faced instantaneous collapse because it owed billions in CDS collateral calls it did not possess. To prevent the complete seizure of the global banking system, the Federal Reserve intervened with an unprecedented **$85 billion bailout of AIG**, followed by Congress passing the **$700 billion Troubled Asset Relief Program (TARP)**.\n\nThe crisis resulted in nine million American families losing their homes, millions of jobs destroyed, and a profound collapse in public trust in political and financial institutions that reshaped global politics for decades.",
-            "readings": [
-              {
-                "label": "Adam Tooze, Crashed: How a Decade of Financial Crises Changed the World (2018)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why was the Federal Reserve forced to bail out insurance giant AIG with $85 billion in September 2008?",
-                "options": [
-                  "AIG had sold massive credit default swaps insuring Wall Street against mortgage defaults; its failure would have triggered systemic worldwide bank collapses.",
-                  "AIG was the official sovereign bank of the United States Treasury.",
-                  "AIG was owned by the president's family.",
-                  "AIG's failure would have canceled all automobile insurance policies in Europe."
-                ],
-                "answer": 0,
-                "why": "AIG was interconnected with every major global investment bank; its insolvency would have caused cascading counterparty default worldwide."
+                "answer": 1,
+                "why": "When platforms offer free or heavily subsidized services, a standard that only looks for consumer price spikes fails to detect systemic anti-competitive conduct like predatory exclusion, lock-in, and self-preferencing."
               }
             ]
           }
@@ -2993,77 +2204,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "policy-cities",
-    "title": "The Future of Cities: Housing Crises, NIMBYism, and Urban Density",
-    "category": "Public Policy and Economics",
-    "subcategory": "Public Policy",
+    "id": "econ-ubi-automation",
+    "title": "Universal Basic Income, Automation & the Future of Social Welfare",
+    "category": "Public Policy & Economics",
+    "subcategory": "Social policy",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "Jane Jacobs vs Robert Moses: urban highway destruction, exclusionary single-family zoning, why rent control backfires, Vienna's social housing model, and congestion pricing in London and New York.",
-    "passMark": 70,
+    "description": "A rigorous policy analysis of labor market automation, artificial intelligence, and welfare state redesign. Explores Universal Basic Income (UBI), negative income taxes, job guarantees, labor share decline, and the fiscal mechanics of funding unconditional social transfers.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-09",
     "objectives": [
-      "Deconstruct the intellectual duel between Robert Moses' master-builder highway urbanism and Jane Jacobs' human-scale sidewalk vitality.",
-      "Analyze exclusionary zoning, NIMBYism, and the housing supply crisis in global superstar cities.",
-      "Evaluate price controls vs supply-side interventions: the empirical economics of rent control.",
-      "Assess the Vienna social housing model and transit-oriented development."
+      "Analyze the economics of Universal Basic Income (UBI): universality, unconditionality, and cash delivery.",
+      "Compare Milton Friedman's Negative Income Tax (NIT) with universal progressive basic income models.",
+      "Evaluate empirical evidence from UBI pilot trials (Finland, Stockton California, Kenya GiveDirectly).",
+      "Model fiscal financing mechanisms: sovereign wealth funds, carbon dividends, and automation/data taxation."
     ],
     "modules": [
       {
-        "title": "The Battle for the Street and Exclusionary Zoning",
+        "title": "Module 1: Automation, Labor Displacement, and the Economics of Cash Transfers",
         "lessons": [
           {
-            "id": "city-l1",
-            "title": "Jane Jacobs vs Robert Moses: The Death and Life of Cities",
-            "body": "### The Duel That Shaped the Modern Metropolis\n\nIn mid-20th-century New York, urban planning was ruled by master-builder **Robert Moses**. Armed with federal urban renewal funds and eminent domain, Moses bulldozed vibrant working-class neighborhoods to build elevated expressways, slum clearance projects, and automobile-centric suburbs. Moses believed the future belonged to the car: *\"You cannot make an omelette without breaking eggs.\"*\n\nIn 1961, community activist and journalist **Jane Jacobs** published the most influential urbanist book of the 20th century: *The Death and Life of Great American Cities*.\n\n#### Eyes on the Street\nJacobs launched a fierce defense of traditional, dense, mixed-use neighborhoods (like Greenwich Village). She proved that safe, vibrant cities depend on:\n1. **Eyes on the Street**: Natural public surveillance provided by shopkeepers, residents, and pedestrians.\n2. **Short Blocks and Mixed Uses**: People living, working, and dining in the same neighborhood at all hours of the day.\n3. **High Density**: Dense human interaction that fosters social trust, culture, and economic innovation.\n\nJacobs led a legendary grassroots campaign that defeated Moses' planned Lower Manhattan Expressway (LOMEX)\u2014which would have demolished SoHo, Little Italy, and Greenwich Village\u2014saving the historic urban fabric of New York.",
+            "id": "econ-ubi-l1",
+            "title": "The Mechanics of Universal Basic Income and the Future of Work",
+            "body": "### Redefining Social Security for the 21st Century\n\nThe 20th-century welfare state was designed around the premise of formal, stable, full-time wage labor, where social protections (pensions, disability insurance, unemployment benefits) were tied to employment. The rise of artificial intelligence, robotic automation, and the platform \"gig\" economy has challenged this model, sparking intense global policy debate over **Universal Basic Income (UBI)**.\n\n#### 1. Defining Universal Basic Income\nA true Universal Basic Income is defined by five non-negotiable criteria:\n1. **Periodic:** Paid at regular intervals (e.g., monthly), not as a one-time grant.\n2. **Cash Payment:** Delivered in liquid currency, allowing recipients full consumer sovereignty (unlike food stamps or housing vouchers).\n3. **Individual:** Paid to each individual adult, rather than calculated per household.\n4. **Universal:** Paid to all citizens without means-testing or income eligibility cutoffs.\n5. **Unconditional:** Paid without work requirements, job search verification, or moral conditionalities.\n\n```\nTargeted Means-Tested Welfare vs Universal Basic Income:\n[Traditional Welfare] \u2500\u2500 Strict means tests \u2500\u2500\u2192 Creates \"Poverty Trap\"\n                                                  (Lose benefits if you take a low-wage job)\n\n[Universal Basic Income] \u2500\u2500 Given to all unconditionally \u2500\u2500\u2192 Always better off working\n                                                             (Earned wages add to UBI floor)\n```\n\n#### 2. The 'Poverty Trap' and Effective Marginal Tax Rates\nTraditional means-tested welfare suffers from a severe structural flaw: the **welfare cliff**.\n- When a low-income recipient finds a job earning $1,000/month, the government terminates their subsidized housing, food stamps, and Medicaid.\n- The effective marginal tax rate can exceed **80%\u2013100%**: every dollar earned from honest labor is canceled by lost welfare benefits.\n- UBI eliminates this trap: because the baseline check is never revoked when you take a job, every dollar of work directly increases net household income.\n\n#### 3. Fiscal Realities and Financing Models\nThe central challenge of UBI is gross budgetary cost. A payment of $1,000/month to 250 million adult citizens in the US requires $3 trillion annually (~12% of GDP). Proposed financing mechanisms include:\n- **Carbon Dividends:** Levying a tax on carbon emissions and redistributing 100% of the revenue equally to every citizen.\n- **Sovereign Wealth Funds (The Alaska Permanent Fund model):** Capitalizing state resource windfalls or public equity stakes into an investment fund that yields annual citizen dividends.\n- **Land Value Taxes & Value Added Taxes (VAT).**",
             "readings": [
               {
-                "label": "Jane Jacobs, The Death and Life of Great American Cities (1961)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Philippe Van Parijs and Yannick Vanderborght, Basic Income: A Radical Proposal for a Free Society (Harvard, 2017)",
+                "url": "https://www.hup.harvard.edu/books/9780674052284"
               },
               {
-                "label": "Robert A. Caro, The Power Broker: Robert Moses and the Fall of New York (1974)",
-                "url": "https://www.penguinrandomhouse.com"
+                "label": "Milton Friedman, Capitalism and Freedom (Chapter 12 on Negative Income Tax, 1962)",
+                "url": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo3643764.html"
+              },
+              {
+                "label": "GiveDirectly, The Universal Basic Income Experiment in Kenya (Research Overview)",
+                "url": "https://www.givedirectly.org/research-on-cash-transfers/"
               }
             ],
             "quiz": [
               {
-                "q": "What concept did Jane Jacobs introduce to explain why dense mixed-use city neighborhoods are naturally safe?",
+                "q": "How does an unconditional Universal Basic Income (UBI) structurally eliminate the 'poverty trap' inherent in traditional means-tested welfare systems?",
                 "options": [
-                  "'Eyes on the street'\u2014natural continuous casual surveillance by residents, shopkeepers, and pedestrians.",
-                  "Installing armed military checkpoints on every corner.",
-                  "Banning all commercial businesses from residential areas.",
-                  "Tearing down historic brick buildings to widen car highways."
+                  "By making it illegal for low-income citizens to seek employment.",
+                  "Because UBI is paid unconditionally to all citizens and is never revoked when an individual gets a job, every dollar of wage income directly increases their net total income.",
+                  "By converting all cash payments into non-transferable food coupons.",
+                  "By privatizing all public transportation systems."
                 ],
-                "answer": 0,
-                "why": "Jacobs proved that vibrant, pedestrian-filled sidewalks create organic, voluntary community safety without police intimidation."
-              }
-            ]
-          },
-          {
-            "id": "city-l2",
-            "title": "NIMBYism, Zoning, and the Vienna Housing Model",
-            "body": "### The Housing Shortage by Design\n\nIn superstar cities across the world (San Francisco, London, Sydney, New York), housing has become unaffordable for the working and middle classes. Economic analysis demonstrates that this crisis is not an accident; it is the deliberate result of **Exclusionary Single-Family Zoning** and **NIMBYism (Not In My Back Yard)**.\n\nExisting homeowners have powerful financial incentives to restrict new housing construction: limiting supply drives up the market value of their own homes while preserving neighborhood character. Restrictive zoning codes make it illegal to build townhouses, duplexes, or apartments on 75% of residential land in major US cities.\n\n#### The Vienna Miracle: Municipal Social Housing\nBy contrast, **Vienna, Austria** has been repeatedly ranked the world's most livable city, largely because housing is treated as a basic public utility. Over **60% of Vienna's population lives in municipal housing (*Gemeindebauten*) or subsidized non-profit cooperatives**.\n\nKey elements of the Vienna model:\n- **Broad Eligibility**: The income ceiling is so high (over \u20ac57,000 net annually for a single person) that 75% of the city qualifies, preventing social housing from becoming stigmatized ghettos of poverty.\n- **Architectural Quality**: Social housing developments feature swimming pools, kindergartens, public parks, and rooftop gardens.\n- **Market Rent Suppression**: By providing high-quality public housing, the municipal supply forces private landlords to compete on quality and price, keeping median rent in Vienna below $900 a month.",
-            "readings": [
-              {
-                "label": "Edward Glaeser, Triumph of the City: How Our Greatest Invention Makes Us Richer, Smarter, Greener, Healthier, and Happier (2011)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What is the primary reason why Vienna, Austria maintains high-quality housing affordability?",
-                "options": [
-                  "Over 60% of the population lives in high-quality municipal or subsidized cooperative housing open to the broad middle class.",
-                  "The city banned all immigration in 1950.",
-                  "Vienna outlawed all private property ownership.",
-                  "The city has no public transportation system."
-                ],
-                "answer": 0,
-                "why": "Vienna's municipal social housing provides large-scale, high-quality public alternatives that anchor the entire rental market."
+                "answer": 1,
+                "why": "Means-tested welfare claws back benefits as soon as a recipient earns wages, creating an effective marginal tax rate near 100%. UBI provides an unbreakable floor that is never clawed back."
               }
             ]
           }
@@ -3072,81 +2261,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "policy-ubi",
-    "title": "Universal Basic Income vs The Welfare State: The Future of Work",
-    "category": "Public Policy and Economics",
-    "subcategory": "Public Policy",
+    "id": "econ-environmental-economics",
+    "title": "Environmental Economics & the Global Energy Transition: Carbon Pricing & Markets",
+    "category": "Public Policy & Economics",
+    "subcategory": "Environmental policy",
     "level": "Pre-university",
-    "duration": "4 weeks",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "An investigation of guaranteed basic income in the era of artificial intelligence automation: Thomas Paine's agrarian justice, Milton Friedman's Negative Income Tax, the Alaska Permanent Fund, and whether free money disincentivizes human labor.",
-    "passMark": 70,
+    "description": "An analytical study of climate economics, market-based environmental instruments, and energy transitions. Explores the social cost of carbon, cap-and-trade systems (ETS) versus carbon taxation, border carbon adjustments, green industrial policy, and William Nordhaus's DICE integrated assessment model.",
+    "passMark": 75,
     "certificate": true,
-    "featured": false,
-    "createdAt": "2026-09-12",
     "objectives": [
-      "Deconstruct the philosophical roots of UBI from Thomas Paine to Martin Luther King Jr.",
-      "Compare Milton Friedman's libertarian Negative Income Tax with progressive unconditional basic income.",
-      "Analyze empirical evidence from the Alaska Permanent Fund and global basic income experiments (Finland, Kenya).",
-      "Evaluate labor market displacement in the age of generative artificial intelligence and robotics."
+      "Calculate the Social Cost of Carbon (SCC) and evaluate the role of discount rates in climate models.",
+      "Compare Cap-and-Trade emissions trading systems with uniform Carbon Taxes using Weitzman's 'Prices vs Quantities' framework.",
+      "Analyze Carbon Border Adjustment Mechanisms (CBAM) to prevent carbon leakage in international trade.",
+      "Evaluate modern clean technology subsidies and green industrial policies."
     ],
     "modules": [
       {
-        "title": "Philosophical Foundations and Economic Modeling",
+        "title": "Module 1: Carbon Pricing Mechanics: Carbon Taxes vs Cap-and-Trade",
         "lessons": [
           {
-            "id": "ubi-l1",
-            "title": "From Thomas Paine to Milton Friedman",
-            "body": "### The Heritage of Guaranteed Income\n\nThe intellectual lineage of **Universal Basic Income (UBI)** unites surprising political allies across history:\n- **Thomas Paine (*Agrarian Justice*, 1797)**: Argued that the Earth in its natural uncultivated state was the common property of the human race. When private property was established, non-landowners were dispossessed. To compensate for this loss, Paine proposed a universal cash dividend paid to every citizen upon reaching adulthood, funded by a ground rent tax on land.\n- **Martin Luther King Jr. (*Where Do We Go from Here*, 1967)**: Concluded that the only genuine solution to racial poverty was the direct, targeted abolition of poverty through a **guaranteed annual income**.\n\n#### Milton Friedman's Negative Income Tax (NIT)\nIn *Capitalism and Freedom* (1962), free-market libertarian icon Milton Friedman proposed the **Negative Income Tax**:\n- Replace the bureaucratic, paternalistic welfare state (food stamps, housing vouchers, welfare caseworkers) with a single, streamlined cash payment administered through the income tax system.\n- If you earn above a threshold, you pay tax; if you earn below, the IRS pays you cash.\n- Friedman argued that cash treats poor citizens with dignity as autonomous consumers, while preserving work incentives because earning an extra dollar of wage never results in a 100% loss of benefit.",
+            "id": "econ-env-l1",
+            "title": "Pricing Carbon: Weitzman's Prices vs Quantities and Carbon Leakage",
+            "body": "### The Economics of Climate Change\n\nClimate change represents what economist Nicholas Stern famously termed *\"the greatest market failure the world has ever seen\"*. Greenhouse gas emissions are an unpriced global externality: emitters enjoy the full private benefit of cheap fossil fuel energy while dispersing the catastrophic planetary costs across the entire global population and future generations.\n\n#### 1. The Two Market-Based Instruments\nEconomists advocate putting a transparent price on carbon to let market incentives drive decarbonization:\n- **Carbon Tax (Price Instrument):**\n  - The government fixes the price per metric ton of CO2 emissions (e.g., $50/ton).\n  - The market determines the resulting quantity of emission reductions.\n  - *Advantage:* Price certainty for businesses planning clean energy capital investments.\n- **Cap-and-Trade / Emissions Trading System (Quantity Instrument):**\n  - The government caps the total allowable volume of emissions (e.g., 500 million tons/year) and issues a matching number of tradable allowances.\n  - Emitters must surrender one allowance per ton emitted. Those that can abate emissions cheaply sell surplus allowances to those facing high abatement costs.\n  - *Advantage:* Environmental certainty that aggregate emissions will not exceed the physical cap (e.g., EU Emissions Trading System, EU ETS).\n\n```\nCarbon Policy Comparison:\nCarbon Tax:       Government sets [PRICE]    \u2500\u2500\u2192 Market chooses [QUANTITY]\nCap-and-Trade:    Government sets [QUANTITY] \u2500\u2500\u2192 Market discovers [PRICE]\n```\n\n#### 2. Martin Weitzman's 'Prices vs Quantities' (1974)\nUnder conditions of scientific and economic uncertainty:\n- If the **Marginal Damage curve is steep** (e.g., hitting irreversible climate tipping points), a **Quantity instrument (Cap-and-Trade)** is welfare-superior because catastrophic damage must be physically avoided.\n- If the **Marginal Abatement Cost curve is steep**, a **Price instrument (Carbon Tax)** is superior because it protects the economy from wild cost spikes.\n\n#### 3. Carbon Leakage and Border Adjustments (CBAM)\nIf Jurisdiction A imposes a stringent carbon price while Jurisdiction B imposes zero carbon costs, domestic industries in Jurisdiction A may relocate production to Jurisdiction B\u2014exporting emissions and domestic jobs without reducing global warming (*carbon leakage*).\n- **The Solution:** A **Carbon Border Adjustment Mechanism (CBAM)** levies an import tariff on energy-intensive goods (steel, cement, aluminum) entering from countries without equivalent carbon pricing, leveling the playing field.",
             "readings": [
               {
-                "label": "Thomas Paine, Agrarian Justice (1797)",
-                "url": "https://www.gutenberg.org"
+                "label": "William D. Nordhaus, The Climate Casino: Risk, Uncertainty, and Economics for a Warming World (Yale, 2013)",
+                "url": "https://yalebooks.yale.edu/book/9780300212648/the-climate-casino/"
               },
               {
-                "label": "Milton Friedman, Capitalism and Freedom (Chapter 12: The Alleviation of Poverty) (1962)",
-                "url": "https://press.uchicago.edu"
+                "label": "Martin L. Weitzman, Prices vs. Quantities (Review of Economic Studies, 1974)",
+                "url": "https://www.jstor.org/stable/2296698"
+              },
+              {
+                "label": "European Commission, Carbon Border Adjustment Mechanism (CBAM) Overview",
+                "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
               }
             ],
             "quiz": [
               {
-                "q": "What was Milton Friedman's primary libertarian argument in favor of a Negative Income Tax over traditional welfare programs?",
+                "q": "What is the primary economic purpose of a Carbon Border Adjustment Mechanism (CBAM)?",
                 "options": [
-                  "It replaces inefficient, bureaucratic state welfare apparatuses with cash, respecting individual market autonomy and preserving work incentives.",
-                  "It forces all citizens to work in state-owned factories.",
-                  "It abolishes the Federal Reserve system.",
-                  "It eliminates all private property rights."
+                  "To confiscate foreign transport ships entering domestic harbors.",
+                  "To prevent 'carbon leakage' by leveling the playing field between domestic producers subject to carbon pricing and foreign competitors in jurisdictions without equivalent climate regulations.",
+                  "To eliminate all international trade in consumer electronics.",
+                  "To subsidize coal mining in developing economies."
                 ],
-                "answer": 0,
-                "why": "Friedman argued direct cash transfers preserve market choice and dignity while dismantling paternalistic welfare bureaucracies."
-              }
-            ]
-          },
-          {
-            "id": "ubi-l2",
-            "title": "Empirical Experiments: Alaska, Finland, and AI Automation",
-            "body": "### Does Free Money Make People Lazy?\n\nThe primary objection to Universal Basic Income has always been the **Labor Disincentive Argument**: if the state gives everyone an unconditional check every month, will people stop working, drop out of the workforce, and spend their days playing video games?\n\n#### The Alaska Permanent Fund Dividend (PFD)\nSince 1982, every man, woman, and child living in Alaska has received an annual unconditional cash dividend (ranging from $1,000 to $3,200) funded by state oil extraction royalties. Economists studying forty years of Alaska data found **zero reduction in overall full-time employment**. While some mothers and students reduced hours temporarily, the injected cash increased local consumer spending, creating more service-sector jobs.\n\n#### AI and the Post-Work Frontier\nIn the era of Generative AI, cognitive automation threatens white-collar legal, financial, and coding professions. Silicon Valley leaders (Sam Altman) have endorsed UBI funded by corporate tech taxes as an indispensable social shock absorber.\n\nIf artificial general intelligence decouples productive economic output from human labor hours, UBI transforms from an idealistic anti-poverty policy into the fundamental foundation of social stability.",
-            "readings": [
-              {
-                "label": "Rutger Bregman, Utopia for Realists: How We Can Build the Ideal World (2017)",
-                "url": "https://www.littlebrown.com"
-              },
-              {
-                "label": "Annie Lowrey, Give People Money: How a Universal Basic Income Would End Poverty (2018)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "What has forty years of empirical evidence from the Alaska Permanent Fund revealed regarding full-time employment?",
-                "options": [
-                  "Unconditional cash dividends did not reduce overall full-time employment across the state population.",
-                  "90% of workers immediately quit their jobs.",
-                  "The state economy suffered permanent hyperinflation.",
-                  "Alaska's population dropped by half."
-                ],
-                "answer": 0,
-                "why": "Empirical studies found cash dividends stimulated local consumer spending, offsetting small reductions in labor hours by new parents and students."
+                "answer": 1,
+                "why": "A CBAM imposes an import carbon tariff on incoming goods, ensuring that domestic firms are not undercut by foreign rivals emitting carbon for free in unregulated foreign markets."
               }
             ]
           }
@@ -3155,81 +2318,55 @@ window.COURSES_SEED = [
     ]
   },
   {
-    "id": "policy-healthcare",
-    "title": "Health Economics: The Paradox of Healthcare Markets",
-    "category": "Public Policy and Economics",
-    "subcategory": "Health Policy",
-    "level": "Undergraduate",
-    "duration": "5 weeks",
+    "id": "econ-health-systems",
+    "title": "Health Systems, Healthcare Financing Models & Pandemic Governance",
+    "category": "Public Policy & Economics",
+    "subcategory": "Health policy",
+    "level": "Pre-university",
+    "duration": "6 weeks (4 hours/week)",
     "instructor": "Faculty of Public Policy and Economics, The Paper Crane Academy",
-    "description": "Kenneth Arrow's 1963 landmark paper on healthcare market failures: why healthcare can never be a normal free market, adverse selection and death spirals, the Bismarck vs Beveridge models, and American pharmaceutical price gouging.",
-    "passMark": 70,
+    "description": "A comparative macroeconomic and institutional analysis of global health systems and healthcare economics. Dissects Arrow's foundational insights on medical uncertainty, the Beveridge vs Bismarck vs National Health Insurance models, pharmaceutical pricing, and pandemic surveillance governance.",
+    "passMark": 75,
     "certificate": true,
-    "featured": true,
-    "createdAt": "2026-09-15",
     "objectives": [
-      "Deconstruct Kenneth Arrow's 1963 theorem: Uncertainty and the Welfare Economics of Medical Care.",
-      "Analyze information asymmetry, moral hazard, and adverse selection death spirals in private insurance.",
-      "Compare the three global healthcare models: Bismarck (Germany), Beveridge (UK NHS), and National Health Insurance (Canada).",
-      "Evaluate statutory price controls, drug pricing monopolies, and medical bankruptcy in the US."
+      "Master Kenneth Arrow's seminal 1963 economic framework on the unique market characteristics of healthcare.",
+      "Compare the four major international healthcare models: Beveridge, Bismarck, National Health Insurance, and Out-of-Pocket.",
+      "Analyze adverse selection, moral hazard, and risk-pooling mechanisms in private versus public insurance.",
+      "Evaluate global pandemic surveillance, vaccine nationalism, and WHO International Health Regulations (IHR)."
     ],
     "modules": [
       {
-        "title": "Kenneth Arrow and Market Failures in Medicine",
+        "title": "Module 1: Healthcare Economics and Comparative Health Systems",
         "lessons": [
           {
-            "id": "health-l1",
-            "title": "Kenneth Arrow: Why Healthcare Is Not a Normal Market",
-            "body": "### The Foundational Paper of Health Economics\n\nIn 1963, Nobel laureate Kenneth Arrow published *Uncertainty and the Welfare Economics of Medical Care* in the *American Economic Review*. Arrow proved mathematically that **free-market competition fails to produce efficient outcomes in healthcare** due to unique structural features:\n\n1. **Extreme Information Asymmetry**: When you buy a smartphone or a car, you can evaluate quality, compare prices, and decide whether to purchase. In medical care, the consumer has almost zero clinical knowledge and must rely entirely on the physician\u2014who acts as both the diagnostician and the seller of services, creating a severe agency dilemma.\n2. **Uncertainty and Inelasticity of Demand**: You do not shop for an emergency room when having a massive heart attack. Medical crises are unexpected, life-or-death events where demand is near-infinitely inelastic.\n3. **Adverse Selection and the Death Spiral**: In an unregulated private insurance market:\n   - Sicker, high-risk individuals buy insurance.\n   - Healthy, low-risk individuals opt out because premiums are high.\n   - The risk pool becomes sicker, forcing insurers to raise premiums further.\n   - More healthy people leave, collapsing the insurance market in an **Adverse Selection Death Spiral**.",
+            "id": "econ-hs-l1",
+            "title": "Arrow's Healthcare Economics and Comparative Financing Models",
+            "body": "### Why Healthcare Cannot Be Treated as an Ordinary Market\n\nIn 1963, Nobel laureate Kenneth Arrow published *\"Uncertainty and the Welfare Economics of Medical Care\"*, establishing health economics as a distinct discipline. Arrow proved that healthcare violates virtually all assumptions of standard competitive markets:\n- **Severe Asymmetry of Information:** Patients cannot self-diagnose complex pathologies or judge surgical treatments; they depend entirely on physician-providers who act simultaneously as their expert advisors and commercial sellers.\n- **Extreme Uncertainty:** The incidence of catastrophic illness is unpredictable, catastrophic in cost, and completely involuntary.\n- **Externalities:** Infectious diseases mean one person's health choices (vaccination, masking, antibiotics) directly protect or endanger the rest of the community.\n\n```\nFour Classical Healthcare Systems:\n1. The Beveridge Model (UK NHS, Scandinavia):\n   - Healthcare is provided and financed by the government through general progressive taxation. Hospitals are publicly owned, doctors are public employees.\n2. The Bismarck Model (Germany, France, Japan):\n   - Universal insurance financed jointly by employers and employees via non-profit sickness funds. Providers remain private.\n3. The National Health Insurance Model (Canada, Taiwan):\n   - Single-payer government insurance pays for healthcare delivered by private doctors and hospitals.\n4. The Out-of-Pocket / Market Model (Developing nations / Uninsured US):\n   - Medical care is purchased like a private commodity; individuals without funds receive no care.\n```\n\n#### 1. Adverse Selection and the Insurance Death Spiral\nIn an unregulated private health insurance market:\n- Individuals with pre-existing conditions and high expected medical costs buy comprehensive insurance.\n- Healthy young people opt out to save money.\n- The insurer's risk pool deteriorates, forcing the insurer to raise premiums.\n- Higher premiums cause the next tier of relatively healthy people to drop out.\n- **The Death Spiral:** The cycle repeats until the insurance market collapses entirely or premiums become unaffordable for anyone.\n- **The Regulatory Solution:** Universal coverage mandates, community rating (charging sick and healthy the same premium), and risk equalization subsidies.",
             "readings": [
               {
-                "label": "Kenneth J. Arrow, Uncertainty and the Welfare Economics of Medical Care, American Economic Review (1963)",
-                "url": "https://www.jstor.org"
+                "label": "Kenneth J. Arrow, Uncertainty and the Welfare Economics of Medical Care (AER, 1963)",
+                "url": "https://www.jstor.org/stable/1812044"
               },
               {
-                "label": "Atul Gawande, The Cost Conundrum, The New Yorker (2009)",
-                "url": "https://www.newyorker.com"
+                "label": "T.R. Reid, The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care (Penguin, 2010)",
+                "url": "https://www.penguinrandomhouse.com/books/301140/the-healing-of-america-by-t-r-reid/"
+              },
+              {
+                "label": "World Health Organization (WHO), World Health Report: Health Systems Financing",
+                "url": "https://www.who.int/publications/i/item/9789241564052"
               }
             ],
             "quiz": [
               {
-                "q": "What fatal structural feature distinguishes healthcare from normal consumer goods according to Kenneth Arrow?",
+                "q": "What causes the 'Insurance Death Spiral' in an unregulated voluntary private health insurance market?",
                 "options": [
-                  "Profound information asymmetry between doctor and patient, combined with unexpected, life-or-death inelastic demand.",
-                  "Doctors only accept payment in gold coins.",
-                  "All hospitals are run by military officers.",
-                  "Prescription drugs are completely free to produce."
+                  "Hospitals run out of pharmaceutical supplies.",
+                  "Healthy individuals opt out of insurance, causing the average risk and claims of the remaining pool to rise, driving up premiums and causing further healthy people to drop out until the market collapses.",
+                  "Doctors are prohibited from billing patients directly.",
+                  "Central banks raise national interest rates."
                 ],
-                "answer": 0,
-                "why": "Arrow proved patients cannot act as rational consumer shoppers when experiencing unexpected, terrifying medical emergencies with extreme informational deficits."
-              }
-            ]
-          },
-          {
-            "id": "health-l2",
-            "title": "Bismarck, Beveridge, and the American Anomaly",
-            "body": "### Three Global Healthcare Models\n\nDeveloped nations organize healthcare under three distinct systemic architectures:\n1. **The Beveridge Model (e.g. UK National Health Service / NHS)**: Healthcare is provided and financed by the national government through progressive taxation. Clinics and hospitals are public property, and doctors are public employees. Free at the point of care.\n2. **The Bismarck Model (e.g. Germany, Japan, France)**: Financed by mandatory non-profit sickness funds co-paid by employers and employees through payroll deductions. Hospitals and doctors are private, but fees and drug prices are strictly regulated through annual universal government negotiation.\n3. **National Health Insurance Model (e.g. Canada, Taiwan)**: Private healthcare providers, but payment comes from a single government-run public insurance program (**Single-Payer**), eliminating private insurance administrative overhead.\n\n#### The American Anomaly\nThe United States spends over **18% of GDP ($13,000+ per person)** on healthcare\u2014more than double the OECD average\u2014yet leaves millions uninsured, suffers lower life expectancy, higher infant mortality, and is the only developed nation where citizens regularly declare personal bankruptcy due to medical illness. \n\nThe cause is not clinical quality; it is administrative waste (hundreds of competing private billing bureaucracies) and the statutory prohibition on Medicare negotiating bulk drug prices until the Inflation Reduction Act of 2022, proving that **without monopsony bargaining power, private healthcare monopolies extract limitless economic rents.**",
-            "readings": [
-              {
-                "label": "T.R. Reid, The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care (2009)",
-                "url": "https://www.penguinrandomhouse.com"
-              },
-              {
-                "label": "Elisabeth Rosenthal, An American Sickness: How Healthcare Became Big Business (2017)",
-                "url": "https://www.penguinrandomhouse.com"
-              }
-            ],
-            "quiz": [
-              {
-                "q": "Why does the United States spend more than double the OECD average per capita on healthcare while yielding worse health outcomes?",
-                "options": [
-                  "Massive administrative billing overhead, lack of universal coverage, and fragmented pricing without centralized government monopsony drug price negotiation.",
-                  "American citizens visit hospitals ten times more frequently than Europeans.",
-                  "American doctors work without salaries.",
-                  "The US government does not allow private health insurance."
-                ],
-                "answer": 0,
-                "why": "The US suffers from administrative waste and lack of single-payer monopsony purchasing power to restrain pharmaceutical and hospital pricing."
+                "answer": 1,
+                "why": "Adverse selection causes healthy individuals to exit high-cost pools, concentrating risk, raising premiums, and causing the entire risk-sharing pool to unravel unless universally mandated."
               }
             ]
           }
